@@ -1,19 +1,3 @@
-race <- function(name = "Race", races = NULL, prob = NULL, n){
-
-    if (is.null(races)){
-        races  <-  c("White", "Black", "Native", "Asian",
-            "Hawaiian", "Bi-Racial", "Other", "Hispanic")
-    }
-
-    if (is.null(prob)){
-        prob <- c(0.637, 0.122, 0.007, 0.047, 0.0015, 0.019, 0.002, 0.163)
-    }
-
-    out <- sample(x = races, size = n, replace = TRUE, prob = prob)
-    out <- factor(out, levels=races)
-    varname(out, name)
-}
-
 binary <- function(name = "Binary", outcomes = NULL, prob = NULL, n){
 
     if (is.null(outcomes)){
@@ -169,10 +153,6 @@ interval <-  function(fun, breaks, ..., right = TRUE, n){
     out2
 }
 
-varname <- function(x, name){
-    attributes(x)[["varname"]] <- list(name)
-    x
-}
 
 race(n = 12)
 binary(n = 12)
