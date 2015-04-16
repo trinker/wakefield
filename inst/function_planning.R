@@ -1,3 +1,44 @@
+r_sample <- function(n, x = 1:100, prob = NULL, name = "X") {
+
+    if (missing(n)) stop("`n` is missing")
+    out <- sample(x = x, size = n, replace = TRUE, prob = prob)
+    varname(out, name)
+
+}
+
+r_sample_integer <- hijack(r_sample, name = "Integer")
+
+
+
+
+r_sample_binary <- function(n, prob = NULL, name = "Binary") {
+
+    if (missing(n)) stop("`n` is missing")
+    out <- sample.int(n = 2, size = n, replace = TRUE, prob = prob) -1
+    varname(out, name)
+
+}
+
+
+r_sample_logical <- function(n, prob = NULL, name = "Logical") {
+
+    if (missing(n)) stop("`n` is missing")
+    out <- as.logical(sample.int(n = 2, size = n, replace = TRUE, prob = prob) -1)
+    varname(out, name)
+
+}
+
+#===============
+p_load(pax)
+
+new_r_test(r_sample_logical)
+new_r_test(r_sample_binary)
+new_r_test(r_sample_integer)
+new_r_test(r_sample)
+
+######################
+
+
 binary <- function(name = "Binary", outcomes = NULL, prob = NULL, n){
 
     if (is.null(outcomes)){

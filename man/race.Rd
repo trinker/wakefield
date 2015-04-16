@@ -21,7 +21,7 @@ attribute.  This is used to auto assign names to the column/vector name when
 used inside of \code{r_data_frame} or \code{r_list}.}
 }
 \value{
-Returns a random vector of elements.
+Returns a random factor vector of elements.
 }
 \description{
 Generate a random vector of races.

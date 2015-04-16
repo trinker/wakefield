@@ -18,7 +18,7 @@
 #' }
 #'
 #' @inheritParams r_sample_factor
-#' @return Returns a random vector of elements.
+#' @return Returns a random factor vector of elements.
 #' @keywords race
 #' @export
 #' @include utils.R r_sample_factor.R
