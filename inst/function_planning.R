@@ -91,12 +91,19 @@ r_list <- function(n, ...) {
 
     nms <- lapply(out, function(x) unlist(attributes(x)[["varname"]]))
     nms[sapply(nms, is.null)] <- make.names(seq_len(length(nms[sapply(nms, is.null)])))
+    nms <- unlist(nms)
+    nms[names(ll) != ""] <- names(ll)[names(ll) != ""]
+
     out <- lapply(out, function(x){
         attributes(x)[["varname"]] <- NULL
         x
     })
-    setNames(out, unlist(nms))
+
+    setNames(out, nms)
 }
+
+pax::new_r_test(r_data_frame)
+pax::new_r_test(r_list)
 
 r_data_frame <- function(n, ...) {
     out <- r_list(n=n, ...)
@@ -104,13 +111,6 @@ r_data_frame <- function(n, ...) {
     dplyr::tbl_df(out)
 }
 
-
-print.r_data_frame <- function (x, n = 10, width = NULL) {
-    cat(sprintf("Source: r_data_frame [%s x %s]", nrow(x), ncol), "\n", sep = "")
-    cat("\n")
-    print(trunc_mat(x, n = n, width = width))
-    invisible(x)
-}
 
 
 r_list(
@@ -126,13 +126,20 @@ r_data_frame(
     n = 1000,
     id,
     race,
-    group,
-    interval(age, 10),
+    interval(age, c(0, 20, 25, 30, 35, 100), right=FALSE),
     sex,
-    upper,
-    height(mean=60)
+    hour,
+    iq,
+    height(mean=60),
+    variable("My Var", rpois, lambda=1)
 )
 
+
+variable <- function(name, fun, ..., n) {
+
+    varname(fun(n, ...), name)
+
+}
 r_data_frame(
     n = 100,
     id,
@@ -215,6 +222,7 @@ religion
 family
 children
 zip
+character
 employment
 language
 area (c("Suburban", "Urban", "Rural"))
@@ -335,18 +343,6 @@ r_na.default
 r_na.list
 r_na.data.frame
 
-sec2hms <- function (...) {
-    x <- c(...)
-    if (any(x > 3600)) stop("`...` must be <= 3600")
-    hs <- x%%3600
-    h <- floor(hs)
-    ms <- (hs - h) * 60
-    m <- floor(ms)
-    s <- floor((ms - m) * 60)
-
-    hms <- lapply(list(h, m, s), function(x) sprintf("%02d", x))
-    chron::times(paste(hms[[1]], hms[[2]], hms[[3]], sep=":"))
-}
 
 
 r_dat <- function(n = 100, ...){

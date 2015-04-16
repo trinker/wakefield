@@ -2,7 +2,7 @@
 % Please edit documentation in R/varname.R
 \name{varname}
 \alias{varname}
-\title{Title}
+\title{Add Internal Name to Vector}
 \usage{
 varname(x, name)
 }
@@ -13,16 +13,20 @@ varname(x, name)
 \item{name}{A name to assign to \code{attributes(x)[["varname"]]}.}
 }
 \value{
-Returns a vector with a \code{attributes(x)[["varname"]]} assigned.
+Returns a vector of the class \code{variable} with a
+\code{attributes(x)[["varname"]]} assigned.
 }
 \description{
-Description
+Adds the class \code{variable} and an internal
+\code{attributes(x)[["varname"]]} attribute to a vector.
 }
 \examples{
 varname(1:10, "A")
+attributes(varname(1:10, "A"))
+sum(varname(1:10, "A"))
+
 varname(LETTERS, "Caps")
-}
-\seealso{
-Other res: \code{\link{race}}
+attributes(varname(LETTERS, "Caps"))
+paste(varname(LETTERS, "Caps"), collapse="")
 }
 

@@ -4,27 +4,27 @@
 \alias{race}
 \title{Generate Random Vector of Races}
 \usage{
-race(name = "Race", races = NULL, prob = NULL, n)
+race(n, x = c("White", "Hispanic", "Black", "Asian", "Bi-Racial", "Native",
+  "Other", "Hawaiian"), prob = c(0.637, 0.163, 0.122, 0.047, 0.019, 0.007,
+  0.002, 0.0015), name = "Race")
 }
 \arguments{
+\item{n}{The number elements to generate.  This can be globally set within
+the environment of \code{r_data_frame} or \code{r_list}.}
+
+\item{x}{A vector of elements to chose from.}
+
+\item{prob}{A vector of probabilities to chose from.}
+
 \item{name}{The name to assign to the output vector's \code{varname}
-attribute (i.e., \code{attributes(x)[["varname"]]}).  This is auto assigned as
-the column/vector name when used inside of \code{r_data_frame} or \code{r_list}.}
-
-\item{races}{A vector of races to chose from.  See \bold{details} for the
-default races.}
-
-\item{prob}{A vector of probabilities to chose from.  See \bold{details} for
-the default probabilities.}
-
-\item{n}{The number elements to generate.  This can be auto set if used
-inside of \code{r_data_frame} or \code{r_list}.}
+attribute.  This is used to auto assign names to the column/vector name when
+used inside of \code{r_data_frame} or \code{r_list}.}
 }
 \value{
 Returns a random vector of elements.
 }
 \description{
-Generate a random vector of races
+Generate a random vector of races.
 }
 \details{
 The races and probabilities used match approximate U.S. racial
@@ -37,18 +37,14 @@ make-up.  The default make up is:
   Black     \tab 12.20 \%\cr
   Asian     \tab 4.70 \%\cr
   Bi-Racial \tab 1.90 \%\cr
-  Other     \tab .20 \%\cr
   Native    \tab .70 \%\cr
+  Other     \tab .20 \%\cr
   Hawaiian  \tab .15 \%
 }
 }
 \examples{
-race("Race_Column", n=100)
-table(race("Race_Column", n=1000))
-race(races = c("B", "W"), prob = c(.7, .3), n = 25)
-}
-\seealso{
-Other res: \code{\link{varname}}
+race()
+100*table(race(n <- 10000))/n
 }
 \keyword{race}
 
