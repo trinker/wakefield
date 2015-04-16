@@ -2,13 +2,18 @@
 % Please edit documentation in R/r_sample_binary.R
 \name{r_sample_binary}
 \alias{r_sample_binary}
+\alias{r_sample_binary_factor}
 \title{Generate Random Binary Vector}
 \usage{
-r_sample_binary(n, prob = NULL, name = "Binary")
+r_sample_binary(n, x = 1:2, prob = NULL, name = "Binary")
+
+r_sample_binary_factor(n, x = 1:2, prob = NULL, name = "Binary")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
 the environment of \code{r_data_frame} or \code{r_list}.}
+
+\item{x}{A vector of length 2 to sample from.}
 
 \item{prob}{A vector of probabilities to chose from.}
 
@@ -17,10 +22,13 @@ attribute.  This is used to auto assign names to the column/vector name when
 used inside of \code{r_data_frame} or \code{r_list}.}
 }
 \value{
-Returns a random binary (0/1) vector of elements.
+Returns a random binary vector of elements.
 }
 \description{
-Generate a random binary (0/1) vector.
+\code{r_sample_binary} - Generate a random binary vector.
+
+\code{r_sample_binary_factor} - Generate a random binary vector and coerces
+to a factor.
 }
 \examples{
 r_sample_binary(100, name = "Var")
@@ -28,6 +36,6 @@ table(r_sample_binary(1000))
 c("B", "W")[r_sample_binary(10)]
 }
 \seealso{
-\code{\link[base]{sample}}
+\code{\link[base]{sample.int}}
 }
 

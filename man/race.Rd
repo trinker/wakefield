@@ -46,5 +46,11 @@ make-up.  The default make up is:
 race(10)
 100*table(race(n <- 10000))/n
 }
+\seealso{
+Other variable.functions: \code{\link{dummy}};
+  \code{\link{lorem_ipsum}}, \code{\link{paragraph}};
+  \code{\link{sex}}; \code{\link{string}};
+  \code{\link{valid}}
+}
 \keyword{race}
 

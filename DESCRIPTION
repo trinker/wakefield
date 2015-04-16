@@ -8,8 +8,9 @@ Description: Generates random data sets including: data.frames, lists, and
 Depends:
     R (>= 3.1.3)
 Imports:
+    chron,
     dplyr,
-    chron
+    stringi
 Suggests:
     testthat
 Date: 2015-04-14
@@ -17,14 +18,19 @@ License: GPL-2
 LazyData: TRUE
 Roxygen: list(wrap = FALSE)
 Collate:
+    'dummy.R'
+    'lorem_ipsum.R'
     'r_data_frame.R'
     'r_list.R'
+    'utils.R'
     'r_sample.R'
     'r_sample_binary.R'
     'r_sample_factor.R'
-    'utils.R'
     'r_sample_integer.R'
     'r_sample_logical.R'
     'race.R'
+    'sex.R'
+    'string.R'
+    'valid.R'
     'varname.R'
     'wakefield-package.R'

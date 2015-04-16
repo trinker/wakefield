@@ -5,7 +5,7 @@
 #' @inheritParams r_sample_factor
 #' @return Returns a random integer vector of elements.
 #' @seealso \code{\link[base]{sample}}
-#' @include utils.R r_sample_integer.R
+#' @include utils.R r_sample.R
 #' @export
 #' @examples
 #' r_sample_integer(100, name = "Var")
