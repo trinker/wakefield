@@ -43,7 +43,7 @@ make-up.  The default make up is:
 }
 }
 \examples{
-race()
+race(10)
 100*table(race(n <- 10000))/n
 }
 \keyword{race}

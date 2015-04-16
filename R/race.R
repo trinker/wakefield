@@ -24,7 +24,7 @@
 #' @include utils.R r_sample_factor.R
 #' @family variable functions
 #' @examples
-#' race()
+#' race(10)
 #' 100*table(race(n <- 10000))/n
 race <- hijack(r_sample_factor,
     name = "Race",
