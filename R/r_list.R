@@ -23,24 +23,38 @@
 #'     rnorm
 #' )
 r_list <- function(n, ...) {
+
+    ## Capture the unevaluated calls and symbols passed via ...
     ll <- as.list(substitute(list(...)))[-1]
+
+    ## Process each one in turn
     out <- lapply(ll, FUN = function(X) {
+        ## Turn any symbols/names into calls
         if(is.name(X)) X <- as.call(list(X))
+        ## See if ll will eval to a vector
+        if (is.vector(try(eval(X), silent = TRUE))) return(eval(X))
+        ## Add/replace an argument named n
         X$n <- n
         eval(X)
     })
 
+    ## Capture names from vectors of class variable
     nms <- unlist(lapply(out, function(x) {
         nmsout <- attributes(x)[["varname"]]
         if (is.null(nmsout)) return(NA)
         nmsout
     }))
 
+    ## Supply any names given in the call to `r_list`
     nms[names(ll) != ""] <- names(ll)[names(ll) != ""]
+
+    ## Supply generic names to any vectors that do not have names
     nms[sapply(nms, is.na)] <- make.names(seq_len(length(nms[sapply(nms, is.na)])))
 
+    ## Strip the varname attribute and variable class from the vectors
     out <- lapply(out, function(x){
         attributes(x)[["varname"]] <- NULL
+        class(x) <- class(x)[!class(x) %in% "variable"]
         x
     })
 

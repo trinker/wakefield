@@ -17,6 +17,7 @@
 #' r_sample_factor("Race", x = c("B", "W"), prob = c(.7, .3), n = 25)
 r_sample_factor <- function(n, x = LETTERS, prob = NULL, name = "X") {
 
+    if (missing(n)) stop("`n` is missing")
     out <- sample(x = x, size = n, replace = TRUE, prob = prob)
     out <- factor(out, levels = x)
     varname(out, name)
