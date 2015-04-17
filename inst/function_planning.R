@@ -29,7 +29,6 @@ hair
 car  (rownames(mtcars))
 pet
 year
-dna (c("Guanine", "Adenine", "Thymine", "Cytosine"))
 level (1:4)
 smokes
 military
@@ -40,26 +39,8 @@ zip
 character
 employment
 language
-area (c("Suburban", "Urban", "Rural"))
 sport
 
-lower <- function(name = "Lower", k = 5, prob = NULL, n){
-
-    stopifnot(k < 27 || k > 0)
-    stopifnot(length(prob) != k)
-
-    out <- sample(x = letters[seq_len(k)], size = n, replace = TRUE, prob = prob)
-    varname(out, name)
-}
-
-upper <- function(name = "Upper", k = 5, prob = NULL, n){
-
-    stopifnot(k < 27 || k > 0)
-    stopifnot(length(prob) != k)
-
-    out <- sample(x = LETTERS[seq_len(k)], size = n, replace = TRUE, prob = prob)
-    varname(out, name)
-}
 
 
 

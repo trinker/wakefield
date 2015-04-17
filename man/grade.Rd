@@ -71,15 +71,18 @@ hist(gpa(10000))
 }
 \seealso{
 Other variable.functions: \code{\link{age}};
-  \code{\link{answer}}; \code{\link{coin}};
-  \code{\link{death}}, \code{\link{died}};
-  \code{\link{dice}}; \code{\link{dummy}};
+  \code{\link{answer}}; \code{\link{area}};
+  \code{\link{coin}}; \code{\link{death}},
+  \code{\link{died}}; \code{\link{dice}};
+  \code{\link{dna}}; \code{\link{dummy}};
   \code{\link{grade_level}}; \code{\link{group}};
   \code{\link{height}}, \code{\link{height_cm}},
   \code{\link{height_in}}; \code{\link{income}};
   \code{\link{iq}}; \code{\link{likert}},
   \code{\link{likert_5}}, \code{\link{likert_7}};
   \code{\link{lorem_ipsum}}, \code{\link{paragraph}};
+  \code{\link{lower}}, \code{\link{lower_factor}},
+  \code{\link{upper}}, \code{\link{upper_factor}};
   \code{\link{marital}}; \code{\link{normal}},
   \code{\link{normal_round}}; \code{\link{political}};
   \code{\link{race}}; \code{\link{sat}}; \code{\link{sex}};
