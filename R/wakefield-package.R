@@ -56,3 +56,17 @@ NULL
 #' @usage data(presidential_debates_2012)
 #' @format A character vector with 2911 elements
 NULL
+
+
+#' Animal List
+#'
+#' A dataset containing a character vector animals
+#'
+#' @docType data
+#' @keywords datasets
+#' @name animal_list
+#' @usage data(animal_list)
+#' @format A character vector with 591 elements
+#' @references \url{http://a-z-animals.com/animals}
+NULL
+

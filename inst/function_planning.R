@@ -4,19 +4,10 @@ variable <- function(name, fun, ..., n) {
 
 }
 
-upper(n = 12)
-lower(n = 12)
-
 http://www.surveymonkey.com/s.asp?u=51185357313
 http://www.uwex.edu/ces/tobaccoeval/resources/surveydemographics.html
 
 
-degree
-name (import data set and have correct caps)
-color
-animal
-sentence (import words) [see random_sent)
-month (month.name
 state (state.name)
 car
 speed
@@ -27,7 +18,7 @@ weight
 eye (HairEyeColor)
 hair
 car  (rownames(mtcars))
-pet
+
 year
 level (1:4)
 smokes

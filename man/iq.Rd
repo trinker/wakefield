@@ -34,23 +34,28 @@ interval(iq, 5, n = 1000)
 }
 \seealso{
 Other variable.functions: \code{\link{age}};
+  \code{\link{animal}}, \code{\link{pet}};
   \code{\link{answer}}; \code{\link{area}};
-  \code{\link{coin}}; \code{\link{death}},
+  \code{\link{coin}}; \code{\link{color}},
+  \code{\link{primary}}; \code{\link{death}},
   \code{\link{died}}; \code{\link{dice}};
   \code{\link{dna}}; \code{\link{dummy}};
-  \code{\link{gpa}}, \code{\link{grade}},
-  \code{\link{grade_letter}}; \code{\link{grade_level}};
-  \code{\link{group}}; \code{\link{height}},
-  \code{\link{height_cm}}, \code{\link{height_in}};
-  \code{\link{income}}; \code{\link{likert}},
-  \code{\link{likert_5}}, \code{\link{likert_7}};
-  \code{\link{lorem_ipsum}}, \code{\link{paragraph}};
-  \code{\link{lower}}, \code{\link{lower_factor}},
-  \code{\link{upper}}, \code{\link{upper_factor}};
-  \code{\link{marital}}; \code{\link{normal}},
-  \code{\link{normal_round}}; \code{\link{political}};
-  \code{\link{race}}; \code{\link{sat}}; \code{\link{sex}};
-  \code{\link{string}}; \code{\link{valid}}
+  \code{\link{education}}; \code{\link{gpa}},
+  \code{\link{grade}}, \code{\link{grade_letter}};
+  \code{\link{grade_level}}; \code{\link{group}};
+  \code{\link{height}}, \code{\link{height_cm}},
+  \code{\link{height_in}}; \code{\link{income}};
+  \code{\link{likert}}, \code{\link{likert_5}},
+  \code{\link{likert_7}}; \code{\link{lorem_ipsum}},
+  \code{\link{paragraph}}; \code{\link{lower}},
+  \code{\link{lower_factor}}, \code{\link{upper}},
+  \code{\link{upper_factor}}; \code{\link{marital}};
+  \code{\link{month}}; \code{\link{name}};
+  \code{\link{normal}}, \code{\link{normal_round}};
+  \code{\link{political}}; \code{\link{race}};
+  \code{\link{sat}}; \code{\link{sentence}};
+  \code{\link{sex}}; \code{\link{string}};
+  \code{\link{valid}}
 }
 \keyword{intelligence}
 \keyword{iq}
