@@ -7,7 +7,6 @@ loc <- grep(regex, desc)
 ver <- gsub(regex, "\\2", desc[loc])
 verbadge <- sprintf('<a href="https://img.shields.io/badge/Version-%s-orange.svg"><img src="https://img.shields.io/badge/Version-%s-orange.svg" alt="Version"/></a></p>', ver, ver)
 p_load(dpyr, wakefield)
-options(dplyr.width = 1000)
 ````
 
 [![Project Status: Wip - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/0.1.0/wip.svg)](http://www.repostatus.org/#wip)
@@ -32,7 +31,7 @@ pacman::p_load_gh("trinker/wakefield")
 
 ## Demonstration
 
-The `r_data_frame` function (random data frame) takes `n` (the number of rows) and any number of variables (columns).  These columns are typicaly produced from a **wakefield** variable function.  Each of these variable functions has a preset behavior that produces a named vector of n length, allowing the user to lazily pass unnamed functions (optionally, without call parenthesis).  The column name is hidden as a `varname` attribute.  For example here we see the `race` variabe function:
+The `r_data_frame` function (random data frame) takes `n` (the number of rows) and any number of variables (columns).  These columns are typically produced from a **wakefield** variable function.  Each of these variable functions has a pre-set behavior that produces a named vector of n length, allowing the user to lazily pass unnamed functions (optionally, without call parenthesis).  The column name is hidden as a `varname` attribute.  For example here we see the `race` variable function:
 
 ```{r}
 race(n=10)
@@ -65,7 +64,7 @@ r_data_frame(
 ```
 
 
-There are a plethora of **wakefield** based variable functions to chose from, spanning R's various data types. However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:
+There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types. However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:
 
 ```{r}
 r_data_frame(
@@ -83,7 +82,7 @@ r_data_frame(
 )
 ```
 
-While, passing variable functions to `r_data_frame` without call parenthesis is handy the user may wish to set arguments.  This can be done through call parenthsis as we do with `data.frame` or `dplyr::data_frame`:
+While, passing variable functions to `r_data_frame` without call parenthesis is handy the user may wish to set arguments.  This can be done through call parenthesis as we do with `data.frame` or `dplyr::data_frame`:
 
 ```{r}
 r_data_frame(
