@@ -14,7 +14,7 @@
 #'   Bi-Racial \tab 1.90 \%\cr
 #'   Native    \tab .70 \%\cr
 #'   Other     \tab .20 \%\cr
-#'   Hawaiian  \tab .15 \%
+#'   Hawaiian  \tab .15 \%\cr
 #' }
 #'
 #' @inheritParams r_sample_factor

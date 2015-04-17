@@ -1,87 +1,5 @@
 
 
-age <- function(name = "Age", ages = NULL, prob = NULL, n){
-
-    if (is.null(ages)){
-        ages <- 20:35
-    }
-
-    out <- sample(x = ages, size = n, replace = TRUE, prob = prob)
-    varname(out, name)
-}
-
-height <- function(name = "Height", mean = 70, sd = 7, n){
-
-    out <- round(rnorm(n, mean=mean, sd=sd), 1)
-    varname(out, name)
-}
-
-score <- function(name = "Score", mean = 80, sd = 10, n){
-
-    out <- round(rnorm(n, mean=mean, sd=sd), 1)
-    out[out > 100] <- 100
-    varname(out, name)
-}
-
-group <- function(name = "Group", groups = NULL, prob = NULL, n){
-
-    if (is.null(groups)){
-        groups <- c("Control", "Treatment")
-    }
-
-    out <- sample(x = groups, size = n, replace = TRUE, prob = prob)
-    varname(out, name)
-}
-
-
-id <- function(name = "ID", ids = NULL, random = FALSE, n){
-
-    if (is.null(ids)){
-        ids <- seq_len(n)
-        ids <- sprintf(paste0("%0", nchar(n), "d"), ids)
-    }
-
-    if (random){
-        out <- sample(x = ids)
-    } else {
-        out <- ids
-    }
-    out <- factor(out, levels = out)
-    varname(out, name)
-}
-
-r_list <- function(n, ...) {
-    ll <- as.list(substitute(list(...)))[-1]
-    out <- lapply(ll, FUN = function(X) {
-        if(is.name(X)) X <- as.call(list(X))
-        X$n <- n
-        eval(X)
-    })
-
-    nms <- lapply(out, function(x) unlist(attributes(x)[["varname"]]))
-    nms[sapply(nms, is.null)] <- make.names(seq_len(length(nms[sapply(nms, is.null)])))
-    nms <- unlist(nms)
-    nms[names(ll) != ""] <- names(ll)[names(ll) != ""]
-
-    out <- lapply(out, function(x){
-        attributes(x)[["varname"]] <- NULL
-        x
-    })
-
-    setNames(out, nms)
-}
-
-pax::new_r_test(r_data_frame)
-pax::new_r_test(r_list)
-
-r_data_frame <- function(n, ...) {
-    out <- r_list(n=n, ...)
-    out <- setNames(data.frame(out), names(out))
-    dplyr::tbl_df(out)
-}
-
-
-
 r_list(
     n = 13,
     id(),
@@ -120,25 +38,9 @@ r_data_frame(
     height(mean=60)
 )
 
-interval <-  function(fun, breaks, ..., right = TRUE, n){
-    out <- fun(n = n, ...)
-    out2 <- cut(out, breaks, right = right)
-    if (!is.null(attributes(out)$varname[[1]])) {
-        out2 <- varname(out2, attributes(out)$varname[[1]])
-    }
-    out2
-}
 
 
-race(n = 12)
-binary(n = 12)
-sex(n = 12)
-age(n = 12)
-height(n = 12)
-rnorm(n = 12)
-score(n = 12)
-group(n = 12)
-id(n = 12)
+
 upper(n = 12)
 lower(n = 12)
 
@@ -146,21 +48,9 @@ http://www.surveymonkey.com/s.asp?u=51185357313
 http://www.uwex.edu/ces/tobaccoeval/resources/surveydemographics.html
 
 answer (yes/NO)
-likert (1:7)
-state
-
-
-coin <- function(name = "Coin", prob = NULL, n) {
-    r_factor(name = name, levels = c("Heads", "Tails"), prob = NULL, n)
-}
-
-iq <- function(name = "IQ", mean = 100, sd = 10, n){
-
-    out <- round(rnorm(n, mean=mean, sd=sd), 0)
-    varname(out, name)
-}
-
-die
+grade_level
+sat
+death (true/false)
 degree
 marital
 income
@@ -180,7 +70,6 @@ weight
 eye (HairEyeColor)
 hair
 car  (rownames(mtcars))
-death
 pet
 year
 dna (c("Guanine", "Adenine", "Thymine", "Cytosine"))
@@ -216,15 +105,6 @@ upper <- function(name = "Upper", k = 5, prob = NULL, n){
 }
 
 
-
-hour <- function(name = "Hour", by = .5, sort = TRUE, times = NULL, prob = NULL, n){
-
-    times <- if (is.null(times)) times <- seq(0, 23.5, by = by)
-
-    out <- sample(x = times, size = n, replace = TRUE, prob = prob)
-    if (sort) out <- sort(out)
-    varname(sec2hms(out), name)
-}
 
 minute <- function(name = "Minute", by = 1, sort = TRUE, times = NULL, prob = NULL, n){
 
@@ -314,16 +194,17 @@ r_na.data.frame
 
 
 
-r_dat <- function(n = 100, ...){
+r_dat <- function(n = 500, ...){
     r_data_frame(
         n = n,
-        id,
+        wakefield::id,
         race,
         age,
         sex,
         hour,
         iq,
         height,
+        died,
         ...
     )
 }

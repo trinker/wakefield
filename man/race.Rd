@@ -39,7 +39,7 @@ make-up.  The default make up is:
   Bi-Racial \tab 1.90 \%\cr
   Native    \tab .70 \%\cr
   Other     \tab .20 \%\cr
-  Hawaiian  \tab .15 \%
+  Hawaiian  \tab .15 \%\cr
 }
 }
 \examples{
@@ -47,8 +47,17 @@ race(10)
 100*table(race(n <- 10000))/n
 }
 \seealso{
-Other variable.functions: \code{\link{dummy}};
+Other variable.functions: \code{\link{age}};
+  \code{\link{coin}}; \code{\link{death}},
+  \code{\link{died}}; \code{\link{dice}};
+  \code{\link{dummy}}; \code{\link{gpa}},
+  \code{\link{grade}}, \code{\link{grade_letter}};
+  \code{\link{group}}; \code{\link{height}},
+  \code{\link{height_cm}}, \code{\link{height_in}};
+  \code{\link{iq}}; \code{\link{likert}},
+  \code{\link{likert_5}}, \code{\link{likert_7}};
   \code{\link{lorem_ipsum}}, \code{\link{paragraph}};
+  \code{\link{normal}}, \code{\link{normal_round}};
   \code{\link{sex}}; \code{\link{string}};
   \code{\link{valid}}
 }

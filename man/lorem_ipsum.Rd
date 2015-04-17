@@ -40,7 +40,16 @@ lorem_ipsum(10, start_lipsum = FALSE)
 \seealso{
 \code{\link[stringi]{stri_rand_lipsum}}
 
-Other variable.functions: \code{\link{dummy}};
+Other variable.functions: \code{\link{age}};
+  \code{\link{coin}}; \code{\link{death}},
+  \code{\link{died}}; \code{\link{dice}};
+  \code{\link{dummy}}; \code{\link{gpa}},
+  \code{\link{grade}}, \code{\link{grade_letter}};
+  \code{\link{group}}; \code{\link{height}},
+  \code{\link{height_cm}}, \code{\link{height_in}};
+  \code{\link{iq}}; \code{\link{likert}},
+  \code{\link{likert_5}}, \code{\link{likert_7}};
+  \code{\link{normal}}, \code{\link{normal_round}};
   \code{\link{race}}; \code{\link{sex}};
   \code{\link{string}}; \code{\link{valid}}
 }

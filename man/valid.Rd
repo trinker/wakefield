@@ -27,11 +27,22 @@ valid(10)
 100*table(valid(n <- 1000))/n
 }
 \seealso{
-Other variable.functions: \code{\link{dummy}};
+Other variable.functions: \code{\link{age}};
+  \code{\link{coin}}; \code{\link{death}},
+  \code{\link{died}}; \code{\link{dice}};
+  \code{\link{dummy}}; \code{\link{gpa}},
+  \code{\link{grade}}, \code{\link{grade_letter}};
+  \code{\link{group}}; \code{\link{height}},
+  \code{\link{height_cm}}, \code{\link{height_in}};
+  \code{\link{iq}}; \code{\link{likert}},
+  \code{\link{likert_5}}, \code{\link{likert_7}};
   \code{\link{lorem_ipsum}}, \code{\link{paragraph}};
+  \code{\link{normal}}, \code{\link{normal_round}};
   \code{\link{race}}; \code{\link{sex}};
   \code{\link{string}}
 }
+\keyword{false}
 \keyword{logical}
+\keyword{true}
 \keyword{valid}
 

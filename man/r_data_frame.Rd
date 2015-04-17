@@ -23,11 +23,30 @@ call parenthesis).
 \examples{
 r_data_frame(
     n = 30,
-    d = rnorm,
+    id,
     race,
-    e = rnorm,
-    p = rep("D", 30),
-    rnorm
+    age,
+    sex,
+    hour,
+    iq,
+    height,
+    died,
+    Scoring = rnorm,
+    Smoker = valid
+)
+
+r_data_frame(
+    n = 30,
+    id,
+    race,
+    age(x = 8:14),
+    Gender = sex,
+    Time = hour,
+    iq,
+    height(mean=50, sd = 10),
+    died,
+    Scoring = rnorm,
+    Smoker = valid
 )
 }
 \author{

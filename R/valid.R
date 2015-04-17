@@ -4,7 +4,7 @@
 #'
 #' @inheritParams r_sample_logical
 #' @return Returns a random logical vector of elements.
-#' @keywords logical valid
+#' @keywords logical valid true false
 #' @export
 #' @include utils.R r_sample_logical.R
 #' @family variable functions

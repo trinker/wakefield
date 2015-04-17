@@ -1,0 +1,51 @@
+#' Generate Random Vector of Heights
+#'
+#' \code{height} and \code{height_in} - Generate a random normal vector of
+#' heights in inches.
+#'
+#' @note \code{height} rounds to nearest whoe number.  \code{height_in} &
+#' \code{height_in} round to the nearest tenths.
+#'
+#' @inheritParams normal_round
+#' @return Returns a random normal vector of height elements.
+#' @keywords height
+#' @export
+#' @rdname height
+#' @include utils.R normal.R
+#' @family variable functions
+#' @examples
+#' height(10)
+#' hist(height(10000))
+#' interval(height, 5, n = 1000)
+height <- hijack(normal_round,
+    name = "Height",
+    mean = 69,
+    sd = 3.75,
+    digits = 0
+)
+
+#' @rdname height
+#' @export
+height_in <- hijack(normal_round,
+    name = "Height(in)",
+    mean = 69,
+    sd = 3.75,
+    digits = 1
+)
+
+
+
+#' Generate Random Vector of Heights
+#'
+#' \code{height_cm} - Generate a random normal vector of heights in centimeters.
+#'
+#' @rdname height
+#' @export
+height_cm <- hijack(normal_round,
+    name = "Height(cm)",
+    mean = 175.26,
+    sd = 9.525,
+    digits = 1
+)
+
+

@@ -6,6 +6,8 @@ regex <- "(^Version:\\s+)(\\d+\\.\\d+\\.\\d+)"
 loc <- grep(regex, desc)
 ver <- gsub(regex, "\\2", desc[loc])
 verbadge <- sprintf('<a href="https://img.shields.io/badge/Version-%s-orange.svg"><img src="https://img.shields.io/badge/Version-%s-orange.svg" alt="Version"/></a></p>', ver, ver)
+p_load(dpyr, wakefield)
+options(dplyr.width = 1000)
 ````
 
 [![Project Status: Wip - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/0.1.0/wip.svg)](http://www.repostatus.org/#wip)
@@ -13,7 +15,7 @@ verbadge <- sprintf('<a href="https://img.shields.io/badge/Version-%s-orange.svg
 [![Coverage Status](https://coveralls.io/repos/trinker/wakefield/badge.svg?branch=master)](https://coveralls.io/r/trinker/wakefield?branch=master)
 `r verbadge`
 
-**wakefield** is...
+**wakefield** is designed to quickly generate random data sets.  The user passes `n` (number of rows) and predefined vectors to the `r_data_frame` function to produce a `dplyr::tbl_df` object.
 
 <img src="inst/wakefield_logo/r_wakefield.png" width="20%", alt="">  
 
@@ -28,9 +30,92 @@ if (!require("pacman")) install.packages("pacman")
 pacman::p_load_gh("trinker/wakefield")
 ```
 
+## Demonstration
+
+The `r_data_frame` function (random data frame) takes `n` (the number of rows) and any number of variables (columns).  These columns are typicaly produced from a **wakefield** variable function.  Each of these variable functions has a preset behavior that produces a named vector of n length, allowing the user to lazily pass unnamed functions (optionally, without call parenthesis).  The column name is hidden as a `varname` attribute.  For example here we see the `race` variabe function:
+
+```{r}
+race(n=10)
+attributes(race(n=10))
+```
+
+When this variable is used inside of `r_data_frame` the `varname` is used as a column name.  Additionally, the `n` argument is not set within variable functions but is set once in `r_data_frame`:
+
+```{r}
+r_data_frame(
+    n = 500,
+    race
+)
+```
+
+The power of `r_data_frame` is apparent when we use many modular variable functions:
+
+```{r}
+r_data_frame(
+    n = 500,
+    id,
+    race,
+    age,
+    sex,
+    hour,
+    iq,
+    height,
+    died
+)
+```
+
+
+There are a plethora of **wakefield** based variable functions to chose from, spanning R's various data types. However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:
+
+```{r}
+r_data_frame(
+    n = 500,
+    id,
+    Scoring = rnorm,
+    Smoker = valid,
+    race,
+    age,
+    sex,
+    hour,
+    iq,
+    height,
+    died
+)
+```
+
+While, passing variable functions to `r_data_frame` without call parenthesis is handy the user may wish to set arguments.  This can be done through call parenthsis as we do with `data.frame` or `dplyr::data_frame`:
+
+```{r}
+r_data_frame(
+    n = 500,
+    id,
+    Scoring = rnorm,
+    Smoker = valid,
+    `Reading(mins)` = rpois(lambda=20),  
+    race,
+    age(x = 8:14),
+    sex,
+    hour,
+    iq,
+    height(mean=50, sd = 10),
+    died
+)
+```
+
+
+
 ## Contact
 
 You are welcome to:
 * submit suggestions and bug-reports at: <https://github.com/trinker/wakefield/issues>
 * send a pull request on: <https://github.com/trinker/wakefield/>
 * compose a friendly e-mail to: <tyler.rinker@gmail.com>
+
+
+
+
+
+
+
+
+
