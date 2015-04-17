@@ -4,7 +4,7 @@
 \alias{coin}
 \title{Generate Random Vector of Coin Flips}
 \usage{
-coin(n, x = c("Tails", "Heads"), prob = NULL, name = "coin")
+coin(n, x = c("Tails", "Heads"), prob = NULL, name = "Coin")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -30,18 +30,20 @@ coin(10)
 }
 \seealso{
 Other variable.functions: \code{\link{age}};
-  \code{\link{death}}, \code{\link{died}};
-  \code{\link{dice}}; \code{\link{dummy}};
-  \code{\link{gpa}}, \code{\link{grade}},
-  \code{\link{grade_letter}}; \code{\link{group}};
+  \code{\link{answer}}; \code{\link{death}},
+  \code{\link{died}}; \code{\link{dice}};
+  \code{\link{dummy}}; \code{\link{gpa}},
+  \code{\link{grade}}, \code{\link{grade_letter}};
+  \code{\link{grade_level}}; \code{\link{group}};
   \code{\link{height}}, \code{\link{height_cm}},
-  \code{\link{height_in}}; \code{\link{iq}};
-  \code{\link{likert}}, \code{\link{likert_5}},
-  \code{\link{likert_7}}; \code{\link{lorem_ipsum}},
-  \code{\link{paragraph}}; \code{\link{normal}},
-  \code{\link{normal_round}}; \code{\link{race}};
-  \code{\link{sex}}; \code{\link{string}};
-  \code{\link{valid}}
+  \code{\link{height_in}}; \code{\link{income}};
+  \code{\link{iq}}; \code{\link{likert}},
+  \code{\link{likert_5}}, \code{\link{likert_7}};
+  \code{\link{lorem_ipsum}}, \code{\link{paragraph}};
+  \code{\link{marital}}; \code{\link{normal}},
+  \code{\link{normal_round}}; \code{\link{political}};
+  \code{\link{race}}; \code{\link{sat}}; \code{\link{sex}};
+  \code{\link{string}}; \code{\link{valid}}
 }
 \keyword{coin}
 \keyword{head}

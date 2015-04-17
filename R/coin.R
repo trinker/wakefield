@@ -13,6 +13,6 @@
 #' coin(10)
 #' 100*table(coin(n <- 10000))/n
 coin <- hijack(r_sample_binary_factor,
-    name = "coin",
+    name = "Coin",
     x = c("Tails", "Heads")
 )

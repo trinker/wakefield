@@ -1,45 +1,8 @@
-
-
-r_list(
-    n = 13,
-    id(),
-    race(),
-    sex(),
-    height(mean=40)
-)
-
-
-r_data_frame(
-    n = 1000,
-    id,
-    race,
-    interval(age, c(0, 20, 25, 30, 35, 100), right=FALSE),
-    sex,
-    hour,
-    iq,
-    height(mean=60),
-    variable("My Var", rpois, lambda=1)
-)
-
-
 variable <- function(name, fun, ..., n) {
 
     varname(fun(n, ...), name)
 
 }
-r_data_frame(
-    n = 100,
-    id,
-    race,
-    interval(age, c(0, 20, 25, 30, 35, 100), right=FALSE),
-    sex,
-    hour,
-    iq,
-    height(mean=60)
-)
-
-
-
 
 upper(n = 12)
 lower(n = 12)
@@ -47,14 +10,8 @@ lower(n = 12)
 http://www.surveymonkey.com/s.asp?u=51185357313
 http://www.uwex.edu/ces/tobaccoeval/resources/surveydemographics.html
 
-answer (yes/NO)
-grade_level
-sat
-death (true/false)
+
 degree
-marital
-income
-political
 name (import data set and have correct caps)
 color
 animal

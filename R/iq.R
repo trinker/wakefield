@@ -1,7 +1,6 @@
 #' Generate Random Vector of Intelligence Quotients (IQs)
 #'
-#' \code{grade} - Generate a random normal vector of intelligence quotients
-#' (IQs).
+#' Generate a random normal vector of intelligence quotients (IQs).
 #'
 #' @inheritParams normal_round
 #' @return Returns a random normal vector of IQ elements.
