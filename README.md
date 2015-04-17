@@ -42,8 +42,8 @@ race(n=10)
 ```
 
 ```
-##  [1] Hispanic White    White    Black    Hispanic Hispanic White   
-##  [8] Asian    Black    Black   
+##  [1] Hispanic Asian    Asian    White    Black    Hispanic White   
+##  [8] Hispanic Black    White   
 ## Levels: White Hispanic Black Asian Bi-Racial Native Other Hawaiian
 ```
 
@@ -77,16 +77,16 @@ r_data_frame(
 ## Source: local data frame [500 x 1]
 ## 
 ##        Race
-## 1  Hispanic
+## 1     White
 ## 2     White
-## 3     White
-## 4     White
-## 5     White
-## 6     Black
-## 7     White
+## 3  Hispanic
+## 4    Native
+## 5     Asian
+## 6     White
+## 7     Asian
 ## 8     White
-## 9     White
-## 10    Asian
+## 9  Hispanic
+## 10 Hispanic
 ## ..      ...
 ```
 
@@ -111,16 +111,16 @@ r_data_frame(
 ## Source: local data frame [500 x 8]
 ## 
 ##     ID  Race Age    Sex     Hour  IQ Height  Died
-## 1  001 White  30 Female 00:00:00  93     67 FALSE
-## 2  002 Black  22   Male 00:00:00  96     63 FALSE
-## 3  003 White  31   Male 00:00:00 127     70  TRUE
-## 4  004 White  33 Female 00:00:00  75     70 FALSE
-## 5  005 White  33 Female 00:00:00 106     64  TRUE
-## 6  006 White  30 Female 00:00:00  97     60  TRUE
-## 7  007 Asian  20 Female 00:00:00 101     74  TRUE
-## 8  008 White  20   Male 00:00:00 108     70  TRUE
-## 9  009 White  34 Female 00:00:00  76     74 FALSE
-## 10 010 Black  27 Female 00:00:00  96     64 FALSE
+## 1  001 Black  32 Female 00:00:00  97     68 FALSE
+## 2  002 White  24   Male 00:00:00 101     68 FALSE
+## 3  003 White  28 Female 00:00:00  84     71  TRUE
+## 4  004 White  32   Male 00:00:00  95     69 FALSE
+## 5  005 White  28 Female 00:00:00  97     73  TRUE
+## 6  006 White  34   Male 00:00:00 122     71 FALSE
+## 7  007 Black  20   Male 00:00:00 107     69 FALSE
+## 8  008 White  20   Male 00:00:00  98     75 FALSE
+## 9  009 White  33   Male 00:00:00  93     78  TRUE
+## 10 010 White  22 Female 00:30:00 101     70  TRUE
 ## .. ...   ... ...    ...      ... ...    ...   ...
 ```
 
@@ -147,18 +147,18 @@ r_data_frame(
 ```
 ## Source: local data frame [500 x 10]
 ## 
-##     ID  Scoring Smoker      Race Age    Sex     Hour  IQ Height  Died
-## 1  001  0.57611  FALSE     White  35 Female 00:00:00  95     69  TRUE
-## 2  002  0.02246  FALSE     White  22   Male 00:00:00 106     73 FALSE
-## 3  003 -1.37453   TRUE     White  33 Female 00:00:00 107     71 FALSE
-## 4  004  1.20713   TRUE     White  25 Female 00:00:00 112     65 FALSE
-## 5  005  0.39792  FALSE     Black  25 Female 00:00:00 103     75 FALSE
-## 6  006 -0.07882   TRUE     White  20 Female 00:00:00 104     69  TRUE
-## 7  007  0.59936   TRUE     Asian  29   Male 00:30:00  94     67  TRUE
-## 8  008  1.63051   TRUE     Black  31   Male 00:30:00 101     70  TRUE
-## 9  009 -0.57019   TRUE     Black  24   Male 00:30:00  92     69 FALSE
-## 10 010  0.83340   TRUE Bi-Racial  35   Male 00:30:00  97     68  TRUE
-## .. ...      ...    ...       ... ...    ...      ... ...    ...   ...
+##     ID Scoring Smoker      Race Age    Sex     Hour  IQ Height  Died
+## 1  001  1.6415  FALSE     White  22   Male 00:00:00  94     70  TRUE
+## 2  002 -0.2662   TRUE     White  23 Female 00:00:00  93     74 FALSE
+## 3  003 -1.9064   TRUE     White  24   Male 00:00:00 100     67  TRUE
+## 4  004  0.2503  FALSE     White  26 Female 00:00:00  93     67  TRUE
+## 5  005  0.8405   TRUE     Black  26 Female 00:00:00 117     60 FALSE
+## 6  006  0.2656   TRUE     White  24 Female 00:00:00  98     76 FALSE
+## 7  007  0.1092  FALSE     White  34   Male 00:00:00  96     70 FALSE
+## 8  008 -0.3398  FALSE     Asian  24 Female 00:00:00  92     73  TRUE
+## 9  009 -0.3989   TRUE Bi-Racial  23 Female 00:00:00 113     72 FALSE
+## 10 010 -0.6393  FALSE     White  23   Male 00:00:00 113     65  TRUE
+## .. ...     ...    ...       ... ...    ...      ... ...    ...   ...
 ```
 
 While, passing variable functions to `r_data_frame` without call parenthesis is handy the user may wish to set arguments.  This can be done through call parenthesis as we do with `data.frame` or `dplyr::data_frame`:
@@ -184,19 +184,19 @@ r_data_frame(
 ```
 ## Source: local data frame [500 x 11]
 ## 
-##     ID Scoring Smoker Reading(mins)  Race Age    Sex     Hour  IQ Height
-## 1  001 -2.3005   TRUE            15 Black  12   Male 00:00:00 108     45
-## 2  002  1.3336   TRUE            19 White  10 Female 00:00:00  83     42
-## 3  003 -0.1393  FALSE            11 Asian   9   Male 00:00:00 106     49
-## 4  004  0.6270   TRUE            21 White   8 Female 00:00:00  86     43
-## 5  005 -0.1178   TRUE            24 White   8   Male 00:00:00 112     52
-## 6  006 -0.1345   TRUE            20 White  12 Female 00:00:00  97     30
-## 7  007  0.4823  FALSE            18 White  11   Male 00:00:00  79     47
-## 8  008  0.9077   TRUE            25 Asian  10 Female 00:00:00 113     37
-## 9  009 -0.6830  FALSE            22 White  13 Female 00:00:00 103     25
-## 10 010  0.2161  FALSE            23 White   9   Male 00:00:00  81     66
-## .. ...     ...    ...           ...   ... ...    ...      ... ...    ...
-## Variables not shown: Died (lgl)
+##     ID Scoring Smoker Reading(mins)      Race Age    Sex     Hour  IQ
+## 1  001 -0.8729   TRUE            25     White  11   Male 00:00:00  92
+## 2  002 -1.3274  FALSE            25     White  12 Female 00:00:00 109
+## 3  003  1.0815   TRUE            23     White  14   Male 00:00:00  93
+## 4  004  0.9911   TRUE            12     Black   9   Male 00:00:00  88
+## 5  005 -1.8943   TRUE            20 Bi-Racial  11 Female 00:00:00 104
+## 6  006  0.9661  FALSE            15  Hispanic  12 Female 00:00:00 114
+## 7  007 -0.8023   TRUE            28     White  12   Male 00:00:00  91
+## 8  008 -1.5360   TRUE            22  Hispanic  12 Female 00:00:00  81
+## 9  009 -0.4913   TRUE            20     Asian  11 Female 00:00:00 108
+## 10 010 -0.4321   TRUE            26     White  14   Male 00:30:00 104
+## .. ...     ...    ...           ...       ... ...    ...      ... ...
+## Variables not shown: Height (dbl), Died (lgl)
 ```
 
 
