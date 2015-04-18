@@ -44,27 +44,4 @@ education <- hijack(r_sample,
 
 
 
-## out <- dplyr::data_frame(
-##     Attainment = rm_default(o, pattern = "^.+?(?=\\s\\.)", extract = TRUE) %>%
-##     unlist %>%
-##     gsub("’", "'", .) %>%
-##     TC %>%
-##     unlist %>%
-##     gsub("Ged", "GED", .) %>%
-##     gsub("(?<=\\d)Th", "th", ., perl=TRUE) %>%
-##     rm_non_ascii(replacement="<<NA>>") %>%
-##     gsub("<<NA>><<NA>><<NA>>", "'", .),
-##
-##     Proportion = sapply(strsplit(sapply(strsplit(o, " –|(\\. )+"), "[[", 2), " "), "[[", 2) %>%
-##     as_numeric %>%
-##     sapply(., function(x) x/100),
-##     Percent = paste(Proportion * 100, "\\%")
-## )
-##
-## out %>%
-##    dplyr::select(-2) %>%
-##    as.data.frame %>%
-##    tabular() %>%
-##    cat(file="clipboard")
-##    roxann()
 

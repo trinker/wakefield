@@ -22,10 +22,11 @@
 #'
 #' primary(10)
 #' pie(tab <- table(primary(10000)), col = names(tab))
+#' barplot(tab <- table(primary(10000, prob = probs(6))), col = names(tab))
 color <- function(n, k = 10, x = colors(), prob = NULL, name = "Color"){
 
     stopifnot(k < length(x) || k > 0)
-    stopifnot(length(prob) != k)
+    if (!is.null(prob) && length(prob) != k) stop("length of `prob` must equa `k`")
 
     out <- sample(x = lvls <- gsub("(\\w)(\\w*)", "\\U\\1\\L\\2", sample(x, k),
         perl=TRUE), size = n, replace = TRUE, prob = prob)

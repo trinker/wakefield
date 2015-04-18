@@ -68,8 +68,9 @@ Other variable.functions: \code{\link{age}};
   \code{\link{name}}; \code{\link{normal}},
   \code{\link{normal_round}}; \code{\link{political}};
   \code{\link{sat}}; \code{\link{sentence}};
-  \code{\link{sex}}; \code{\link{string}};
-  \code{\link{valid}}
+  \code{\link{sex}}; \code{\link{smokes}};
+  \code{\link{state}}; \code{\link{string}};
+  \code{\link{valid}}; \code{\link{zip_code}}
 }
 \keyword{race}
 

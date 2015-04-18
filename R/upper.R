@@ -22,10 +22,11 @@
 #' upper_factor(10)
 #' lower_factor(10)
 #' barplot(table(upper(10000)))
+#' barplot(table(upper(10000, prob = probs(5))))
 upper <- function(n, k = 5, x = LETTERS, prob = NULL, name = "Upper"){
 
     stopifnot(k < length(x) || k > 0)
-    stopifnot(length(prob) != k)
+    if (!is.null(prob) && length(prob) != k) stop("length of `prob` must equa `k`")
 
     out <- sample(x = x[seq_len(k)], size = n, replace = TRUE, prob = prob)
     varname(out, name)

@@ -1,6 +1,6 @@
 #' Generate Random Logical Vector
 #'
-#' Generate a random logical (\code{TRUE}/\code{FALSE}).
+#' Generate a random logical (\code{TRUE}/\code{FALSE}) vector.
 #'
 #' @inheritParams r_sample_logical
 #' @return Returns a random logical vector of elements.

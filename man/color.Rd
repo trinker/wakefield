@@ -40,6 +40,7 @@ pie(tab <- table(color(10000)), col = names(tab))
 
 primary(10)
 pie(tab <- table(primary(10000)), col = names(tab))
+barplot(tab <- table(primary(10000, prob = probs(6))), col = names(tab))
 }
 \seealso{
 Other variable.functions: \code{\link{age}};
@@ -63,7 +64,9 @@ Other variable.functions: \code{\link{age}};
   \code{\link{normal_round}}; \code{\link{political}};
   \code{\link{race}}; \code{\link{sat}};
   \code{\link{sentence}}; \code{\link{sex}};
-  \code{\link{string}}; \code{\link{valid}}
+  \code{\link{smokes}}; \code{\link{state}};
+  \code{\link{string}}; \code{\link{valid}};
+  \code{\link{zip_code}}
 }
 \keyword{color}
 

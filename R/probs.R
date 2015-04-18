@@ -16,7 +16,7 @@
 probs <- function(j, upper = 1000000) {
     m <- sample(1:upper, j, TRUE)
     out <- suppressWarnings(m/sum(m))
-    if (any(is.na(out))) stop("`j` is too large.  `j` typically performs best at < 4000")
+    if (anyNA(out)) stop("`j` is too large.  `j` typically performs best at < 4000")
     out
 }
 

@@ -8,7 +8,6 @@ http://www.surveymonkey.com/s.asp?u=51185357313
 http://www.uwex.edu/ces/tobaccoeval/resources/surveydemographics.html
 
 
-state (state.name)
 car
 speed
 distance
@@ -21,12 +20,10 @@ car  (rownames(mtcars))
 
 year
 level (1:4)
-smokes
 military
 religion
 family
 children
-zip
 character
 employment
 language

@@ -18,7 +18,7 @@
 animal <- function(n, k = 10, x = wakefield::animal_list, prob = NULL, name = "Animal"){
 
     stopifnot(k < length(x) || k > 0)
-    stopifnot(length(prob) != k)
+    if (!is.null(prob) && length(prob) != k) stop("length of `prob` must equa `k`")
 
     out <- sample(x = lvls <- gsub("(\\w)(\\w*)", "\\U\\1\\L\\2", sample(x, k),
         perl=TRUE), size = n, replace = TRUE, prob = prob)

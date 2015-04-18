@@ -20,7 +20,7 @@ used inside of \code{r_data_frame} or \code{r_list}.}
 Returns a random logical vector of elements.
 }
 \description{
-Generate a random logical (\code{TRUE}/\code{FALSE}).
+Generate a random logical (\code{TRUE}/\code{FALSE}) vector.
 }
 \examples{
 valid(10)
@@ -49,7 +49,8 @@ Other variable.functions: \code{\link{age}};
   \code{\link{normal_round}}; \code{\link{political}};
   \code{\link{race}}; \code{\link{sat}};
   \code{\link{sentence}}; \code{\link{sex}};
-  \code{\link{string}}
+  \code{\link{smokes}}; \code{\link{state}};
+  \code{\link{string}}; \code{\link{zip_code}}
 }
 \keyword{false}
 \keyword{logical}

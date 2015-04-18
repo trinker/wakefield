@@ -70,3 +70,24 @@ NULL
 #' @references \url{http://a-z-animals.com/animals}
 NULL
 
+
+#' State Populations (2010)
+#'
+#' A dataset containing U.S. state populations.
+#'
+#' @details
+#' \itemize{
+#'   \item State. The 50 U.S. states.
+#'   \item Population. Population of state.
+#'   \item Proportion. Proportion of total U.S. population.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name state_populations
+#' @usage data(state_populations)
+#' @format A data frame with 50 rows and 3 variables
+#' @references \url{http://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population}
+NULL
+
+
