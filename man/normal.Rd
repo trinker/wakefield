@@ -5,9 +5,10 @@
 \alias{normal_round}
 \title{Generate Random Normal Vector}
 \usage{
-normal(n, mean = 0, sd = 1, name = "Normal")
+normal(n, mean = 0, sd = 1, min = NULL, max = NULL, name = "Normal")
 
-normal_round(n, mean = 0, sd = 1, digits = 2, name = "Normal")
+normal_round(n, mean = 0, sd = 1, min = NULL, max = NULL, digits = 2,
+  name = "Normal")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -16,6 +17,12 @@ the environment of \code{r_data_frame} or \code{r_list}.}
 \item{mean}{The mean value for the normal distribution to be drawn from.}
 
 \item{sd}{The standard deviation of the normal distribution to draw from.}
+
+\item{min}{A numeric lower boundary cutoff.  Resuts less than this value will be
+replaced with \code{min}.}
+
+\item{max}{A numeric upper boundary cutoff.  Resuts greater than this value will
+be replaced with \code{max}.}
 
 \item{name}{The name to assign to the output vector's \code{varname}
 attribute.  This is used to auto assign names to the column/vector name when
@@ -47,25 +54,27 @@ interval(normal, 9, n = 1000)
 Other variable.functions: \code{\link{age}};
   \code{\link{animal}}, \code{\link{pet}};
   \code{\link{answer}}; \code{\link{area}};
-  \code{\link{coin}}; \code{\link{color}},
-  \code{\link{primary}}; \code{\link{death}},
-  \code{\link{died}}; \code{\link{dice}};
-  \code{\link{dna}}; \code{\link{dummy}};
-  \code{\link{education}}; \code{\link{gpa}},
-  \code{\link{grade}}, \code{\link{grade_letter}};
-  \code{\link{grade_level}}; \code{\link{group}};
-  \code{\link{height}}, \code{\link{height_cm}},
-  \code{\link{height_in}}; \code{\link{income}};
-  \code{\link{iq}}; \code{\link{likert}},
-  \code{\link{likert_5}}, \code{\link{likert_7}};
-  \code{\link{lorem_ipsum}}, \code{\link{paragraph}};
-  \code{\link{lower}}, \code{\link{lower_factor}},
-  \code{\link{upper}}, \code{\link{upper_factor}};
-  \code{\link{marital}}; \code{\link{month}};
-  \code{\link{name}}; \code{\link{political}};
-  \code{\link{race}}; \code{\link{sat}};
-  \code{\link{sentence}}; \code{\link{sex}};
-  \code{\link{smokes}}; \code{\link{state}};
+  \code{\link{car}}; \code{\link{coin}};
+  \code{\link{color}}, \code{\link{primary}};
+  \code{\link{death}}, \code{\link{died}};
+  \code{\link{dice}}; \code{\link{dna}};
+  \code{\link{dummy}}; \code{\link{education}};
+  \code{\link{gpa}}, \code{\link{grade}},
+  \code{\link{grade_letter}}; \code{\link{grade_level}};
+  \code{\link{group}}; \code{\link{height}},
+  \code{\link{height_cm}}, \code{\link{height_in}};
+  \code{\link{income}}; \code{\link{iq}};
+  \code{\link{likert}}, \code{\link{likert_5}},
+  \code{\link{likert_7}}; \code{\link{lorem_ipsum}},
+  \code{\link{paragraph}}; \code{\link{lower}},
+  \code{\link{lower_factor}}, \code{\link{upper}},
+  \code{\link{upper_factor}}; \code{\link{marital}};
+  \code{\link{month}}; \code{\link{name}};
+  \code{\link{political}}; \code{\link{race}};
+  \code{\link{sat}}; \code{\link{sentence}};
+  \code{\link{sex}}; \code{\link{smokes}};
+  \code{\link{speed}}, \code{\link{speed_kph}},
+  \code{\link{speed_mph}}; \code{\link{state}};
   \code{\link{string}}; \code{\link{valid}};
   \code{\link{zip_code}}
 }

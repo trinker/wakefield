@@ -15,7 +15,8 @@ iq <- hijack(normal_round,
     mean = 100,
     sd = 10,
     name = "IQ",
-    digits = 0
+    digits = 0,
+    min = 0
 )
 
 

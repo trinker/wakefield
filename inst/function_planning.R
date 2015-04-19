@@ -8,15 +8,13 @@ http://www.surveymonkey.com/s.asp?u=51185357313
 http://www.uwex.edu/ces/tobaccoeval/resources/surveydemographics.html
 
 
-car
-speed
 distance
 width
 length
 weight
 eye (HairEyeColor)
 hair
-car  (rownames(mtcars))
+
 
 year
 level (1:4)

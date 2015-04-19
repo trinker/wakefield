@@ -7,6 +7,10 @@
 #' the environment of \code{r_data_frame} or \code{r_list}.
 #' @param mean The mean value for the normal distribution to be drawn from.
 #' @param sd The standard deviation of the normal distribution to draw from.
+#' @param min A numeric lower boundary cutoff.  Resuts less than this value will be
+#' replaced with \code{min}.
+#' @param max A numeric upper boundary cutoff.  Resuts greater than this value will
+#' be replaced with \code{max}.
 #' @param name The name to assign to the output vector's \code{varname}
 #' attribute.  This is used to auto assign names to the column/vector name when
 #' used inside of \code{r_data_frame} or \code{r_list}.
@@ -21,10 +25,19 @@
 #' hist(normal(10000, 100, 10))
 #' interval(normal, 9, n = 1000)
 normal <-
-function (n, mean = 0, sd = 1, name = "Normal") {
+function (n, mean = 0, sd = 1, min = NULL, max = NULL, name = "Normal") {
 
     if (missing(n)) stop("`n` is missing")
     out <- rnorm(n = n, mean = mean, sd = sd)
+
+    if (!is.null(min)){
+        out[out < min] <- min
+    }
+
+    if (!is.null(max)){
+        out[out > max] <- max
+    }
+
     varname(out, name)
 
 }
@@ -40,10 +53,20 @@ function (n, mean = 0, sd = 1, name = "Normal") {
 #' @export
 #' @rdname normal
 normal_round <-
-function (n, mean = 0, sd = 1, digits = 2, name = "Normal") {
+function (n, mean = 0, sd = 1, min = NULL, max = NULL, digits = 2,
+    name = "Normal") {
 
     if (missing(n)) stop("`n` is missing")
     out <- round(rnorm(n = n, mean = mean, sd = sd), digits = digits)
+
+    if (!is.null(min)){
+        out[out < min] <- min
+    }
+
+    if (!is.null(max)){
+        out[out > max] <- max
+    }
+
     varname(out, name)
 
 }
