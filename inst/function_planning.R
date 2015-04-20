@@ -7,22 +7,15 @@ variable <- function(name, fun, ..., n) {
 http://www.surveymonkey.com/s.asp?u=51185357313
 http://www.uwex.edu/ces/tobaccoeval/resources/surveydemographics.html
 
+## Add a variables function function
 
 distance
 width
 length
 weight
-eye (HairEyeColor)
-hair
-
-
-year
-level (1:4)
 military
 religion
-family
-children
-character
+family ##stats function
 employment
 language
 sport
@@ -30,33 +23,6 @@ sport
 
 
 
-minute <- function(name = "Minute", by = 1, sort = TRUE, times = NULL, prob = NULL, n){
-
-    times <- if (is.null(times)) times <- seq(0, 59, by = by)/60
-
-    out <- sample(x = times, size = n, replace = TRUE, prob = prob)
-    if (sort) out <- sort(out)
-    varname(sec2hms(out), name)
-}
-
-second <- function(name = "Second", by = 1, sort = TRUE, times = NULL, prob = NULL, n){
-
-    times <- if (is.null(times)) times <- seq(0, 59, by = by)/3600
-
-    out <- sample(x = times, size = n, replace = TRUE, prob = prob)
-    if (sort) out <- sort(out)
-    varname(sec2hms(out), name)
-}
-
-
-r_time <- function(name = "Time", times = NULL, sort = TRUE, prob = NULL, n){
-
-    times <- if (is.null(times)) times <- seq(0, 23.5, by = 1)
-
-    out <- sample(x = times, size = n, replace = TRUE, prob = prob)
-    if (sort) out <- sort(out)
-    varname(sec2hms(out), name)
-}
 
 
 r_date <- function(name = "Date", sort = TRUE, start = Sys.Date(), k = 5, by = "-1 years", prob = NULL, n){
@@ -69,48 +35,6 @@ r_date <- function(name = "Date", sort = TRUE, start = Sys.Date(), k = 5, by = "
 }
 
 
-r_factor <- function(name = "Factor", levels = LETTERS[1:5], prob = NULL, n){
-
-    out <- sample(x = levels, size = n, replace = TRUE, prob = prob)
-    out <- factor(out, levels=levels)
-    varname(out, name)
-}
-
-r_ordered <- function(name = "Ordered", k = 5, prob = NULL, n){
-
-    stopifnot(length(prob) != k)
-
-    out <- sample(x = seq_len(k), size = n, replace = TRUE, prob = prob)
-    out <- ordered(out, levels=seq_len(k))
-    varname(out, name)
-}
-
-r_character <- function(name = "Character", k = 5, prob = NULL, n){
-
-    stopifnot(k < 27 || k > 0)
-    stopifnot(length(prob) != k)
-
-    out <- sample(x = LETTERS[seq_len(k)], size = n, replace = TRUE, prob = prob)
-    varname(out, name)
-}
-
-r_numeric <- function(name = "Numeric", mean = 0, sd = 1, n){
-
-    varname(rnorm(n = n, mean = mean, sd = sd), name)
-}
-
-r_integer <- function(name = "Integer", integers = NULL, prob = NULL, n){
-
-    if (is.null(integers)){
-        integers <- 1:100
-    }
-
-    out <- sample(x = integers, size = n, replace = TRUE, prob = prob)
-    varname(out, name)
-}
-
-
-r_logical
 
 r_na.default
 r_na.list
