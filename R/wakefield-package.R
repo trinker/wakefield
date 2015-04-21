@@ -91,3 +91,25 @@ NULL
 NULL
 
 
+
+#' Languages of the World
+#'
+#' A dataset containing native language use statistics taken from:
+#' \url{http://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers}.
+#'
+#' @details
+#' \itemize{
+#'   \item Language. The language spoken.
+#'   \item N. The number of speakers world-wide.
+#'   \item Proportion. The proportion of speakers.
+#'   \item Percent. The percentage of speakers.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name languages
+#' @usage data(languages)
+#' @format A data frame with 99 rows and 4 variables
+#' @references \url{http://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers}
+NULL
+

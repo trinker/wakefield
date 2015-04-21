@@ -44,21 +44,21 @@ Other variable.functions: \code{\link{age}};
   \code{\link{group}}; \code{\link{hair}};
   \code{\link{height}}, \code{\link{height_cm}},
   \code{\link{height_in}}; \code{\link{income}};
-  \code{\link{iq}}; \code{\link{level}};
-  \code{\link{likert}}, \code{\link{likert_5}},
-  \code{\link{likert_7}}; \code{\link{lorem_ipsum}},
-  \code{\link{paragraph}}; \code{\link{lower}},
-  \code{\link{lower_factor}}, \code{\link{upper}},
-  \code{\link{upper_factor}}; \code{\link{marital}};
-  \code{\link{month}}; \code{\link{name}};
-  \code{\link{normal}}, \code{\link{normal_round}};
-  \code{\link{political}}; \code{\link{race}};
-  \code{\link{sat}}; \code{\link{sentence}};
-  \code{\link{sex}}; \code{\link{smokes}};
-  \code{\link{speed}}, \code{\link{speed_kph}},
-  \code{\link{speed_mph}}; \code{\link{state}};
-  \code{\link{string}}; \code{\link{valid}};
-  \code{\link{zip_code}}
+  \code{\link{iq}}; \code{\link{language}};
+  \code{\link{level}}; \code{\link{likert}},
+  \code{\link{likert_5}}, \code{\link{likert_7}};
+  \code{\link{lorem_ipsum}}, \code{\link{paragraph}};
+  \code{\link{lower}}, \code{\link{lower_factor}},
+  \code{\link{upper}}, \code{\link{upper_factor}};
+  \code{\link{marital}}; \code{\link{month}};
+  \code{\link{name}}; \code{\link{normal}},
+  \code{\link{normal_round}}; \code{\link{political}};
+  \code{\link{race}}; \code{\link{sat}};
+  \code{\link{sentence}}; \code{\link{sex}};
+  \code{\link{smokes}}; \code{\link{speed}},
+  \code{\link{speed_kph}}, \code{\link{speed_mph}};
+  \code{\link{state}}; \code{\link{string}};
+  \code{\link{valid}}; \code{\link{zip_code}}
 }
 \keyword{year}
 
