@@ -17,7 +17,6 @@ military
 religion
 family ##stats function
 employment
-language
 sport
 
 

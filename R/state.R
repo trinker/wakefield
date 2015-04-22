@@ -68,7 +68,7 @@
 #' sort(100*table(state(n <- 10000))/n)
 state <-
 function (n, x = state.name, prob = wakefield::state_populations[["Proportion"]],
-    name = "state") {
+    name = "State") {
 
     if (missing(n)) stop("`n` is missing")
     out <- sample(x = x, size = n, replace = TRUE, prob = prob)
