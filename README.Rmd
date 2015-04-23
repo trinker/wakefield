@@ -103,7 +103,7 @@ r_data_frame(
 
 ## Random Missing Observations
 
-Often data contains missing values.  **wakefield** allows the user to add a proportion of missing values vie the `r_na` (random `NA`).  This works nicely within a **dplyr**/**magrittr** `%>%` *then* pipeline:
+Often data contains missing values.  **wakefield** allows the user to add a proportion of missing values per column/vector via the `r_na` (random `NA`).  This works nicely within a **dplyr**/**magrittr** `%>%` *then* pipeline:
 
 ```r
 r_data_frame(
