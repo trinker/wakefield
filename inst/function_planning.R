@@ -1,14 +1,3 @@
-variable <- function(name, fun, ..., n) {
-
-    varname(fun(n, ...), name)
-
-}
-
-http://www.surveymonkey.com/s.asp?u=51185357313
-http://www.uwex.edu/ces/tobaccoeval/resources/surveydemographics.html
-
-## Add a variables function function
-
 distance
 width
 length

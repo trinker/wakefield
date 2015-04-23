@@ -6,7 +6,7 @@ regex <- "(^Version:\\s+)(\\d+\\.\\d+\\.\\d+)"
 loc <- grep(regex, desc)
 ver <- gsub(regex, "\\2", desc[loc])
 verbadge <- sprintf('<a href="https://img.shields.io/badge/Version-%s-orange.svg"><img src="https://img.shields.io/badge/Version-%s-orange.svg" alt="Version"/></a></p>', ver, ver)
-p_load(dpyr, wakefield)
+p_load(dplyr, wakefield)
 ````
 
 [![Project Status: Wip - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/0.1.0/wip.svg)](http://www.repostatus.org/#wip)
@@ -101,7 +101,26 @@ r_data_frame(
 )
 ```
 
+## Random Missing Observations
 
+Often data contains missing values.  **wakefield** allows the user to add a proportion of missing values vie the `r_na` (random `NA`).  THis works nicely within a `dplyr`/`magrittr` pipeline:
+
+```r
+r_data_frame(
+    n = 30,
+    id,
+    race,
+    age,
+    sex,
+    hour,
+    iq,
+    height,
+    died,
+    Scoring = rnorm,
+    Smoker = valid
+) %>%
+    r_na(prob=.4)
+```
 
 ## Contact
 
