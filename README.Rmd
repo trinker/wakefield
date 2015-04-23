@@ -105,7 +105,7 @@ r_data_frame(
 
 Often data contains missing values.  **wakefield** allows the user to add a proportion of missing values per column/vector via the `r_na` (random `NA`).  This works nicely within a **dplyr**/**magrittr** `%>%` *then* pipeline:
 
-```r
+```{r}
 r_data_frame(
     n = 30,
     id,
