@@ -16,12 +16,7 @@ weight
 military
 religion
 family ##stats function
-employment
 sport
-
-
-
-
 
 
 r_date <- function(name = "Date", sort = TRUE, start = Sys.Date(), k = 5, by = "-1 years", prob = NULL, n){
@@ -35,28 +30,7 @@ r_date <- function(name = "Date", sort = TRUE, start = Sys.Date(), k = 5, by = "
 
 
 
-r_na.default
-r_na.list
-r_na.data.frame
 
-
-
-r_dat <- function(n = 500, ...){
-    r_data_frame(
-        n = n,
-        wakefield::id,
-        race,
-        age,
-        sex,
-        hour,
-        iq,
-        height,
-        died,
-        ...
-    )
-}
-
-r_dat()
 
 
 

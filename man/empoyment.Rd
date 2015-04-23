@@ -39,6 +39,7 @@ The folowing arbitraty probabilities are used:
 }
 \examples{
 empoyment(10)
+pie(table(empoyment(10000)))
 barplot(table(empoyment(10000)))
 }
 \seealso{

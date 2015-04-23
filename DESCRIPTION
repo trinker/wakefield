@@ -65,6 +65,7 @@ Collate:
     'r_data.R'
     'r_data_frame.R'
     'r_list.R'
+    'r_na.R'
     'r_sample_integer.R'
     'race.R'
     'sat.R'

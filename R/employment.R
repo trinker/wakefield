@@ -21,6 +21,7 @@
 #' @family variable functions
 #' @examples
 #' empoyment(10)
+#' pie(table(empoyment(10000)))
 #' barplot(table(empoyment(10000)))
 empoyment <- hijack(r_sample,
     name = "Empoyment",
