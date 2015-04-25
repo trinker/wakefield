@@ -16,7 +16,7 @@ p_load(dplyr, wakefield)
 
 **wakefield** is designed to quickly generate random data sets.  The user passes `n` (number of rows) and predefined vectors to the `r_data_frame` function to produce a `dplyr::tbl_df` object.
 
-<img src="inst/wakefield_logo/r_wakefield.png" width="20%", alt="">  
+<img src="inst/wakefield_logo/r_wakefield.png" width="60%", alt="">  
 
 ## Installation
 

@@ -9,7 +9,7 @@
 
 **wakefield** is designed to quickly generate random data sets.  The user passes `n` (number of rows) and predefined vectors to the `r_data_frame` function to produce a `dplyr::tbl_df` object.
 
-<img src="inst/wakefield_logo/r_wakefield.png" width="20%", alt="">  
+<img src="inst/wakefield_logo/r_wakefield.png" width="60%", alt="">  
 
 ## Installation
 
@@ -32,8 +32,8 @@ race(n=10)
 ```
 
 ```
-##  [1] White    Hispanic Black    White    Hispanic White    Asian   
-##  [8] White    Hispanic White   
+##  [1] Bi-Racial Hispanic  White     White     White     Asian     White    
+##  [8] White     White     White    
 ## Levels: White Hispanic Black Asian Bi-Racial Native Other Hawaiian
 ```
 
@@ -68,15 +68,15 @@ r_data_frame(
 ## 
 ##        Race
 ## 1     White
-## 2     Black
-## 3     White
-## 4     White
-## 5     Asian
-## 6  Hispanic
-## 7     White
+## 2     White
+## 3  Hispanic
+## 4     Black
+## 5     White
+## 6     White
+## 7    Native
 ## 8     White
 ## 9     White
-## 10    White
+## 10 Hispanic
 ## ..      ...
 ```
 
@@ -101,16 +101,16 @@ r_data_frame(
 ## Source: local data frame [500 x 8]
 ## 
 ##     ID     Race Age    Sex     Hour  IQ Height  Died
-## 1  001    White  32   Male 00:00:00 103     77 FALSE
-## 2  002    White  30   Male 00:00:00  96     70 FALSE
-## 3  003    White  34 Female 00:00:00 114     70  TRUE
-## 4  004    White  25   Male 00:00:00 106     67  TRUE
-## 5  005    White  27 Female 00:00:00 103     67  TRUE
-## 6  006    White  21 Female 00:00:00  98     67  TRUE
-## 7  007 Hispanic  34   Male 00:00:00  92     71 FALSE
-## 8  008 Hispanic  27   Male 00:30:00 106     62  TRUE
-## 9  009    White  22 Female 00:30:00  94     62 FALSE
-## 10 010    Black  25 Female 00:30:00 108     71 FALSE
+## 1  001    White  35 Female 00:00:00 108     74 FALSE
+## 2  002    Black  20   Male 00:00:00  89     64 FALSE
+## 3  003 Hispanic  29   Male 00:00:00 113     75  TRUE
+## 4  004    White  31   Male 00:00:00  87     69 FALSE
+## 5  005    White  27   Male 00:00:00 100     72 FALSE
+## 6  006    White  26 Female 00:00:00  98     71  TRUE
+## 7  007    Asian  20   Male 00:00:00  98     71 FALSE
+## 8  008    White  21   Male 00:00:00 102     70 FALSE
+## 9  009    White  35   Male 00:00:00  96     74  TRUE
+## 10 010    White  27   Male 00:00:00 105     72  TRUE
 ## .. ...      ... ...    ...      ... ...    ...   ...
 ```
 
@@ -137,18 +137,18 @@ r_data_frame(
 ```
 ## Source: local data frame [500 x 10]
 ## 
-##     ID    Scoring Smoker     Race Age    Sex     Hour  IQ Height  Died
-## 1  001 -0.2034816  FALSE    White  26 Female 00:00:00 106     74 FALSE
-## 2  002 -0.1442279  FALSE Hispanic  20   Male 00:00:00  93     70  TRUE
-## 3  003  1.5907056  FALSE    White  30   Male 00:00:00 105     70  TRUE
-## 4  004  0.4270862  FALSE    White  28   Male 00:00:00  87     65  TRUE
-## 5  005 -0.1599932   TRUE    White  30 Female 00:00:00 124     77 FALSE
-## 6  006 -0.2641669   TRUE    White  27   Male 00:00:00 106     70  TRUE
-## 7  007  0.3999410  FALSE    White  29 Female 00:00:00 122     68  TRUE
-## 8  008  1.7437113   TRUE    White  35   Male 00:00:00 101     71  TRUE
-## 9  009 -0.7204378   TRUE Hispanic  25 Female 00:30:00 121     75  TRUE
-## 10 010  1.6416635  FALSE    White  26   Male 00:30:00 107     65 FALSE
-## .. ...        ...    ...      ... ...    ...      ... ...    ...   ...
+##     ID     Scoring Smoker  Race Age    Sex     Hour  IQ Height  Died
+## 1  001  1.24570408   TRUE White  29 Female 00:00:00  97     75  TRUE
+## 2  002  0.33180310   TRUE White  28   Male 00:00:00 109     63 FALSE
+## 3  003  0.42789060   TRUE White  33 Female 00:00:00 101     69  TRUE
+## 4  004  0.97552833  FALSE White  33   Male 00:00:00  78     71 FALSE
+## 5  005 -1.39895657   TRUE White  26 Female 00:00:00  76     69  TRUE
+## 6  006  0.93806903   TRUE Asian  35   Male 00:00:00 114     68  TRUE
+## 7  007  0.07001015   TRUE Black  33 Female 00:00:00 105     70  TRUE
+## 8  008 -0.62530848   TRUE White  31 Female 00:00:00  93     76 FALSE
+## 9  009  0.22691638   TRUE Asian  26 Female 00:00:00  96     65  TRUE
+## 10 010 -1.38093532   TRUE White  35   Male 00:00:00 110     67  TRUE
+## .. ...         ...    ...   ... ...    ...      ... ...    ...   ...
 ```
 
 While, passing variable functions to `r_data_frame` without call parenthesis is handy the user may wish to set arguments.  This can be done through call parenthesis as we do with `data.frame` or `dplyr::data_frame`:
@@ -174,18 +174,18 @@ r_data_frame(
 ```
 ## Source: local data frame [500 x 11]
 ## 
-##     ID    Scoring Smoker Reading(mins)  Race Age    Sex     Hour  IQ
-## 1  001 -0.7159927   TRUE            23 Asian  12   Male 00:00:00 108
-## 2  002 -0.4987348  FALSE            23 White  11 Female 00:00:00  81
-## 3  003 -1.0256886   TRUE            23 White  10 Female 00:00:00  90
-## 4  004 -0.5624134  FALSE            30 White   9   Male 00:00:00 102
-## 5  005  0.4272436   TRUE            12 White  14 Female 00:00:00  79
-## 6  006  0.0853898  FALSE            20 White  10   Male 00:00:00 100
-## 7  007  0.2990398   TRUE            14 White   9   Male 00:00:00 104
-## 8  008 -1.6902027  FALSE            23 Black   9   Male 00:00:00  95
-## 9  009  0.9856923  FALSE            17 White   9   Male 00:00:00 100
-## 10 010  1.3158711  FALSE            17 White   8   Male 00:30:00 105
-## .. ...        ...    ...           ...   ... ...    ...      ... ...
+##     ID    Scoring Smoker Reading(mins)     Race Age    Sex     Hour  IQ
+## 1  001 -1.0257939  FALSE            23 Hispanic  12 Female 00:00:00 105
+## 2  002 -0.3048544   TRUE            20    White  12   Male 00:00:00 108
+## 3  003  0.9917982  FALSE            22    White  14 Female 00:00:00 105
+## 4  004 -1.4786655   TRUE            22 Hispanic  10 Female 00:00:00 111
+## 5  005  1.2786795  FALSE            22    Black   9 Female 00:00:00 100
+## 6  006 -0.8472265  FALSE            26 Hispanic  14   Male 00:00:00 108
+## 7  007  0.8391221   TRUE            17    White  11 Female 00:00:00  97
+## 8  008 -1.2797948  FALSE            14    White  10   Male 00:00:00  95
+## 9  009  1.2664323   TRUE            21    White  10   Male 00:00:00  89
+## 10 010 -0.8767045  FALSE            34    White  11 Female 00:30:00 102
+## .. ...        ...    ...           ...      ... ...    ...      ... ...
 ## Variables not shown: Height (dbl), Died (lgl)
 ```
 
@@ -214,18 +214,18 @@ r_data_frame(
 ```
 ## Source: local data frame [30 x 10]
 ## 
-##    ID     Race Age    Sex     Hour  IQ Height  Died      Scoring Smoker
-## 1  01    White  NA     NA 01:00:00 118     72  TRUE  1.842498628  FALSE
-## 2  02    White  NA   Male 01:00:00 102     72  TRUE -0.200240440  FALSE
-## 3  03 Hispanic  NA   Male     <NA>  NA     NA FALSE -0.004860979   TRUE
-## 4  04       NA  NA   Male 02:30:00  NA     65  TRUE -0.356429903   TRUE
-## 5  05    White  NA Female 03:00:00 104     73 FALSE -0.621576875     NA
-## 6  06       NA  20     NA 03:30:00  NA     67 FALSE  0.041356420     NA
-## 7  07 Hispanic  23     NA 03:30:00  87     62    NA  2.753377276   TRUE
-## 8  08    White  21     NA     <NA>  98     NA    NA           NA   TRUE
-## 9  09    White  20     NA     <NA> 106     65  TRUE  1.549071141  FALSE
-## 10 10       NA  33   Male 08:30:00  NA     NA FALSE           NA   TRUE
-## .. ..      ... ...    ...      ... ...    ...   ...          ...    ...
+##    ID      Race Age    Sex     Hour  IQ Height  Died    Scoring Smoker
+## 1  01        NA  26   Male     <NA>  99     NA  TRUE -0.1992774     NA
+## 2  02        NA  27 Female 01:00:00 100     NA FALSE         NA   TRUE
+## 3  03        NA  NA     NA 01:30:00  NA     NA  TRUE         NA     NA
+## 4  04  Hispanic  26   Male 02:00:00  91     73 FALSE         NA     NA
+## 5  05     White  NA     NA 02:30:00  92     71  TRUE -0.6734123  FALSE
+## 6  06  Hispanic  26   Male 02:30:00  NA     NA FALSE  1.5138128   TRUE
+## 7  07        NA  NA Female     <NA>  90     70  TRUE -0.2947129  FALSE
+## 8  08  Hispanic  NA     NA     <NA> 124     82    NA -0.6392170  FALSE
+## 9  09 Bi-Racial  23   Male 05:00:00  NA     75  TRUE         NA  FALSE
+## 10 10        NA  33   Male     <NA>  NA     NA FALSE         NA   TRUE
+## .. ..       ... ...    ...      ... ...    ...   ...        ...    ...
 ```
 
 ## Contact
