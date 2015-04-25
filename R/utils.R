@@ -26,3 +26,13 @@ hijack <- function(FUN, ...){
 
     .FUN
 }
+
+## taked from the qdapTools package
+mtabulate <- function (vects) {
+    lev <- sort(unique(unlist(vects)))
+    dat <- do.call(rbind, lapply(vects, function(x, lev) {
+        tabulate(factor(x, levels = lev, ordered = TRUE), nbins = length(lev))
+    }, lev = lev))
+    colnames(dat) <- sort(lev)
+    data.frame(dat, check.names = FALSE)
+}

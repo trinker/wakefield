@@ -20,7 +20,9 @@
 #' @references \url{http://stackoverflow.com/a/29617983/1000343}
 #' @keywords list
 #' @export
-#' @seealso \code{\link[wakefield]{r_data_frame}}
+#' @seealso \code{\link[wakefield]{r_data_frame}},
+#' \code{\link[wakefield]{r_series}}
+#' \code{\link[wakefield]{r_dummy}}
 #' @examples
 #' r_list(
 #'     n = 30,
@@ -85,6 +87,7 @@ r_list <- function(n, ..., rep.sep = "_") {
         x
     })
 
+    ## If duplicate names exist fix their suffix
     if (!is.null(rep.sep)){
         nms <- ave(nms, nms, FUN = function(x) {
             if (length(x) == 1) {x} else {paste(x, seq_along(x), sep = rep.sep)}

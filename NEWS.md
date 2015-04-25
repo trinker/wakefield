@@ -28,6 +28,16 @@ wakefield 0.1.0
   sensible way.  The separator is controlled by `rep.sep`.  Suggested by
   Ananda Mahto.  See <a href="https://github.com/trinker/wakefield/issues/1">issue #1</a> for details.
 
+* `r_series` added to produce a series of grouped data.  This is useful for
+  simulating repeated measures or survey questions.  Suggested by Ananda Mahto.
+  See <a href="https://github.com/trinker/wakefield/issues/1">issue #1</a> for details.
+
+* `as_integer` added as a means of coercing all columns of a `factor`
+  `data.frame` to `integer`s.
+
+* `r_dummy` added to produce multiple dummy columns from a single factor.
+
+
 &lt;b&gt;MINOR FEATURES&lt;/b&gt;
 
 IMPROVEMENTS

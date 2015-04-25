@@ -18,7 +18,9 @@
 #' @author Josh O'Brien and Tyler Rinker <tyler.rinker@@gmail.com>.
 #' @references \url{http://stackoverflow.com/a/29617983/1000343}
 #' @export
-#' @seealso \code{\link[wakefield]{r_list}}
+#' @seealso \code{\link[wakefield]{r_list}},
+#' \code{\link[wakefield]{r_series}}
+#' \code{\link[wakefield]{r_dummy}}
 #' @examples
 #' r_data_frame(
 #'     n = 30,

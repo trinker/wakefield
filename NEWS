@@ -28,6 +28,16 @@ NEW FEATURES
   sensible way.  The separator is controlled by `rep.sep`.  Suggested by
   Ananda Mahto.  See issue #1 for details.
 
+* `r_series` added to produce a series of grouped data.  This is useful for
+  simulating repeated measures or survey questions.  Suggested by Ananda Mahto.
+  See issue #1 for details.
+
+* `as_integer` added as a means of coercing all columns of a `factor`
+  `data.frame` to `integer`s.
+
+* `r_dummy` added to produce multiple dummy columns from a single factor.
+
+
 MINOR FEATURES
 
 IMPROVEMENTS

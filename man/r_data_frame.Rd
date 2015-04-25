@@ -65,6 +65,8 @@ Josh O'Brien and Tyler Rinker <tyler.rinker@gmail.com>.
 \url{http://stackoverflow.com/a/29617983/1000343}
 }
 \seealso{
-\code{\link[wakefield]{r_list}}
+\code{\link[wakefield]{r_list}},
+\code{\link[wakefield]{r_series}}
+\code{\link[wakefield]{r_dummy}}
 }
 
