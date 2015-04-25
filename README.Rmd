@@ -122,6 +122,64 @@ r_data_frame(
     r_na(prob=.4)
 ```
 
+## Repeated Measures & Time Series
+
+The `r_series` function allows the user to pass a single **wakefield** function and dictate how many columns (`j`) to produce.  
+
+```{r}
+set.seed(10)
+
+r_series(likert, j = 3, n=10)
+```
+
+Often the user wants a numeric score for Likert type columns and similar variables.  For series with multiple factors the `as_integer` converts all columns to integer values.  Additionally, we may want to specify column name prefixes. This can be accomplished via the variable function's `name` argument.  Both of these features are demonstrated here.
+
+```{r}
+set.seed(10)
+
+as_integer(r_series(likert, j = 5, n=10, name = "Item"))
+```
+
+`r_series` can be used within a `r_data_frame` as well.  
+
+```{r}
+set.seed(10)
+
+r_data_frame(n=100,
+    id,
+    age,
+    sex,
+    r_series(likert, 3, name = "Question")
+)
+```
+
+
+```{r}
+set.seed(10)
+
+r_data_frame(n=100,
+    id,
+    age,
+    sex,
+    as_integer(r_series(likert, j = 5, n = 100, name = "Item"))
+)
+```
+
+## Expanded Dummy Coding
+
+The user may wish to expand a `factor` into `j` dummy coded columns.  The `r_dummy` function expands a factor into `j` columns and works similar to the `r_series` function.  The user may wish to use the original factor name as the prefix to the `j` columns.  Setting `prefix = TRUE` within `r_dummy` accomplishes this.
+
+
+```{r}
+set.seed(10)
+r_data_frame(n=100,
+    id,
+    age,
+    r_dummy(sex, prefix = TRUE),
+    r_dummy(political)
+)
+```
+
 ## Contact
 
 You are welcome to:

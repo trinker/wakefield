@@ -4,16 +4,21 @@
 \alias{r_dummy}
 \title{Title}
 \usage{
-r_dummy(fun, n, ..., rep.sep = "_")
+r_dummy(fun, n, ..., prefix = FALSE, rep.sep = "_")
 }
 \arguments{
 \item{fun}{A \pkg{waefield} variable function.}
 
 \item{n}{The number of rows to produce.}
 
-\item{rep.sep}{A separator to use for the variable and category part of names.
-For example if the \code{\link[wakefield]{age}} is used
-(\code{r_dummy(sex)}), this resuts in column names \code{c("Sex_Male", "Sex_Female")}.}
+\item{prefix}{logical.  If \code{TRUE} the original factor name (supplied to
+\code{fun} as \code{name} argument) will prefic the column names that were
+generated from the factor's categories.}
+
+\item{rep.sep}{A separator to use for the variable and category part of names
+when \code{prefix = TRUE}.  For example if the \code{\link[wakefield]{age}}
+is used (\code{r_dummy(sex)}), this resuts in column names
+\code{c("Sex_Male", "Sex_Female")}.}
 
 \item{\ldots}{Additional arguments passed to \code{fun}.}
 }

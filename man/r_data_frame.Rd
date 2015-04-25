@@ -57,6 +57,22 @@ r_data_frame(
     Scoring = rnorm,
     Smoker = valid
 )
+
+## Repeated Measures/Time Series
+r_data_frame(n=100,
+    id,
+    age,
+    sex,
+    r_series(likert, 3)
+)
+
+## Expanded Dummy Coded Variables
+r_data_frame(n=100,
+    id,
+    age,
+    r_dummy(sex, prefix=TRUE),
+    r_dummy(political)
+)
 }
 \author{
 Josh O'Brien and Tyler Rinker <tyler.rinker@gmail.com>.

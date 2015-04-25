@@ -3,7 +3,7 @@
 #' Adds the class \code{variable} and an internal
 #' \code{attributes(x)[["varname"]]} attribute to a vector.
 #'
-#' @param x A vector to add a code{varname} attribute (i.e.,
+#' @param x A vector to add a \code{varname} attribute (i.e.,
 #' \code{attributes(x)[["varname"]]})
 #' @param name A name to assign to \code{attributes(x)[["varname"]]}.
 #' @return Returns a vector of the class \code{variable} with a

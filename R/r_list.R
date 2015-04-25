@@ -60,6 +60,8 @@ r_list <- function(n, ..., rep.sep = "_") {
         if(is.name(X)) X <- as.call(list(X))
         ## See if ll will eval to a vector
         if (is.vector(try(eval(X), silent = TRUE))) return(eval(X))
+        ## See if ll will eval to a data.frame
+        if (is.data.frame(try(eval(X), silent = TRUE))) return(eval(X))
         ## Add/replace an argument named n
         X$n <- n
         eval(X)
@@ -67,7 +69,8 @@ r_list <- function(n, ..., rep.sep = "_") {
 
     ## Capture names from vectors of class variable
     nms <- unlist(lapply(out, function(x) {
-        nmsout <- attributes(x)[["varname"]]
+        nmsout <- attributes(x)[["seriesname"]]
+        if (is.null(nmsout)) nmsout <- attributes(x)[["varname"]]
         if (is.null(nmsout)) return(NA)
         nmsout
     }))
@@ -77,8 +80,6 @@ r_list <- function(n, ..., rep.sep = "_") {
 
     ## Supply generic names to any vectors that do not have names
     nms[sapply(nms, is.na)] <- make.names(seq_len(length(nms[sapply(nms, is.na)])))
-
-
 
     ## Strip the varname attribute and variable class from the vectors
     out <- lapply(out, function(x){

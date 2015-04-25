@@ -33,7 +33,6 @@ r_series <- function(fun, j, n, ..., rep.sep = "_") {
 
     names(out) <- paste(attributes(out[[1]])[["varname"]], seq_len(j),sep = rep.sep)
 
-    dplyr::tbl_df(as.data.frame(out))
+    seriesname(dplyr::tbl_df(as.data.frame(out)), attributes(out[[1]])[["varname"]])
 }
 
-as_integer

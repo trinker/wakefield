@@ -28,6 +28,9 @@ NEW FEATURES
   sensible way.  The separator is controlled by `rep.sep`.  Suggested by
   Ananda Mahto.  See issue #1 for details.
 
+* `r_list` and `r_data_frame` can utilize `r_series` and `r_dummy` to produce
+  series of variables. Suggested by Ananda Mahto.  See issue #1 for details.
+
 * `r_series` added to produce a series of grouped data.  This is useful for
   simulating repeated measures or survey questions.  Suggested by Ananda Mahto.
   See issue #1 for details.
@@ -37,8 +40,10 @@ NEW FEATURES
 
 * `r_dummy` added to produce multiple dummy columns from a single factor.
 
-
 MINOR FEATURES
+
+* `seriesname` function added to give a `data.frame` an attribute `seriesname`.
+  Typicaly this is for internal use.
 
 IMPROVEMENTS
 

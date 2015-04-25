@@ -7,7 +7,7 @@
 varname(x, name)
 }
 \arguments{
-\item{x}{A vector to add a code{varname} attribute (i.e.,
+\item{x}{A vector to add a \code{varname} attribute (i.e.,
 \code{attributes(x)[["varname"]]})}
 
 \item{name}{A name to assign to \code{attributes(x)[["varname"]]}.}

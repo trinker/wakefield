@@ -77,6 +77,7 @@ Collate:
     'sat.R'
     'second.R'
     'sentence.R'
+    'seriesname.R'
     'sex.R'
     'smokes.R'
     'speed.R'

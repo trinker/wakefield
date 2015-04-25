@@ -28,6 +28,9 @@ wakefield 0.1.0
   sensible way.  The separator is controlled by `rep.sep`.  Suggested by
   Ananda Mahto.  See <a href="https://github.com/trinker/wakefield/issues/1">issue #1</a> for details.
 
+* `r_list` and `r_data_frame` can utilize `r_series` and `r_dummy` to produce
+  series of variables. Suggested by Ananda Mahto.  See <a href="https://github.com/trinker/wakefield/issues/1">issue #1</a> for details.
+
 * `r_series` added to produce a series of grouped data.  This is useful for
   simulating repeated measures or survey questions.  Suggested by Ananda Mahto.
   See <a href="https://github.com/trinker/wakefield/issues/1">issue #1</a> for details.
@@ -37,8 +40,10 @@ wakefield 0.1.0
 
 * `r_dummy` added to produce multiple dummy columns from a single factor.
 
-
 &lt;b&gt;MINOR FEATURES&lt;/b&gt;
+
+* `seriesname` function added to give a `data.frame` an attribute `seriesname`.
+  Typicaly this is for internal use.
 
 IMPROVEMENTS
 

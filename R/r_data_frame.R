@@ -50,11 +50,33 @@
 #'     Scoring = rnorm,
 #'     Smoker = valid
 #' )
+#'
+#' ## Repeated Measures/Time Series
+#' r_data_frame(n=100,
+#'     id,
+#'     age,
+#'     sex,
+#'     r_series(likert, 3)
+#' )
+#'
+#' ## Expanded Dummy Coded Variables
+#' r_data_frame(n=100,
+#'     id,
+#'     age,
+#'     r_dummy(sex, prefix=TRUE),
+#'     r_dummy(political)
+#' )
 r_data_frame <-
 function (n, ..., rep.sep = "_") {
     out <- r_list(n = n, ..., rep.sep = "_")
+
+    ## Search for series names to use
+    cnames <- sapply(out, function(x) attributes(x)[["cname"]])
+    nms <- as.list(names(out))
+    nms[!sapply(cnames, is.null)] <- cnames[!sapply(cnames, is.null)]
+
     out <- setNames(data.frame(out, stringsAsFactors = FALSE,
-        check.names = FALSE), names(out))
+        check.names = FALSE), unlist(nms))
     dplyr::tbl_df(out)
 }
 

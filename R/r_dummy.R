@@ -5,9 +5,13 @@
 #' @param fun A \pkg{waefield} variable function.
 #' @param n The number of rows to produce.
 #' @param \ldots Additional arguments passed to \code{fun}.
-#' @param rep.sep A separator to use for the variable and category part of names.
-#' For example if the \code{\link[wakefield]{age}} is used
-#' (\code{r_dummy(sex)}), this resuts in column names \code{c("Sex_Male", "Sex_Female")}.
+#' @param prefix logical.  If \code{TRUE} the original factor name (supplied to
+#' \code{fun} as \code{name} argument) will prefic the column names that were
+#' generated from the factor's categories.
+#' @param rep.sep A separator to use for the variable and category part of names
+#' when \code{prefix = TRUE}.  For example if the \code{\link[wakefield]{age}}
+#' is used (\code{r_dummy(sex)}), this resuts in column names
+#' \code{c("Sex_Male", "Sex_Female")}.
 #' @return Returns a \code{\link[dplyr]{tbl_df}}.
 #' @keywords dummy
 #' @export
@@ -18,16 +22,18 @@
 #' r_dummy(sex, 10)
 #' r_dummy(race, 1000)
 #' r_dummy(race, 1000, name = "Ethnicity")
-r_dummy <- function(fun, n, ..., rep.sep = "_") {
+r_dummy <- function(fun, n, ..., prefix = FALSE, rep.sep = "_") {
 
     vect <- fun(n = n, ...)
 
     out <- dplyr::tbl_df(mtabulate(vect))
 
-    names(out) <- paste(attributes(vect)[["varname"]], colnames(out), sep = rep.sep)
-    out
+    if (isTRUE(prefix)) {
+        names(out) <- paste(attributes(vect)[["varname"]], colnames(out),
+            sep = rep.sep)
+    }
+    seriesname(out, attributes(vect)[["varname"]])
 }
-
 
 
 
