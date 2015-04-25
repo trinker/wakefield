@@ -59,29 +59,30 @@ Other variable.functions: \code{\link{age}};
   \code{\link{answer}}; \code{\link{area}};
   \code{\link{car}}; \code{\link{children}};
   \code{\link{coin}}; \code{\link{color}},
-  \code{\link{primary}}; \code{\link{death}},
-  \code{\link{died}}; \code{\link{dice}};
-  \code{\link{dna}}; \code{\link{dummy}};
-  \code{\link{education}}; \code{\link{empoyment}};
-  \code{\link{eye}}; \code{\link{gpa}},
-  \code{\link{grade}}, \code{\link{grade_letter}};
-  \code{\link{grade_level}}; \code{\link{group}};
-  \code{\link{hair}}; \code{\link{height}},
-  \code{\link{height_cm}}, \code{\link{height_in}};
-  \code{\link{income}}; \code{\link{iq}};
-  \code{\link{language}}; \code{\link{level}};
-  \code{\link{likert}}, \code{\link{likert_5}},
-  \code{\link{likert_7}}; \code{\link{lorem_ipsum}},
-  \code{\link{paragraph}}; \code{\link{marital}};
-  \code{\link{month}}; \code{\link{name}};
-  \code{\link{normal}}, \code{\link{normal_round}};
-  \code{\link{political}}; \code{\link{race}};
-  \code{\link{sat}}; \code{\link{sentence}};
-  \code{\link{sex}}; \code{\link{smokes}};
-  \code{\link{speed}}, \code{\link{speed_kph}},
-  \code{\link{speed_mph}}; \code{\link{state}};
-  \code{\link{string}}; \code{\link{valid}};
-  \code{\link{year}}; \code{\link{zip_code}}
+  \code{\link{primary}}; \code{\link{date_stamp}};
+  \code{\link{death}}, \code{\link{died}};
+  \code{\link{dice}}; \code{\link{dna}};
+  \code{\link{dummy}}; \code{\link{education}};
+  \code{\link{empoyment}}; \code{\link{eye}};
+  \code{\link{gpa}}, \code{\link{grade}},
+  \code{\link{grade_letter}}; \code{\link{grade_level}};
+  \code{\link{group}}; \code{\link{hair}};
+  \code{\link{height}}, \code{\link{height_cm}},
+  \code{\link{height_in}}; \code{\link{income}};
+  \code{\link{iq}}; \code{\link{language}};
+  \code{\link{level}}; \code{\link{likert}},
+  \code{\link{likert_5}}, \code{\link{likert_7}};
+  \code{\link{lorem_ipsum}}, \code{\link{paragraph}};
+  \code{\link{marital}}; \code{\link{month}};
+  \code{\link{name}}; \code{\link{normal}},
+  \code{\link{normal_round}}; \code{\link{political}};
+  \code{\link{race}}; \code{\link{sat}};
+  \code{\link{sentence}}; \code{\link{sex}};
+  \code{\link{smokes}}; \code{\link{speed}},
+  \code{\link{speed_kph}}, \code{\link{speed_mph}};
+  \code{\link{state}}; \code{\link{string}};
+  \code{\link{valid}}; \code{\link{year}};
+  \code{\link{zip_code}}
 }
 \keyword{capitals}
 \keyword{letters}

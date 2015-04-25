@@ -30,6 +30,7 @@ Collate:
     'children.R'
     'coin.R'
     'color.R'
+    'date_stamp.R'
     'r_sample_logical.R'
     'death.R'
     'dice.R'
