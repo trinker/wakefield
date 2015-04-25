@@ -4,17 +4,13 @@
 \alias{as_integer}
 \title{Convert a Factor Data Frame to Integer}
 \usage{
-as_integer(x, fun = as.integer, n = NULL)
+as_integer(x, fun = as.integer)
 }
 \arguments{
 \item{x}{A \code{\link[base]{data.frame}} of \code{\link[base]{factor}}s.}
 
 \item{fun}{An \code{as.} coercion function to apply to each column.  Default
 is \code{\link[base]{as.integer}}.}
-
-\item{n}{The number of elements to produce.  Only applies if used inside of
-\code{\link[wakefield]{r_list}} or \code{\link[wakefield]{r_data_frame}} and
-is supplied automatically.}
 }
 \value{
 Returns a \code{\link[base]{data.frame}} equal to the

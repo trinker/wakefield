@@ -6,9 +6,6 @@
 #' @param x A \code{\link[base]{data.frame}} of \code{\link[base]{factor}}s.
 #' @param fun An \code{as.} coercion function to apply to each column.  Default
 #' is \code{\link[base]{as.integer}}.
-#' @param n The number of elements to produce.  Only applies if used inside of
-#' \code{\link[wakefield]{r_list}} or \code{\link[wakefield]{r_data_frame}} and
-#' is supplied automatically.
 #' @return Returns a \code{\link[base]{data.frame}} equal to the
 #' \code{\link[base]{class}} of \code{x} with integer columns rather than factor.
 #' @keywords integer numeric
@@ -16,7 +13,7 @@
 #' @seealso \code{\link[wakefield]{r_series}}
 #' @examples
 #' as_integer(r_series(likert_7, 5, 10))
-as_integer <- function(x, fun = as.integer, n = NULL) {
-    x[] <- lapply(x, fun, n = n)
+as_integer <- function(x, fun = as.integer) {
+    x[] <- lapply(x, fun)
     x
 }
