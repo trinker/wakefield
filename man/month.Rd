@@ -4,7 +4,7 @@
 \alias{month}
 \title{Generate Random Vector of Months}
 \usage{
-month(n, x = month.name, prob = NULL, name = "month")
+month(n, x = month.name, prob = NULL, name = "Month")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within

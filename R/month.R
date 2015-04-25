@@ -11,7 +11,7 @@
 #' month(10)
 #' pie(table(month(10000, prob = probs(12))))
 month <-
-function (n, x = month.name, prob = NULL, name = "month") {
+function (n, x = month.name, prob = NULL, name = "Month") {
 
     if (missing(n)) stop("`n` is missing")
     out <- sample(x = x, size = n, replace = TRUE, prob = prob)
