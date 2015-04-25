@@ -8,14 +8,6 @@ family ##stats function
 sport
 
 
-r_date <- function(name = "Date", sort = TRUE, start = Sys.Date(), k = 5, by = "-1 years", prob = NULL, n){
-
-    dates <- seq(start, length = k, by = by)
-
-    out <- sample(x = dates, size = n, replace = TRUE, prob = prob)
-    if (sort) out <- sort(out)
-    varname(out, name)
-}
 
 
 

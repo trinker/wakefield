@@ -4,10 +4,18 @@
 \alias{r_data_frame}
 \title{Data Frame Production (From Variable Functions)}
 \usage{
-r_data_frame(n, ...)
+r_data_frame(n, ..., rep.sep = "_")
 }
 \arguments{
 \item{n}{The length to pass to the randomly generated vectors.}
+
+\item{rep.sep}{A separator to use for repeated variable names.  For example
+if the \code{\link[wakefield]{age}} is used three times
+(\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
+three columns.  The resuts in column names \code{c("Age_1", "Age_2", "Age_3")}.
+To turn of this behavior use  \code{rep.sep = NULL}.  This resuts in
+\code{c("Age", "Age.1", "Age.2")} column names in the
+\code{\link[base]{data.frame}}.}
 
 \item{\ldots}{A set of optionally named arguments.  Using \pkg{wakefield}
 variable functions require no name or call parenthesis.}
@@ -43,6 +51,7 @@ r_data_frame(
     Gender = sex,
     Time = hour,
     iq,
+    grade, grade, grade,  #repeated measures
     height(mean=50, sd = 10),
     died,
     Scoring = rnorm,

@@ -4,10 +4,19 @@
 \alias{r_list}
 \title{List Production (From Variable Functions)}
 \usage{
-r_list(n, ...)
+r_list(n, ..., rep.sep = "_")
 }
 \arguments{
 \item{n}{The length to pass to the randomly generated vectors.}
+
+\item{rep.sep}{A separator to use for repeated variable names.  For example
+if the \code{\link[wakefield]{age}} is used three times
+(\code{r_list(age, age, age)}), the name "Age" will be assigned to all three
+vectors in the list.  The resuts in column names
+\code{c("Age_1", "Age_2", "Age_3")}.  To turn of this behavior use
+\code{rep.sep = NULL}.  This resuts in \code{c("Age", "Age", "Age")} for
+vector names, leading to \code{c("Age", "Age.1", "Age.2")} if coerced to a
+\code{\link[base]{data.frame}}.}
 
 \item{\ldots}{A set of optionally named arguments.  Using \pkg{wakefield}
 variable functions require no name or call parenthesis.}
