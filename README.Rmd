@@ -12,9 +12,10 @@ p_load(dplyr, wakefield, knitr)
 ```{r, echo=FALSE}
 knit_hooks$set(htmlcap = function(before, options, envir) {
   if(!before) {
-    paste('<p class="caption"><em>',options$htmlcap,"</em></p>",sep="")
+    paste('<p class="caption"><b><em>',options$htmlcap,"</em></b></p>",sep="")
     }
     })
+opts_knit$set(self.contained = TRUE, cache = FALSE)
 ```
 
 [![Project Status: Wip - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/0.1.0/wip.svg)](http://www.repostatus.org/#wip)
@@ -87,12 +88,12 @@ r_data_frame(
 There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types.
 
 ```{r, results='asis', echo=FALSE, comment=NA, warning=FALSE, htmlcap="Available Variable Functions"}
-x <- "age ; animal , pet ; answer ; area ; car ; children ; coin ; date_stamp ;
-death , died ; dice ; dna ; dummy ; education ; employment ; eye ; gpa , grade , grade_letter ; grade_level ;
-group ; hair ; height , height_cm , height_in ; income ; iq ; language ; level ; likert , likert_5 ,
-likert_7 ; lorem_ipsum , paragraph ; lower , lower_factor , upper , upper_factor ; marital ;
-month ; name ; normal , normal_round ; political ; race ; sat ; sentence ; sex ; smokes ; speed ,
-speed_kph , speed_mph ; state ; string ; valid ; year ; zip_code ; dob ; birth"
+x <- "age ; animal , pet ; answer ; area ; birth , dob ; car ; children ; coin ;
+color , primary ; date_stamp ; death , died ; dice ; dna ; dummy ; education ; employment ; eye ;
+gender , sex ; gpa , grade , grade_letter ; group ; hair ; height , height_cm , height_in ; income ;
+iq ; language ; level ; likert , likert_5 , likert_7 ; lorem_ipsum , paragraph ; lower , lower_factor ,
+upper , upper_factor ; marital ; month ; name ; normal , normal_round ; political ; race ; sat ;
+sentence ; smokes ; speed , speed_kph , speed_mph ; state ; string ; valid ; year ; zip_code"
 
 p_load(pander, xtable)
 
@@ -236,7 +237,28 @@ r_data_frame(n=100,
 ```
 
 
+## Visualizing Column Types
 
+It is helpful to see the column types and `nA`s as a visualization.  The `table_heat` (the `plot` method assigned to `tbl_df` as well).
+
+```{r}
+set.seed(10)
+
+r_data_frame(n=100,
+    id,
+    dob,
+    animal,
+    grade, grade,
+    death,
+    dummy,
+    grade_letter,
+    gender,
+    paragraph,
+    sentence
+) %>%
+   r_na() %>%
+   plot(palette = "Set1")
+```
 
 
 
