@@ -7,7 +7,7 @@
 r_series(fun, j, n, ..., integer = FALSE, rep.sep = "_")
 }
 \arguments{
-\item{fun}{A \pkg{waefield} variable function.}
+\item{fun}{A \pkg{wakefield} variable function.}
 
 \item{j}{The number of columns to produce.}
 

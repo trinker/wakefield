@@ -29,8 +29,7 @@ lazily pass unnamed \pkg{wakefield} variable functions (optionally, without
 call parenthesis).
 }
 \examples{
-r_data_frame(
-    n = 30,
+r_data_frame(n = 30,
     id,
     race,
     age,
@@ -43,8 +42,7 @@ r_data_frame(
     Smoker = valid
 )
 
-r_data_frame(
-    n = 30,
+r_data_frame(n = 30,
     id,
     race,
     age(x = 8:14),
@@ -58,12 +56,19 @@ r_data_frame(
     Smoker = valid
 )
 
+r_data_frame(n = 500,
+    id,
+    age, age, age,
+    grade, grade, grade
+)
+
 ## Repeated Measures/Time Series
 r_data_frame(n=100,
     id,
     age,
     sex,
-    r_series(likert, 3)
+    r_series(likert, 3),
+    r_series(likert, 4, name = "Item", integer = TRUE)
 )
 
 ## Expanded Dummy Coded Variables

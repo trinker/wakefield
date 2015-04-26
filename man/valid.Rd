@@ -36,7 +36,7 @@ Other variable.functions: \code{\link{age}};
   \code{\link{death}}, \code{\link{died}};
   \code{\link{dice}}; \code{\link{dna}};
   \code{\link{dummy}}; \code{\link{education}};
-  \code{\link{empoyment}}; \code{\link{eye}};
+  \code{\link{employment}}; \code{\link{eye}};
   \code{\link{gpa}}, \code{\link{grade}},
   \code{\link{grade_letter}}; \code{\link{grade_level}};
   \code{\link{group}}; \code{\link{hair}};

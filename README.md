@@ -130,24 +130,58 @@ r_data_frame(
 There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types.
 
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Sat Apr 25 23:21:23 2015 -->
+<!-- Sat Apr 25 23:41:25 2015 -->
 <table >
-  <tr> <td> &lt;code&gt;age&lt;/code&gt; </td> <td> &lt;code&gt;eye&lt;/code&gt; </td> <td> &lt;code&gt;likert_5&lt;/code&gt; </td> <td> &lt;code&gt;sentence&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;animal&lt;/code&gt; </td> <td> &lt;code&gt;gpa&lt;/code&gt; </td> <td> &lt;code&gt;likert_7&lt;/code&gt; </td> <td> &lt;code&gt;sex&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;answer&lt;/code&gt; </td> <td> &lt;code&gt;grade&lt;/code&gt; </td> <td> &lt;code&gt;lorem_ipsum&lt;/code&gt; </td> <td> &lt;code&gt;smokes&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;area&lt;/code&gt; </td> <td> &lt;code&gt;grade_letter&lt;/code&gt; </td> <td> &lt;code&gt;lower&lt;/code&gt; </td> <td> &lt;code&gt;speed&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;car&lt;/code&gt; </td> <td> &lt;code&gt;grade_level&lt;/code&gt; </td> <td> &lt;code&gt;lower_factor&lt;/code&gt; </td> <td> &lt;code&gt;speed_kph&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;children&lt;/code&gt; </td> <td> &lt;code&gt;group&lt;/code&gt; </td> <td> &lt;code&gt;marital&lt;/code&gt; </td> <td> &lt;code&gt;speed_mph&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;coin&lt;/code&gt; </td> <td> &lt;code&gt;hair&lt;/code&gt; </td> <td> &lt;code&gt;month&lt;/code&gt; </td> <td> &lt;code&gt;state&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;date_stamp&lt;/code&gt; </td> <td> &lt;code&gt;height&lt;/code&gt; </td> <td> &lt;code&gt;name&lt;/code&gt; </td> <td> &lt;code&gt;string&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;death&lt;/code&gt; </td> <td> &lt;code&gt;height_cm&lt;/code&gt; </td> <td> &lt;code&gt;normal&lt;/code&gt; </td> <td> &lt;code&gt;upper&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;dice&lt;/code&gt; </td> <td> &lt;code&gt;height_in&lt;/code&gt; </td> <td> &lt;code&gt;normal_round&lt;/code&gt; </td> <td> &lt;code&gt;upper_factor&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;died&lt;/code&gt; </td> <td> &lt;code&gt;income&lt;/code&gt; </td> <td> &lt;code&gt;paragraph&lt;/code&gt; </td> <td> &lt;code&gt;valid&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;dna&lt;/code&gt; </td> <td> &lt;code&gt;iq&lt;/code&gt; </td> <td> &lt;code&gt;pet&lt;/code&gt; </td> <td> &lt;code&gt;year&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;dummy&lt;/code&gt; </td> <td> &lt;code&gt;language&lt;/code&gt; </td> <td> &lt;code&gt;political&lt;/code&gt; </td> <td> &lt;code&gt;zip_code&lt;/code&gt; </td> </tr>
-  <tr> <td> &lt;code&gt;education&lt;/code&gt; </td> <td> &lt;code&gt;level&lt;/code&gt; </td> <td> &lt;code&gt;race&lt;/code&gt; </td> <td>  </td> </tr>
-  <tr> <td> &lt;code&gt;empoyment&lt;/code&gt; </td> <td> &lt;code&gt;likert&lt;/code&gt; </td> <td> &lt;code&gt;sat&lt;/code&gt; </td> <td>  </td> </tr>
+  <tr> <td> age </td> <td> eye </td> <td> likert_5 </td> <td> sentence </td> </tr>
+  <tr> <td> animal </td> <td> gpa </td> <td> likert_7 </td> <td> sex </td> </tr>
+  <tr> <td> answer </td> <td> grade </td> <td> lorem_ipsum </td> <td> smokes </td> </tr>
+  <tr> <td> area </td> <td> grade_letter </td> <td> lower </td> <td> speed </td> </tr>
+  <tr> <td> car </td> <td> grade_level </td> <td> lower_factor </td> <td> speed_kph </td> </tr>
+  <tr> <td> children </td> <td> group </td> <td> marital </td> <td> speed_mph </td> </tr>
+  <tr> <td> coin </td> <td> hair </td> <td> month </td> <td> state </td> </tr>
+  <tr> <td> date_stamp </td> <td> height </td> <td> name </td> <td> string </td> </tr>
+  <tr> <td> death </td> <td> height_cm </td> <td> normal </td> <td> upper </td> </tr>
+  <tr> <td> dice </td> <td> height_in </td> <td> normal_round </td> <td> upper_factor </td> </tr>
+  <tr> <td> died </td> <td> income </td> <td> paragraph </td> <td> valid </td> </tr>
+  <tr> <td> dna </td> <td> iq </td> <td> pet </td> <td> year </td> </tr>
+  <tr> <td> dummy </td> <td> language </td> <td> political </td> <td> zip_code </td> </tr>
+  <tr> <td> education </td> <td> level </td> <td> race </td> <td>  </td> </tr>
+  <tr> <td> employment </td> <td> likert </td> <td> sat </td> <td>  </td> </tr>
    </table>
+
+------------ -------------- -------------- --------------
+   `age`         `eye`        `likert_5`     `sentence`  
+
+  `animal`       `gpa`        `likert_7`       `sex`     
+
+  `answer`      `grade`     `lorem_ipsum`     `smokes`   
+
+   `area`    `grade_letter`    `lower`        `speed`    
+
+   `car`     `grade_level`  `lower_factor`  `speed_kph`  
+
+ `children`     `group`       `marital`     `speed_mph`  
+
+   `coin`        `hair`        `month`        `state`    
+
+`date_stamp`    `height`        `name`        `string`   
+
+  `death`     `height_cm`      `normal`       `upper`    
+
+   `dice`     `height_in`   `normal_round` `upper_factor`
+
+   `died`       `income`     `paragraph`      `valid`    
+
+   `dna`          `iq`          `pet`          `year`    
+
+  `dummy`      `language`    `political`     `zip_code`  
+
+`education`     `level`         `race`                   
+
+`employment`    `likert`        `sat`                    
+------------ -------------- -------------- --------------
+
+Table: Available variable functions.
 
 However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:
 

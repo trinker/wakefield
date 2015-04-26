@@ -22,6 +22,8 @@ wakefield 0.1.0
 
 &lt;b&gt;BUG FIXES&lt;/b&gt;
 
+* `employment` was misspelled as `empoyment`.  Caught by Danilo Freire (<a href="https://github.com/trinker/wakefield/issues/2">issue #2</a>).
+
 &lt;b&gt;NEW FEATURES&lt;/b&gt;
 
 * `r_list` & `r_data_frame` now add a suffix to repeat variable names in a

@@ -3,7 +3,7 @@
 #' Produce a \code{\link[dplyr]{tbl_df}} data frame of repeated measures from a
 #' wakefield variable function.
 #'
-#' @param fun A \pkg{waefield} variable function.
+#' @param fun A \pkg{wakefield} variable function.
 #' @param j The number of columns to produce.
 #' @param n The number of rows to produce.
 #' @param \ldots Additional arguments passed to \code{fun}.
