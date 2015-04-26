@@ -91,8 +91,6 @@ p_load(xtable)
 vect <- sort(strsplit(x, "\\s*[;,]\\s*")[[1]])
 blanks <- rep("", 4 * (ceiling(length(vect)/4) - length(vect)/4))
 
-panderOptions("table.style", "rmarkdown")
-
 matrix(c(sprintf("`%s`", vect), blanks), ncol=4) %>%
     xtable() %>%
     print(type = 'html', include.colnames = FALSE, include.rownames = FALSE,
