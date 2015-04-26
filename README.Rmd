@@ -240,7 +240,7 @@ r_data_frame(n=100,
 
 ## Visualizing Column Types
 
-It is helpful to see the column types and `nA`s as a visualization.  The `table_heat` (the `plot` method assigned to `tbl_df` as well).
+It is helpful to see the column types and `NA`s as a visualization.  The `table_heat` (the `plot` method assigned to `tbl_df` as well).
 
 ```{r}
 set.seed(10)
