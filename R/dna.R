@@ -11,7 +11,7 @@
 #' @examples
 #' dna(10)
 #' barplot(table(dna(10000)))
-dna <- hijack(r_sample,
+dna <- hijack(r_sample_factor,
     name = "DNA",
     x = c("Guanine", "Adenine", "Thymine", "Cytosine")
 )

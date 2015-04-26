@@ -12,7 +12,7 @@ p_load(dplyr, wakefield, knitr)
 ```{r, echo=FALSE}
 knit_hooks$set(htmlcap = function(before, options, envir) {
   if(!before) {
-    paste('<p class="caption" style="color:blue"><em>',options$htmlcap,"</em></p>",sep="")
+    paste('<p class="caption"><em>',options$htmlcap,"</em></p>",sep="")
     }
     })
 ```

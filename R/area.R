@@ -11,7 +11,7 @@
 #' @examples
 #' area(10)
 #' barplot(table(area(10000)))
-area <- hijack(r_sample,
+area <- hijack(r_sample_factor,
     name = "Area",
     x = c("Suburban", "Urban", "Rural")
 )

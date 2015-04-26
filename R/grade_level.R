@@ -11,7 +11,7 @@
 #' @examples
 #' grade_level(10)
 #' barplot(table(grade_level(10000)))
-grade_level <- hijack(r_sample,
+grade_level <- hijack(r_sample_factor,
     name = "Grade_Level",
     x = c("K", 1:12)
 )

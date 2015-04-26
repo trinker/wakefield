@@ -11,7 +11,7 @@
 #' @examples
 #' marital(10)
 #' barplot(table(marital(10000)))
-marital <- hijack(r_sample,
+marital <- hijack(r_sample_factor,
     name = "Marital",
     x = c("Married", "Divorced", "Widowed", "Separated", "Never Married")
 )

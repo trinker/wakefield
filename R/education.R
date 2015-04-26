@@ -31,7 +31,7 @@
 #' @examples
 #' education(10)
 #' pie(table(education(10000)))
-education <- hijack(r_sample,
+education <- hijack(r_sample_factor,
     name = "Education",
     x = c("No Schooling Completed", "Nursery School to 8th Grade", "9th Grade to 12th Grade, No Diploma",
         "Regular High School Diploma", "GED or Alternative Credential",

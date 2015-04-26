@@ -23,7 +23,7 @@
 #' employment(10)
 #' pie(table(employment(10000)))
 #' barplot(table(employment(10000)))
-employment <- hijack(r_sample,
+employment <- hijack(r_sample_factor,
     name = "Employment",
     prob = c(.6, .1, .1, .1, .1),
     x = c("Full Time", "Part Time", "Unemployed", "Retired", "Student")
