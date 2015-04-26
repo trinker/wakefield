@@ -13,13 +13,20 @@
 #' dob(10)
 #' barplot(table(birth(15)))
 #' barplot(table(birth(30)))
-dob <- hijack(date_stamp,
-    name = "DOB",
-    random = TRUE,
-    start = Sys.Date() - 365*15,
-    k = 2*365,
-    by = "1 days"
-)
+dob <- function(n, random = TRUE, x = NULL, start = Sys.Date() - 365*15,
+    k = 365*2, by = "1 days", prob = NULL, name = "DOB"){
+
+    if (is.null(x)){
+        x <- seq(start, length = k, by = by)
+    }
+
+    if (!inherits(x, c("Date", "POSIXct", "POSIXt"))) warning("`x`may not a date vector")
+
+    out <- sample(x = x, size = n, replace = TRUE, prob = prob)
+    if (!random) out <- sort(out)
+    varname(out, name)
+}
+
 
 
 #' @export

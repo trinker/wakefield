@@ -78,6 +78,26 @@ r_data_frame(n=100,
     r_dummy(sex, prefix=TRUE),
     r_dummy(political)
 )
+
+## `peek` to view al columns
+## `plot` (`table_heat`) for a graphic representation
+library(dplyr)
+
+r_data_frame(n=100,
+    id,
+    dob,
+    animal,
+    grade, grade,
+    death,
+    dummy,
+    grade_letter,
+    gender,
+    paragraph,
+    sentence
+) \%>\%
+   r_na() \%>\%
+   peek \%>\%
+   plot(palette = "Set1")
 }
 \author{
 Josh O'Brien and Tyler Rinker <tyler.rinker@gmail.com>.

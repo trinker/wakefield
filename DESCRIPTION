@@ -11,6 +11,7 @@ Depends:
     R (>= 3.1.3)
 Imports:
     chron,
+    ggplot2,
     dplyr,
     stringi
 Suggests:
@@ -71,6 +72,8 @@ Collate:
     'r_data.R'
     'r_data_frame.R'
     'r_dummy.R'
+    'seriesname.R'
+    'r_insert.R'
     'r_list.R'
     'r_na.R'
     'r_sample_integer.R'
@@ -79,12 +82,12 @@ Collate:
     'sat.R'
     'second.R'
     'sentence.R'
-    'seriesname.R'
     'sex.R'
     'smokes.R'
     'speed.R'
     'state.R'
     'string.R'
+    'table_heat.R'
     'time_stamp.R'
     'upper.R'
     'valid.R'

@@ -47,6 +47,11 @@ wakefield 0.1.0
 * `peek` added to allow a truncated head inspection of all columns of a
   `data.frame`.
 
+* `table_heat` & `plot.tbl_df` added to visualize column types & `NA`s.
+
+* `r_insert` added to safely insert `data.frame`s into a `r_data_frame` or
+  `r_list` object.
+
 &lt;b&gt;MINOR FEATURES&lt;/b&gt;
 
 * `seriesname` function added to give a `data.frame` an attribute `seriesname`.

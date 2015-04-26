@@ -5,11 +5,11 @@
 \alias{dob}
 \title{Generate Random Vector of Birth Dates}
 \usage{
-dob(n, random = TRUE, x = NULL, start = structure(11076, class = "Date"),
-  k = 730, by = "1 days", prob = NULL, name = "DOB")
+dob(n, random = TRUE, x = NULL, start = Sys.Date() - 365 * 15, k = 365 *
+  2, by = "1 days", prob = NULL, name = "DOB")
 
-birth(n, random = TRUE, x = NULL, start = structure(11076, class =
-  "Date"), k = 730, by = "1 days", prob = NULL, name = "Birth")
+birth(n, random = TRUE, x = NULL, start = Sys.Date() - 365 * 15, k = 365
+  * 2, by = "1 days", prob = NULL, name = "Birth")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within

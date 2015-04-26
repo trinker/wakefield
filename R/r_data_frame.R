@@ -71,6 +71,26 @@
 #'     r_dummy(sex, prefix=TRUE),
 #'     r_dummy(political)
 #' )
+#'
+#' ## `peek` to view al columns
+#' ## `plot` (`table_heat`) for a graphic representation
+#' library(dplyr)
+#'
+#' r_data_frame(n=100,
+#'     id,
+#'     dob,
+#'     animal,
+#'     grade, grade,
+#'     death,
+#'     dummy,
+#'     grade_letter,
+#'     gender,
+#'     paragraph,
+#'     sentence
+#' ) %>%
+#'    r_na() %>%
+#'    peek %>%
+#'    plot(palette = "Set1")
 r_data_frame <-
 function (n, ..., rep.sep = "_") {
     out <- r_list(n = n, ..., rep.sep = "_")
@@ -79,6 +99,13 @@ function (n, ..., rep.sep = "_") {
     cnames <- sapply(out, function(x) attributes(x)[["cname"]])
     nms <- as.list(names(out))
     nms[!sapply(cnames, is.null)] <- cnames[!sapply(cnames, is.null)]
+
+    ## If duplicate names exist fix their suffix
+    if (!is.null(rep.sep)){
+        nms <- ave(unlist(nms), unlist(nms), FUN = function(x) {
+            if (length(x) == 1) {x} else {paste(x, seq_along(x), sep = rep.sep)}
+        })
+    }
 
     out <- setNames(data.frame(out, stringsAsFactors = FALSE,
         check.names = FALSE), unlist(nms))
