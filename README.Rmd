@@ -6,8 +6,16 @@ regex <- "(^Version:\\s+)(\\d+\\.\\d+\\.\\d+)"
 loc <- grep(regex, desc)
 ver <- gsub(regex, "\\2", desc[loc])
 verbadge <- sprintf('<a href="https://img.shields.io/badge/Version-%s-orange.svg"><img src="https://img.shields.io/badge/Version-%s-orange.svg" alt="Version"/></a></p>', ver, ver)
-p_load(dplyr, wakefield)
+p_load(dplyr, wakefield, knitr)
 ````
+
+```{r, echo=FALSE}
+knit_hooks$set(htmlcap = function(before, options, envir) {
+  if(!before) {
+    paste('<p class="caption">',options$htmlcap,"</p>",sep="")
+    }
+    })
+```
 
 [![Project Status: Wip - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/0.1.0/wip.svg)](http://www.repostatus.org/#wip)
 [![Build Status](https://travis-ci.org/trinker/wakefield.svg?branch=master)](https://travis-ci.org/trinker/wakefield)
@@ -78,7 +86,7 @@ r_data_frame(
 
 There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types.
 
-```{r, results='asis', echo=FALSE, comment=NA, warning=FALSE}
+```{r, results='asis', echo=FALSE, comment=NA, warning=FALSE, htmlcap="Available variable functions"}
 x <- "age ; animal , pet ; answer ; area ; car ; children ; coin ; date_stamp ;
 death , died ; dice ; dna ; dummy ; education ; employment ; eye ; gpa , grade , grade_letter ; grade_level ;
 group ; hair ; height , height_cm , height_in ; income ; iq ; language ; level ; likert , likert_5 ,
@@ -96,8 +104,8 @@ matrix(c(sprintf("%s", vect), blanks), ncol=4) %>%
     print(type = 'html', include.colnames = FALSE, include.rownames = FALSE,
         html.table.attributes = '')
 
-matrix(c(sprintf("`%s`", vect), blanks), ncol=4) %>%
-    pandoc.table(format = "markdown", caption = "Available variable functions.")
+#matrix(c(sprintf("`%s`", vect), blanks), ncol=4) %>%
+#    pandoc.table(format = "markdown", caption = "Available variable functions.")
 ```
 
 However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:
