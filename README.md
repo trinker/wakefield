@@ -26,6 +26,14 @@ pacman::p_load_gh("trinker/wakefield")
     
 - [Package PDF Help Manual](https://dl.dropboxusercontent.com/u/61803503/wakefield.pdf)   
 
+
+## Contact
+
+You are welcome to:
+* submit suggestions and bug-reports at: <https://github.com/trinker/wakefield/issues>
+* send a pull request on: <https://github.com/trinker/wakefield/>
+* compose a friendly e-mail to: <tyler.rinker@gmail.com>
+
 ## Demonstration
 
 The `r_data_frame` function (random data frame) takes `n` (the number of rows) and any number of variables (columns).  These columns are typically produced from a **wakefield** variable function.  Each of these variable functions has a pre-set behavior that produces a named vector of n length, allowing the user to lazily pass unnamed functions (optionally, without call parenthesis).  The column name is hidden as a `varname` attribute.  For example here we see the `race` variable function:
@@ -408,12 +416,6 @@ r_data_frame(n=100,
 ## Variables not shown: Republican (int)
 ```
 
-## Contact
-
-You are welcome to:
-* submit suggestions and bug-reports at: <https://github.com/trinker/wakefield/issues>
-* send a pull request on: <https://github.com/trinker/wakefield/>
-* compose a friendly e-mail to: <tyler.rinker@gmail.com>
 
 
 
