@@ -95,7 +95,8 @@ panderOptions("table.style", "rmarkdown")
 
 matrix(c(sprintf("`%s`", vect), blanks), ncol=4) %>%
     xtable() %>%
-    print(type = 'html', include.colnames = FALSE, include.rownames = FALSE)
+    print(type = 'html', include.colnames = FALSE, include.rownames = FALSE,
+        html.table.attributes = '')
 ```
 
 However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:
