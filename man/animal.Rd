@@ -54,6 +54,7 @@ pie(table(pet(10000)))
 \seealso{
 Other variable.functions: \code{\link{age}};
   \code{\link{answer}}; \code{\link{area}};
+  \code{\link{birth}}, \code{\link{dob}};
   \code{\link{car}}; \code{\link{children}};
   \code{\link{coin}}; \code{\link{color}},
   \code{\link{primary}}; \code{\link{date_stamp}};

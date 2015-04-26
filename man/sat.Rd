@@ -44,6 +44,7 @@ interval(sat, 5, n = 1000)
 Other variable.functions: \code{\link{age}};
   \code{\link{animal}}, \code{\link{pet}};
   \code{\link{answer}}; \code{\link{area}};
+  \code{\link{birth}}, \code{\link{dob}};
   \code{\link{car}}; \code{\link{children}};
   \code{\link{coin}}; \code{\link{color}},
   \code{\link{primary}}; \code{\link{date_stamp}};

@@ -53,6 +53,7 @@ date_stamp(10, x = seq(as.Date("1980-11-16"), length = 30, by = "1 years"))
 Other variable.functions: \code{\link{age}};
   \code{\link{animal}}, \code{\link{pet}};
   \code{\link{answer}}; \code{\link{area}};
+  \code{\link{birth}}, \code{\link{dob}};
   \code{\link{car}}; \code{\link{children}};
   \code{\link{coin}}; \code{\link{color}},
   \code{\link{primary}}; \code{\link{death}},

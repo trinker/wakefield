@@ -32,7 +32,8 @@ interval(age, 3, n = 1000)
 \seealso{
 Other variable.functions: \code{\link{animal}},
   \code{\link{pet}}; \code{\link{answer}};
-  \code{\link{area}}; \code{\link{car}};
+  \code{\link{area}}; \code{\link{birth}},
+  \code{\link{dob}}; \code{\link{car}};
   \code{\link{children}}; \code{\link{coin}};
   \code{\link{color}}, \code{\link{primary}};
   \code{\link{date_stamp}}; \code{\link{death}},

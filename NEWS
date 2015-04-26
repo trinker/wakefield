@@ -42,6 +42,8 @@ NEW FEATURES
 
 * `r_dummy` added to produce multiple dummy columns from a single factor.
 
+* `dob` and `birth` functions added for date of birth variable.
+
 MINOR FEATURES
 
 * `seriesname` function added to give a `data.frame` an attribute `seriesname`.

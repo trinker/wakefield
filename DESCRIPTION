@@ -38,6 +38,7 @@ Collate:
     'death.R'
     'dice.R'
     'dna.R'
+    'dob.R'
     'dummy.R'
     'education.R'
     'employment.R'

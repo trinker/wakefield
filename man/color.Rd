@@ -46,6 +46,7 @@ barplot(tab <- table(primary(10000, prob = probs(6))), col = names(tab))
 Other variable.functions: \code{\link{age}};
   \code{\link{animal}}, \code{\link{pet}};
   \code{\link{answer}}; \code{\link{area}};
+  \code{\link{birth}}, \code{\link{dob}};
   \code{\link{car}}; \code{\link{children}};
   \code{\link{coin}}; \code{\link{date_stamp}};
   \code{\link{death}}, \code{\link{died}};
