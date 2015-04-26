@@ -65,6 +65,7 @@ Collate:
     'wakefield-package.R'
     'r_sample_replace.R'
     'name.R'
+    'peek.R'
     'political.R'
     'probs.R'
     'r_data.R'

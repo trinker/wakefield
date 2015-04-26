@@ -42,6 +42,11 @@ wakefield 0.1.0
 
 * `r_dummy` added to produce multiple dummy columns from a single factor.
 
+* `dob` and `birth` functions added for date of birth variable.
+
+* `peek` added to allow a truncated head inspection of all columns of a
+  `data.frame`.
+
 &lt;b&gt;MINOR FEATURES&lt;/b&gt;
 
 * `seriesname` function added to give a `data.frame` an attribute `seriesname`.

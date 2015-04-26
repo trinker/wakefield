@@ -15,6 +15,7 @@
 #' @return Returns a random factor vector of gender elements.
 #' @keywords sex gender
 #' @export
+#' @rdname sex
 #' @include utils.R r_sample_binary.R
 #' @family variable functions
 #' @examples
@@ -26,4 +27,9 @@ sex <- hijack(r_sample_binary_factor,
     prob = (x <- c(105, 100))/sum(x)
 )
 
+#' @export
+#' @rdname sex
+gender <- hijack(sex,
+    name = "Gender"
+)
 

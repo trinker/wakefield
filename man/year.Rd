@@ -41,6 +41,7 @@ Other variable.functions: \code{\link{age}};
   \code{\link{dice}}; \code{\link{dna}};
   \code{\link{dummy}}; \code{\link{education}};
   \code{\link{employment}}; \code{\link{eye}};
+  \code{\link{gender}}, \code{\link{sex}};
   \code{\link{gpa}}, \code{\link{grade}},
   \code{\link{grade_letter}}; \code{\link{grade_level}};
   \code{\link{group}}; \code{\link{hair}};
@@ -56,11 +57,11 @@ Other variable.functions: \code{\link{age}};
   \code{\link{name}}; \code{\link{normal}},
   \code{\link{normal_round}}; \code{\link{political}};
   \code{\link{race}}; \code{\link{sat}};
-  \code{\link{sentence}}; \code{\link{sex}};
-  \code{\link{smokes}}; \code{\link{speed}},
-  \code{\link{speed_kph}}, \code{\link{speed_mph}};
-  \code{\link{state}}; \code{\link{string}};
-  \code{\link{valid}}; \code{\link{zip_code}}
+  \code{\link{sentence}}; \code{\link{smokes}};
+  \code{\link{speed}}, \code{\link{speed_kph}},
+  \code{\link{speed_mph}}; \code{\link{state}};
+  \code{\link{string}}; \code{\link{valid}};
+  \code{\link{zip_code}}
 }
 \keyword{year}
 

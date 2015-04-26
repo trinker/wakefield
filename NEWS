@@ -44,6 +44,9 @@ NEW FEATURES
 
 * `dob` and `birth` functions added for date of birth variable.
 
+* `peek` added to allow a truncated head inspection of all columns of a
+  `data.frame`.
+
 MINOR FEATURES
 
 * `seriesname` function added to give a `data.frame` an attribute `seriesname`.
