@@ -127,7 +127,42 @@ r_data_frame(
 ```
 
 
-There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types. However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:
+There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types.
+
+
++--------------+----------------+----------------+----------------+
+|    `age`     |     `eye`      |   `likert_5`   |   `sentence`   |
++--------------+----------------+----------------+----------------+
+|   `animal`   |     `gpa`      |   `likert_7`   |     `sex`      |
++--------------+----------------+----------------+----------------+
+|   `answer`   |    `grade`     | `lorem_ipsum`  |    `smokes`    |
++--------------+----------------+----------------+----------------+
+|    `area`    | `grade_letter` |    `lower`     |    `speed`     |
++--------------+----------------+----------------+----------------+
+|    `car`     | `grade_level`  | `lower_factor` |  `speed_kph`   |
++--------------+----------------+----------------+----------------+
+|  `children`  |    `group`     |   `marital`    |  `speed_mph`   |
++--------------+----------------+----------------+----------------+
+|    `coin`    |     `hair`     |    `month`     |    `state`     |
++--------------+----------------+----------------+----------------+
+| `date_stamp` |    `height`    |     `name`     |    `string`    |
++--------------+----------------+----------------+----------------+
+|   `death`    |  `height_cm`   |    `normal`    |    `upper`     |
++--------------+----------------+----------------+----------------+
+|    `dice`    |  `height_in`   | `normal_round` | `upper_factor` |
++--------------+----------------+----------------+----------------+
+|    `died`    |    `income`    |  `paragraph`   |    `valid`     |
++--------------+----------------+----------------+----------------+
+|    `dna`     |      `iq`      |     `pet`      |     `year`     |
++--------------+----------------+----------------+----------------+
+|   `dummy`    |   `language`   |  `political`   |   `zip_code`   |
++--------------+----------------+----------------+----------------+
+| `education`  |    `level`     |     `race`     |                |
++--------------+----------------+----------------+----------------+
+| `empoyment`  |    `likert`    |     `sat`      |                |
++--------------+----------------+----------------+----------------+
+
+However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:
 
 
 ```r
