@@ -15,7 +15,8 @@ knit_hooks$set(htmlcap = function(before, options, envir) {
     paste('<p class="caption"><b><em>',options$htmlcap,"</em></b></p>",sep="")
     }
     })
-opts_knit$set(self.contained = TRUE, cache = FALSE)
+knitr::opts_knit$set(self.contained = TRUE, cache = FALSE)
+knitr::opts_chunk$set(fig.path = "inst/figure/")
 ```
 
 [![Project Status: Wip - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/0.1.0/wip.svg)](http://www.repostatus.org/#wip)
@@ -257,7 +258,7 @@ r_data_frame(n=100,
     sentence
 ) %>%
    r_na() %>%
-   plot(palette = "Set1")
+   plot(palette = "Set1", flip = TRUE)
 ```
 
 
