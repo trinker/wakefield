@@ -78,7 +78,7 @@ r_data_frame(
 
 There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types.
 
-```{r, echo=FALSE, results='asis', warning=FALSE}
+```{r, results='asis', echo=FALSE, comment=NA, warning=FALSE}
 x <- "age ; animal , pet ; answer ; area ; car ; children ; coin ; date_stamp ;
 death , died ; dice ; dna ; dummy ; education ; empoyment ; eye ; gpa , grade , grade_letter ; grade_level ;
 group ; hair ; height , height_cm , height_in ; income ; iq ; language ; level ; likert , likert_5 ,
@@ -86,13 +86,16 @@ likert_7 ; lorem_ipsum , paragraph ; lower , lower_factor , upper , upper_factor
 month ; name ; normal , normal_round ; political ; race ; sat ; sentence ; sex ; smokes ; speed ,
 speed_kph , speed_mph ; state ; string ; valid ; year ; zip_code"
 
-p_load(pander)
+p_load(xtable)
 
 vect <- sort(strsplit(x, "\\s*[;,]\\s*")[[1]])
 blanks <- rep("", 4 * (ceiling(length(vect)/4) - length(vect)/4))
 
+panderOptions("table.style", "rmarkdown")
+
 matrix(c(sprintf("`%s`", vect), blanks), ncol=4) %>%
-    pandoc.table(style = "grid")
+    xtable() %>%
+    print(type = 'html', include.colnames = FALSE, include.rownames = FALSE)
 ```
 
 However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:

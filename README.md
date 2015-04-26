@@ -129,38 +129,25 @@ r_data_frame(
 
 There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types.
 
-
-+--------------+----------------+----------------+----------------+
-|    `age`     |     `eye`      |   `likert_5`   |   `sentence`   |
-+--------------+----------------+----------------+----------------+
-|   `animal`   |     `gpa`      |   `likert_7`   |     `sex`      |
-+--------------+----------------+----------------+----------------+
-|   `answer`   |    `grade`     | `lorem_ipsum`  |    `smokes`    |
-+--------------+----------------+----------------+----------------+
-|    `area`    | `grade_letter` |    `lower`     |    `speed`     |
-+--------------+----------------+----------------+----------------+
-|    `car`     | `grade_level`  | `lower_factor` |  `speed_kph`   |
-+--------------+----------------+----------------+----------------+
-|  `children`  |    `group`     |   `marital`    |  `speed_mph`   |
-+--------------+----------------+----------------+----------------+
-|    `coin`    |     `hair`     |    `month`     |    `state`     |
-+--------------+----------------+----------------+----------------+
-| `date_stamp` |    `height`    |     `name`     |    `string`    |
-+--------------+----------------+----------------+----------------+
-|   `death`    |  `height_cm`   |    `normal`    |    `upper`     |
-+--------------+----------------+----------------+----------------+
-|    `dice`    |  `height_in`   | `normal_round` | `upper_factor` |
-+--------------+----------------+----------------+----------------+
-|    `died`    |    `income`    |  `paragraph`   |    `valid`     |
-+--------------+----------------+----------------+----------------+
-|    `dna`     |      `iq`      |     `pet`      |     `year`     |
-+--------------+----------------+----------------+----------------+
-|   `dummy`    |   `language`   |  `political`   |   `zip_code`   |
-+--------------+----------------+----------------+----------------+
-| `education`  |    `level`     |     `race`     |                |
-+--------------+----------------+----------------+----------------+
-| `empoyment`  |    `likert`    |     `sat`      |                |
-+--------------+----------------+----------------+----------------+
+<!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
+<!-- Sat Apr 25 23:15:05 2015 -->
+<table border=1>
+  <tr> <td> `age` </td> <td> `eye` </td> <td> `likert_5` </td> <td> `sentence` </td> </tr>
+  <tr> <td> `animal` </td> <td> `gpa` </td> <td> `likert_7` </td> <td> `sex` </td> </tr>
+  <tr> <td> `answer` </td> <td> `grade` </td> <td> `lorem_ipsum` </td> <td> `smokes` </td> </tr>
+  <tr> <td> `area` </td> <td> `grade_letter` </td> <td> `lower` </td> <td> `speed` </td> </tr>
+  <tr> <td> `car` </td> <td> `grade_level` </td> <td> `lower_factor` </td> <td> `speed_kph` </td> </tr>
+  <tr> <td> `children` </td> <td> `group` </td> <td> `marital` </td> <td> `speed_mph` </td> </tr>
+  <tr> <td> `coin` </td> <td> `hair` </td> <td> `month` </td> <td> `state` </td> </tr>
+  <tr> <td> `date_stamp` </td> <td> `height` </td> <td> `name` </td> <td> `string` </td> </tr>
+  <tr> <td> `death` </td> <td> `height_cm` </td> <td> `normal` </td> <td> `upper` </td> </tr>
+  <tr> <td> `dice` </td> <td> `height_in` </td> <td> `normal_round` </td> <td> `upper_factor` </td> </tr>
+  <tr> <td> `died` </td> <td> `income` </td> <td> `paragraph` </td> <td> `valid` </td> </tr>
+  <tr> <td> `dna` </td> <td> `iq` </td> <td> `pet` </td> <td> `year` </td> </tr>
+  <tr> <td> `dummy` </td> <td> `language` </td> <td> `political` </td> <td> `zip_code` </td> </tr>
+  <tr> <td> `education` </td> <td> `level` </td> <td> `race` </td> <td>  </td> </tr>
+  <tr> <td> `empoyment` </td> <td> `likert` </td> <td> `sat` </td> <td>  </td> </tr>
+   </table>
 
 However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:
 
