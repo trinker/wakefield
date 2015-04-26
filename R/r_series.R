@@ -7,6 +7,8 @@
 #' @param j The number of columns to produce.
 #' @param n The number of rows to produce.
 #' @param \ldots Additional arguments passed to \code{fun}.
+#' @param integer logical.  If \code{TRUE} factor columns will be coerced to
+#' integer.
 #' @param rep.sep A separator to use for repeated variable names.  For example
 #' if the \code{\link[wakefield]{age}} is used three times
 #' (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
@@ -24,8 +26,8 @@
 #' r_series(likert, 5, 10, name = "Question")
 #'
 #' ## Convert factors to integers
-#' as_integer(r_series(likert_7, 5, 10))
-r_series <- function(fun, j, n, ..., rep.sep = "_") {
+#' r_series(likert_7, 5, 10, integer = TRUE)
+r_series <- function(fun, j, n, ..., integer = FALSE, rep.sep = "_") {
 
     out <- lapply(seq_len(j), function(i){
         fun(n = n, ...)
@@ -33,6 +35,10 @@ r_series <- function(fun, j, n, ..., rep.sep = "_") {
 
     names(out) <- paste(attributes(out[[1]])[["varname"]], seq_len(j),sep = rep.sep)
 
-    seriesname(dplyr::tbl_df(as.data.frame(out)), attributes(out[[1]])[["varname"]])
+    out <- seriesname(dplyr::tbl_df(as.data.frame(out)), attributes(out[[1]])[["varname"]])
+
+    if (isTRUE(integer)) out <- as_integer(out)
+
+    out
 }
 

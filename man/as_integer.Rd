@@ -4,10 +4,14 @@
 \alias{as_integer}
 \title{Convert a Factor Data Frame to Integer}
 \usage{
-as_integer(x, fun = as.integer)
+as_integer(x, cols = NULL, fun = as.integer)
 }
 \arguments{
 \item{x}{A \code{\link[base]{data.frame}} of \code{\link[base]{factor}}s.}
+
+\item{cols}{Numeric indices of the columns to icude (use \code{-} to explcude
+as well).  Default is to assign random \code{NA}s to al columns except the
+first column.}
 
 \item{fun}{An \code{as.} coercion function to apply to each column.  Default
 is \code{\link[base]{as.integer}}.}
@@ -22,6 +26,16 @@ integers.
 }
 \examples{
 as_integer(r_series(likert_7, 5, 10))
+as_integer(r_series(likert_7, 5, 10), cols = c(2, 4))
+
+library(dplyr)
+r_data_frame(n=100,
+    age,
+    political,
+    sex,
+    grade
+) \%>\%
+    as_integer(2:3)
 }
 \seealso{
 \code{\link[wakefield]{r_series}}

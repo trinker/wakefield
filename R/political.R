@@ -15,7 +15,7 @@
 #' }
 #'
 #' @inheritParams r_sample_factor
-#' @return Returns a random vector of political party elements.
+#' @return Returns a random factor vector of political party elements.
 #' @keywords poitical politics republican democrat
 #' @export
 #' @include utils.R r_sample.R
@@ -23,7 +23,7 @@
 #' @examples
 #' political(10)
 #' barplot(table(political(10000)))
-political <- hijack(r_sample,
+political <- hijack(r_sample_factor,
     name = "Political",
     x = c("Constitution", "Democrat", "Green", "Libertarian", "Republican"),
     prob = c(0.577269133302094, 0.410800432748879, 0.00491084954793489,

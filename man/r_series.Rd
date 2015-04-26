@@ -4,7 +4,7 @@
 \alias{r_series}
 \title{Data Frame Series (Repeated Measures)}
 \usage{
-r_series(fun, j, n, ..., rep.sep = "_")
+r_series(fun, j, n, ..., integer = FALSE, rep.sep = "_")
 }
 \arguments{
 \item{fun}{A \pkg{waefield} variable function.}
@@ -12,6 +12,9 @@ r_series(fun, j, n, ..., rep.sep = "_")
 \item{j}{The number of columns to produce.}
 
 \item{n}{The number of rows to produce.}
+
+\item{integer}{logical.  If \code{TRUE} factor columns will be coerced to
+integer.}
 
 \item{rep.sep}{A separator to use for repeated variable names.  For example
 if the \code{\link[wakefield]{age}} is used three times
@@ -34,7 +37,7 @@ r_series(grade, 5, 10)
 r_series(likert, 5, 10, name = "Question")
 
 ## Convert factors to integers
-as_integer(r_series(likert_7, 5, 10))
+r_series(likert_7, 5, 10, integer = TRUE)
 }
 \references{
 \url{https://github.com/trinker/wakefield/issues/1/#issuecomment-96166910}

@@ -82,6 +82,17 @@ r_data_frame(
 )
 ```
 
+
+```{r}
+r_data_frame(
+    n = 500,
+    id,
+    age, age, age,
+    grade, grade, grade
+)
+```
+
+
 While, passing variable functions to `r_data_frame` without call parenthesis is handy the user may wish to set arguments.  This can be done through call parenthesis as we do with `data.frame` or `dplyr::data_frame`:
 
 ```{r}
@@ -161,7 +172,7 @@ r_data_frame(n=100,
     id,
     age,
     sex,
-    as_integer(r_series(likert, j = 5, n = 100, name = "Item"))
+    r_series(likert, 5, name = "Item", integer = TRUE)
 )
 ```
 

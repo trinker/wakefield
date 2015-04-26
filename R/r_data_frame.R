@@ -22,8 +22,7 @@
 #' \code{\link[wakefield]{r_series}}
 #' \code{\link[wakefield]{r_dummy}}
 #' @examples
-#' r_data_frame(
-#'     n = 30,
+#' r_data_frame(n = 30,
 #'     id,
 #'     race,
 #'     age,
@@ -36,8 +35,7 @@
 #'     Smoker = valid
 #' )
 #'
-#' r_data_frame(
-#'     n = 30,
+#' r_data_frame(n = 30,
 #'     id,
 #'     race,
 #'     age(x = 8:14),
@@ -51,12 +49,19 @@
 #'     Smoker = valid
 #' )
 #'
+#' r_data_frame(n = 500,
+#'     id,
+#'     age, age, age,
+#'     grade, grade, grade
+#' )
+#'
 #' ## Repeated Measures/Time Series
 #' r_data_frame(n=100,
 #'     id,
 #'     age,
 #'     sex,
-#'     r_series(likert, 3)
+#'     r_series(likert, 3),
+#'     r_series(likert, 4, name = "Item", integer = TRUE)
 #' )
 #'
 #' ## Expanded Dummy Coded Variables
