@@ -12,7 +12,7 @@ p_load(dplyr, wakefield, knitr)
 ```{r, echo=FALSE}
 knit_hooks$set(htmlcap = function(before, options, envir) {
   if(!before) {
-    paste('<p class="caption">',options$htmlcap,"</p>",sep="")
+    paste('<p class="caption" style="color:blue"><em>',options$htmlcap,"</em></p>",sep="")
     }
     })
 ```
@@ -86,7 +86,7 @@ r_data_frame(
 
 There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types.
 
-```{r, results='asis', echo=FALSE, comment=NA, warning=FALSE, htmlcap="Available variable functions"}
+```{r, results='asis', echo=FALSE, comment=NA, warning=FALSE, htmlcap="Available Variable Functions"}
 x <- "age ; animal , pet ; answer ; area ; car ; children ; coin ; date_stamp ;
 death , died ; dice ; dna ; dummy ; education ; employment ; eye ; gpa , grade , grade_letter ; grade_level ;
 group ; hair ; height , height_cm , height_in ; income ; iq ; language ; level ; likert , likert_5 ,
