@@ -78,10 +78,14 @@ print.available <- function(x, ...){
 get_variable_functions <- function(){
 
     db <- tools::Rd_db("wakefield")
-    zipfl <- db[["zip_code.Rd"]]
-    funs <- tools:::.Rd_get_metadata(zipfl, "seealso")
-    funs <- funs[grepl("^list\\(list\\(", funs)]
-    funs <- gsub("(^list\\(list\\(\")|(\"\\)\\))", "", funs)
+    zipfl <- as.character(db[["zip_code.Rd"]])
+
+    seealso <- 1 + grep("Other variable.functions: ", zipfl, ignore.case=TRUE)
+    exmpls <- -1 + grep("\\\\examples", zipfl, ignore.case=TRUE)
+
+    funs <- paste(zipfl[seealso:exmpls], collapse="")
+    funs <- regmatches(funs, gregexpr("(?<=link\\{)(.*?)(?=\\})", funs, perl=TRUE))[[1]]
+
     sort(unique(c(funs, "zip_code")))
 
 }
