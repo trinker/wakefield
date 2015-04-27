@@ -100,10 +100,12 @@ zip_code"
 
 p_load(pander, xtable)
 
-vect <- sort(strsplit(x, "\\s*[;,]\\s*")[[1]])
-blanks <- rep("", 4 * (ceiling(length(vect)/4) - length(vect)/4))
+ncols <- 5
 
-matrix(c(sprintf("%s", vect), blanks), ncol=4) %>%
+vect <- sort(strsplit(x, "\\s*[;,]\\s*")[[1]])
+blanks <- rep("", ncols * (ceiling(length(vect)/ncols) - length(vect)/ncols))
+
+matrix(c(sprintf("%s", vect), blanks), ncol=ncols) %>%
     xtable() %>%
     print(type = 'html', include.colnames = FALSE, include.rownames = FALSE,
         html.table.attributes = '')

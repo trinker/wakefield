@@ -133,24 +133,21 @@ r_data_frame(
 There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types.
 
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Sun Apr 26 23:17:52 2015 -->
+<!-- Sun Apr 26 23:20:40 2015 -->
 <table >
-  <tr> <td> age </td> <td> education </td> <td> likert </td> <td> race </td> </tr>
-  <tr> <td> animal </td> <td> employment </td> <td> likert_5 </td> <td> sat </td> </tr>
-  <tr> <td> answer </td> <td> eye </td> <td> likert_7 </td> <td> sentence </td> </tr>
-  <tr> <td> area </td> <td> gender </td> <td> lorem_ipsum </td> <td> sex </td> </tr>
-  <tr> <td> birth </td> <td> gpa </td> <td> lower </td> <td> smokes </td> </tr>
-  <tr> <td> car </td> <td> grade </td> <td> lower_factor </td> <td> speed </td> </tr>
-  <tr> <td> children </td> <td> grade_letter </td> <td> marital </td> <td> speed_kph </td> </tr>
-  <tr> <td> coin </td> <td> group </td> <td> military </td> <td> speed_mph </td> </tr>
-  <tr> <td> color </td> <td> hair </td> <td> month </td> <td> state </td> </tr>
-  <tr> <td> date_stamp </td> <td> height </td> <td> name </td> <td> string </td> </tr>
-  <tr> <td> death </td> <td> height_cm </td> <td> normal </td> <td> upper </td> </tr>
-  <tr> <td> dice </td> <td> height_in </td> <td> normal_round </td> <td> upper_factor </td> </tr>
-  <tr> <td> died </td> <td> income </td> <td> paragraph </td> <td> valid </td> </tr>
-  <tr> <td> dna </td> <td> iq </td> <td> pet </td> <td> year </td> </tr>
-  <tr> <td> dob </td> <td> language </td> <td> political </td> <td> zip_code </td> </tr>
-  <tr> <td> dummy </td> <td> level </td> <td> primary </td> <td>  </td> </tr>
+  <tr> <td> age </td> <td> dna </td> <td> height_cm </td> <td> military </td> <td> smokes </td> </tr>
+  <tr> <td> animal </td> <td> dob </td> <td> height_in </td> <td> month </td> <td> speed </td> </tr>
+  <tr> <td> answer </td> <td> dummy </td> <td> income </td> <td> name </td> <td> speed_kph </td> </tr>
+  <tr> <td> area </td> <td> education </td> <td> iq </td> <td> normal </td> <td> speed_mph </td> </tr>
+  <tr> <td> birth </td> <td> employment </td> <td> language </td> <td> normal_round </td> <td> state </td> </tr>
+  <tr> <td> car </td> <td> eye </td> <td> level </td> <td> paragraph </td> <td> string </td> </tr>
+  <tr> <td> children </td> <td> gender </td> <td> likert </td> <td> pet </td> <td> upper </td> </tr>
+  <tr> <td> coin </td> <td> gpa </td> <td> likert_5 </td> <td> political </td> <td> upper_factor </td> </tr>
+  <tr> <td> color </td> <td> grade </td> <td> likert_7 </td> <td> primary </td> <td> valid </td> </tr>
+  <tr> <td> date_stamp </td> <td> grade_letter </td> <td> lorem_ipsum </td> <td> race </td> <td> year </td> </tr>
+  <tr> <td> death </td> <td> group </td> <td> lower </td> <td> sat </td> <td> zip_code </td> </tr>
+  <tr> <td> dice </td> <td> hair </td> <td> lower_factor </td> <td> sentence </td> <td>  </td> </tr>
+  <tr> <td> died </td> <td> height </td> <td> marital </td> <td> sex </td> <td>  </td> </tr>
    </table>
 <p class="caption"><b><em>Available Variable Functions</em></b></p>
 
