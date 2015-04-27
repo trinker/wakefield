@@ -4,8 +4,8 @@
 \alias{military}
 \title{Generate Random Vector of Military Branches}
 \usage{
-military(n, x = c("Army", "Marine Corps", "Navy", "Air Force", "Coast Guard"),
-  prob = c(0.3785, 0.1366, 0.2218, 0.2334, 0.0296), name = "Military")
+military(n, x = c("Army", "Air Force", "Navy", "Marine Corps", "Coast Guard"),
+  prob = c(0.3785, 0.2334, 0.2218, 0.1366, 0.0296), name = "Military")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -32,9 +32,9 @@ military make-up:
 \tabular{lrr}{
   \bold{ Branch} \tab \bold{N} \tab \bold{Percent} \cr
   Army         \tab 541,291 \tab 37.9\%\cr
-  Marine Corps \tab 195,338 \tab 13.7\%\cr
-  Navy         \tab 317,237 \tab 22.2\%\cr
   Air Force    \tab 333,772 \tab 23.3\%\cr
+  Navy         \tab 317,237 \tab 22.2\%\cr
+  Marine Corps \tab 195,338 \tab 13.7\%\cr
   Coast Guard  \tab 42,357  \tab 3.0\%\cr
 }
 }
