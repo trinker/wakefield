@@ -90,22 +90,9 @@ r_data_frame(
 There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types.
 
 ```{r, results='asis', echo=FALSE, comment=NA, warning=FALSE, htmlcap="Available Variable Functions"}
-x <- "age ; animal , pet ; answer ; area ; birth , dob ; car ; children ; coin ;
-color , primary ; date_stamp ; death , died ; dice ; dna ; dummy ; education ; employment ; eye ;
-gender , sex ; gpa , grade , grade_letter ; group ; hair ; height , height_cm , height_in ; income ;
-iq ; language ; level ; likert , likert_5 , likert_7 ; lorem_ipsum , paragraph ; lower , lower_factor ,
-upper , upper_factor ; marital ; military ; month ; name ; normal , normal_round ; political ;
-race ; sat ; sentence ; smokes ; speed , speed_kph , speed_mph ; state ; string ; valid ; year ;
-zip_code"
-
 p_load(pander, xtable)
 
-ncols <- 5
-
-vect <- sort(strsplit(x, "\\s*[;,]\\s*")[[1]])
-blanks <- rep("", ncols * (ceiling(length(vect)/ncols) - length(vect)/ncols))
-
-matrix(c(sprintf("%s", vect), blanks), ncol=ncols) %>%
+variables("matrix") %>%
     xtable() %>%
     print(type = 'html', include.colnames = FALSE, include.rownames = FALSE,
         html.table.attributes = '')

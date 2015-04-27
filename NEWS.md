@@ -20,11 +20,11 @@ And constructed with the following guidelines:
 wakefield 0.1.0
 ----------------------------------------------------------------
 
-**BUG FIXES**
+&lt;b&gt;BUG FIXES&lt;/b&gt;
 
 * `employment` was misspelled as `empoyment`.  Caught by Danilo Freire (<a href="https://github.com/trinker/wakefield/issues/2">issue #2</a>).
 
-**NEW FEATURES**
+&lt;b&gt;NEW FEATURES&lt;/b&gt;
 
 * `r_list` & `r_data_frame` now add a suffix to repeat variable names in a
   sensible way.  The separator is controlled by `rep.sep`.  Suggested by
@@ -54,14 +54,16 @@ wakefield 0.1.0
 
 * `military` added as a random military branch varaible function.
 
-**MINOR FEATURES**
+* `variables` added to view the available variable functions.
+
+&lt;b&gt;MINOR FEATURES&lt;/b&gt;
 
 * `seriesname` function added to give a `data.frame` an attribute `seriesname`.
   Typicaly this is for internal use.
 
 IMPROVEMENTS
 
-**CHANGES**
+&lt;b&gt;CHANGES&lt;/b&gt;
 
 
 wakefield 0.0.1

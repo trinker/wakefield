@@ -54,6 +54,8 @@ NEW FEATURES
 
 * `military` added as a random military branch varaible function.
 
+* `variables` added to view the available variable functions.
+
 MINOR FEATURES
 
 * `seriesname` function added to give a `data.frame` an attribute `seriesname`.
