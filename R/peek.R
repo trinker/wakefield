@@ -106,7 +106,21 @@ function(x, n=10, width=10, ...) {
     header <- "Source: local data frame [%s x %s]\n\n"
     cat(sprintf(header, nrow(x), ncol(x)))
 
-    print(o)
+    out <- capture.output(o)
+    fill <- tail(out, 1)
+
+    nth_row <- paste(c(
+        paste(rep(".", nchar(nrow(o))), collapse = ""),
+        sapply(1:ncol(o), function(i) {
+            elems <- c(colnames(o)[i], as.character(o[[i]]))
+            lens <- max(nchar(elems))
+            if (lens <= 3) return(paste(c(" ", rep(".", lens)), collapse=""))
+            paste(c(rep(" ", (lens + 1) - 3), "..."), collapse = "")
+        })),
+        collapse = ""
+    )
+
+    cat(paste(c(out, nth_row), collapse="\n"), "\n")
 
     options(width=WD)
     invisible(x)
