@@ -242,7 +242,7 @@ r_data_frame(n=100,
 
 It is helpful to see the column types and `NA`s as a visualization.  The `table_heat` (the `plot` method assigned to `tbl_df` as well).
 
-```{r}
+```{r, fig.height=7, fig.width=11}
 set.seed(10)
 
 r_data_frame(n=100,
@@ -258,7 +258,7 @@ r_data_frame(n=100,
     sentence
 ) %>%
    r_na() %>%
-   plot(palette = "Set1", flip = TRUE)
+   plot(palette = "Set1")
 ```
 
 
