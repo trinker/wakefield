@@ -12,7 +12,10 @@ character evctor), \code{"matrix"}, or \code{"list"}; or the user may extract
 a specific type from a list using:
 \code{"character"}, \code{"date"}, \code{"factor"}, \code{"integer"},
 \code{"logical"}, \code{"numeric"}, \code{"ordered factor"}.  Setting
-\code{type = TRUE} will also return a \code{\link[base]{list}}.}
+\code{type = TRUE} will also return a \code{\link[base]{list}}.
+The \code{\link[base]{list}} version breaks the variable functions into
+classes.  Specifying a specific class (e.g., \code{type = "numeric"} will
+list only variable functions that yield a numeric output.}
 
 \item{ncols}{The number of columns to use if \code{type = "matrix"}.}
 
