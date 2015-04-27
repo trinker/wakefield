@@ -53,15 +53,15 @@ Other variable.functions: \code{\link{age}};
   \code{\link{paragraph}}; \code{\link{lower}},
   \code{\link{lower_factor}}, \code{\link{upper}},
   \code{\link{upper_factor}}; \code{\link{marital}};
-  \code{\link{month}}; \code{\link{name}};
-  \code{\link{normal}}, \code{\link{normal_round}};
-  \code{\link{political}}; \code{\link{race}};
-  \code{\link{sat}}; \code{\link{sentence}};
-  \code{\link{smokes}}; \code{\link{speed}},
-  \code{\link{speed_kph}}, \code{\link{speed_mph}};
-  \code{\link{state}}; \code{\link{string}};
-  \code{\link{valid}}; \code{\link{year}};
-  \code{\link{zip_code}}
+  \code{\link{military}}; \code{\link{month}};
+  \code{\link{name}}; \code{\link{normal}},
+  \code{\link{normal_round}}; \code{\link{political}};
+  \code{\link{race}}; \code{\link{sat}};
+  \code{\link{sentence}}; \code{\link{smokes}};
+  \code{\link{speed}}, \code{\link{speed_kph}},
+  \code{\link{speed_mph}}; \code{\link{state}};
+  \code{\link{string}}; \code{\link{valid}};
+  \code{\link{year}}; \code{\link{zip_code}}
 }
 \keyword{grade}
 

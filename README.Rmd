@@ -21,8 +21,8 @@ knitr::opts_chunk$set(fig.path = "inst/figure/")
 
 [![Project Status: Wip - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/0.1.0/wip.svg)](http://www.repostatus.org/#wip)
 [![Build Status](https://travis-ci.org/trinker/wakefield.svg?branch=master)](https://travis-ci.org/trinker/wakefield)
-[![DOI](https://zenodo.org/badge/5398/trinker/wakefield.svg)](http://dx.doi.org/10.5281/zenodo.17172)
 [![Coverage Status](https://coveralls.io/repos/trinker/wakefield/badge.svg?branch=master)](https://coveralls.io/r/trinker/wakefield?branch=master)
+[![DOI](https://zenodo.org/badge/5398/trinker/wakefield.svg)](http://dx.doi.org/10.5281/zenodo.17172)
 `r verbadge`
 
 **wakefield** is designed to quickly generate random data sets.  The user passes `n` (number of rows) and predefined vectors to the `r_data_frame` function to produce a `dplyr::tbl_df` object.
@@ -94,8 +94,9 @@ x <- "age ; animal , pet ; answer ; area ; birth , dob ; car ; children ; coin ;
 color , primary ; date_stamp ; death , died ; dice ; dna ; dummy ; education ; employment ; eye ;
 gender , sex ; gpa , grade , grade_letter ; group ; hair ; height , height_cm , height_in ; income ;
 iq ; language ; level ; likert , likert_5 , likert_7 ; lorem_ipsum , paragraph ; lower , lower_factor ,
-upper , upper_factor ; marital ; month ; name ; normal , normal_round ; political ; race ; sat ;
-sentence ; smokes ; speed , speed_kph , speed_mph ; state ; string ; valid ; year ; zip_code"
+upper , upper_factor ; marital ; military ; month ; name ; normal , normal_round ; political ;
+race ; sat ; sentence ; smokes ; speed , speed_kph , speed_mph ; state ; string ; valid ; year ;
+zip_code"
 
 p_load(pander, xtable)
 

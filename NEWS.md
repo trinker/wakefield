@@ -52,6 +52,8 @@ wakefield 0.1.0
 * `r_insert` added to safely insert `data.frame`s into a `r_data_frame` or
   `r_list` object.
 
+* `military` added as a random military branch varaible function.
+
 **MINOR FEATURES**
 
 * `seriesname` function added to give a `data.frame` an attribute `seriesname`.

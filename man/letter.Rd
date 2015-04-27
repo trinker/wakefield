@@ -75,15 +75,16 @@ Other variable.functions: \code{\link{age}};
   \code{\link{level}}; \code{\link{likert}},
   \code{\link{likert_5}}, \code{\link{likert_7}};
   \code{\link{lorem_ipsum}}, \code{\link{paragraph}};
-  \code{\link{marital}}; \code{\link{month}};
-  \code{\link{name}}; \code{\link{normal}},
-  \code{\link{normal_round}}; \code{\link{political}};
-  \code{\link{race}}; \code{\link{sat}};
-  \code{\link{sentence}}; \code{\link{smokes}};
-  \code{\link{speed}}, \code{\link{speed_kph}},
-  \code{\link{speed_mph}}; \code{\link{state}};
-  \code{\link{string}}; \code{\link{valid}};
-  \code{\link{year}}; \code{\link{zip_code}}
+  \code{\link{marital}}; \code{\link{military}};
+  \code{\link{month}}; \code{\link{name}};
+  \code{\link{normal}}, \code{\link{normal_round}};
+  \code{\link{political}}; \code{\link{race}};
+  \code{\link{sat}}; \code{\link{sentence}};
+  \code{\link{smokes}}; \code{\link{speed}},
+  \code{\link{speed_kph}}, \code{\link{speed_mph}};
+  \code{\link{state}}; \code{\link{string}};
+  \code{\link{valid}}; \code{\link{year}};
+  \code{\link{zip_code}}
 }
 \keyword{capitals}
 \keyword{letters}
