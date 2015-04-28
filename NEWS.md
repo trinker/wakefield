@@ -56,7 +56,7 @@ wakefield 0.1.0
 
 * `variables` added to view the available variable functions.
 
-* `p_data_theme` added to "save" common themes (preset column types)
+* `p_data_theme` added to "save" common themes (preset column types).
 
 **MINOR FEATURES**
 
