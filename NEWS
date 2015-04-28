@@ -56,6 +56,8 @@ NEW FEATURES
 
 * `variables` added to view the available variable functions.
 
+* `p_data_theme` added to "save" common themes (preset column types)
+
 MINOR FEATURES
 
 * `seriesname` function added to give a `data.frame` an attribute `seriesname`.

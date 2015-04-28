@@ -39,6 +39,7 @@
 #'
 #' table_heat(dat)
 #' table_heat(dat, flip=TRUE)
+#' table_heat(r_data_theme(), flip=TRUE)
 #'
 #' ## NA values
 #' table_heat(r_na(dat, NULL))
