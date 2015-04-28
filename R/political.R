@@ -16,7 +16,7 @@
 #'
 #' @inheritParams r_sample_factor
 #' @return Returns a random factor vector of political party elements.
-#' @keywords poitical politics republican democrat
+#' @keywords political politics republican democrat
 #' @export
 #' @include utils.R r_sample.R
 #' @family variable functions

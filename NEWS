@@ -42,7 +42,11 @@ NEW FEATURES
 
 * `r_dummy` added to produce multiple dummy columns from a single factor.
 
-* `dob` and `birth` functions added for date of birth variable.
+* `dob` and `birth` functions added for date of birth variable function.
+
+* `military` added as a random military branch varaible function.
+
+* `religion` added as a random religion varaible function.
 
 * `peek` added to allow a truncated head inspection of all columns of a
   `data.frame`.
@@ -51,8 +55,6 @@ NEW FEATURES
 
 * `r_insert` added to safely insert `data.frame`s into a `r_data_frame` or
   `r_list` object.
-
-* `military` added as a random military branch varaible function.
 
 * `variables` added to view the available variable functions.
 
