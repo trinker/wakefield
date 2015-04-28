@@ -2,7 +2,7 @@
 #'
 #' Generate a random vector of Internet browser.
 #'
-#' @details The browser use and probabilities (from \url{http://gs.statcounter.com/}): 
+#' @details The browser use and probabilities (from \url{http://gs.statcounter.com}): 
 #'
 #' \tabular{lr}{
 #'   \bold{ Browser} \tab \bold{Percent} \cr
@@ -22,10 +22,10 @@
 #' @include utils.R r_sample.R
 #' @family variable functions
 #' @examples
-#' browser(10)
-#' barplot(table(browser(10000)))
-#' pie(table(browser(10000)))
-browser <- hijack(r_sample_factor,
+#' internet_browser(20)
+#' barplot(table(internet_browser(10000)))
+#' pie(table(internet_browser(10000)))
+internet_browser <- hijack(r_sample_factor,
     name = "Browser",
     x = c("Chrome", "IE", "Firefox", "Safari", "Opera", "Android"),
     prob = c(0.5027, 0.175, 0.1689, 0.0994, 0.017, 0.0132)

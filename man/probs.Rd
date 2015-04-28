@@ -4,7 +4,7 @@
 \alias{probs}
 \title{Generate a Random Vector of Probabilities.}
 \usage{
-probs(j, upper = 1000000)
+probs(j, upper = 1e+06)
 }
 \arguments{
 \item{j}{An integer of number of probability elements (typically performs
