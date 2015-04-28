@@ -87,7 +87,7 @@ r_data_frame(
 ```
 
 
-There are a plethora of **wakefield** based variable functions to chose from, spanning **R**'s various data types (see `?variables` details).  
+There are `r length(variables())` **wakefield** based variable functions to chose from, spanning **R**'s various data types (see `?variables` for details).  
 
 ```{r, results='asis', echo=FALSE, comment=NA, warning=FALSE, htmlcap="Available Variable Functions"}
 p_load(pander, xtable)
