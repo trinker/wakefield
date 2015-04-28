@@ -39,8 +39,8 @@ The default make up is:
   Hindu     \tab 1,034,620,000 \tab 14.99 \%\cr
   Buddhist  \tab   489,030,000 \tab 7.08 \% \cr
   Folk      \tab   406,140,000 \tab 5.88 \% \cr
-  Other     \tab    59,330,000 \tab 0.86 \% \cr
-  Jewish    \tab    15,670,000 \tab 0.23 \% \cr
+  Other     \tab    59,330,000 \tab  .86 \% \cr
+  Jewish    \tab    15,670,000 \tab  .23 \% \cr
 }
 }
 \examples{

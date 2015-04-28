@@ -31,10 +31,10 @@ The browser use and probabilities (from \url{http://gs.statcounter.com/}):
 \tabular{lr}{
   \bold{ Browser} \tab \bold{Percent} \cr
   Chrome  \tab 50.27 \%\cr
-  IE      \tab 17.5 \% \cr
+  IE      \tab 17.50 \% \cr
   Firefox \tab 16.89 \%\cr
   Safari  \tab 9.94 \% \cr
-  Opera   \tab 1.7 \%  \cr
+  Opera   \tab 1.70 \%  \cr
   Android \tab 1.32 \% \cr
 }
 }

@@ -109,7 +109,7 @@ variables_as_matrix <- function(variable_functions, ncols = 5, ...){
 variables_as_list <- function(variable_functions){
 
     types <- unlist(lapply(variable_functions, function(x){
-        cls <- class(match.fun(x)(n=1))
+        cls <- class(eval(parse(text=paste0("wakefield::", x)))(n=1))
         tolower(paste(cls[!cls %in% "variable"], collapse = " "))
     }))
 
