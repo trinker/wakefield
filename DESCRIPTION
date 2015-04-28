@@ -30,6 +30,7 @@ Collate:
     'answer.R'
     'area.R'
     'as_integer.R'
+    'browser.R'
     'car.R'
     'children.R'
     'coin.R'

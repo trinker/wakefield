@@ -48,6 +48,8 @@ wakefield 0.1.0
 
 * `religion` added as a random religion varaible function.
 
+* `browser` added as a random Internet browser varaible function.
+
 * `peek` added to allow a truncated head inspection of all columns of a
   `data.frame`.
 
