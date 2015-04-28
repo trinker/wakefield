@@ -16,6 +16,7 @@ std
 humidity
 gdp
 stock (random stocks: maybe pull in names)
+media_consumption (integer)
 
 
 
