@@ -25,7 +25,7 @@ document(x)
 install(x, quick = quick, build_vignettes = FALSE, dependencies = TRUE)
 
 path <- find.package(pack)
-system(paste(shQuote(file.path(R.home("bin"), "R")), 
+system(paste(shQuote(file.path(R.home("bin"), "R")),
     "CMD", "Rd2pdf", shQuote(path)))
 
 qman(repo, dir=loc)

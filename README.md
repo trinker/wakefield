@@ -47,8 +47,8 @@ race(n=10)
 ```
 
 ```
-##  [1] White    Hispanic Hispanic Hispanic White    White    Black   
-##  [8] White    White    Hispanic
+##  [1] White    White    Black    White    White    White    White   
+##  [8] White    Hispanic Black   
 ## Levels: White Hispanic Black Asian Bi-Racial Native Other Hawaiian
 ```
 
@@ -86,10 +86,10 @@ r_data_frame(
 ## 2  White
 ## 3  White
 ## 4  White
-## 5  Black
-## 6  White
+## 5  White
+## 6  Asian
 ## 7  White
-## 8  White
+## 8  Black
 ## 9  White
 ## 10 White
 ## ..   ...
@@ -115,37 +115,38 @@ r_data_frame(
 ```
 ## Source: local data frame [500 x 8]
 ## 
-##     ID     Race Age    Sex     Hour  IQ Height  Died
-## 1  001    White  22   Male 00:00:00  85     70 FALSE
-## 2  002    White  29   Male 00:00:00 101     76 FALSE
-## 3  003    White  27 Female 00:00:00  99     70  TRUE
-## 4  004    White  32 Female 00:00:00  92     62 FALSE
-## 5  005    Black  24   Male 00:00:00  95     68 FALSE
-## 6  006 Hispanic  28 Female 00:00:00  91     69 FALSE
-## 7  007    White  27 Female 00:00:00 100     68  TRUE
-## 8  008    Asian  20 Female 00:00:00 113     67 FALSE
-## 9  009    White  26   Male 00:30:00 100     65  TRUE
-## 10 010    Asian  24 Female 00:30:00  98     68 FALSE
-## .. ...      ... ...    ...      ... ...    ...   ...
+##     ID  Race Age    Sex     Hour  IQ Height  Died
+## 1  001 Black  25   Male 00:00:00 108     65  TRUE
+## 2  002 White  33   Male 00:00:00  96     71  TRUE
+## 3  003 Black  32 Female 00:00:00  90     70 FALSE
+## 4  004 White  24   Male 00:00:00  74     68 FALSE
+## 5  005 White  33 Female 00:00:00 104     70  TRUE
+## 6  006 White  25   Male 00:00:00 107     66  TRUE
+## 7  007 White  35   Male 00:00:00 104     73 FALSE
+## 8  008 White  20 Female 00:00:00 107     71  TRUE
+## 9  009 Black  27 Female 00:30:00  99     65  TRUE
+## 10 010 White  20   Male 00:30:00 107     74  TRUE
+## .. ...   ... ...    ...      ... ...    ...   ...
 ```
 
 
-There are 66 **wakefield** based variable functions to chose from, spanning **R**'s various data types (see `?variables` for details).  
+There are 68 **wakefield** based variable functions to chose from, spanning **R**'s various data types (see `?variables` for details).  
 
-<!-- html table generated in R 3.1.2 by xtable 1.7-4 package -->
-<!-- Tue Apr 28 11:18:01 2015 -->
+<!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
+<!-- Thu Apr 30 18:02:29 2015 -->
 <table >
-  <tr> <td> age </td> <td> dice </td> <td> grade_letter </td> <td> level </td> <td> normal </td> <td> smokes </td> </tr>
-  <tr> <td> animal </td> <td> died </td> <td> grade_level </td> <td> likert </td> <td> normal_round </td> <td> speed </td> </tr>
-  <tr> <td> answer </td> <td> dna </td> <td> group </td> <td> likert_5 </td> <td> paragraph </td> <td> speed_kph </td> </tr>
-  <tr> <td> area </td> <td> dob </td> <td> hair </td> <td> likert_7 </td> <td> pet </td> <td> speed_mph </td> </tr>
-  <tr> <td> birth </td> <td> dummy </td> <td> height </td> <td> lorem_ipsum </td> <td> political </td> <td> state </td> </tr>
-  <tr> <td> car </td> <td> education </td> <td> height_cm </td> <td> lower </td> <td> primary </td> <td> string </td> </tr>
-  <tr> <td> children </td> <td> employment </td> <td> height_in </td> <td> lower_factor </td> <td> race </td> <td> upper </td> </tr>
-  <tr> <td> coin </td> <td> eye </td> <td> income </td> <td> marital </td> <td> religion </td> <td> upper_factor </td> </tr>
-  <tr> <td> color </td> <td> gender </td> <td> internet_browser </td> <td> military </td> <td> sat </td> <td> valid </td> </tr>
-  <tr> <td> date_stamp </td> <td> gpa </td> <td> iq </td> <td> month </td> <td> sentence </td> <td> year </td> </tr>
-  <tr> <td> death </td> <td> grade </td> <td> language </td> <td> name </td> <td> sex </td> <td> zip_code </td> </tr>
+  <tr> <td> age </td> <td> died </td> <td> grade_level </td> <td> likert_5 </td> <td> paragraph </td> <td> speed_mph </td> </tr>
+  <tr> <td> animal </td> <td> dna </td> <td> group </td> <td> likert_7 </td> <td> pet </td> <td> state </td> </tr>
+  <tr> <td> answer </td> <td> dob </td> <td> hair </td> <td> lorem_ipsum </td> <td> political </td> <td> string </td> </tr>
+  <tr> <td> area </td> <td> dummy </td> <td> height </td> <td> lower </td> <td> primary </td> <td> upper </td> </tr>
+  <tr> <td> birth </td> <td> education </td> <td> height_cm </td> <td> lower_factor </td> <td> race </td> <td> upper_factor </td> </tr>
+  <tr> <td> car </td> <td> ela </td> <td> height_in </td> <td> marital </td> <td> religion </td> <td> valid </td> </tr>
+  <tr> <td> children </td> <td> employment </td> <td> income </td> <td> math </td> <td> sat </td> <td> year </td> </tr>
+  <tr> <td> coin </td> <td> eye </td> <td> internet_browser </td> <td> military </td> <td> sentence </td> <td> zip_code </td> </tr>
+  <tr> <td> color </td> <td> gender </td> <td> iq </td> <td> month </td> <td> sex </td> <td>  </td> </tr>
+  <tr> <td> date_stamp </td> <td> gpa </td> <td> language </td> <td> name </td> <td> smokes </td> <td>  </td> </tr>
+  <tr> <td> death </td> <td> grade </td> <td> level </td> <td> normal </td> <td> speed </td> <td>  </td> </tr>
+  <tr> <td> dice </td> <td> grade_letter </td> <td> likert </td> <td> normal_round </td> <td> speed_kph </td> <td>  </td> </tr>
    </table>
 <p class="caption"><b><em>Available Variable Functions</em></b></p>
 
@@ -171,18 +172,18 @@ r_data_frame(
 ```
 ## Source: local data frame [500 x 10]
 ## 
-##     ID    Scoring Smoker  Race Age    Sex     Hour  IQ Height  Died
-## 1  001  0.3505344  FALSE Black  21 Female 00:00:00 117     74  TRUE
-## 2  002 -0.5751597   TRUE Black  22 Female 00:00:00 101     71 FALSE
-## 3  003  0.3014190   TRUE Black  32 Female 00:00:00  85     61 FALSE
-## 4  004 -2.4781913  FALSE White  23   Male 00:00:00 104     63 FALSE
-## 5  005 -0.9991238  FALSE White  32   Male 00:00:00  84     68  TRUE
-## 6  006  0.4845612   TRUE White  30 Female 00:00:00 112     74  TRUE
-## 7  007 -1.3089491  FALSE White  22 Female 00:00:00 129     70  TRUE
-## 8  008  0.2459723   TRUE White  32 Female 00:00:00  84     69 FALSE
-## 9  009  0.1982807   TRUE Black  34 Female 00:00:00  95     73 FALSE
-## 10 010 -1.2367944  FALSE White  21   Male 00:00:00 119     71  TRUE
-## .. ...        ...    ...   ... ...    ...      ... ...    ...   ...
+##     ID    Scoring Smoker     Race Age    Sex     Hour  IQ Height  Died
+## 1  001 -1.5617128   TRUE    White  21   Male 00:00:00 100     77  TRUE
+## 2  002  2.4086482  FALSE    White  24 Female 00:00:00 114     71  TRUE
+## 3  003  1.2807312   TRUE Hispanic  31 Female 00:00:00 110     68  TRUE
+## 4  004 -0.6890110   TRUE    Black  33   Male 00:00:00  97     62  TRUE
+## 5  005 -0.3491101   TRUE    White  32 Female 00:00:00 107     67  TRUE
+## 6  006 -0.1432578  FALSE    White  26   Male 00:00:00 112     65  TRUE
+## 7  007 -0.8839696  FALSE    White  33 Female 00:00:00  90     64  TRUE
+## 8  008 -0.4020511  FALSE Hispanic  24 Female 00:00:00  96     75 FALSE
+## 9  009 -0.3741693   TRUE    White  34 Female 00:30:00  97     64  TRUE
+## 10 010  0.6644089   TRUE    Black  28 Female 00:30:00  88     63  TRUE
+## .. ...        ...    ...      ... ...    ...      ... ...    ...   ...
 ```
 
 
@@ -200,16 +201,16 @@ r_data_frame(
 ## Source: local data frame [500 x 7]
 ## 
 ##     ID Age_1 Age_2 Age_3 Grade_1 Grade_2 Grade_3
-## 1  001    29    35    34    88.9    89.5    82.9
-## 2  002    26    28    20    85.2    85.3    87.4
-## 3  003    29    32    26    89.5    85.7    91.1
-## 4  004    29    25    28    92.3    85.5    85.8
-## 5  005    28    29    22    93.8    83.4    81.3
-## 6  006    32    34    24    92.2    91.5    86.5
-## 7  007    28    32    29    89.9    89.3    92.3
-## 8  008    27    24    33    90.9    88.0    90.7
-## 9  009    29    29    32    84.1    84.2    89.1
-## 10 010    23    32    23    89.0    88.4    88.5
+## 1  001    31    21    22    87.6    86.7    78.5
+## 2  002    32    21    33    86.9    81.4    91.3
+## 3  003    35    29    28    84.3    91.1    80.2
+## 4  004    20    24    26    93.2    93.0    92.3
+## 5  005    27    27    31    84.2    94.2    87.9
+## 6  006    23    32    21    99.3    81.0    80.5
+## 7  007    31    28    31    85.7    89.3    92.2
+## 8  008    30    25    22    87.3    87.0    92.8
+## 9  009    21    35    31    89.1    88.6    88.3
+## 10 010    30    33    23    92.6    92.5    82.3
 ## .. ...   ...   ...   ...     ...     ...     ...
 ```
 
@@ -238,16 +239,16 @@ r_data_frame(
 ## Source: local data frame [500 x 11]
 ## 
 ##     ID     Scoring Smoker Reading(mins)     Race Age    Sex     Hour  IQ
-## 1  001  1.59619204  FALSE            21 Hispanic   9 Female 00:00:00  93
-## 2  002 -1.38601723  FALSE            19    White  10   Male 00:00:00 121
-## 3  003  0.79336594   TRUE            19    White   8   Male 00:00:00  75
-## 4  004 -1.91950871   TRUE            23    White  10 Female 00:00:00  96
-## 5  005 -0.72268477   TRUE            25    Black   9 Female 00:00:00 112
-## 6  006 -0.04871286   TRUE            21    Black  14   Male 00:00:00 100
-## 7  007 -0.25818600  FALSE            22    White  11   Male 00:00:00 100
-## 8  008 -1.98591196   TRUE            24    White   8 Female 00:00:00  90
-## 9  009 -1.09670674   TRUE            13    White  12   Male 00:00:00  94
-## 10 010 -0.64859653  FALSE            17    White  13 Female 00:00:00  91
+## 1  001  0.10702766  FALSE            18    White  10   Male 00:00:00 107
+## 2  002  0.08998353   TRUE            18    White  14   Male 00:00:00  85
+## 3  003  1.08405396   TRUE            18    White  13   Male 00:00:00 116
+## 4  004  0.99488395  FALSE            26    White  11   Male 00:00:00 109
+## 5  005  0.83049210  FALSE             9 Hispanic  11   Male 00:00:00  94
+## 6  006 -0.76249951   TRUE            13    White  10 Female 00:00:00  90
+## 7  007  0.06096533  FALSE            26 Hispanic  11   Male 00:00:00 108
+## 8  008  0.04183716   TRUE            23    White  10 Female 00:00:00  94
+## 9  009  1.90573678   TRUE            22 Hispanic  13   Male 00:00:00 115
+## 10 010  0.56571829  FALSE            19 Hispanic  10   Male 00:00:00 102
 ## .. ...         ...    ...           ...      ... ...    ...      ... ...
 ## Variables not shown: Height (dbl), Died (lgl)
 ```
@@ -277,18 +278,18 @@ r_data_frame(
 ```
 ## Source: local data frame [30 x 10]
 ## 
-##    ID  Race Age    Sex     Hour  IQ Height  Died    Scoring Smoker
-## 1  01 White  NA     NA 00:30:00 101     NA FALSE         NA     NA
-## 2  02 White  NA     NA     <NA>  98     NA FALSE  2.3805960  FALSE
-## 3  03    NA  20   Male 03:30:00  NA     70 FALSE  1.4607125  FALSE
-## 4  04    NA  NA Female 04:00:00  NA     NA    NA  0.5639103     NA
-## 5  05 White  29     NA 05:30:00  NA     64    NA -0.5047427     NA
-## 6  06 White  21   Male 06:30:00  98     NA    NA -0.2023203  FALSE
-## 7  07    NA  24     NA 06:30:00  NA     69    NA         NA   TRUE
-## 8  08 Black  26 Female     <NA> 107     70    NA  1.5896542     NA
-## 9  09 Black  25     NA     <NA>  96     NA  TRUE  0.8489005  FALSE
-## 10 10    NA  NA Female     <NA> 107     68 FALSE  0.5900424     NA
-## .. ..   ... ...    ...      ... ...    ...   ...        ...    ...
+##    ID     Race Age    Sex     Hour  IQ Height  Died    Scoring Smoker
+## 1  01       NA  NA   Male 00:00:00 101     72 FALSE -0.7081720     NA
+## 2  02 Hispanic  NA     NA 00:30:00 105     78 FALSE  0.8599923  FALSE
+## 3  03    White  27 Female 01:00:00  NA     NA FALSE         NA     NA
+## 4  04 Hispanic  20   Male 01:00:00  88     73 FALSE         NA  FALSE
+## 5  05    Black  NA     NA 01:30:00  86     68 FALSE         NA  FALSE
+## 6  06    White  21   Male     <NA>  NA     NA    NA  0.9155031     NA
+## 7  07 Hispanic  20 Female     <NA>  NA     67  TRUE         NA     NA
+## 8  08 Hispanic  32     NA 04:30:00  99     70    NA -0.5460636   TRUE
+## 9  09       NA  24   Male     <NA> 106     73    NA -0.9711661     NA
+## 10 10       NA  NA     NA 07:00:00  90     67    NA  0.6309114   TRUE
+## .. ..      ... ...    ...      ... ...    ...   ...        ...    ...
 ```
 
 ## Repeated Measures & Time Series
