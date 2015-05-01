@@ -1,6 +1,6 @@
 Package: wakefield
 Title: Generate Random Data Sets
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(person("Tyler", "Rinker", email = "tyler.rinker@gmail.com",
     role = c("aut", "cre")), person("Josh", "O'Brien", role = "ctb"),
     person("Ananda", "Mahto", role = "ctb"))
