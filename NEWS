@@ -37,6 +37,9 @@ NEW FEATURES
   simulating repeated measures or survey questions.  Suggested by Ananda Mahto.
   See issue #1 for details.
 
+* `r_series` picks up a `reate argument to generate related data as suggested by
+  Wordpress user Ulf: http://goo.gl/H1RKsV.
+
 * `as_integer` added as a means of coercing all columns of a `factor`
   `data.frame` to `integer`s.
 
@@ -61,6 +64,9 @@ NEW FEATURES
 * `variables` added to view the available variable functions.
 
 * `p_data_theme` added to "save" common themes (preset column types).
+
+* `relate` function added to generate related data as suggested by Wordpress
+  user Ulf: http://goo.gl/H1RKsV.
 
 MINOR FEATURES
 

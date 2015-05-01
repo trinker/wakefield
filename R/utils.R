@@ -36,3 +36,7 @@ mtabulate <- function (vects) {
     colnames(dat) <- sort(lev)
     data.frame(dat, check.names = FALSE)
 }
+
+validate_relate <- function(x){
+    grepl("[\\+\\-\\*\\/]([^_]+)_(.+)", x, perl=TRUE)
+}
