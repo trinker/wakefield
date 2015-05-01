@@ -10,7 +10,7 @@
 #' @param integer logical.  If \code{TRUE} factor columns will be coerced to
 #' integer.
 #' @param relate Allows the user to specify the relationship between columns.
-#' May be be a named list of \code{c("operation", "mean", "sd")} or a string of
+#' May be a named list of \code{c("operation", "mean", "sd")} or a string of
 #' the form of "fM_sd" whe `f` is one of (+, -, *, /), `M` is a mean value, and
 #' `sd` is a standard deviation of the mean value (e.g., \code{"*4_1"}).  See
 #' \code{\link[wakefield]{relate}} for details.
