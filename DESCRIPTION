@@ -81,6 +81,7 @@ Collate:
     'r_sample_integer.R'
     'r_series.R'
     'race.R'
+    'relate.R'
     'religion.R'
     'sat.R'
     'second.R'
