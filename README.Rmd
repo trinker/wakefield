@@ -1,4 +1,13 @@
+---
+title: "wakefield"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  md_document:
+    toc: true      
+---
+
 # wakefield
+
 
 ```{r, echo=FALSE}
 desc <- suppressWarnings(readLines("DESCRIPTION"))

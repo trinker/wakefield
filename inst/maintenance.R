@@ -13,6 +13,10 @@ devtools::test()
 #==========================
 knitr::knit2html("README.Rmd", output ='README.md'); reports::delete("README.html")
 
+pacman::p_loaded()
+rmarkdown::render("README.Rmd", "all")
+
+md_toc()
 #==========================
 # UPDATE NEWS
 #==========================
@@ -49,7 +53,7 @@ expand_statdoc(path2, to.icon = extras, readme = rdme)
 
 x <- readLines(path2)
 x[grepl("<h2>Authors</h2>", x)] <- paste(
-    c("<h2>Author</h2>" 
+    c("<h2>Author</h2>"
     #rep("<h2>Contributor</h2>", 1)
     ),
     c("Tyler W. Rinker")
