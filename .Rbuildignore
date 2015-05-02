@@ -22,3 +22,5 @@ data_script.R
 function_planning.R
 logo_script.R
 check funs.R
+inst/figure
+

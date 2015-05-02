@@ -6,7 +6,7 @@ regex <- "(^Version:\\s+)(\\d+\\.\\d+\\.\\d+)"
 loc <- grep(regex, desc)
 ver <- gsub(regex, "\\2", desc[loc])
 verbadge <- sprintf('<a href="https://img.shields.io/badge/Version-%s-orange.svg"><img src="https://img.shields.io/badge/Version-%s-orange.svg" alt="Version"/></a></p>', ver, ver)
-p_load(dplyr, wakefield, knitr)
+p_load(dplyr, wakefield, knitr, tidyr, ggplot)
 ````
 
 ```{r, echo=FALSE}
@@ -38,6 +38,7 @@ Download the [zip ball](https://github.com/trinker/wakefield/zipball/master) or 
 ```r
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load_gh("trinker/wakefield")
+pacman::p_load(dplyr, tidyr, ggplot2)
 ```
 
 ## Help
@@ -212,6 +213,53 @@ r_data_frame(n=100,
     r_series(likert, 5, name = "Item", integer = TRUE)
 )
 ```
+
+### Related Series
+
+The user can also create related series via the `relate` argument in `r_series`.  It allows the user to specify the relationship between columns.  May be be a named list of \code{c("operation", "mean", "sd")} or a short hand string of the form of `"fM_sd"` where:
+
+- `f` is one of (+, -, *, /)
+- `M` is a mean value
+- `sd` is a standard deviation of the mean value 
+
+For example you may use `relate = "*4_1"`.  If `relate = NULL` no relationship is generated between columns.  I will use the short hand string form here.
+
+#### Some Examples With Variation
+
+```{r}
+r_series(grade, j = 5, n = 100, relate = "+1_6")
+r_series(age, 5, 100, relate = "+5_0")
+r_series(likert, 5,  100, name ="Item", relate = "-.5_.1")
+r_series(grade, j = 5, n = 100, relate = "*1.05_.1")
+```
+
+#### Adjust Correlations
+
+Use the `sd` command to adjust correlations.
+
+```{r}
+round(cor(r_series(grade, 8, 10, relate = "+1_2")), 2)
+round(cor(r_series(grade, 8, 10, relate = "+1_0")), 2)
+round(cor(r_series(grade, 8, 10, relate = "+1_20")), 2)
+round(cor(r_series(grade, 8, 10, relate = "+15_20")), 2)
+```
+
+#### Visualize the Relationship
+
+```{r}
+dat <- r_data_frame(12,
+    name,
+    r_series(grade, 100, relate = "+1_6")
+) 
+
+dat %>%
+    gather(Time, Grade, -c(Name)) %>%
+    mutate(Time = as.numeric(gsub("\\D", "", Time))) %>%
+    ggplot(aes(x = Time, y = Grade, color = Name, group = Name)) +
+        geom_line(size=.8) + 
+        theme_bw()
+```
+
 
 ## Expanded Dummy Coding
 
