@@ -48,6 +48,9 @@
 relate <- function(x, j, name = NULL, operation = "+", mean = 5, sd = 1,
     rep.sep = "_", digits = max(nchar(sub("^[^.]*.", "", x)))){
 
+    if (is.null(name)) name <- attributes(x)[["varname"]]
+    if (is.null(name)) name <- "Variable"
+
     if (is.factor(x) | inherits(x, c("Date", "POSIXct", "POSIXt"))) x <- as.numeric(x)
     if (!is.numeric(x)) warning("`x` is not numeric, date, or factor.", immediate. = TRUE)
 
@@ -61,9 +64,6 @@ relate <- function(x, j, name = NULL, operation = "+", mean = 5, sd = 1,
     for (i in 2:ncol(seed_dat)) {
         seed_dat[, i] <- match.fun(operation)(seed_dat[, i - 1], seed_dat[, i])
     }
-
-    if (is.null(name)) name <- attributes(x)[["varname"]]
-    if (is.null(name)) name <- "Variable"
 
     out <- setNames(seed_dat, paste(name, seq_len(j), sep = rep.sep))
 
