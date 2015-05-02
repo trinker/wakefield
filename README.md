@@ -134,7 +134,7 @@ r_data_frame(
 There are 68 **wakefield** based variable functions to chose from, spanning **R**'s various data types (see `?variables` for details).  
 
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Fri May 01 21:22:48 2015 -->
+<!-- Fri May 01 21:23:24 2015 -->
 <table >
   <tr> <td> age </td> <td> died </td> <td> grade_level </td> <td> likert_5 </td> <td> paragraph </td> <td> speed_mph </td> </tr>
   <tr> <td> animal </td> <td> dna </td> <td> group </td> <td> likert_7 </td> <td> pet </td> <td> state </td> </tr>
@@ -574,7 +574,8 @@ round(cor(r_series(grade, 8, 10, relate = "+15_20")), 2)
 
 #### Visualize the Relationship
 
-```{r, fig.height=7, fig.width=11
+
+```r
 dat <- r_data_frame(12,
     name,
     r_series(grade, 100, relate = "+1_6")
@@ -587,6 +588,8 @@ dat %>%
         geom_line(size=.8) + 
         theme_bw()
 ```
+
+![plot of chunk unnamed-chunk-17](inst/figure/unnamed-chunk-17-1.png) 
 
 
 ## Expanded Dummy Coding
@@ -648,7 +651,7 @@ r_data_frame(n=100,
    plot(palette = "Set1")
 ```
 
-![plot of chunk unnamed-chunk-18](inst/figure/unnamed-chunk-18-1.png) 
+![plot of chunk unnamed-chunk-19](inst/figure/unnamed-chunk-19-1.png) 
 
 
 
