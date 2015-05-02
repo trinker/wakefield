@@ -1,5 +1,5 @@
 wakefield
-------------
+============
 
 
 [![Project Status: Active - The project has reached a stable, usable
@@ -20,7 +20,7 @@ function to produce a `dplyr::tbl_df` object.
 
 
 Table of Contents
-------------
+============
 
 -   [Installation](#installation)
 -   [Help](#help)
@@ -36,7 +36,7 @@ Table of Contents
     -   [Visualizing Column Types](#visualizing-column-types)
 
 Installation
-------------
+============
 
 
 To download the development version of **wakefield**:
@@ -152,7 +152,7 @@ There are 68 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Fri May 01 21:55:03 2015 -->
+<!-- Fri May 01 22:18:11 2015 -->
 <table>
 <tr>
 <td>
