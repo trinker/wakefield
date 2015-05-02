@@ -6,9 +6,6 @@ output:
     toc: true      
 ---
 
-# wakefield
-
-
 ```{r, echo=FALSE}
 desc <- suppressWarnings(readLines("DESCRIPTION"))
 regex <- "(^Version:\\s+)(\\d+\\.\\d+\\.\\d+)"
@@ -38,7 +35,7 @@ knitr::opts_chunk$set(fig.path = "inst/figure/")
 
 <img src="inst/wakefield_logo/r_wakefield.png" width="60%", alt="">  
 
-## Installation
+# Installation
 
 To download the development version of **wakefield**:
 
@@ -50,19 +47,19 @@ pacman::p_load_gh("trinker/wakefield")
 pacman::p_load(dplyr, tidyr, ggplot2)
 ```
 
-## Help
+# Help
     
 - [Package PDF Help Manual](https://dl.dropboxusercontent.com/u/61803503/wakefield.pdf)   
 
 
-## Contact
+# Contact
 
 You are welcome to:
 * submit suggestions and bug-reports at: <https://github.com/trinker/wakefield/issues>
 * send a pull request on: <https://github.com/trinker/wakefield/>
 * compose a friendly e-mail to: <tyler.rinker@gmail.com>
 
-## Demonstration
+# Demonstration
 
 The `r_data_frame` function (random data frame) takes `n` (the number of rows) and any number of variables (columns).  These columns are typically produced from a **wakefield** variable function.  Each of these variable functions has a pre-set behavior that produces a named vector of n length, allowing the user to lazily pass unnamed functions (optionally, without call parenthesis).  The column name is hidden as a `varname` attribute.  For example here we see the `race` variable function:
 
@@ -159,7 +156,7 @@ r_data_frame(
 )
 ```
 
-## Random Missing Observations
+# Random Missing Observations
 
 Often data contains missing values.  **wakefield** allows the user to add a proportion of missing values per column/vector via the `r_na` (random `NA`).  This works nicely within a **dplyr**/**magrittr** `%>%` *then* pipeline:
 
@@ -180,7 +177,7 @@ r_data_frame(
     r_na(prob=.4)
 ```
 
-## Repeated Measures & Time Series
+# Repeated Measures & Time Series
 
 The `r_series` function allows the user to pass a single **wakefield** function and dictate how many columns (`j`) to produce.  
 
@@ -223,7 +220,7 @@ r_data_frame(n=100,
 )
 ```
 
-### Related Series
+## Related Series
 
 The user can also create related series via the `relate` argument in `r_series`.  It allows the user to specify the relationship between columns.  May be be a named list of \code{c("operation", "mean", "sd")} or a short hand string of the form of `"fM_sd"` where:
 
@@ -233,7 +230,7 @@ The user can also create related series via the `relate` argument in `r_series`.
 
 For example you may use `relate = "*4_1"`.  If `relate = NULL` no relationship is generated between columns.  I will use the short hand string form here.
 
-#### Some Examples With Variation
+### Some Examples With Variation
 
 ```{r}
 r_series(grade, j = 5, n = 100, relate = "+1_6")
@@ -242,7 +239,7 @@ r_series(likert, 5,  100, name ="Item", relate = "-.5_.1")
 r_series(grade, j = 5, n = 100, relate = "*1.05_.1")
 ```
 
-#### Adjust Correlations
+### Adjust Correlations
 
 Use the `sd` command to adjust correlations.
 
@@ -253,7 +250,7 @@ round(cor(r_series(grade, 8, 10, relate = "+1_20")), 2)
 round(cor(r_series(grade, 8, 10, relate = "+15_20")), 2)
 ```
 
-#### Visualize the Relationship
+### Visualize the Relationship
 
 ```{r, fig.height=7, fig.width=11}
 dat <- r_data_frame(12,

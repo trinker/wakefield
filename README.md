@@ -1,6 +1,6 @@
-
 wakefield
-=========
+------------
+
 
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
@@ -22,14 +22,16 @@ function to produce a `dplyr::tbl_df` object.
 Table of Contents
 ------------
 
--   [wakefield](#wakefield)
-    -   [Installation](#installation)
-    -   [Help](#help)
-    -   [Contact](#contact)
-    -   [Demonstration](#demonstration)
-    -   [Random Missing Observations](#random-missing-observations)
-    -   [Repeated Measures & Time Series](#repeated-measures-&-time-series)
-        -   [Related Series](#related-series)
+-   [Installation](#installation)
+-   [Help](#help)
+-   [Contact](#contact)
+-   [Demonstration](#demonstration)
+-   [Random Missing Observations](#random-missing-observations)
+-   [Repeated Measures & Time Series](#repeated-measures-&-time-series)
+    -   [Related Series](#related-series)
+        -   [Some Examples With Variation](#some-examples-with-variation)
+        -   [Adjust Correlations](#adjust-correlations)
+        -   [Visualize the Relationship](#visualize-the-relationship)
     -   [Expanded Dummy Coding](#expanded-dummy-coding)
     -   [Visualizing Column Types](#visualizing-column-types)
 
@@ -50,13 +52,13 @@ the development version:
     pacman::p_load(dplyr, tidyr, ggplot2)
 
 Help
-----
+====
 
 -   [Package PDF Help
     Manual](https://dl.dropboxusercontent.com/u/61803503/wakefield.pdf)
 
 Contact
--------
+=======
 
 You are welcome to: \* submit suggestions and bug-reports at:
 <https://github.com/trinker/wakefield/issues> \* send a pull request on:
@@ -64,7 +66,7 @@ You are welcome to: \* submit suggestions and bug-reports at:
 <tyler.rinker@gmail.com>
 
 Demonstration
--------------
+=============
 
 The `r_data_frame` function (random data frame) takes `n` (the number of
 rows) and any number of variables (columns). These columns are typically
@@ -150,7 +152,7 @@ There are 68 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Fri May 01 21:47:40 2015 -->
+<!-- Fri May 01 21:55:03 2015 -->
 <table>
 <tr>
 <td>
@@ -484,7 +486,7 @@ done through call parenthesis as we do with `data.frame` or
     ## Variables not shown: Height (dbl), Died (lgl)
 
 Random Missing Observations
----------------------------
+===========================
 
 Often data contains missing values. **wakefield** allows the user to add
 a proportion of missing values per column/vector via the `r_na` (random
@@ -522,7 +524,7 @@ pipeline:
     ## .. ..      ... ...    ...      ... ...    ...   ...        ...    ...
 
 Repeated Measures & Time Series
--------------------------------
+===============================
 
 The `r_series` function allows the user to pass a single **wakefield**
 function and dictate how many columns (`j`) to produce.
@@ -620,7 +622,8 @@ here.
     ## 10 010  26   Male      1      1      4      1      2
     ## .. ... ...    ...    ...    ...    ...    ...    ...
 
-### Related Series
+Related Series
+--------------
 
 The user can also create related series via the `relate` argument in
 `r_series`. It allows the user to specify the relationship between
@@ -635,7 +638,7 @@ For example you may use `relate = "*4_1"`. If `relate = NULL` no
 relationship is generated between columns. I will use the short hand
 string form here.
 
-#### Some Examples With Variation
+### Some Examples With Variation
 
     r_series(grade, j = 5, n = 100, relate = "+1_6")
 
@@ -705,7 +708,7 @@ string form here.
     ## 10    92.9   92.90  83.610  91.9710 101.1681
     ## ..     ...     ...     ...      ...      ...
 
-#### Adjust Correlations
+### Adjust Correlations
 
 Use the `sd` command to adjust correlations.
 
@@ -757,7 +760,7 @@ Use the `sd` command to adjust correlations.
     ## Grade_7   -0.26    0.36    0.71    0.58    0.70    0.58    1.00    0.78
     ## Grade_8   -0.31    0.46    0.78    0.75    0.74    0.57    0.78    1.00
 
-#### Visualize the Relationship
+### Visualize the Relationship
 
     dat <- r_data_frame(12,
         name,

@@ -11,12 +11,10 @@ devtools::test()
 #==========================
 # knit README.md
 #==========================
-knitr::knit2html("README.Rmd", output ='README.md'); reports::delete("README.html")
+#knitr::knit2html("README.Rmd", output ='README.md'); reports::delete("README.html")
 
-pacman::p_loaded()
-rmarkdown::render("README.Rmd", "all")
+rmarkdown::render("README.Rmd", "all"); reports::delete("README.html"); md_toc()
 
-md_toc()
 #==========================
 # UPDATE NEWS
 #==========================
