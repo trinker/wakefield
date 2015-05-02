@@ -246,7 +246,7 @@ round(cor(r_series(grade, 8, 10, relate = "+15_20")), 2)
 
 #### Visualize the Relationship
 
-```{r}
+```{r, fig.height=7, fig.width=11
 dat <- r_data_frame(12,
     name,
     r_series(grade, 100, relate = "+1_6")
