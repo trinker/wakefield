@@ -11,7 +11,7 @@ devtools::test()
 #==========================
 # knit README.md
 #==========================
-rmarkdown::render("README.Rmd", "all");  md_toc(); reports::delete("README_cache"); reports::delete("README_files")
+rmarkdown::render("README.Rmd", "all");  md_toc()
 
 #==========================
 # UPDATE NEWS
