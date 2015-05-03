@@ -157,7 +157,7 @@ There are 68 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Sun May 03 14:36:25 2015 -->
+<!-- Sun May 03 14:54:12 2015 -->
 <table>
 <tr>
 <td>
@@ -397,7 +397,7 @@ speed\_kph
 </tr>
 </table>
 <p class="caption">
-<b><em>*Available Variable Functions*</em></b>
+<b><em>Available Variable Functions</em></b>
 </p>
 However, the user may also pass their own vector producing functions or
 vectors to `r_data_frame`. Those with an `n` argument can be set by
