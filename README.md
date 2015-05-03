@@ -30,9 +30,9 @@ Table of Contents
     -   [Random Missing Observations](#random-missing-observations)
     -   [Repeated Measures & Time Series](#repeated-measures--time-series)
         -   [Related Series](#related-series)
-        -   [Related Series: Some Examples With Variation](#related-series-some-examples-with-variation)
-        -   [Related Series: Adjust Correlations](#related-series-adjust-correlations)
-        -   [Related Series: Visualize the Relationship](#related-series-visualize-the-relationship)
+            -   [Some Examples With Variation](#some-examples-with-variation)
+            -   [Adjust Correlations](#adjust-correlations)
+            -   [Visualize the Relationship](#visualize-the-relationship)
     -   [Expanded Dummy Coding](#expanded-dummy-coding)
     -   [Visualizing Column Types](#visualizing-column-types)
 
@@ -157,7 +157,7 @@ There are 68 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Sun May 03 14:20:01 2015 -->
+<!-- Sun May 03 14:36:25 2015 -->
 <table>
 <tr>
 <td>
@@ -167,16 +167,16 @@ age
 died
 </td>
 <td>
-grade_level
+grade\_level
 </td>
 <td>
-likert_5
+likert\_5
 </td>
 <td>
 paragraph
 </td>
 <td>
-speed_mph
+speed\_mph
 </td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ dna
 group
 </td>
 <td>
-likert_7
+likert\_7
 </td>
 <td>
 pet
@@ -210,7 +210,7 @@ dob
 hair
 </td>
 <td>
-lorem_ipsum
+lorem\_ipsum
 </td>
 <td>
 political
@@ -247,16 +247,16 @@ birth
 education
 </td>
 <td>
-height_cm
+height\_cm
 </td>
 <td>
-lower_factor
+lower\_factor
 </td>
 <td>
 race
 </td>
 <td>
-upper_factor
+upper\_factor
 </td>
 </tr>
 <tr>
@@ -267,7 +267,7 @@ car
 ela
 </td>
 <td>
-height_in
+height\_in
 </td>
 <td>
 marital
@@ -307,7 +307,7 @@ coin
 eye
 </td>
 <td>
-internet_browser
+internet\_browser
 </td>
 <td>
 military
@@ -316,7 +316,7 @@ military
 sentence
 </td>
 <td>
-zip_code
+zip\_code
 </td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ sex
 </tr>
 <tr>
 <td>
-date_stamp
+date\_stamp
 </td>
 <td>
 gpa
@@ -381,16 +381,16 @@ speed
 dice
 </td>
 <td>
-grade_letter
+grade\_letter
 </td>
 <td>
 likert
 </td>
 <td>
-normal_round
+normal\_round
 </td>
 <td>
-speed_kph
+speed\_kph
 </td>
 <td>
 </td>
@@ -642,7 +642,7 @@ For example you may use `relate = "*4_1"`. If `relate = NULL` no
 relationship is generated between columns. I will use the short hand
 string form here.
 
-### Related Series: Some Examples With Variation
+#### Some Examples With Variation
 
     r_series(grade, j = 5, n = 100, relate = "+1_6")
 
@@ -712,7 +712,7 @@ string form here.
     ## 10    92.9   92.90  83.610  91.9710 101.1681
     ## ..     ...     ...     ...      ...      ...
 
-### Related Series: Adjust Correlations
+#### Adjust Correlations
 
 Use the `sd` command to adjust correlations.
 
@@ -764,7 +764,7 @@ Use the `sd` command to adjust correlations.
     ## Grade_7   -0.26    0.36    0.71    0.58    0.70    0.58    1.00    0.78
     ## Grade_8   -0.31    0.46    0.78    0.75    0.74    0.57    0.78    1.00
 
-### Related Series: Visualize the Relationship
+#### Visualize the Relationship
 
     dat <- r_data_frame(12,
         name,
