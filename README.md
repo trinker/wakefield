@@ -157,7 +157,7 @@ There are 68 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Sun May 03 14:54:12 2015 -->
+<!-- Sun May 03 14:56:43 2015 -->
 <table>
 <tr>
 <td>
@@ -167,16 +167,16 @@ age
 died
 </td>
 <td>
-grade\_level
+grade_level
 </td>
 <td>
-likert\_5
+likert_5
 </td>
 <td>
 paragraph
 </td>
 <td>
-speed\_mph
+speed_mph
 </td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ dna
 group
 </td>
 <td>
-likert\_7
+likert_7
 </td>
 <td>
 pet
@@ -210,7 +210,7 @@ dob
 hair
 </td>
 <td>
-lorem\_ipsum
+lorem_ipsum
 </td>
 <td>
 political
@@ -247,16 +247,16 @@ birth
 education
 </td>
 <td>
-height\_cm
+height_cm
 </td>
 <td>
-lower\_factor
+lower_factor
 </td>
 <td>
 race
 </td>
 <td>
-upper\_factor
+upper_factor
 </td>
 </tr>
 <tr>
@@ -267,7 +267,7 @@ car
 ela
 </td>
 <td>
-height\_in
+height_in
 </td>
 <td>
 marital
@@ -307,7 +307,7 @@ coin
 eye
 </td>
 <td>
-internet\_browser
+internet_browser
 </td>
 <td>
 military
@@ -316,7 +316,7 @@ military
 sentence
 </td>
 <td>
-zip\_code
+zip_code
 </td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ sex
 </tr>
 <tr>
 <td>
-date\_stamp
+date_stamp
 </td>
 <td>
 gpa
@@ -381,24 +381,21 @@ speed
 dice
 </td>
 <td>
-grade\_letter
+grade_letter
 </td>
 <td>
 likert
 </td>
 <td>
-normal\_round
+normal_round
 </td>
 <td>
-speed\_kph
+speed_kph
 </td>
 <td>
 </td>
 </tr>
 </table>
-<p class="caption">
-<b><em>Available Variable Functions</em></b>
-</p>
 However, the user may also pass their own vector producing functions or
 vectors to `r_data_frame`. Those with an `n` argument can be set by
 `r_data_table`:
@@ -778,7 +775,7 @@ Use the `sd` command to adjust correlations.
             geom_line(size=.8) + 
             theme_bw()
 
-![](inst/figure/unnamed-chunk-17-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-17-1.png)
 
 Expanded Dummy Coding
 ---------------------
@@ -836,4 +833,4 @@ It is helpful to see the column types and `NA`s as a visualization. The
        r_na() %>%
        plot(palette = "Set1")
 
-![](inst/figure/unnamed-chunk-19-1.png)
+![](README_files/figure-markdown_strict/unnamed-chunk-19-1.png)
