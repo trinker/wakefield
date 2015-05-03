@@ -157,7 +157,7 @@ There are 68 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
 <!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Sat May 02 22:17:06 2015 -->
+<!-- Sat May 02 22:49:38 2015 -->
 <table>
 <tr>
 <td>

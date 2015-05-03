@@ -4,7 +4,7 @@
 # Example code in package build process
 *-Ex.R
 
-.Rprofile
+
 .Rproj.user
 wakefield.Rproj
 
