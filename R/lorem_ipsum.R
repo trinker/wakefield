@@ -19,10 +19,12 @@
 #' @rdname lorem_ipsum
 #' @family variable functions
 #' @examples
+#' \dontrun{
 #' lorem_ipsum(10)
 #' paragraph(10)
 #'
 #' lorem_ipsum(10, start_lipsum = FALSE)
+#' }
 lorem_ipsum <- function (n, ..., name = "Lorem_Ipsum") {
 
     if (missing(n)) stop("`n` is missing")
