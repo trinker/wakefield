@@ -82,7 +82,7 @@ r_data_frame(n=100,
 ## `peek` to view al columns
 ## `plot` (`table_heat`) for a graphic representation
 library(dplyr)
-
+\dontrun{
 r_data_frame(n=100,
     id,
     dob,
@@ -98,6 +98,7 @@ r_data_frame(n=100,
    r_na() \%>\%
    peek \%>\%
    plot(palette = "Set1")
+}
 }
 \author{
 Josh O'Brien and Tyler Rinker <tyler.rinker@gmail.com>.

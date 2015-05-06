@@ -28,10 +28,12 @@
 #' @examples
 #' r_data()
 #' r_data(10)
+#' \dontrun{
 #' r_data(10, paragraph, Attending = valid)
 #'
 #' peek(r_data_theme())
 #' plot(r_data_theme(), flip=TRUE)
+#' }
 #' r_data_theme(, "survey")
 #' r_data_theme(, "survey2")
 r_data <- function(n = 500, ...){
