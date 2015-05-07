@@ -42,6 +42,7 @@ table_heat(CO2)
 table_heat(iris)
 table_heat(state_populations)
 
+\dontrun{
 dat <- r_data_frame(100,
     lorem_ipsum,
     birth,
@@ -55,6 +56,7 @@ dat <- r_data_frame(100,
 
 table_heat(dat)
 table_heat(dat, flip=TRUE)
+
 table_heat(r_data_theme(), flip=TRUE)
 
 ## NA values
@@ -68,6 +70,7 @@ table_heat(r_na(dat, NULL), palette = "Set1")
 table_heat(r_na(dat, NULL), palette = "Dark2")
 table_heat(r_na(dat, NULL), palette = "Spectral")
 table_heat(r_na(dat, NULL), palette = "Reds")
+}
 }
 \keyword{class,}
 \keyword{type}
