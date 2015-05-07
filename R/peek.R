@@ -16,7 +16,6 @@
 #' particularly with text string data.  \code{peek} allows the user to see a
 #' truncated head for inspection purposes.
 #' @examples
-#' \dontrun{
 #' (dat1 <- r_data_frame(100, id, sentence, paragraph))
 #' peek(dat1)
 #' peek(dat1, n = 20)
@@ -36,7 +35,6 @@
 #'
 #' dat2
 #' peek(dat2)
-#' }
 peek <-
 function(x, n=10, width=10, ...) {
 

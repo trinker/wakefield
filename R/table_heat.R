@@ -26,7 +26,6 @@
 #' table_heat(iris)
 #' table_heat(state_populations)
 #'
-#' \dontrun{
 #' dat <- r_data_frame(100,
 #'     lorem_ipsum,
 #'     birth,
@@ -54,7 +53,6 @@
 #' table_heat(r_na(dat, NULL), palette = "Dark2")
 #' table_heat(r_na(dat, NULL), palette = "Spectral")
 #' table_heat(r_na(dat, NULL), palette = "Reds")
-#' }
 table_heat <- function(x, flip = FALSE, palette = "Set3", print = interactive(), sep = "\n"){
 
     types <- sapply(x, function(y) paste(tolower(class(y)), collapse = sep))

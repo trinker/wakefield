@@ -32,12 +32,10 @@ will produce different vector/column names when used inside of
 \code{r_data_frame} or \code{r_list}.
 }
 \examples{
-\dontrun{
 lorem_ipsum(10)
 paragraph(10)
 
 lorem_ipsum(10, start_lipsum = FALSE)
-}
 }
 \seealso{
 \code{\link[stringi]{stri_rand_lipsum}}
