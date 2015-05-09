@@ -224,7 +224,7 @@ r_data_frame(n=100,
 
 ### Related Series
 
-The user can also create related series via the `relate` argument in `r_series`.  It allows the user to specify the relationship between columns.  May be be a named list of \code{c("operation", "mean", "sd")} or a short hand string of the form of `"fM_sd"` where:
+The user can also create related series via the `relate` argument in `r_series`.  It allows the user to specify the relationship between columns.  `relate` may be a named list of \code{c("operation", "mean", "sd")} or a short hand string of the form of `"fM_sd"` where:
 
 - `f` is one of (+, -, *, /)
 - `M` is a mean value
