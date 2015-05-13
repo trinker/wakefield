@@ -56,12 +56,16 @@ r_list <- function(n, ..., rep.sep = "_") {
 
     ## Process each one in turn
     out <- lapply(ll, FUN = function(X) {
-        ## Turn any symbols/names into calls
-        if(is.name(X)) X <- as.call(list(X))
+
         ## See if ll will eval to a vector
         if (is.vector(try(eval(X), silent = TRUE))) return(eval(X))
+
         ## See if ll will eval to a data.frame
         if (is.data.frame(try(eval(X), silent = TRUE))) return(eval(X))
+
+        ## Turn any symbols/names into calls
+        if(is.name(X)) X <- as.call(list(X))
+
         ## Add/replace an argument named n
         X$n <- n
         eval(X)
@@ -97,4 +101,3 @@ r_list <- function(n, ..., rep.sep = "_") {
 
     setNames(out, nms)
 }
-

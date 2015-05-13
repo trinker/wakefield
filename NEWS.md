@@ -24,6 +24,9 @@ wakefield 0.1.0
 
 * `employment` was misspelled as `empoyment`.  Caught by Danilo Freire (<a href="https://github.com/trinker/wakefield/issues/2">issue #2</a>).
 
+* `r_list` did not handle vectors and data.frames that were passed to it.  The
+  symbols were turned into calls before they were tested as vector/data.frame.
+
 **NEW FEATURES**
 
 * `r_list` & `r_data_frame` now add a suffix to repeat variable names in a
