@@ -92,12 +92,30 @@
 #'    plot(palette = "Set1")
 r_data_frame <-
 function (n, ..., rep.sep = "_") {
-    out <- r_list(n = n, ..., rep.sep = "_")
+    out <- r_list(n = n, ..., rep.sep = rep.sep)
 
-    ## Search for series names to use
-    cnames <- sapply(out, function(x) attributes(x)[["cname"]])
-    nms <- as.list(names(out))
+    nms <- get_names(out, rep.sep)
+
+    out <- setNames(data.frame(out, stringsAsFactors = FALSE,
+        check.names = FALSE), nms)
+    dplyr::tbl_df(out)
+}
+
+
+
+get_names <- function(x, rep.sep){
+
+    listnames <- lapply(x, function(y) {
+        if (is.list(y)) return(names(y))
+        NA
+    })
+
+    nms <- as.list(names(x))
+    nms[sapply(x, is.list)] <- NA
+    cnames <- sapply(x, function(y) attributes(y)[["cname"]])
     nms[!sapply(cnames, is.null)] <- cnames[!sapply(cnames, is.null)]
+    nms[is.na(nms)] <- listnames[is.na(nms)]
+    nms <- unlist(nms)
 
     ## If duplicate names exist fix their suffix
     if (!is.null(rep.sep)){
@@ -105,9 +123,14 @@ function (n, ..., rep.sep = "_") {
             if (length(x) == 1) {x} else {paste(x, seq_along(x), sep = rep.sep)}
         })
     }
-
-    out <- setNames(data.frame(out, stringsAsFactors = FALSE,
-        check.names = FALSE), unlist(nms))
-    dplyr::tbl_df(out)
+    nms
 }
+
+
+
+
+
+
+
+
 

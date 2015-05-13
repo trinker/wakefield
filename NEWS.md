@@ -27,6 +27,8 @@ wakefield 0.1.0
 * `r_list` did not handle vectors and data.frames that were passed to it.  The
   symbols were turned into calls before they were tested as vector/data.frame.
 
+* `rep.sep` was not honored in `r_data_frame` ("_" was used).
+
 **NEW FEATURES**
 
 * `r_list` & `r_data_frame` now add a suffix to repeat variable names in a
