@@ -110,7 +110,7 @@ variables("matrix", ncol=6) %>%
 #    pandoc.table(format = "markdown", caption = "Available variable functions.")
 ```
 
-However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_table`:
+However, the user may also pass their own vector producing functions or vectors to `r_data_frame`.  Those with an `n` argument can be set by `r_data_frame`:
 
 ```{r}
 r_data_frame(
