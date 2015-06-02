@@ -73,6 +73,10 @@ wakefield 0.1.0
 * `relate` function added to generate related data as suggested by Wordpress
   user Ulf: http://goo.gl/H1RKsV.
 
+* `sex_inclusive` and `gender_inclusive` added to give a non-binary alternative
+  for sex/gender variables that are more inclusive.  Thanks to Matthew Sigal
+  for this https://github.com/trinker/wakefield/pull/4.
+
 **MINOR FEATURES**
 
 * `seriesname` function added to give a `data.frame` an attribute `seriesname`.

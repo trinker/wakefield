@@ -56,7 +56,8 @@ Other variable.functions: \code{\link{age}};
   \code{\link{dummy}}; \code{\link{education}};
   \code{\link{ela}}, \code{\link{level}},
   \code{\link{math}}; \code{\link{employment}};
-  \code{\link{eye}}; \code{\link{gpa}},
+  \code{\link{eye}}; \code{\link{gender_inclusive}},
+  \code{\link{sex_inclusive}}; \code{\link{gpa}},
   \code{\link{grade}}, \code{\link{grade_letter}};
   \code{\link{grade_level}}; \code{\link{group}};
   \code{\link{hair}}; \code{\link{height}},
