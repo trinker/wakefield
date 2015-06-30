@@ -23,7 +23,7 @@
 #' primary(10)
 #' pie(tab <- table(primary(10000)), col = names(tab))
 #' barplot(tab <- table(primary(10000, prob = probs(6))), col = names(tab))
-color <- function(n, k = 10, x = colors(), prob = NULL, name = "Color"){
+color <- function(n, k = 10, x = grDevices::colors(), prob = NULL, name = "Color"){
 
     stopifnot(k < length(x) || k > 0)
     if (!is.null(prob) && length(prob) != k) stop("length of `prob` must equa `k`")

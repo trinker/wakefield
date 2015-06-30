@@ -28,7 +28,7 @@ normal <-
 function (n, mean = 0, sd = 1, min = NULL, max = NULL, name = "Normal") {
 
     if (missing(n)) stop("`n` is missing")
-    out <- rnorm(n = n, mean = mean, sd = sd)
+    out <- stats::rnorm(n = n, mean = mean, sd = sd)
 
     if (!is.null(min)){
         out[out < min] <- min
@@ -57,7 +57,7 @@ function (n, mean = 0, sd = 1, min = NULL, max = NULL, digits = 2,
     name = "Normal") {
 
     if (missing(n)) stop("`n` is missing")
-    out <- round(rnorm(n = n, mean = mean, sd = sd), digits = digits)
+    out <- round(stats::rnorm(n = n, mean = mean, sd = sd), digits = digits)
 
     if (!is.null(min)){
         out[out < min] <- min

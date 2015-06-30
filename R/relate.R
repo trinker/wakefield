@@ -56,7 +56,7 @@ relate <- function(x, j, name = NULL, operation = "+", mean = 5, sd = 1,
 
     elems <- (j - 1) * length(x)
 
-    seed_dat <- data.frame(x, matrix(rnorm(elems, mean = mean, sd = sd),
+    seed_dat <- data.frame(x, matrix(stats::rnorm(elems, mean = mean, sd = sd),
         nrow = length(x)), stringsAsFactors = FALSE)
 
     if (!is.null(digits)) seed_dat <- round(seed_dat, digits)
@@ -65,7 +65,7 @@ relate <- function(x, j, name = NULL, operation = "+", mean = 5, sd = 1,
         seed_dat[, i] <- match.fun(operation)(seed_dat[, i - 1], seed_dat[, i])
     }
 
-    out <- setNames(seed_dat, paste(name, seq_len(j), sep = rep.sep))
+    out <- stats::setNames(seed_dat, paste(name, seq_len(j), sep = rep.sep))
 
     seriesname(dplyr::tbl_df(out), name)
 }

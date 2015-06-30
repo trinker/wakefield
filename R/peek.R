@@ -35,36 +35,29 @@
 #'
 #' dat2
 #' peek(dat2)
-peek <-
-function(x, n=10, width=10, ...) {
-
+peek <- 
+function (x, n = 10, width = 10, ...) {
     WD <- options()[["width"]]
-    options(width=3000)
-
-    o <- head(truncdf(as.data.frame(x), width), n = n, ...)
+    options(width = 3000)
+    o <- utils::head(truncdf(as.data.frame(x), width), n = n, 
+        ...)
     header <- "Source: local data frame [%s x %s]\n\n"
     cat(sprintf(header, nrow(x), ncol(x)))
-
-    out <- capture.output(o)
-    fill <- tail(out, 1)
-
-    nth_row <- paste(c(
-        paste(rep(".", nchar(nrow(o))), collapse = ""),
+    out <- utils::capture.output(o)
+    fill <- utils::tail(out, 1)
+    nth_row <- paste(c(paste(rep(".", nchar(nrow(o))), collapse = ""), 
         sapply(1:ncol(o), function(i) {
             elems <- c(colnames(o)[i], as.character(o[[i]]))
-            lens <- max(nchar(elems))
-            if (lens <= 3) return(paste(c(" ", rep(".", lens)), collapse=""))
+            elems[is.na(elems)] <- "NA"
+            lens <- max(nchar(elems), na.rm = TRUE)
+            if (lens <= 3) return(paste(c(" ", rep(".", lens)), 
+                collapse = ""))
             paste(c(rep(" ", (lens + 1) - 3), "..."), collapse = "")
-        })),
-        collapse = ""
-    )
-
-    cat(paste(c(out, nth_row), collapse="\n"), "\n")
-
-    options(width=WD)
+        })), collapse = "")
+    cat(paste(c(out, nth_row), collapse = "\n"), "\n")
+    options(width = WD)
     invisible(x)
 }
-
 
 truncdf <-
 function(x, end=10, begin=1) {

@@ -96,7 +96,7 @@ function (n, ..., rep.sep = "_") {
 
     nms <- get_names(out, rep.sep)
 
-    out <- setNames(data.frame(out, stringsAsFactors = FALSE,
+    out <- stats::setNames(data.frame(out, stringsAsFactors = FALSE,
         check.names = FALSE), nms)
     dplyr::tbl_df(out)
 }
@@ -119,7 +119,7 @@ get_names <- function(x, rep.sep){
 
     ## If duplicate names exist fix their suffix
     if (!is.null(rep.sep)){
-        nms <- ave(unlist(nms), unlist(nms), FUN = function(x) {
+        nms <- stats::ave(unlist(nms), unlist(nms), FUN = function(x) {
             if (length(x) == 1) {x} else {paste(x, seq_along(x), sep = rep.sep)}
         })
     }

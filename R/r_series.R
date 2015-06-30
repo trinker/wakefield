@@ -90,7 +90,7 @@ r_series <- function(fun, j, n, ..., integer = FALSE, relate = NULL,
                     "   mean value, and `sd` is a standard deviation of the mean value (e.g., \"*4_1\")."
                 )
             }
-            relate <- setNames(
+            relate <- stats::setNames(
                 as.list(
                     strsplit(
                         gsub("^([*/+-])", "\\1_", relate), "_"

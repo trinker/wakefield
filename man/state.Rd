@@ -4,7 +4,7 @@
 \alias{state}
 \title{Generate Random Vector of states}
 \usage{
-state(n, x = state.name,
+state(n, x = datasets::state.name,
   prob = wakefield::state_populations[["Proportion"]], name = "State")
 }
 \arguments{

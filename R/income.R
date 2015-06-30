@@ -23,7 +23,7 @@ income <-
 function (n, digits = 2, name = "Income") {
 
     if (missing(n)) stop("`n` is missing")
-    out <- round(rgamma(n, 2) * 20000, digits = digits)
+    out <- round(stats::rgamma(n, 2) * 20000, digits = digits)
     varname(out, name)
 
 }

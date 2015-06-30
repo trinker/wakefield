@@ -1,10 +1,9 @@
 Package: wakefield
 Title: Generate Random Data Sets
 Version: 0.2.0
-Authors@R: c(person("Tyler", "Rinker", email = "tyler.rinker@gmail.com",
-    role = c("aut", "cre")), person("Josh", "O'Brien", role = "ctb"),
-    person("Ananda", "Mahto", role = "ctb"),
-    person("MAtthew", "Sigal", role = "ctb"))
+Authors@R: c(person("Tyler", "Rinker", email = "tyler.rinker@gmail.com", role = c("aut",
+          "cre")), person("Josh", "O'Brien", role = "ctb"), person("Ananda", "Mahto",
+          role = "ctb"), person("MAtthew", "Sigal", role = "ctb"))
 Maintainer: Tyler Rinker <tyler.rinker@gmail.com>
 Description: Generates random data sets including: data.frames, lists, and
     vectors.
@@ -17,7 +16,7 @@ Imports:
     stringi
 Suggests:
     testthat
-Date: 2015-04-14
+Date: 2015-06-30
 License: GPL-2
 LazyData: TRUE
 Roxygen: list(wrap = FALSE)

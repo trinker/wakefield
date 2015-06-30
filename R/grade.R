@@ -41,7 +41,7 @@ grade <-
 function (n, mean = 88, sd = 4, name = "Grade", digits = 1) {
 
     if (missing(n)) stop("`n` is missing")
-    out <- rnorm(n = n, mean = mean, sd = sd)
+    out <- stats::rnorm(n = n, mean = mean, sd = sd)
     out[out > 100] <- 100
     varname(round(out, digits = digits), name)
 
@@ -57,7 +57,7 @@ grade_letter <-
 function (n, mean = 88, sd = 4, name = "Grade_Letter") {
 
     if (missing(n)) stop("`n` is missing")
-    out <- rnorm(n = n, mean = mean, sd = sd)
+    out <- stats::rnorm(n = n, mean = mean, sd = sd)
     out[out > 100] <- 100
     convert2letter(out, name)
 
@@ -74,7 +74,7 @@ gpa <-
 function (n, mean = 88, sd = 4, name = "GPA") {
 
     if (missing(n)) stop("`n` is missing")
-    out <- rnorm(n = n, mean = mean, sd = sd)
+    out <- stats::rnorm(n = n, mean = mean, sd = sd)
     out[out > 100] <- 100
     convert2scale_4.0(out, name)
 

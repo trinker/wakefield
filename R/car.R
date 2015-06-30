@@ -11,7 +11,7 @@
 #' @examples
 #' car(10)
 #' table(car(10000))
-car <- function(n, x = rownames(mtcars), prob = NULL, name = "Car") {
+car <- function(n, x = rownames(datasets::mtcars), prob = NULL, name = "Car") {
 
     if (missing(n)) stop("`n` is missing")
     out <- sample(x = x, size = n, replace = TRUE, prob = prob)

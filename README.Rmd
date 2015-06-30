@@ -139,7 +139,7 @@ r_data_frame(
 ```
 
 
-While, passing variable functions to `r_data_frame` without call parenthesis is handy the user may wish to set arguments.  This can be done through call parenthesis as we do with `data.frame` or `dplyr::data_frame`:
+While passing variable functions to `r_data_frame` without call parenthesis is handy, the user may wish to set arguments.  This can be done through call parenthesis as we do with `data.frame` or `dplyr::data_frame`:
 
 ```{r}
 r_data_frame(
@@ -287,7 +287,7 @@ r_data_frame(n=100,
 
 ## Visualizing Column Types
 
-It is helpful to see the column types and `NA`s as a visualization.  The `table_heat` (the `plot` method assigned to `tbl_df` as well).
+It is helpful to see the column types and `NA`s as a visualization.  The `table_heat` (also the `plot` method assigned to `tbl_df` as well) can provide visual glimpse of data types and missing cells.
 
 ```{r, fig.height=7, fig.width=11}
 set.seed(10)

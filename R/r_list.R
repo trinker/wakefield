@@ -94,10 +94,10 @@ r_list <- function(n, ..., rep.sep = "_") {
 
     ## If duplicate names exist fix their suffix
     if (!is.null(rep.sep)){
-        nms <- ave(nms, nms, FUN = function(x) {
+        nms <- stats::ave(nms, nms, FUN = function(x) {
             if (length(x) == 1) {x} else {paste(x, seq_along(x), sep = rep.sep)}
         })
     }
 
-    setNames(out, nms)
+    stats::setNames(out, nms)
 }

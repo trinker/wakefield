@@ -83,8 +83,7 @@ attribute. For example here we see the `race` variable function:
 
     race(n=10)
 
-    ##  [1] Black    White    Asian    White    White    Hispanic White   
-    ##  [8] White    Hispanic Native  
+    ##  [1] White White White White Asian White Black White White White
     ## Levels: White Hispanic Black Asian Bi-Racial Native Other Hawaiian
 
     attributes(race(n=10))
@@ -113,12 +112,12 @@ variable functions but is set once in `r_data_frame`:
     ##        Race
     ## 1     White
     ## 2     White
-    ## 3     Black
+    ## 3     White
     ## 4     White
     ## 5     White
-    ## 6     White
-    ## 7  Hispanic
-    ## 8     White
+    ## 6  Hispanic
+    ## 7     White
+    ## 8  Hispanic
     ## 9     White
     ## 10    White
     ## ..      ...
@@ -140,24 +139,24 @@ variable functions:
 
     ## Source: local data frame [500 x 8]
     ## 
-    ##     ID  Race Age    Sex     Hour  IQ Height  Died
-    ## 1  001 White  26   Male 00:00:00  98     72  TRUE
-    ## 2  002 White  30   Male 00:00:00  94     74 FALSE
-    ## 3  003 White  22 Female 00:00:00  99     69  TRUE
-    ## 4  004 White  26   Male 00:00:00 103     66  TRUE
-    ## 5  005 White  26 Female 00:00:00 102     71  TRUE
-    ## 6  006 White  26 Female 00:00:00  97     71 FALSE
-    ## 7  007 White  29 Female 00:30:00  94     65  TRUE
-    ## 8  008 Black  22   Male 00:30:00 105     75  TRUE
-    ## 9  009 White  33 Female 00:30:00 105     65 FALSE
-    ## 10 010 White  32   Male 00:30:00 102     65 FALSE
-    ## .. ...   ... ...    ...      ... ...    ...   ...
+    ##     ID     Race Age    Sex     Hour  IQ Height  Died
+    ## 1  001    Black  24   Male 00:00:00 108     73 FALSE
+    ## 2  002    White  31   Male 00:00:00 123     65  TRUE
+    ## 3  003    White  34 Female 00:00:00  97     73 FALSE
+    ## 4  004    White  32 Female 00:00:00  83     69  TRUE
+    ## 5  005 Hispanic  23 Female 00:00:00 104     71  TRUE
+    ## 6  006 Hispanic  26 Female 00:00:00  97     74 FALSE
+    ## 7  007    White  27   Male 00:00:00 102     73  TRUE
+    ## 8  008    White  26 Female 00:00:00  92     64 FALSE
+    ## 9  009    White  24 Female 00:00:00 100     67 FALSE
+    ## 10 010 Hispanic  32   Male 00:00:00 116     70  TRUE
+    ## .. ...      ... ...    ...      ... ...    ...   ...
 
 There are 70 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
-<!-- html table generated in R 3.2.0 by xtable 1.7-4 package -->
-<!-- Mon Jun 01 21:09:23 2015 -->
+<!-- html table generated in R 3.3.0 by xtable 1.7-4 package -->
+<!-- Tue Jun 30 11:48:45 2015 -->
 <table>
 <tr>
 <td>
@@ -421,18 +420,18 @@ vectors to `r_data_frame`. Those with an `n` argument can be set by
 
     ## Source: local data frame [500 x 10]
     ## 
-    ##     ID     Scoring Smoker     Race Age    Sex     Hour  IQ Height  Died
-    ## 1  001 -1.00172866   TRUE    White  32   Male 00:00:00 107     74 FALSE
-    ## 2  002 -1.22045688  FALSE Hispanic  34 Female 00:00:00 112     69  TRUE
-    ## 3  003  0.03800246   TRUE    White  28 Female 00:00:00  84     65 FALSE
-    ## 4  004  0.71036400   TRUE    White  21 Female 00:00:00  85     65 FALSE
-    ## 5  005  0.59644996   TRUE    White  22 Female 00:00:00  96     69  TRUE
-    ## 6  006  0.24556053   TRUE    White  23   Male 00:00:00 123     79  TRUE
-    ## 7  007  1.59434567  FALSE    White  30 Female 00:00:00 101     65  TRUE
-    ## 8  008  0.14108265   TRUE    White  31   Male 00:00:00  88     71  TRUE
-    ## 9  009 -0.96799173   TRUE    White  29   Male 00:00:00  98     68 FALSE
-    ## 10 010 -0.06773925  FALSE Hispanic  22 Female 00:30:00  89     70 FALSE
-    ## .. ...         ...    ...      ... ...    ...      ... ...    ...   ...
+    ##     ID    Scoring Smoker     Race Age    Sex     Hour  IQ Height  Died
+    ## 1  001  1.3108227   TRUE    White  33   Male 00:00:00  95     70  TRUE
+    ## 2  002 -1.2576885   TRUE    White  27   Male 00:00:00  98     69  TRUE
+    ## 3  003  0.2172327   TRUE    White  28   Male 00:00:00  90     71  TRUE
+    ## 4  004 -0.6910862   TRUE    Black  21 Female 00:00:00 105     70  TRUE
+    ## 5  005 -0.4312079   TRUE    White  21 Female 00:00:00  88     74  TRUE
+    ## 6  006  0.5060815  FALSE Hispanic  34   Male 00:00:00 114     69 FALSE
+    ## 7  007 -0.3152411  FALSE    White  35 Female 00:00:00 102     70  TRUE
+    ## 8  008 -1.4761484  FALSE    White  34   Male 00:00:00 115     68 FALSE
+    ## 9  009 -0.3072190  FALSE Hispanic  30 Female 00:00:00 107     69 FALSE
+    ## 10 010 -0.5158378   TRUE    White  20   Male 00:30:00 119     70  TRUE
+    ## .. ...        ...    ...      ... ...    ...      ... ...    ...   ...
 
     r_data_frame(
         n = 500,
@@ -444,20 +443,20 @@ vectors to `r_data_frame`. Those with an `n` argument can be set by
     ## Source: local data frame [500 x 7]
     ## 
     ##     ID Age_1 Age_2 Age_3 Grade_1 Grade_2 Grade_3
-    ## 1  001    28    26    24    96.1    78.9    83.7
-    ## 2  002    30    22    27    95.4    86.9    89.4
-    ## 3  003    35    27    22    91.8    86.9    89.4
-    ## 4  004    25    27    33    81.7    87.1    91.1
-    ## 5  005    33    35    33    86.7    87.2    82.4
-    ## 6  006    29    20    34    91.1    86.3    92.1
-    ## 7  007    26    29    33    86.2    87.8    81.3
-    ## 8  008    34    33    31    84.5    81.6    89.8
-    ## 9  009    21    33    27    96.0    88.6    94.0
-    ## 10 010    31    29    26    91.4    89.0    87.8
+    ## 1  001    23    23    33    87.0    87.7    89.9
+    ## 2  002    24    24    28    83.4    86.3    86.7
+    ## 3  003    27    35    22    86.6    87.1    85.4
+    ## 4  004    21    20    29    92.5    92.7    81.7
+    ## 5  005    26    20    23    86.0    86.7    99.7
+    ## 6  006    34    26    20    94.4    90.7    87.3
+    ## 7  007    29    20    21    87.4    86.9    91.9
+    ## 8  008    34    22    21    83.6    83.4    90.2
+    ## 9  009    34    35    33    86.1    94.0    88.7
+    ## 10 010    23    35    30    85.9    89.2    92.7
     ## .. ...   ...   ...   ...     ...     ...     ...
 
-While, passing variable functions to `r_data_frame` without call
-parenthesis is handy the user may wish to set arguments. This can be
+While passing variable functions to `r_data_frame` without call
+parenthesis is handy, the user may wish to set arguments. This can be
 done through call parenthesis as we do with `data.frame` or
 `dplyr::data_frame`:
 
@@ -479,16 +478,16 @@ done through call parenthesis as we do with `data.frame` or
     ## Source: local data frame [500 x 11]
     ## 
     ##     ID     Scoring Smoker Reading(mins)     Race Age    Sex     Hour  IQ
-    ## 1  001  1.25315699  FALSE            18    White   9   Male 00:00:00  82
-    ## 2  002 -0.10451919  FALSE            21    White   8 Female 00:00:00  94
-    ## 3  003 -0.11401295   TRUE            19    White  14 Female 00:00:00 104
-    ## 4  004  0.77380822  FALSE            16    White   9   Male 00:00:00  88
-    ## 5  005  0.36936803  FALSE            18 Hispanic  13 Female 00:00:00 108
-    ## 6  006  0.72023857   TRUE            24    White  13   Male 00:00:00  93
-    ## 7  007  0.16074250  FALSE            17    White  10   Male 00:00:00 126
-    ## 8  008 -0.03576366  FALSE            18    Black  11 Female 00:00:00  99
-    ## 9  009  0.15264881   TRUE            28    White  10   Male 00:00:00 111
-    ## 10 010 -0.22782276  FALSE            23    White  10 Female 00:00:00  95
+    ## 1  001  0.17631418  FALSE            20 Hispanic   9   Male 00:00:00  93
+    ## 2  002 -0.59194452  FALSE            17    White  13   Male 00:00:00 115
+    ## 3  003 -0.10898668  FALSE            20 Hispanic  10   Male 00:00:00  98
+    ## 4  004 -1.33935262  FALSE            27    White   9 Female 00:00:00  99
+    ## 5  005  0.67257455   TRUE            17    White  11 Female 00:00:00 118
+    ## 6  006  1.78132792   TRUE            24 Hispanic  13 Female 00:00:00 103
+    ## 7  007  0.04807019   TRUE            17    Black  11 Female 00:00:00 100
+    ## 8  008 -0.02372278   TRUE            17    White   9   Male 00:00:00  91
+    ## 9  009 -2.47915414   TRUE            20    White  10 Female 00:00:00 107
+    ## 10 010  0.60571375   TRUE            19 Hispanic  13 Female 00:00:00 122
     ## .. ...         ...    ...           ...      ... ...    ...      ... ...
     ## Variables not shown: Height (dbl), Died (lgl)
 
@@ -518,16 +517,16 @@ pipeline:
     ## Source: local data frame [30 x 10]
     ## 
     ##    ID     Race Age    Sex     Hour  IQ Height  Died    Scoring Smoker
-    ## 1  01    White  NA Female     <NA> 108     NA    NA -1.2889925     NA
-    ## 2  02    White  NA   Male     <NA>  NA     66    NA         NA  FALSE
-    ## 3  03    White  22 Female 01:00:00 103     76 FALSE         NA   TRUE
-    ## 4  04    White  NA     NA 01:30:00  94     NA  TRUE -1.7087044  FALSE
-    ## 5  05 Hispanic  NA Female 04:30:00  NA     74    NA -0.1776321     NA
-    ## 6  06       NA  27 Female     <NA> 101     77    NA  1.0338205   TRUE
-    ## 7  07    White  34     NA 05:30:00  NA     NA  TRUE  0.9559290  FALSE
-    ## 8  08       NA  27   Male     <NA> 104     NA FALSE  1.3647700   TRUE
-    ## 9  09       NA  30 Female 06:30:00  95     66    NA -0.1283762   TRUE
-    ## 10 10    White  25     NA 06:30:00 104     NA    NA -1.3232695   TRUE
+    ## 1  01       NA  NA   Male 00:00:00  99     64  TRUE         NA  FALSE
+    ## 2  02    Black  NA     NA 00:00:00 107     75 FALSE         NA     NA
+    ## 3  03    White  29     NA     <NA> 133     NA  TRUE         NA     NA
+    ## 4  04       NA  NA Female 01:00:00 112     66  TRUE -1.6886817     NA
+    ## 5  05 Hispanic  NA   Male     <NA>  NA     NA    NA         NA     NA
+    ## 6  06    White  NA     NA 03:00:00  78     68    NA  0.7237363     NA
+    ## 7  07    White  24 Female     <NA> 112     71 FALSE         NA  FALSE
+    ## 8  08    White  31 Female 06:30:00  NA     72  TRUE  1.4534040  FALSE
+    ## 9  09    Black  NA   Male     <NA>  99     NA  TRUE         NA   TRUE
+    ## 10 10    White  NA   Male     <NA>  NA     NA  TRUE -0.6155962     NA
     ## .. ..      ... ...    ...      ... ...    ...   ...        ...    ...
 
 Repeated Measures & Time Series
@@ -819,7 +818,8 @@ Visualizing Column Types
 ------------------------
 
 It is helpful to see the column types and `NA`s as a visualization. The
-`table_heat` (the `plot` method assigned to `tbl_df` as well).
+`table_heat` (also the `plot` method assigned to `tbl_df` as well) can
+provide visual glimpse of data types and missing cells.
 
     set.seed(10)
 

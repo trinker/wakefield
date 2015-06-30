@@ -5,7 +5,7 @@
 \alias{primary}
 \title{Generate Random Vector of Colors}
 \usage{
-color(n, k = 10, x = colors(), prob = NULL, name = "Color")
+color(n, k = 10, x = grDevices::colors(), prob = NULL, name = "Color")
 
 primary(n, x = c("Red", "Green", "Blue", "Yellow", "Black", "White"),
   prob = NULL, name = "Color")

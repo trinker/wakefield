@@ -67,7 +67,7 @@
 #' pie(table(state(10000)))
 #' sort(100*table(state(n <- 10000))/n)
 state <-
-function (n, x = state.name, prob = wakefield::state_populations[["Proportion"]],
+function (n, x = datasets::state.name, prob = wakefield::state_populations[["Proportion"]],
     name = "State") {
 
     if (missing(n)) stop("`n` is missing")

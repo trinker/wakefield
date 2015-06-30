@@ -4,7 +4,7 @@
 \alias{car}
 \title{Generate Random Vector of Cars}
 \usage{
-car(n, x = rownames(mtcars), prob = NULL, name = "Car")
+car(n, x = rownames(datasets::mtcars), prob = NULL, name = "Car")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
