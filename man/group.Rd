@@ -2,7 +2,7 @@
 % Please edit documentation in R/group.R
 \name{group}
 \alias{group}
-\title{Generate Random Vector of Groups}
+\title{Generate Random Vector of Control/Treatment Groups}
 \usage{
 group(n, x = c("Control", "Treatment"), prob = NULL, name = "Group")
 }
@@ -22,7 +22,10 @@ used inside of \code{r_data_frame} or \code{r_list}.}
 Returns a random factor vector of group (control/treatment) elements.
 }
 \description{
-Generate a random vector of groups (control/treatment).
+Generate a random vector of binary groups (e.g., control/treatment).
+}
+\note{
+If you want > 2 groups see `r_sample_factor`.
 }
 \examples{
 group(10)

@@ -84,6 +84,9 @@ wakefield 0.1.0
 
 IMPROVEMENTS
 
+* Added clarification to `groups` to indicate its binary grouping and alternate
+  grouping for &gt; 2 groups (see <a href="https://github.com/trinker/wakefield/issues/5">issue #5</a>).
+
 **CHANGES**
 
 

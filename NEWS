@@ -84,6 +84,9 @@ MINOR FEATURES
 
 IMPROVEMENTS
 
+* Added clarification to `groups` to indicate its binary grouping and alternate
+  grouping for > 2 groups (see issue #5).
+
 CHANGES
 
 

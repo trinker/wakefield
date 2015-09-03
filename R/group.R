@@ -1,12 +1,13 @@
-#' Generate Random Vector of Groups
+#' Generate Random Vector of Control/Treatment Groups
 #'
-#' Generate a random vector of groups (control/treatment).
+#' Generate a random vector of binary groups (e.g., control/treatment).
 #'
 #' @inheritParams dummy
 #' @param x A vector of groups to sample from.
 #' @return Returns a random factor vector of group (control/treatment) elements.
 #' @keywords group
 #' @export
+#' @note If you want > 2 groups see `r_sample_factor`.
 #' @include utils.R r_sample_binary.R
 #' @family variable functions
 #' @examples
