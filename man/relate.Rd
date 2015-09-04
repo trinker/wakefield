@@ -13,13 +13,13 @@ relate(x, j, name = NULL, operation = "+", mean = 5, sd = 1,
 \item{j}{The number of columns to produce.}
 
 \item{name}{An optional prefix name to give to the columns.  If \code{NULL}
-attepts to take from the \code{varname} attribute of \code{x}.  If not found,
+attempts to take from the \code{varname} attribute of \code{x}.  If not found,
 "Variable" is used.}
 
 \item{operation}{A operation character vector of length 1; either
 \code{c("+", "-", "*", "/")}.  This is the relationship between columns.}
 
-\item{mean}{Mean is the average vaule to add, subtract, multiple, or divide
+\item{mean}{Mean is the average value to add, subtract, multiple, or divide
 by.}
 
 \item{sd}{The amount of variability to allow in \code{mean}.  Setting to 0
@@ -29,7 +29,7 @@ the mean value (see \bold{Examples} for a demonstration).}
 \item{rep.sep}{A separator to use for repeated variable names.  For example
 if the \code{\link[wakefield]{age}} is used three times
 (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
-three columns.  The resuts in column names \code{c("Age_1", "Age_2", "Age_3")}.}
+three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.}
 
 \item{digits}{The number of digits to round to.  Defaults to the max number
 of significant digits in \code{x}.}
@@ -38,7 +38,7 @@ of significant digits in \code{x}.}
 Returns a \code{\link[dplyr]{tbl_df}}.
 }
 \description{
-Generate coumns that are related.
+Generate columns that are related.
 }
 \examples{
 relate(1:10, 10)

@@ -4,8 +4,8 @@
 #' integers.
 #'
 #' @param x A \code{\link[base]{data.frame}} of \code{\link[base]{factor}}s.
-#' @param cols Numeric indices of the columns to icude (use \code{-} to explcude
-#' as well).  Default is to assign random \code{NA}s to al columns except the
+#' @param cols Numeric indices of the columns to incude (use \code{-} to exclude
+#' as well).  Default is to assign random \code{NA}s to all columns except the
 #' first column.
 #' @param fun An \code{as.} coercion function to apply to each column.  Default
 #' is \code{\link[base]{as.integer}}.

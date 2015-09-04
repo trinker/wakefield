@@ -8,9 +8,9 @@ r_na(x, cols = -1, prob = 0.05)
 }
 \arguments{
 \item{x}{A \code{\link[base]{data.frame}} or \code{\link[base]{list}} to
-randonly replace elements with \code{NA}s.}
+randomly replace elements with \code{NA}s.}
 
-\item{cols}{Numeric indices of the columns to icude (use \code{-} to explcude
+\item{cols}{Numeric indices of the columns to incude (use \code{-} to exlcude
 as well).  Default is to assign random \code{NA}s to al columns except the
 first column.}
 

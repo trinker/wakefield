@@ -5,7 +5,7 @@
 #' @inheritParams r_sample_factor
 #' @param random logical.  If \code{TRUE} the times are randomized, otherwise the
 #' times are sequential.
-#' @return Returns a random vector of  time elements in H:M:S format.
+#' @return Returns a random vector of time elements in H:M:S format.
 #' @keywords time
 #' @export
 #' @seealso \code{\link[chron]{times}}

@@ -41,7 +41,7 @@ NULL
 #' @name name_neutral
 #' @usage data(name_neutral)
 #' @format A character vector with 662 elements
-#' @references \url{http://www.census.gov}
+#' @references http://www.census.gov
 NULL
 
 

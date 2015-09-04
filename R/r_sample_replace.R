@@ -6,7 +6,7 @@
 #' the environment of \code{r_data_frame} or \code{r_list}.
 #' @param x A vector of elements to chose from.
 #' @param prob A vector of probabilities to chose from.
-#' @param replace logical.  If \code{TRUE} samping is done with replacement.
+#' @param replace logical.  If \code{TRUE} sampling is done with replacement.
 #' Default is without replacement.
 #' @param name The name to assign to the output vector's \code{varname}
 #' attribute.  This is used to auto assign names to the column/vector name when

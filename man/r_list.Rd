@@ -12,9 +12,9 @@ r_list(n, ..., rep.sep = "_")
 \item{rep.sep}{A separator to use for repeated variable names.  For example
 if the \code{\link[wakefield]{age}} is used three times
 (\code{r_list(age, age, age)}), the name "Age" will be assigned to all three
-vectors in the list.  The resuts in column names
+vectors in the list.  The results in column names
 \code{c("Age_1", "Age_2", "Age_3")}.  To turn of this behavior use
-\code{rep.sep = NULL}.  This resuts in \code{c("Age", "Age", "Age")} for
+\code{rep.sep = NULL}.  This results in \code{c("Age", "Age", "Age")} for
 vector names, leading to \code{c("Age", "Age.1", "Age.2")} if coerced to a
 \code{\link[base]{data.frame}}.}
 

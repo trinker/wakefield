@@ -2,7 +2,7 @@
 #'
 #' Description
 #'
-#' @param fun A \pkg{waefield} variable function.
+#' @param fun A \pkg{wakefield} variable function.
 #' @param n The number of rows to produce.
 #' @param \ldots Additional arguments passed to \code{fun}.
 #' @param prefix logical.  If \code{TRUE} the original factor name (supplied to
@@ -10,7 +10,7 @@
 #' generated from the factor's categories.
 #' @param rep.sep A separator to use for the variable and category part of names
 #' when \code{prefix = TRUE}.  For example if the \code{\link[wakefield]{age}}
-#' is used (\code{r_dummy(sex)}), this resuts in column names
+#' is used (\code{r_dummy(sex)}), this results in column names
 #' \code{c("Sex_Male", "Sex_Female")}.
 #' @return Returns a \code{\link[dplyr]{tbl_df}}.
 #' @keywords dummy

@@ -27,7 +27,7 @@ Generate a random vector and coerces to an ordered factor.
 \examples{
 r_sample_ordered(100, name = "Var")
 
-lvls <- c("Strongly Agree", "Agree", "Neutral", "Disagree","Strongly Disagree")
+lvls <- c("Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree")
 table(r_sample_ordered(x = lvls, n=1000))
 
 (out <- r_sample_ordered(x = c("Black", "Grey", "White"),

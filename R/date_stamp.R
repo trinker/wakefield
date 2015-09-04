@@ -12,8 +12,8 @@
 #' Note that \code{start}, \code{k}, and \code{by} work together to make a
 #' vector of dates to sample from.  See \code{\link[base]{seq.Date}} for
 #' additional information.
-#' @param start A date to start the sequance at.
-#' @param k The length of the sequnce (number of the elements) so build out from
+#' @param start A date to start the sequence at.
+#' @param k The length of the sequence (number of the elements) so build out from
 #' \code{start}.
 #' @param by The interval to use in building the sequence.
 #' @param prob A vector of probabilities to chose from.

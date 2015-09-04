@@ -17,7 +17,7 @@
 #' @param rep.sep A separator to use for repeated variable names.  For example
 #' if the \code{\link[wakefield]{age}} is used three times
 #' (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
-#' three columns.  The resuts in column names \code{c("Age_1", "Age_2", "Age_3")}.
+#' three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
 #' @return Returns a \code{\link[dplyr]{tbl_df}}.
 #' @references \url{https://github.com/trinker/wakefield/issues/1/#issuecomment-96166910}
 #' @export

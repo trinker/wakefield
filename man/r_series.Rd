@@ -25,7 +25,7 @@ the form of "fM_sd" where `f` is one of (+, -, *, /), `M` is a mean value, and
 \item{rep.sep}{A separator to use for repeated variable names.  For example
 if the \code{\link[wakefield]{age}} is used three times
 (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
-three columns.  The resuts in column names \code{c("Age_1", "Age_2", "Age_3")}.}
+three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.}
 
 \item{\ldots}{Additional arguments passed to \code{fun}.}
 }

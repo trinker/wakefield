@@ -3,7 +3,7 @@
 #' Generate a random vector of educational attainment level.
 #'
 #' @details The educational attainments and probabilities used match approximate
-#' U.S. educational attainment make-up (\url{http://www.census.gov}):
+#' U.S. educational attainment make-up (http://www.census.gov):
 #'
 #' \tabular{lr}{
 #'   \bold{ Highest Attainment}        \tab \bold{Percent} \cr

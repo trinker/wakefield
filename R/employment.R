@@ -3,7 +3,7 @@
 #' Generate a random vector of employment statuses.
 #'
 #' @inheritParams r_sample_factor
-#' @details The folowing arbitraty probabilities are used:
+#' @details The following arbitrary probabilities are used:
 #'
 #' \tabular{lr}{
 #'   \bold{ Employment Status}  \tab \bold{Percent}\cr

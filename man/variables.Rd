@@ -7,8 +7,8 @@
 variables(type = NULL, ncols = 5, ...)
 }
 \arguments{
-\item{type}{The output type. Must must be either \code{NULL} (returns a
-character evctor), \code{"matrix"}, or \code{"list"}; or the user may extract
+\item{type}{The output type. Must be either \code{NULL} (returns a
+character vector), \code{"matrix"}, or \code{"list"}; or the user may extract
 a specific type from a list using:
 \code{"character"}, \code{"date"}, \code{"factor"}, \code{"integer"},
 \code{"logical"}, \code{"numeric"}, \code{"ordered factor"}.  Setting

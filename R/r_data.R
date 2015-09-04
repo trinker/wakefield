@@ -1,4 +1,4 @@
-#' Pre-Seleceted Column Data Set
+#' Pre-Selected Column Data Set
 #'
 #' \code{r_data} - Generate a data set with pre-set columns selected.
 #'
@@ -50,11 +50,11 @@ r_data <- function(n = 500, ...){
     )
 }
 
-#' Pre-Seleceted Column Data Set
+#' Pre-Selected Column Data Set
 #'
 #' \code{r_data_theme} - Generate a themed data set with pre-set columns.
 #'
-#' @param data_theme A data theme.  Currenty selections include:
+#' @param data_theme A data theme.  Currently selections include:
 #' \describe{
 #'   \item{the_works}{all available variable functions}
 #'   \item{survey}{ID column plus 10 numeric 5-point Likert type response columns}

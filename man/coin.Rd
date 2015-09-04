@@ -22,7 +22,7 @@ used inside of \code{r_data_frame} or \code{r_list}.}
 Returns a random factor vector of coin flip outcome elements.
 }
 \description{
-Generate a random vector of coin fips (heads/tails).
+Generate a random vector of coin flips (heads/tails).
 }
 \examples{
 coin(10)

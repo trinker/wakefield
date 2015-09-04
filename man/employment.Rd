@@ -26,7 +26,7 @@ Returns a random vector of employment status elements.
 Generate a random vector of employment statuses.
 }
 \details{
-The folowing arbitraty probabilities are used:
+The following arbitrary probabilities are used:
 
 \tabular{lr}{
   \bold{ Employment Status}  \tab \bold{Percent}\cr

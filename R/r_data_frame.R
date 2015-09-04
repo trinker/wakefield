@@ -10,8 +10,8 @@
 #' @param rep.sep A separator to use for repeated variable names.  For example
 #' if the \code{\link[wakefield]{age}} is used three times
 #' (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
-#' three columns.  The resuts in column names \code{c("Age_1", "Age_2", "Age_3")}.
-#' To turn of this behavior use  \code{rep.sep = NULL}.  This resuts in
+#' three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
+#' To turn of this behavior use  \code{rep.sep = NULL}.  This results in
 #' \code{c("Age", "Age.1", "Age.2")} column names in the
 #' \code{\link[base]{data.frame}}.
 #' @return Returns a \code{\link[dplyr]{tbl_df}}.

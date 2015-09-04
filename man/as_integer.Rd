@@ -9,8 +9,8 @@ as_integer(x, cols = NULL, fun = as.integer)
 \arguments{
 \item{x}{A \code{\link[base]{data.frame}} of \code{\link[base]{factor}}s.}
 
-\item{cols}{Numeric indices of the columns to icude (use \code{-} to explcude
-as well).  Default is to assign random \code{NA}s to al columns except the
+\item{cols}{Numeric indices of the columns to incude (use \code{-} to exclude
+as well).  Default is to assign random \code{NA}s to all columns except the
 first column.}
 
 \item{fun}{An \code{as.} coercion function to apply to each column.  Default

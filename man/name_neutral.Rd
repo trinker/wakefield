@@ -13,7 +13,7 @@ A dataset containing a character vector gender neutral names according to the
 U.S. Census.
 }
 \references{
-\url{http://www.census.gov}
+http://www.census.gov
 }
 \keyword{datasets}
 

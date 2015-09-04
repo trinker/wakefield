@@ -3,7 +3,7 @@
 #' \code{height} and \code{height_in} - Generate a random normal vector of
 #' heights in inches.
 #'
-#' @note \code{height} rounds to nearest whoe number.  \code{height_in} &
+#' @note \code{height} rounds to nearest whole number.  \code{height_in} &
 #' \code{height_in} round to the nearest tenths.
 #'
 #' @inheritParams normal_round

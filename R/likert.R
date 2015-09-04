@@ -3,7 +3,7 @@
 #' Generate a random vector of Likert-type responses.
 #'
 #' @inheritParams r_sample_factor
-#' @note \code{likert} & \code{likert_5} are identical outputs, sampeling from a
+#' @note \code{likert} & \code{likert_5} are identical outputs, sampling from a
 #' 5-point response scale.  \code{likert_7} samples from a 7-point response
 #' scale.
 #' @return Returns a random vector of Likert-type response elements.

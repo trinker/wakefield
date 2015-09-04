@@ -15,7 +15,7 @@ the environment of \code{r_data_frame} or \code{r_list}.}
 
 \item{prob}{A vector of probabilities to chose from.}
 
-\item{replace}{logical.  If \code{TRUE} samping is done with replacement.
+\item{replace}{logical.  If \code{TRUE} sampling is done with replacement.
 Default is without replacement.}
 
 \item{name}{The name to assign to the output vector's \code{varname}

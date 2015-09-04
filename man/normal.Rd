@@ -18,10 +18,10 @@ the environment of \code{r_data_frame} or \code{r_list}.}
 
 \item{sd}{The standard deviation of the normal distribution to draw from.}
 
-\item{min}{A numeric lower boundary cutoff.  Resuts less than this value will be
+\item{min}{A numeric lower boundary cutoff.  Results less than this value will be
 replaced with \code{min}.}
 
-\item{max}{A numeric upper boundary cutoff.  Resuts greater than this value will
+\item{max}{A numeric upper boundary cutoff.  Results greater than this value will
 be replaced with \code{max}.}
 
 \item{name}{The name to assign to the output vector's \code{varname}
@@ -39,7 +39,7 @@ Returns a random vector of elements.
 random normal vector.
 
 \code{normal_round} - A wrapper for \code{\link[stats]{rnorm}} that generate
-a roounded random normal vector.
+a rounded random normal vector.
 }
 \examples{
 normal(100, name = "Var")

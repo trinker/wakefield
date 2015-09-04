@@ -35,7 +35,7 @@ Returns a random vector of Likert-type response elements.
 Generate a random vector of Likert-type responses.
 }
 \note{
-\code{likert} & \code{likert_5} are identical outputs, sampeling from a
+\code{likert} & \code{likert_5} are identical outputs, sampling from a
 5-point response scale.  \code{likert_7} samples from a 7-point response
 scale.
 }

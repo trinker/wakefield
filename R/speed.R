@@ -3,7 +3,7 @@
 #' \code{speed} and \code{speed_in} - Generate a random normal vector of
 #' speeds in inches.
 #'
-#' @note \code{speed} rounds to nearest whoe number.  \code{speed_in} &
+#' @note \code{speed} rounds to nearest whole number.  \code{speed_in} &
 #' \code{speed_in} round to the nearest tenths.
 #'
 #' @inheritParams normal_round

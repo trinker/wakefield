@@ -3,7 +3,7 @@
 \name{r_data}
 \alias{r_data}
 \alias{r_data_theme}
-\title{Pre-Seleceted Column Data Set}
+\title{Pre-Selected Column Data Set}
 \usage{
 r_data(n = 500, ...)
 
@@ -12,7 +12,7 @@ r_data_theme(n = 100, data_theme = "the_works")
 \arguments{
 \item{n}{The length to pass to the randomly generated vectors (number of rows).}
 
-\item{data_theme}{A data theme.  Currenty selections include:
+\item{data_theme}{A data theme.  Currently selections include:
 \describe{
   \item{the_works}{all available variable functions}
   \item{survey}{ID column plus 10 numeric 5-point Likert type response columns}

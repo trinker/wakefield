@@ -25,9 +25,9 @@ Note that \code{start}, \code{k}, and \code{by} work together to make a
 vector of dates to sample from.  See \code{\link[base]{seq.Date}} for
 additional information.}
 
-\item{start}{A date to start the sequance at.}
+\item{start}{A date to start the sequence at.}
 
-\item{k}{The length of the sequnce (number of the elements) so build out from
+\item{k}{The length of the sequence (number of the elements) so build out from
 \code{start}.}
 
 \item{by}{The interval to use in building the sequence.}

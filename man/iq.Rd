@@ -15,10 +15,10 @@ the environment of \code{r_data_frame} or \code{r_list}.}
 
 \item{sd}{The standard deviation of the normal distribution to draw from.}
 
-\item{min}{A numeric lower boundary cutoff.  Resuts less than this value will be
+\item{min}{A numeric lower boundary cutoff.  Results less than this value will be
 replaced with \code{min}.}
 
-\item{max}{A numeric upper boundary cutoff.  Resuts greater than this value will
+\item{max}{A numeric upper boundary cutoff.  Results greater than this value will
 be replaced with \code{max}.}
 
 \item{digits}{Integer indicating the number of decimal places to be used.

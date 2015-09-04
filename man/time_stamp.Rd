@@ -23,7 +23,7 @@ attribute.  This is used to auto assign names to the column/vector name when
 used inside of \code{r_data_frame} or \code{r_list}.}
 }
 \value{
-Returns a random vector of  time elements in H:M:S format.
+Returns a random vector of time elements in H:M:S format.
 }
 \description{
 Generate a random vector of times in H:M:S format.

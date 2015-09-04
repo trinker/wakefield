@@ -1,6 +1,6 @@
 #' Generate Random Vector of Coin Flips
 #'
-#' Generate a random vector of coin fips (heads/tails).
+#' Generate a random vector of coin flips (heads/tails).
 #'
 #' @inheritParams dummy
 #' @param x A vector of coin outcomes to sample from.

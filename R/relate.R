@@ -1,15 +1,15 @@
 #' Create Related Numeric Columns
 #'
-#' Generate coumns that are related.
+#' Generate columns that are related.
 #'
 #' @param x A starting column.
 #' @param j The number of columns to produce.
 #' @param name An optional prefix name to give to the columns.  If \code{NULL}
-#' attepts to take from the \code{varname} attribute of \code{x}.  If not found,
+#' attempts to take from the \code{varname} attribute of \code{x}.  If not found,
 #' "Variable" is used.
 #' @param operation A operation character vector of length 1; either
 #' \code{c("+", "-", "*", "/")}.  This is the relationship between columns.
-#' @param mean Mean is the average vaule to add, subtract, multiple, or divide
+#' @param mean Mean is the average value to add, subtract, multiple, or divide
 #' by.
 #' @param sd The amount of variability to allow in \code{mean}.  Setting to 0
 #' will constrain the operation between x_(n - 1) column and x_n to be exactly
@@ -17,7 +17,7 @@
 #' @param rep.sep A separator to use for repeated variable names.  For example
 #' if the \code{\link[wakefield]{age}} is used three times
 #' (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
-#' three columns.  The resuts in column names \code{c("Age_1", "Age_2", "Age_3")}.
+#' three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
 #' @param digits The number of digits to round to.  Defaults to the max number
 #' of significant digits in \code{x}.
 #' @return Returns a \code{\link[dplyr]{tbl_df}}.

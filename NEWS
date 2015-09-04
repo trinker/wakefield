@@ -16,6 +16,14 @@ And constructed with the following guidelines:
   (and resets the patch)
 * Bug fixes and misc changes bumps the patch
 
+wakefield 0.2.0
+----------------------------------------------------------------
+
+IMPROVEMENTS
+
+* Added clarification to `groups` to indicate its binary grouping and alternate
+  grouping for > 2 groups (see issue #5).
+
 
 wakefield 0.1.0
 ----------------------------------------------------------------
@@ -82,12 +90,6 @@ MINOR FEATURES
 * `seriesname` function added to give a `data.frame` an attribute `seriesname`.
   Typicaly this is for internal use.
 
-IMPROVEMENTS
-
-* Added clarification to `groups` to indicate its binary grouping and alternate
-  grouping for > 2 groups (see issue #5).
-
-CHANGES
 
 
 wakefield 0.0.1
