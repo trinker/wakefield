@@ -21,6 +21,8 @@ Suggests:
 Date: 2015-09-03
 License: GPL-2
 LazyData: TRUE
+URL: http://trinker.github.com/wakefield/
+BugReports: http://github.com/trinker/wakefield/issues
 Roxygen: list(wrap = FALSE)
 Collate:
     'utils.R'
