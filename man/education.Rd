@@ -55,7 +55,7 @@ education(10)
 pie(table(education(10000)))
 }
 \references{
-\url{http://www.census.gov}
+http://www.census.gov
 }
 \seealso{
 Other variable.functions: \code{\link{age}};

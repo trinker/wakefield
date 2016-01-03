@@ -26,7 +26,7 @@
 #' @keywords education
 #' @export
 #' @include utils.R r_sample.R
-#' @references \url{http://www.census.gov}
+#' @references http://www.census.gov
 #' @family variable functions
 #' @examples
 #' education(10)
