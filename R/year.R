@@ -10,12 +10,16 @@
 #' @family variable functions
 #' @examples
 #' year(10)
-#' pr <- probs(length(1995:as.numeric(format(Sys.Date(), "%Y"))))
-#' pie(table(year(10000, prob = pr)))
-year <- hijack(r_sample,
-    name = "Year",
-    x = 1995:as.numeric(format(Sys.Date(), "%Y"))
-)
+#' pr <- probs(length(1996:2016))
+#' pie(table(year(10000, x= 1996:2016, prob = pr)))
+year <-function (n, x = 1996:as.numeric(format(Sys.Date(), "%Y")), prob = NULL,
+    name = "Year") {
+
+    if (missing(n)) stop("`n` is missing")
+    out <- sample(x = x, size = n, replace = TRUE, prob = prob)
+    varname(out, name)
+
+}
 
 
 
