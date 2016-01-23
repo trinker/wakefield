@@ -10,6 +10,7 @@ Status](https://travis-ci.org/trinker/wakefield.svg?branch=master)](https://trav
 [![Coverage
 Status](https://coveralls.io/repos/trinker/wakefield/badge.svg?branch=master)](https://coveralls.io/r/trinker/wakefield?branch=master)
 [![DOI](https://zenodo.org/badge/5398/trinker/wakefield.svg)](http://dx.doi.org/10.5281/zenodo.17172)
+[![](http://cranlogs.r-pkg.org/badges/wakefield)](http://cran.rstudio.com/web/packages/wakefield/index.html)
 <a href="https://img.shields.io/badge/Version-0.2.2-orange.svg"><img src="https://img.shields.io/badge/Version-0.2.2-orange.svg" alt="Version"/></a>
 </p>
 **wakefield** is designed to quickly generate random data sets. The user
@@ -160,7 +161,7 @@ There are 49 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
 <!-- html table generated in R 3.2.3 by xtable 1.8-0 package -->
-<!-- Fri Jan 22 23:17:15 2016 -->
+<!-- Fri Jan 22 23:18:33 2016 -->
 <table>
 <tr>
 <td>
