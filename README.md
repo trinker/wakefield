@@ -17,8 +17,8 @@ Status](https://coveralls.io/repos/trinker/wakefield/badge.svg?branch=master)](h
 passes `n` (number of rows) and predefined vectors to the `r_data_frame`
 function to produce a `dplyr::tbl_df` object.
 
-<img src=="inst/wakefield\_logo/r\_wakefield.png" width="60%",
-alt="">
+<img src="inst/wakefield_logo/r_wakefield.png" width="60%", alt="">  
+
 
 
 Table of Contents
