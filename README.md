@@ -10,31 +10,32 @@ Status](https://travis-ci.org/trinker/wakefield.svg?branch=master)](https://trav
 [![Coverage
 Status](https://coveralls.io/repos/trinker/wakefield/badge.svg?branch=master)](https://coveralls.io/r/trinker/wakefield?branch=master)
 [![DOI](https://zenodo.org/badge/5398/trinker/wakefield.svg)](http://dx.doi.org/10.5281/zenodo.17172)
-<a href="https://img.shields.io/badge/Version-0.2.1-orange.svg"><img src="https://img.shields.io/badge/Version-0.2.1-orange.svg" alt="Version"/></a>
+<a href="https://img.shields.io/badge/Version-0.2.2-orange.svg"><img src="https://img.shields.io/badge/Version-0.2.2-orange.svg" alt="Version"/></a>
 </p>
 **wakefield** is designed to quickly generate random data sets. The user
 passes `n` (number of rows) and predefined vectors to the `r_data_frame`
 function to produce a `dplyr::tbl_df` object.
 
-<img src="inst/wakefield_logo/r_wakefield.png" width="60%", alt="">
+&lt;img src="inst/wakefield\_logo/r\_wakefield.png" width="60%",
+alt=""&gt;
 
 
 Table of Contents
 ============
 
--   [Installation](#installation)
--   [Help](#help)
--   [Contact](#contact)
--   [Demonstration](#demonstration)
-    -   [Getting Started](#getting-started)
-    -   [Random Missing Observations](#random-missing-observations)
-    -   [Repeated Measures & Time Series](#repeated-measures--time-series)
-        -   [Related Series](#related-series)
-            -   [Some Examples With Variation](#some-examples-with-variation)
-            -   [Adjust Correlations](#adjust-correlations)
-            -   [Visualize the Relationship](#visualize-the-relationship)
-    -   [Expanded Dummy Coding](#expanded-dummy-coding)
-    -   [Visualizing Column Types](#visualizing-column-types)
+-   [[Installation](#installation)](#[installation](#installation))
+-   [[Help](#help)](#[help](#help))
+-   [[Contact](#contact)](#[contact](#contact))
+-   [[Demonstration](#demonstration)](#[demonstration](#demonstration))
+    -   [[Getting Started](#getting-started)](#[getting-started](#getting-started))
+    -   [[Random Missing Observations](#random-missing-observations)](#[random-missing-observations](#random-missing-observations))
+    -   [[Repeated Measures & Time Series](#repeated-measures-time-series)](#[repeated-measures--time-series](#repeated-measures-time-series))
+        -   [[Related Series](#related-series)](#[related-series](#related-series))
+            -   [[Some Examples With Variation](#some-examples-with-variation)](#[some-examples-with-variation](#some-examples-with-variation))
+            -   [[Adjust Correlations](#adjust-correlations)](#[adjust-correlations](#adjust-correlations))
+            -   [[Visualize the Relationship](#visualize-the-relationship)](#[visualize-the-relationship](#visualize-the-relationship))
+    -   [[Expanded Dummy Coding](#expanded-dummy-coding)](#[expanded-dummy-coding](#expanded-dummy-coding))
+    -   [[Visualizing Column Types](#visualizing-column-types)](#[visualizing-column-types](#visualizing-column-types))
 
 Installation
 ============
@@ -83,8 +84,8 @@ attribute. For example here we see the `race` variable function:
 
     race(n=10)
 
-    ##  [1] White     White     Black     White     Bi-Racial White     White    
-    ##  [8] White     Black     Hispanic 
+    ##  [1] Black    White    Asian    White    White    Hispanic White   
+    ##  [8] White    Hispanic Native  
     ## Levels: White Hispanic Black Asian Bi-Racial Native Other Hawaiian
 
     attributes(race(n=10))
@@ -113,15 +114,15 @@ variable functions but is set once in `r_data_frame`:
     ##        Race
     ##      (fctr)
     ## 1     White
-    ## 2  Hispanic
+    ## 2     White
     ## 3     Black
-    ## 4     Black
-    ## 5  Hispanic
+    ## 4     White
+    ## 5     White
     ## 6     White
-    ## 7     White
+    ## 7  Hispanic
     ## 8     White
     ## 9     White
-    ## 10 Hispanic
+    ## 10    White
     ## ..      ...
 
 The power of `r_data_frame` is apparent when we use many modular
@@ -143,30 +144,23 @@ variable functions:
     ## 
     ##       ID   Race   Age    Sex     Hour    IQ Height  Died
     ##    (chr) (fctr) (int) (fctr)   (tims) (dbl)  (dbl) (lgl)
-    ## 1    001  White    33 Female 00:00:00   111     71 FALSE
-    ## 2    002  White    29 Female 00:00:00    95     70 FALSE
-    ## 3    003  White    31 Female 00:00:00   103     72 FALSE
-    ## 4    004  White    31 Female 00:00:00    96     70  TRUE
-    ## 5    005  Black    28   Male 00:00:00   103     64 FALSE
-    ## 6    006  White    22   Male 00:00:00    92     68 FALSE
-    ## 7    007  White    26   Male 00:00:00   102     63 FALSE
-    ## 8    008  Black    26 Female 00:00:00    91     69 FALSE
-    ## 9    009  White    21   Male 00:00:00    92     68  TRUE
-    ## 10   010  White    32 Female 00:00:00   108     73  TRUE
+    ## 1    001  White    26   Male 00:00:00    98     72  TRUE
+    ## 2    002  White    30   Male 00:00:00    94     74 FALSE
+    ## 3    003  White    22 Female 00:00:00    99     69  TRUE
+    ## 4    004  White    26   Male 00:00:00   103     66  TRUE
+    ## 5    005  White    26 Female 00:00:00   102     71  TRUE
+    ## 6    006  White    26 Female 00:00:00    97     71 FALSE
+    ## 7    007  White    29 Female 00:30:00    94     65  TRUE
+    ## 8    008  Black    22   Male 00:30:00   105     75  TRUE
+    ## 9    009  White    33 Female 00:30:00   105     65 FALSE
+    ## 10   010  White    32   Male 00:30:00   102     65 FALSE
     ## ..   ...    ...   ...    ...      ...   ...    ...   ...
 
 There are 49 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
-package 'pander' successfully unpacked and MD5 sums checked
-
-The downloaded binary packages are in C:\_packages
-
-
-    pander installed
-
 <!-- html table generated in R 3.2.3 by xtable 1.8-0 package -->
-<!-- Sun Jan 03 21:30:37 2016 -->
+<!-- Fri Jan 22 23:17:15 2016 -->
 <table>
 <tr>
 <td>
@@ -361,19 +355,19 @@ vectors to `r_data_frame`. Those with an `n` argument can be set by
 
     ## Source: local data frame [500 x 10]
     ## 
-    ##       ID     Scoring Smoker      Race   Age    Sex     Hour    IQ Height
-    ##    (chr)       (dbl)  (lgl)    (fctr) (int) (fctr)   (tims) (dbl)  (dbl)
-    ## 1    001  0.04306268   TRUE Bi-Racial    30   Male 00:00:00    87     67
-    ## 2    002  0.42330503  FALSE     White    30 Female 00:00:00    94     61
-    ## 3    003  1.05044147  FALSE     White    25   Male 00:00:00   131     69
-    ## 4    004  0.42175189  FALSE     White    22   Male 00:00:00    96     74
-    ## 5    005 -0.76690904   TRUE     Black    27   Male 00:00:00   109     70
-    ## 6    006 -0.39477681   TRUE     White    20   Male 00:00:00   113     65
-    ## 7    007  0.89407671  FALSE     White    34 Female 00:00:00   119     67
-    ## 8    008  2.15588402  FALSE     White    24   Male 00:00:00    97     72
-    ## 9    009  0.59774517   TRUE     White    33 Female 00:00:00   108     71
-    ## 10   010 -1.84644825   TRUE     White    35   Male 00:00:00    94     75
-    ## ..   ...         ...    ...       ...   ...    ...      ...   ...    ...
+    ##       ID     Scoring Smoker     Race   Age    Sex     Hour    IQ Height
+    ##    (chr)       (dbl)  (lgl)   (fctr) (int) (fctr)   (tims) (dbl)  (dbl)
+    ## 1    001 -1.00172866   TRUE    White    32   Male 00:00:00   107     74
+    ## 2    002 -1.22045688  FALSE Hispanic    34 Female 00:00:00   112     69
+    ## 3    003  0.03800246   TRUE    White    28 Female 00:00:00    84     65
+    ## 4    004  0.71036400   TRUE    White    21 Female 00:00:00    85     65
+    ## 5    005  0.59644996   TRUE    White    22 Female 00:00:00    96     69
+    ## 6    006  0.24556053   TRUE    White    23   Male 00:00:00   123     79
+    ## 7    007  1.59434567  FALSE    White    30 Female 00:00:00   101     65
+    ## 8    008  0.14108265   TRUE    White    31   Male 00:00:00    88     71
+    ## 9    009 -0.96799173   TRUE    White    29   Male 00:00:00    98     68
+    ## 10   010 -0.06773925  FALSE Hispanic    22 Female 00:30:00    89     70
+    ## ..   ...         ...    ...      ...   ...    ...      ...   ...    ...
     ## Variables not shown: Died (lgl)
 
     r_data_frame(
@@ -387,16 +381,16 @@ vectors to `r_data_frame`. Those with an `n` argument can be set by
     ## 
     ##       ID Age_1 Age_2 Age_3 Grade_1 Grade_2 Grade_3
     ##    (chr) (int) (int) (int)   (dbl)   (dbl)   (dbl)
-    ## 1    001    25    32    25    86.9    94.4    89.4
-    ## 2    002    25    23    24    85.6    89.6    85.7
-    ## 3    003    21    25    34    86.6    86.0    87.8
-    ## 4    004    28    33    32    90.3    93.6    91.7
-    ## 5    005    34    27    24    88.0    82.7    82.0
-    ## 6    006    28    30    34    82.6    83.7    83.6
-    ## 7    007    20    22    34    88.1    96.1    86.8
-    ## 8    008    24    28    34    87.5    86.2    86.6
-    ## 9    009    23    28    23    86.8    89.8    96.1
-    ## 10   010    30    25    31    90.3    87.2    83.7
+    ## 1    001    28    26    24    96.1    78.9    83.7
+    ## 2    002    30    22    27    95.4    86.9    89.4
+    ## 3    003    35    27    22    91.8    86.9    89.4
+    ## 4    004    25    27    33    81.7    87.1    91.1
+    ## 5    005    33    35    33    86.7    87.2    82.4
+    ## 6    006    29    20    34    91.1    86.3    92.1
+    ## 7    007    26    29    33    86.2    87.8    81.3
+    ## 8    008    34    33    31    84.5    81.6    89.8
+    ## 9    009    21    33    27    96.0    88.6    94.0
+    ## 10   010    31    29    26    91.4    89.0    87.8
     ## ..   ...   ...   ...   ...     ...     ...     ...
 
 While passing variable functions to `r_data_frame` without call
@@ -423,16 +417,16 @@ done through call parenthesis as we do with `data.frame` or
     ## 
     ##       ID     Scoring Smoker Reading(mins)     Race   Age    Sex     Hour
     ##    (chr)       (dbl)  (lgl)         (int)   (fctr) (int) (fctr)   (tims)
-    ## 1    001  2.66863307   TRUE            23    White    11 Female 00:00:00
-    ## 2    002  0.70881729  FALSE            22    White    11   Male 00:00:00
-    ## 3    003 -0.47785279   TRUE            20    Black     9 Female 00:00:00
-    ## 4    004  1.05286437  FALSE            24 Hispanic    11 Female 00:00:00
-    ## 5    005 -0.97791488   TRUE            15 Hispanic    12   Male 00:00:00
-    ## 6    006  0.47544822  FALSE            35    Black    10 Female 00:00:00
-    ## 7    007  2.30682176  FALSE            25 Hawaiian    11   Male 00:00:00
-    ## 8    008  0.36768885   TRUE            25    White    13 Female 00:00:00
-    ## 9    009 -1.31429077  FALSE            24    White    11   Male 00:00:00
-    ## 10   010  0.08534896  FALSE            23    Black    10 Female 00:00:00
+    ## 1    001  1.25315699  FALSE            18    White     9   Male 00:00:00
+    ## 2    002 -0.10451919  FALSE            21    White     8 Female 00:00:00
+    ## 3    003 -0.11401295   TRUE            19    White    14 Female 00:00:00
+    ## 4    004  0.77380822  FALSE            16    White     9   Male 00:00:00
+    ## 5    005  0.36936803  FALSE            18 Hispanic    13 Female 00:00:00
+    ## 6    006  0.72023857   TRUE            24    White    13   Male 00:00:00
+    ## 7    007  0.16074250  FALSE            17    White    10   Male 00:00:00
+    ## 8    008 -0.03576366  FALSE            18    Black    11 Female 00:00:00
+    ## 9    009  0.15264881   TRUE            28    White    10   Male 00:00:00
+    ## 10   010 -0.22782276  FALSE            23    White    10 Female 00:00:00
     ## ..   ...         ...    ...           ...      ...   ...    ...      ...
     ## Variables not shown: IQ (dbl), Height (dbl), Died (lgl)
 
@@ -463,18 +457,30 @@ pipeline:
     ## 
     ##       ID     Race   Age    Sex     Hour    IQ Height  Died    Scoring
     ##    (chr)   (fctr) (int) (fctr)   (tims) (dbl)  (dbl) (lgl)      (dbl)
-    ## 1     01    White    26 Female 00:00:00    97     69    NA  0.9703488
-    ## 2     02       NA    24 Female 02:00:00   119     70 FALSE -1.9710768
-    ## 3     03    White    21   Male 02:30:00   111     62  TRUE  0.3707602
-    ## 4     04       NA    34   Male     <NA>   106     NA  TRUE         NA
-    ## 5     05       NA    NA     NA     <NA>    NA     68  TRUE  2.0514226
-    ## 6     06    White    NA Female 03:30:00    88     NA    NA         NA
-    ## 7     07 Hispanic    34 Female     <NA>    94     74 FALSE -0.6467943
-    ## 8     08    Asian    NA     NA     <NA>    96     NA  TRUE -1.6346676
-    ## 9     09       NA    26     NA 10:00:00    NA     66    NA         NA
-    ## 10    10       NA    34   Male 11:00:00    91     71    NA         NA
+    ## 1     01    White    NA Female     <NA>   108     NA    NA -1.2889925
+    ## 2     02    White    NA   Male     <NA>    NA     66    NA         NA
+    ## 3     03    White    22 Female 01:00:00   103     76 FALSE         NA
+    ## 4     04    White    NA     NA 01:30:00    94     NA  TRUE -1.7087044
+    ## 5     05 Hispanic    NA Female 04:30:00    NA     74    NA -0.1776321
+    ## 6     06       NA    27 Female     <NA>   101     77    NA  1.0338205
+    ## 7     07    White    34     NA 05:30:00    NA     NA  TRUE  0.9559290
+    ## 8     08       NA    27   Male     <NA>   104     NA FALSE  1.3647700
+    ## 9     09       NA    30 Female 06:30:00    95     66    NA -0.1283762
+    ## 10    10    White    25     NA 06:30:00   104     NA    NA -1.3232695
     ## ..   ...      ...   ...    ...      ...   ...    ...   ...        ...
-    ## Variables not shown: Smoker (lgl)
+    ##    Smoker
+    ##     (lgl)
+    ## 1      NA
+    ## 2   FALSE
+    ## 3    TRUE
+    ## 4   FALSE
+    ## 5      NA
+    ## 6    TRUE
+    ## 7   FALSE
+    ## 8    TRUE
+    ## 9    TRUE
+    ## 10   TRUE
+    ## ..    ...
 
 Repeated Measures & Time Series
 -------------------------------
@@ -735,7 +741,7 @@ Use the `sd` command to adjust correlations.
             geom_line(size=.8) + 
             theme_bw()
 
-![](inst/figure/unnamed-chunk-17-1.png)
+![](inst/figure/unnamed-chunk-17-1.png)  
 
 Expanded Dummy Coding
 ---------------------
