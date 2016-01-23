@@ -17,8 +17,8 @@ Status](https://coveralls.io/repos/trinker/wakefield/badge.svg?branch=master)](h
 passes `n` (number of rows) and predefined vectors to the `r_data_frame`
 function to produce a `dplyr::tbl_df` object.
 
-&lt;img src="inst/wakefield\_logo/r\_wakefield.png" width="60%",
-alt=""&gt;
+<img src=="inst/wakefield\_logo/r\_wakefield.png" width="60%",
+alt="">
 
 
 Table of Contents
@@ -161,7 +161,7 @@ There are 49 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
 <!-- html table generated in R 3.2.3 by xtable 1.8-0 package -->
-<!-- Fri Jan 22 23:18:33 2016 -->
+<!-- Fri Jan 22 23:23:26 2016 -->
 <table>
 <tr>
 <td>
