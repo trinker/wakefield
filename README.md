@@ -12,7 +12,6 @@ Status](https://coveralls.io/repos/trinker/wakefield/badge.svg?branch=master)](h
 [![DOI](https://zenodo.org/badge/5398/trinker/wakefield.svg)](http://dx.doi.org/10.5281/zenodo.17172)
 [![](http://cranlogs.r-pkg.org/badges/wakefield)](http://cran.rstudio.com/web/packages/wakefield/index.html)
 <a href="https://img.shields.io/badge/Version-0.2.2-orange.svg"><img src="https://img.shields.io/badge/Version-0.2.2-orange.svg" alt="Version"/></a>
-[![Follow](https://img.shields.io/twitter/follow/tylerrinker.svg?style=social)](https://twitter.com/intent/follow?screen_name=tylerrinker)
 </p>
 **wakefield** is designed to quickly generate random data sets. The user
 passes `n` (number of rows) and predefined vectors to the `r_data_frame`
