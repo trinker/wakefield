@@ -17,7 +17,7 @@
 #' barplot(table(dice(10000)))
 likert <- hijack(r_sample_ordered,
     name = "Likert",
-    x = c("Strongly Agree ", "Agree", "Neutral", "Disagree", "Strongly Disagree")
+    x = c("Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree")
 )
 
 
@@ -25,7 +25,7 @@ likert <- hijack(r_sample_ordered,
 #' @rdname likert
 likert_5 <- hijack(r_sample_ordered,
     name = "Likert",
-    x = c("Strongly Agree ", "Agree", "Neutral", "Disagree", "Strongly Disagree")
+    x = c("Strongly Agree", "Agree", "Neutral", "Disagree", "Strongly Disagree")
 )
 
 
@@ -33,6 +33,6 @@ likert_5 <- hijack(r_sample_ordered,
 #' @rdname likert
 likert_7 <- hijack(r_sample_ordered,
     name = "Likert",
-    x = c("Strongly Agree ", "Agree", "Somewhat Agree", "Neutral",
+    x = c("Strongly Agree", "Agree", "Somewhat Agree", "Neutral",
         "Somewhat Disagree", "Disagree", "Strongly Disagree")
 )
