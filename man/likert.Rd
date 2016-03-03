@@ -6,13 +6,13 @@
 \alias{likert_7}
 \title{Generate Random Vector of Likert-Type Responses}
 \usage{
-likert(n, x = c("Strongly Agree ", "Agree", "Neutral", "Disagree",
+likert(n, x = c("Strongly Agree", "Agree", "Neutral", "Disagree",
   "Strongly Disagree"), prob = NULL, name = "Likert")
 
-likert_5(n, x = c("Strongly Agree ", "Agree", "Neutral", "Disagree",
+likert_5(n, x = c("Strongly Agree", "Agree", "Neutral", "Disagree",
   "Strongly Disagree"), prob = NULL, name = "Likert")
 
-likert_7(n, x = c("Strongly Agree ", "Agree", "Somewhat Agree", "Neutral",
+likert_7(n, x = c("Strongly Agree", "Agree", "Somewhat Agree", "Neutral",
   "Somewhat Disagree", "Disagree", "Strongly Disagree"), prob = NULL,
   name = "Likert")
 }

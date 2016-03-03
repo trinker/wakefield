@@ -16,6 +16,22 @@ And constructed with the following guidelines:
   (and resets the patch)
 * Bug fixes and misc changes bumps the patch
 
+
+wakefield 0.2.1
+----------------------------------------------------------------
+
+**BUG FIXES**
+
+* `year` used `hijack` to hard code the year into the documentation causing
+  a mismatch in the function arguments and documentation on Jan. 1st.  `hijack`
+  is no longer used to create `year`.
+
+* `likert` had a space at the end of the `"Strongly Agree "` group.  This has
+  been stripped.
+
+* `political` had the wrong distribution of political groups.  This has been
+  fixed.
+
 wakefield 0.2.0
 ----------------------------------------------------------------
 

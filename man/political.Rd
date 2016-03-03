@@ -4,8 +4,8 @@
 \alias{political}
 \title{Generate Random Vector of Political Parties}
 \usage{
-political(n, x = c("Constitution", "Democrat", "Green", "Libertarian",
-  "Republican"), prob = c(0.577269133302094, 0.410800432748879,
+political(n, x = c("Democrat", "Republican", "Constitution", "Libertarian",
+  "Green"), prob = c(0.577269133302094, 0.410800432748879,
   0.00491084954793489, 0.00372590303330866, 0.0032936813677832),
   name = "Political")
 }
