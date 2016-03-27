@@ -22,7 +22,7 @@ Safely insert \code{\link[base]{data.frame}} objects into a
 }
 \examples{
 dat <- dplyr::data_frame(
-    Age = age(100), Age = age(100), Age = age(100),
+    Age_1 = age(100), Age_2 = age(100), Age_3 = age(100),
     Smokes = smokes(n=100),
     Sick = ifelse(Smokes, sample(5:10, 100, TRUE), sample(0:4, 100, TRUE)),
     Death = ifelse(Smokes, sample(0:1, 100, TRUE, prob = c(.2, .8)),
