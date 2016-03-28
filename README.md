@@ -1,4 +1,4 @@
-wakefield [![Follow](https://img.shields.io/twitter/follow/tylerrinker.svg?style=social)](https://twitter.com/intent/follow?screen_name=tylerrinker)
+wakefield   [![Follow](https://img.shields.io/twitter/follow/tylerrinker.svg?style=social)](https://twitter.com/intent/follow?screen_name=tylerrinker)
 ============
 
 
@@ -10,33 +10,33 @@ Status](https://travis-ci.org/trinker/wakefield.svg?branch=master)](https://trav
 [![Coverage
 Status](https://coveralls.io/repos/trinker/wakefield/badge.svg?branch=master)](https://coveralls.io/r/trinker/wakefield?branch=master)
 [![DOI](https://zenodo.org/badge/5398/trinker/wakefield.svg)](http://dx.doi.org/10.5281/zenodo.17172)
-[![](http://cranlogs.r-pkg.org/badges/wakefield)](http://cran.rstudio.com/web/packages/wakefield/index.html)
+[![](http://cranlogs.r-pkg.org/badges/wakefield)](https://cran.r-project.org/package=wakefield)
 <a href="https://img.shields.io/badge/Version-0.2.2-orange.svg"><img src="https://img.shields.io/badge/Version-0.2.2-orange.svg" alt="Version"/></a>
 </p>
 **wakefield** is designed to quickly generate random data sets. The user
 passes `n` (number of rows) and predefined vectors to the `r_data_frame`
 function to produce a `dplyr::tbl_df` object.
 
-<img src="inst/wakefield_logo/r_wakefield.png" width="60%", alt="">  
-
+&lt;img src="inst/wakefield\_logo/r\_wakefield.png" width="60%",
+alt=""&gt;
 
 
 Table of Contents
 ============
 
--   [[Installation](#installation)](#[installation](#installation))
--   [[Help](#help)](#[help](#help))
--   [[Contact](#contact)](#[contact](#contact))
--   [[Demonstration](#demonstration)](#[demonstration](#demonstration))
-    -   [[Getting Started](#getting-started)](#[getting-started](#getting-started))
-    -   [[Random Missing Observations](#random-missing-observations)](#[random-missing-observations](#random-missing-observations))
-    -   [[Repeated Measures & Time Series](#repeated-measures-time-series)](#[repeated-measures--time-series](#repeated-measures-time-series))
-        -   [[Related Series](#related-series)](#[related-series](#related-series))
-            -   [[Some Examples With Variation](#some-examples-with-variation)](#[some-examples-with-variation](#some-examples-with-variation))
-            -   [[Adjust Correlations](#adjust-correlations)](#[adjust-correlations](#adjust-correlations))
-            -   [[Visualize the Relationship](#visualize-the-relationship)](#[visualize-the-relationship](#visualize-the-relationship))
-    -   [[Expanded Dummy Coding](#expanded-dummy-coding)](#[expanded-dummy-coding](#expanded-dummy-coding))
-    -   [[Visualizing Column Types](#visualizing-column-types)](#[visualizing-column-types](#visualizing-column-types))
+-   [Installation](#installation)
+-   [Help](#help)
+-   [Contact](#contact)
+-   [Demonstration](#demonstration)
+    -   [Getting Started](#getting-started)
+    -   [Random Missing Observations](#random-missing-observations)
+    -   [Repeated Measures & Time Series](#repeated-measures-time-series)
+        -   [Related Series](#related-series)
+            -   [Some Examples With Variation](#some-examples-with-variation)
+            -   [Adjust Correlations](#adjust-correlations)
+            -   [Visualize the Relationship](#visualize-the-relationship)
+    -   [Expanded Dummy Coding](#expanded-dummy-coding)
+    -   [Visualizing Column Types](#visualizing-column-types)
 
 Installation
 ============
@@ -63,11 +63,10 @@ Help
 Contact
 =======
 
-You are welcome to: 
-* submit suggestions and bug-reports at: <https://github.com/trinker/wakefield/issues> 
-* send a pull request on: <https://github.com/trinker/wakefield/> 
-* compose a friendly e-mail to: <tyler.rinker@gmail.com>
-
+You are welcome to:    
+- submit suggestions and bug-reports at: <https://github.com/trinker/wakefield/issues>    
+- send a pull request on: <https://github.com/trinker/wakefield/>    
+- compose a friendly e-mail to: <tyler.rinker@gmail.com>    
 
 Demonstration
 =============
@@ -160,8 +159,8 @@ variable functions:
 There are 49 **wakefield** based variable functions to chose from,
 spanning **R**'s various data types (see `?variables` for details).
 
-<!-- html table generated in R 3.2.3 by xtable 1.8-0 package -->
-<!-- Fri Jan 22 23:23:26 2016 -->
+<!-- html table generated in R 3.4.0 by xtable 1.8-0 package -->
+<!-- Sun Mar 27 21:58:05 2016 -->
 <table>
 <tr>
 <td>
@@ -495,18 +494,18 @@ function and dictate how many columns (`j`) to produce.
 
     ## Source: local data frame [10 x 3]
     ## 
-    ##           Likert_1          Likert_2          Likert_3
-    ##             (fctr)            (fctr)            (fctr)
-    ## 1          Neutral          Disagree Strongly Disagree
-    ## 2            Agree           Neutral          Disagree
-    ## 3          Neutral   Strongly Agree           Disagree
-    ## 4         Disagree           Neutral             Agree
-    ## 5  Strongly Agree              Agree           Neutral
-    ## 6            Agree           Neutral          Disagree
-    ## 7            Agree   Strongly Agree  Strongly Disagree
-    ## 8            Agree             Agree             Agree
-    ## 9         Disagree             Agree          Disagree
-    ## 10         Neutral Strongly Disagree             Agree
+    ##          Likert_1          Likert_2          Likert_3
+    ##            (fctr)            (fctr)            (fctr)
+    ## 1         Neutral          Disagree Strongly Disagree
+    ## 2           Agree           Neutral          Disagree
+    ## 3         Neutral    Strongly Agree          Disagree
+    ## 4        Disagree           Neutral             Agree
+    ## 5  Strongly Agree             Agree           Neutral
+    ## 6           Agree           Neutral          Disagree
+    ## 7           Agree    Strongly Agree Strongly Disagree
+    ## 8           Agree             Agree             Agree
+    ## 9        Disagree             Agree          Disagree
+    ## 10        Neutral Strongly Disagree             Agree
 
 Often the user wants a numeric score for Likert type columns and similar
 variables. For series with multiple factors the `as_integer` converts
@@ -550,14 +549,14 @@ here.
     ##       ID   Age    Sex        Question_1        Question_2
     ##    (chr) (int) (fctr)            (fctr)            (fctr)
     ## 1    001    28   Male             Agree             Agree
-    ## 2    002    24   Male           Neutral   Strongly Agree 
+    ## 2    002    24   Male           Neutral    Strongly Agree
     ## 3    003    26   Male          Disagree           Neutral
     ## 4    004    31   Male Strongly Disagree           Neutral
-    ## 5    005    21 Female   Strongly Agree  Strongly Disagree
+    ## 5    005    21 Female    Strongly Agree Strongly Disagree
     ## 6    006    23 Female          Disagree          Disagree
-    ## 7    007    24 Female          Disagree   Strongly Agree 
+    ## 7    007    24 Female          Disagree    Strongly Agree
     ## 8    008    24   Male Strongly Disagree             Agree
-    ## 9    009    29 Female             Agree   Strongly Agree 
+    ## 9    009    29 Female             Agree    Strongly Agree
     ## 10   010    26   Male Strongly Disagree Strongly Disagree
     ## ..   ...   ...    ...               ...               ...
     ## Variables not shown: Question_3 (fctr)
@@ -742,7 +741,7 @@ Use the `sd` command to adjust correlations.
             geom_line(size=.8) + 
             theme_bw()
 
-![](inst/figure/unnamed-chunk-17-1.png)  
+![](inst/figure/unnamed-chunk-17-1.png)
 
 Expanded Dummy Coding
 ---------------------
@@ -763,20 +762,20 @@ name as the prefix to the `j` columns. Setting `prefix = TRUE` within
 
     ## Source: local data frame [100 x 9]
     ## 
-    ##       ID   Age Sex_Male Sex_Female Constitution Democrat Green Libertarian
-    ##    (chr) (int)    (int)      (int)        (int)    (int) (int)       (int)
-    ## 1    001    28        1          0            1        0     0           0
-    ## 2    002    24        1          0            1        0     0           0
-    ## 3    003    26        1          0            0        1     0           0
-    ## 4    004    31        1          0            0        1     0           0
-    ## 5    005    21        0          1            1        0     0           0
-    ## 6    006    23        0          1            0        1     0           0
-    ## 7    007    24        0          1            0        1     0           0
-    ## 8    008    24        1          0            0        0     0           0
-    ## 9    009    29        0          1            1        0     0           0
-    ## 10   010    26        1          0            0        1     0           0
-    ## ..   ...   ...      ...        ...          ...      ...   ...         ...
-    ## Variables not shown: Republican (int)
+    ##       ID   Age Sex_Male Sex_Female Democrat Republican Constitution
+    ##    (chr) (int)    (int)      (int)    (int)      (int)        (int)
+    ## 1    001    28        1          0        1          0            0
+    ## 2    002    24        1          0        1          0            0
+    ## 3    003    26        1          0        0          1            0
+    ## 4    004    31        1          0        0          1            0
+    ## 5    005    21        0          1        1          0            0
+    ## 6    006    23        0          1        0          1            0
+    ## 7    007    24        0          1        0          1            0
+    ## 8    008    24        1          0        0          0            0
+    ## 9    009    29        0          1        1          0            0
+    ## 10   010    26        1          0        0          1            0
+    ## ..   ...   ...      ...        ...      ...        ...          ...
+    ## Variables not shown: Libertarian (int), Green (int)
 
 Visualizing Column Types
 ------------------------
