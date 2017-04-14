@@ -50,10 +50,6 @@ pacman::p_load_gh("trinker/wakefield")
 pacman::p_load(dplyr, tidyr, ggplot2)
 ```
 
-# Help
-    
-- [Package PDF Help Manual](https://dl.dropboxusercontent.com/u/61803503/wakefield.pdf)   
-
 
 # Contact
 
