@@ -45,4 +45,3 @@ variables("matrix", 1)
 variables("matrix", byrow = TRUE)
 }
 \keyword{type}
-

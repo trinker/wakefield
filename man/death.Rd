@@ -33,7 +33,7 @@ died(10)
 r_data_frame(10, died)
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -60,4 +60,3 @@ Other variable.functions: \code{\link{age}},
 }
 \keyword{death}
 \keyword{died}
-

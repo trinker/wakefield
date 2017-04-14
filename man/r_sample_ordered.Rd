@@ -41,4 +41,3 @@ pie(slices, main="Pie Chart of Colors", col = tolower(names(slices)))
 }
 \keyword{factor}
 \keyword{ordered}
-

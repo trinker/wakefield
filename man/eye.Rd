@@ -42,7 +42,7 @@ eye(10)
 barplot(v <- table(eye(10000)), col = replace(names(v), 4, "yellowgreen"))
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -70,4 +70,3 @@ Other variable.functions: \code{\link{age}},
 }
 \keyword{eye}
 \keyword{iris}
-

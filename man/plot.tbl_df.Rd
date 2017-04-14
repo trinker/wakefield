@@ -14,4 +14,3 @@
 \description{
 Plots a tbl_df object.
 }
-

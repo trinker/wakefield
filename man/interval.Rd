@@ -52,4 +52,3 @@ interval(age, 3, n = 1000)
 }
 \keyword{cut}
 \keyword{interval}
-

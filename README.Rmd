@@ -23,7 +23,7 @@ knit_hooks$set(htmlcap = function(before, options, envir) {
     }
     })
 knitr::opts_knit$set(self.contained = TRUE, cache = FALSE)
-knitr::opts_chunk$set(fig.path = "inst/figure/")
+knitr::opts_chunk$set(fig.path = "tools/figure/")
 ```
 
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active)
@@ -36,7 +36,7 @@ knitr::opts_chunk$set(fig.path = "inst/figure/")
 
 **wakefield** is designed to quickly generate random data sets.  The user passes `n` (number of rows) and predefined vectors to the `r_data_frame` function to produce a `dplyr::tbl_df` object.
 
-<img src="inst/wakefield_logo/r_wakefield.png" width="60%", alt="">  
+![](tools/wakefield_logo/r_wakefield.png)  
 
 # Installation
 

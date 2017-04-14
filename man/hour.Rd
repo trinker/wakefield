@@ -37,4 +37,3 @@ hour(20, random=TRUE)
 }
 \keyword{hour}
 \keyword{time}
-

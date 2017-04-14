@@ -30,7 +30,7 @@ children(10)
 pie(table(children(100)))
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{coin}}, \code{\link{color}},
@@ -56,4 +56,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{year}}, \code{\link{zip_code}}
 }
 \keyword{children}
-

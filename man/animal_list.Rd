@@ -15,4 +15,3 @@ A dataset containing a character vector animals
 \url{http://a-z-animals.com/animals}
 }
 \keyword{datasets}
-

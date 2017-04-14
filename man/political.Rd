@@ -45,7 +45,7 @@ political(10)
 barplot(table(political(10000)))
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -75,4 +75,3 @@ Other variable.functions: \code{\link{age}},
 \keyword{political}
 \keyword{politics}
 \keyword{republican}
-

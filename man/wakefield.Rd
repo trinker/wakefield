@@ -2,11 +2,10 @@
 % Please edit documentation in R/wakefield-package.R
 \docType{package}
 \name{wakefield}
-\alias{package-wakefield}
 \alias{wakefield}
+\alias{package-wakefield}
 \alias{wakefield-package}
 \title{Generate Random Data Sets}
 \description{
 Generates random data sets including: data.frames, lists, and vectors.
 }
-

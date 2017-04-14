@@ -14,4 +14,3 @@
 \description{
 Prints an available object.
 }
-

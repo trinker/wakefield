@@ -100,4 +100,3 @@ ggplot(dat, aes(x = Time, y = values, color = ID, group = ID)) +
 \code{\link[wakefield]{r_data_frame}}
 \code{\link[wakefield]{r_dummy}}
 }
-

@@ -33,4 +33,3 @@ r_sample_integer(25, x = c(TRUE, FALSE))
 \seealso{
 \code{\link[base]{sample}}
 }
-

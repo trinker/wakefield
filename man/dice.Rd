@@ -29,7 +29,7 @@ dice(10)
 barplot(table(dice(10000)))
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -56,4 +56,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{zip_code}}
 }
 \keyword{dice}
-

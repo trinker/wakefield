@@ -98,9 +98,6 @@ r_data_frame(n=100,
    peek \%>\%
    plot(palette = "Set1")
 }
-\author{
-Josh O'Brien and Tyler Rinker <tyler.rinker@gmail.com>.
-}
 \references{
 \url{http://stackoverflow.com/a/29617983/1000343}
 }
@@ -109,4 +106,6 @@ Josh O'Brien and Tyler Rinker <tyler.rinker@gmail.com>.
 \code{\link[wakefield]{r_series}}
 \code{\link[wakefield]{r_dummy}}
 }
-
+\author{
+Josh O'Brien and Tyler Rinker <tyler.rinker@gmail.com>.
+}

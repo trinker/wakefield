@@ -2,8 +2,8 @@
 % Please edit documentation in R/height.R
 \name{height}
 \alias{height}
-\alias{height_cm}
 \alias{height_in}
+\alias{height_cm}
 \title{Generate Random Vector of Heights}
 \usage{
 height(n, mean = 69, sd = 3.75, min = 1, max = NULL, digits = 0,
@@ -55,7 +55,7 @@ hist(height(10000))
 interval(height, 5, n = 1000)
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -82,4 +82,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{zip_code}}
 }
 \keyword{height}
-

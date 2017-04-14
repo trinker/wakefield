@@ -36,7 +36,7 @@ labs <- round(100 * lang[["prop"]], 1)
 pie(lang[["prop"]], paste0(lang[["Language"]], "\\n", labs, "\%"))
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -63,4 +63,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{zip_code}}
 }
 \keyword{language}
-

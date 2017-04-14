@@ -38,4 +38,3 @@ pie(table(minute(2000, x = seq(0, 59, by = 10)/60, prob = probs(6))))
 }
 \keyword{minute}
 \keyword{time}
-

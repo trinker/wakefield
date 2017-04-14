@@ -24,4 +24,3 @@ Adds \code{attributes(x)[["seriesname"]]} attribute to a
 seriesname(mtcars, "Cars")
 attributes(seriesname(mtcars, "Cars"))
 }
-

@@ -44,7 +44,7 @@ barplot(table(military(10000)))
 pie(table(military(10000)))
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -75,4 +75,3 @@ Other variable.functions: \code{\link{age}},
 \keyword{marines}
 \keyword{military}
 \keyword{navy}
-

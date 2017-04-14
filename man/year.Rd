@@ -31,7 +31,7 @@ pr <- probs(length(1996:2016))
 pie(table(year(10000, x= 1996:2016, prob = pr)))
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -58,4 +58,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{zip_code}}
 }
 \keyword{year}
-

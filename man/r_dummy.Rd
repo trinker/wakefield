@@ -39,4 +39,3 @@ r_dummy(race, 1000, name = "Ethnicity")
 \code{\link[wakefield]{r_series}}
 }
 \keyword{dummy}
-

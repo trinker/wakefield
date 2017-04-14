@@ -14,4 +14,3 @@
 \description{
 Prints a \code{variable} object
 }
-

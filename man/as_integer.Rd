@@ -42,4 +42,3 @@ r_data_frame(n=100,
 }
 \keyword{integer}
 \keyword{numeric}
-

@@ -24,4 +24,3 @@ A dataset containing native language use statistics taken from:
 \url{http://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers}
 }
 \keyword{datasets}
-

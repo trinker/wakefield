@@ -29,4 +29,3 @@ varname(LETTERS, "Caps")
 attributes(varname(LETTERS, "Caps"))
 paste(varname(LETTERS, "Caps"), collapse="")
 }
-

@@ -1,0 +1,2 @@
+cd C:\Users\Tyler\GitHub\wakefield\tools\wakefield_logo
+ffmpeg -i r_wakefielda.png -vf scale=250:-1 r_wakefield.png

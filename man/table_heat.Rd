@@ -72,4 +72,3 @@ table_heat(r_na(dat, NULL), palette = "Reds")
 }
 \keyword{class,}
 \keyword{type}
-

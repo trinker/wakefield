@@ -31,7 +31,7 @@ zip_code(10)
 pie(table(zip_code(10000, prob = probs(10))))
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -58,4 +58,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{year}}
 }
 \keyword{zip_code}
-

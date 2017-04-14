@@ -38,4 +38,3 @@ c("B", "W")[r_sample_binary(10)]
 \seealso{
 \code{\link[base]{sample.int}}
 }
-

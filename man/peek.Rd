@@ -53,4 +53,3 @@ peek(dat2)
 \seealso{
 \code{\link[utils]{head}}
 }
-

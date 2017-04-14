@@ -62,4 +62,3 @@ r_data_theme(, "survey2")
 \seealso{
 \code{\link[wakefield]{r_data_frame}}
 }
-

@@ -43,7 +43,7 @@ lbs <- paste0(names(v), "\\n", round(100*v/sum(v), 1), "\%")
 pie(v, col = replace(names(v), 3, "yellow"), labels = lbs)
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -70,4 +70,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{zip_code}}
 }
 \keyword{hair}
-

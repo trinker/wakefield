@@ -30,4 +30,3 @@ c("B", "W")[r_sample_logical(10)]
 \seealso{
 \code{\link[base]{sample}}
 }
-

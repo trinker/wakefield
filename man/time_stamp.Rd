@@ -37,4 +37,3 @@ pie(table(time_stamp(2000, x = seq(0, 23, by = 2), prob = probs(12))))
 \code{\link[chron]{times}}
 }
 \keyword{time}
-

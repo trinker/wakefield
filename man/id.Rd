@@ -43,6 +43,7 @@ string is passed down the OS's sprintf function...The behaviour on inputs not
 documented here is 'undefined', which means it is allowed to differ by
 platform.''  See \code{\link[base]{sprintf}} for details.
 }
+
 \examples{
 id(1000)
 r_data_frame(n=21, id)
@@ -52,4 +53,3 @@ r_data_frame(n=21, id)
 }
 \keyword{id}
 \keyword{identification}
-

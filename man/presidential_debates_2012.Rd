@@ -13,4 +13,3 @@ A dataset containing 2911 ordered sentences used by speakers during the three
 2012 presidential debates.
 }
 \keyword{datasets}
-

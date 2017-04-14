@@ -29,7 +29,7 @@ car(10)
 table(car(10000))
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{children}},
   \code{\link{coin}}, \code{\link{color}},
@@ -55,4 +55,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{year}}, \code{\link{zip_code}}
 }
 \keyword{car}
-

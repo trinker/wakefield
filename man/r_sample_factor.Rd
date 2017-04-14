@@ -32,4 +32,3 @@ r_sample_factor(x = c("B", "W"), prob = c(.7, .3), n = 25)
 \seealso{
 \code{\link[base]{sample}}
 }
-

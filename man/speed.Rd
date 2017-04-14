@@ -2,8 +2,8 @@
 % Please edit documentation in R/speed.R
 \name{speed}
 \alias{speed}
-\alias{speed_kph}
 \alias{speed_mph}
+\alias{speed_kph}
 \title{Generate Random Vector of Speeds}
 \usage{
 speed(n, mean = 55, sd = 10, min = 0, max = NULL, digits = 0,
@@ -55,7 +55,7 @@ hist(speed(10000))
 interval(speed, 5, n = 1000)
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -82,4 +82,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{zip_code}}
 }
 \keyword{speed}
-

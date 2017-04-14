@@ -29,7 +29,7 @@ answer(10)
 100*table(answer(n <- 10000))/n
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{area}},
   \code{\link{car}}, \code{\link{children}},
   \code{\link{coin}}, \code{\link{color}},
@@ -57,4 +57,3 @@ Other variable.functions: \code{\link{age}},
 \keyword{answer}
 \keyword{no}
 \keyword{yes}
-

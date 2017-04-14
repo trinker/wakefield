@@ -26,4 +26,3 @@ pie(table(month(10000, prob = probs(12))))
 }
 \keyword{percent}
 \keyword{probability}
-

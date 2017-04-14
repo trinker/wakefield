@@ -43,4 +43,3 @@ r_list(10,
 \code{\link[wakefield]{seriesname}}
 }
 \keyword{insert}
-

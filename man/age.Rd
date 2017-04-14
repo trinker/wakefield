@@ -30,7 +30,7 @@ hist(age(10000))
 interval(age, 3, n = 1000)
 }
 \seealso{
-Other variable.functions: \code{\link{animal}},
+Other variable functions: \code{\link{animal}},
   \code{\link{answer}}, \code{\link{area}},
   \code{\link{car}}, \code{\link{children}},
   \code{\link{coin}}, \code{\link{color}},
@@ -56,4 +56,3 @@ Other variable.functions: \code{\link{animal}},
   \code{\link{year}}, \code{\link{zip_code}}
 }
 \keyword{age}
-

@@ -48,4 +48,3 @@ r_data_frame(
 }
 \keyword{missing}
 \keyword{na}
-

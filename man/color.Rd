@@ -43,7 +43,7 @@ pie(tab <- table(primary(10000)), col = names(tab))
 barplot(tab <- table(primary(10000, prob = probs(6))), col = names(tab))
 }
 \seealso{
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -69,4 +69,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{year}}, \code{\link{zip_code}}
 }
 \keyword{color}
-

@@ -14,7 +14,12 @@ inst/build.R
 README.Rmd
 README.R
 travis.yml
-inst/wakefield_logo
+tools/wkefield_logo/r_wkefielda.png
+tools/wkefield_logo/r_wkefield.pptx
+tools/wkefield_logo/resize_icon.txt
+tools/wkefield_logo/r_wakefield_dep.png
+tools/wkefield_logo/logo_script.R
+Thumbs.db
 inst/staticdocs
 inst/extra_statdoc
 inst/maintenance.R

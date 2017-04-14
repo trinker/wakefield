@@ -29,7 +29,7 @@ table(dummy(1000))
 \seealso{
 \code{\link[base]{sample.int}}
 
-Other variable.functions: \code{\link{age}},
+Other variable functions: \code{\link{age}},
   \code{\link{animal}}, \code{\link{answer}},
   \code{\link{area}}, \code{\link{car}},
   \code{\link{children}}, \code{\link{coin}},
@@ -55,4 +55,3 @@ Other variable.functions: \code{\link{age}},
   \code{\link{valid}}, \code{\link{year}},
   \code{\link{zip_code}}
 }
-
