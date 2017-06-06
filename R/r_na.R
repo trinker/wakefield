@@ -1,6 +1,6 @@
-#' Title
+#' Replace a Proportion of Values With NA
 #'
-#' Description
+#' Replaces a proportion of values with NA. Useful for simulating missing data.
 #'
 #' @param x A \code{\link[base]{data.frame}} or \code{\link[base]{list}} to
 #' randomly replace elements with \code{NA}s.
