@@ -2,7 +2,7 @@
 % Please edit documentation in R/r_dummy.R
 \name{r_dummy}
 \alias{r_dummy}
-\title{Title}
+\title{Generate Random Dummy Values}
 \usage{
 r_dummy(fun, n, ..., prefix = FALSE, rep.sep = "_")
 }
@@ -12,7 +12,7 @@ r_dummy(fun, n, ..., prefix = FALSE, rep.sep = "_")
 \item{n}{The number of rows to produce.}
 
 \item{prefix}{logical.  If \code{TRUE} the original factor name (supplied to
-\code{fun} as \code{name} argument) will prefic the column names that were
+\code{fun} as \code{name} argument) will prefix the column names that were
 generated from the factor's categories.}
 
 \item{rep.sep}{A separator to use for the variable and category part of names
@@ -26,7 +26,7 @@ is used (\code{r_dummy(sex)}), this results in column names
 Returns a \code{\link[dplyr]{tbl_df}}.
 }
 \description{
-Description
+Generate random values from a \pkg{wakefield} variable function.
 }
 \examples{
 r_dummy(sex, 10)

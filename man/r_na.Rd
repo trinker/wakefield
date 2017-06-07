@@ -2,7 +2,7 @@
 % Please edit documentation in R/r_na.R
 \name{r_na}
 \alias{r_na}
-\title{Title}
+\title{Replace a Proportion of Values With NA}
 \usage{
 r_na(x, cols = -1, prob = 0.05)
 }
@@ -22,7 +22,7 @@ Returns a \code{\link[base]{data.frame}} or \code{\link[base]{list}}
 with random missing values.
 }
 \description{
-Description
+Replaces a proportion of values with NA. Useful for simulating missing data.
 }
 \examples{
 r_na(mtcars)

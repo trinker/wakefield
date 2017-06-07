@@ -1,12 +1,12 @@
-#' Title
+#' Generate Random Dummy Values
 #'
-#' Description
+#' Generate random values from a \pkg{wakefield} variable function.
 #'
 #' @param fun A \pkg{wakefield} variable function.
 #' @param n The number of rows to produce.
 #' @param \ldots Additional arguments passed to \code{fun}.
 #' @param prefix logical.  If \code{TRUE} the original factor name (supplied to
-#' \code{fun} as \code{name} argument) will prefic the column names that were
+#' \code{fun} as \code{name} argument) will prefix the column names that were
 #' generated from the factor's categories.
 #' @param rep.sep A separator to use for the variable and category part of names
 #' when \code{prefix = TRUE}.  For example if the \code{\link[wakefield]{age}}
