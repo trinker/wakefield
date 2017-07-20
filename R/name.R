@@ -1,6 +1,7 @@
 #' Generate Random Vector of Names
 #'
-#' Generate a random vector of first names (Gender Neutral-ish).
+#' Generate a random vector of first names. This dataset includes all unique entries
+#' from the \code{babynames} package.
 #'
 #' @inheritParams r_sample_replace
 #' @return Returns a random vector of name elements.
