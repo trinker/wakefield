@@ -1,9 +1,12 @@
 #' Generate Random Vector of Ages
 #'
-#' Generate a random vector of ages within the provided range.  The default age range is set between 18 and 89, to match the age ranges whch appear (see e.g.,  https://gssdataexplorer.norc.org/variables/53/vshow)
+#' Generate a random vector of ages within the provided range.  The default age 
+#' range is set between 18 and 89, to match the age ranges which appear (see e.g.,  
+#' https://gssdataexplorer.norc.org/variables/53/vshow).
 #'
 #' @inheritParams r_sample_factor
-#' @return Returns a random integer vector of ages within the provided range (defaults to 18:89) 
+#' @return Returns a random integer vector of ages within the provided range 
+#' (defaults to 18:89). 
 #' @keywords age
 #' @export
 #' @include utils.R r_sample.R

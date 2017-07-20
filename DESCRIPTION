@@ -6,7 +6,8 @@ Authors@R: c(
         person("Josh", "O'Brien", role = "ctb"), 
         person("Ananda", "Mahto", role = "ctb"), 
         person("Matthew", "Sigal", role = "ctb"),
-        person("Jonathan", "Carroll", role = "ctb")        
+        person("Jonathan", "Carroll", role = "ctb"),
+        person("Scott", "Westenberger", role = "ctb")  
         )
 Maintainer: Tyler Rinker <tyler.rinker@gmail.com>
 Description: Generates random data sets including: data.frames, lists,
@@ -14,7 +15,7 @@ Description: Generates random data sets including: data.frames, lists,
 Depends: R (>= 3.1.2)
 Imports: chron, ggplot2, dplyr, stringi
 Suggests: testthat
-Date: 2017-06-06
+Date: 2017-07-20
 License: GPL-2
 LazyData: TRUE
 URL: https://github.com/trinker/wakefield
