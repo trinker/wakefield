@@ -34,7 +34,7 @@ Returns a random vector of integer levels (1-4) elements.
 \code{math} - Generate a random vector of integer mathematics levels (1-4)
 similar to New York State grades 3-8 assessment results.
 
-\code{math} - Generate a random vector of integer English language arts (ELA)
+\code{ela} - Generate a random vector of integer English language arts (ELA)
 levels (1-4) similar to New York State grades 3-8 assessment results.
 }
 \details{

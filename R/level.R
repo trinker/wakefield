@@ -49,7 +49,7 @@ math <- hijack(r_sample,
 
 #' Generate Random Vector of Levels
 #'
-#' \code{math} - Generate a random vector of integer English language arts (ELA)
+#' \code{ela} - Generate a random vector of integer English language arts (ELA)
 #' levels (1-4) similar to New York State grades 3-8 assessment results.
 #'
 #' @export

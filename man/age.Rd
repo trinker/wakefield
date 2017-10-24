@@ -4,7 +4,7 @@
 \alias{age}
 \title{Generate Random Vector of Ages}
 \usage{
-age(n, x = 20:35, prob = NULL, name = "Age")
+age(n, x = 18:89, prob = NULL, name = "Age")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -19,14 +19,17 @@ attribute.  This is used to auto assign names to the column/vector name when
 used inside of \code{r_data_frame} or \code{r_list}.}
 }
 \value{
-Returns a random factor vector of gender elements.
+Returns a random integer vector of ages within the provided range 
+(defaults to 18:89).
 }
 \description{
-Generate a random vector of ages.
+Generate a random vector of ages within the provided range.  The default age 
+range is set between 18 and 89, to match the age ranges which appear (see e.g.,  
+https://gssdataexplorer.norc.org/variables/53/vshow).
 }
 \examples{
-age(10)
-hist(age(10000))
+age(10) # draw 10 ages with default values
+hist(age(n=10000))  
 interval(age, 3, n = 1000)
 }
 \seealso{

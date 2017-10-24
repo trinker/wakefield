@@ -26,7 +26,8 @@ used inside of \code{r_data_frame} or \code{r_list}.}
 Returns a random vector of name elements.
 }
 \description{
-Generate a random vector of first names (Gender Neutral-ish).
+Generate a random vector of first names. This dataset includes all unique entries
+from the \code{babynames} package.
 }
 \examples{
 name(10)
