@@ -17,6 +17,14 @@ And constructed with the following guidelines:
 * Bug fixes and misc changes bumps the patch
 
 
+wakefield 0.3.3
+----------------------------------------------------------------
+
+* A maintenence release to ensure that images for README are accessible per CRAN's
+  request.
+
+
+
 wakefield 0.2.1
 ----------------------------------------------------------------
 
