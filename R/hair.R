@@ -24,7 +24,7 @@
 #' lbs <- paste0(names(v), "\n", round(100*v/sum(v), 1), "%")
 #' pie(v, col = replace(names(v), 3, "yellow"), labels = lbs)
 hair <- hijack(r_sample_factor,
-    name = "hair",
+    name = "Hair",
     x = c("Brown", "Black", "Blonde", "Red"),
     prob = c(.35, .28, .26, .11)
 )
