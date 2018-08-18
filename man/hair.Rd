@@ -5,7 +5,7 @@
 \title{Generate Random Vector of Hair Colors}
 \usage{
 hair(n, x = c("Brown", "Black", "Blonde", "Red"), prob = c(0.35, 0.28, 0.26,
-  0.11), name = "hair")
+  0.11), name = "Hair")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
