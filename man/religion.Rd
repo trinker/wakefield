@@ -31,7 +31,7 @@ Generate a random vector of religion.
 }
 \details{
 The religion and probabilities used match approximate world
-religion make-up (from \href{http://www.pewforum.org/}{Pew Research Center}).  
+religion make-up (from \href{https://www.pewforum.org/}{Pew Research Center}).  
 The default make up is:
 
 \tabular{lrr}{
@@ -52,7 +52,7 @@ barplot(table(religion(10000)))
 pie(table(religion(10000)))
 }
 \references{
-\url{http://www.pewforum.org/2012/12/18/table-religious-composition-by-country-in-numbers}
+https://www.pewforum.org/2012/12/18/table-religious-composition-by-country-in-numbers/
 }
 \seealso{
 Other variable functions: 

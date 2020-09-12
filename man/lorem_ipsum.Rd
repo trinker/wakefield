@@ -23,8 +23,7 @@ used inside of \code{r_data_frame} or \code{r_list}.}
 Returns a random character vector of string elements.
 }
 \description{
-Generates (pseudo)random \href{http://www.lipsum.com/}{\emph{lorem ipsum}}
-text.
+Generates (pseudo)random lorem ipsum text.
 }
 \note{
 \code{lorem_ipsum} and \code{paragraph} produce identical strings but

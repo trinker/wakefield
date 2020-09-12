@@ -34,8 +34,7 @@ Returns a random factor vector of color elements.
 \description{
 \code{color} - Generate a random vector of colors (sampled from \code{colors()}).
 
-\code{color} - Generate a random vector of
-\href{http://en.wikipedia.org/wiki/Primary_color}{\emph{psycological primary}}
+\code{color} - Generate a random vector of \emph{psycological primary}
 colors (sampled from \code{colors()}).
 }
 \examples{

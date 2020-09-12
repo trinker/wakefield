@@ -2,7 +2,7 @@
 #'
 #' Generate a random vector of Internet browser.
 #'
-#' @details The browser use and probabilities (from \url{http://gs.statcounter.com}): 
+#' @details The browser use and probabilities (from https://gs.statcounter.com/): 
 #'
 #' \tabular{lr}{
 #'   \bold{ Browser} \tab \bold{Percent} \cr
@@ -17,7 +17,7 @@
 #' @inheritParams r_sample_factor
 #' @return Returns a random factor vector of Internet browser elements.
 #' @keywords browser
-#' @references \url{http://www.pewforum.org/2012/12/18/table-religious-composition-by-country-in-numbers}
+#' @references https://gs.statcounter.com/
 #' @export
 #' @include utils.R r_sample.R
 #' @family variable functions

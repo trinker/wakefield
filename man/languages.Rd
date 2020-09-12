@@ -12,7 +12,7 @@ data(languages)
 }
 \description{
 A dataset containing native language use statistics taken from:
-\url{http://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers}.
+https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers.
 }
 \details{
 \itemize{
@@ -23,6 +23,6 @@ A dataset containing native language use statistics taken from:
 }
 }
 \references{
-\url{http://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers}
+https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers
 }
 \keyword{datasets}

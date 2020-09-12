@@ -37,8 +37,7 @@ color <- function(n, k = 10, x = grDevices::colors(), prob = NULL, name = "Color
 
 #' Generate Random Vector of Colors
 #'
-#' \code{color} - Generate a random vector of
-#' \href{http://en.wikipedia.org/wiki/Primary_color}{\emph{psycological primary}}
+#' \code{color} - Generate a random vector of \emph{psycological primary}
 #' colors (sampled from \code{colors()}).
 #'
 #' @export

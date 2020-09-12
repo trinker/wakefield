@@ -21,6 +21,6 @@ A dataset containing U.S. state populations.
 }
 }
 \references{
-\url{http://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population}
+https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population
 }
 \keyword{datasets}

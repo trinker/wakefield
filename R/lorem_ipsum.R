@@ -1,7 +1,6 @@
 #' Generate Random Lorem Ipsum Strings
 #'
-#' Generates (pseudo)random \href{http://www.lipsum.com/}{\emph{lorem ipsum}}
-#' text.
+#' Generates (pseudo)random lorem ipsum text.
 #'
 #' @param n The number elements to generate.  This can be globally set within
 #' the environment of \code{r_data_frame} or \code{r_list}.

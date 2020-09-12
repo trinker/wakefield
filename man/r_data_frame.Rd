@@ -99,7 +99,7 @@ r_data_frame(n=100,
    plot(palette = "Set1")
 }
 \references{
-\url{http://stackoverflow.com/a/29617983/1000343}
+https://stackoverflow.com/a/29617983/1000343
 }
 \seealso{
 \code{\link[wakefield]{r_list}},

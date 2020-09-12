@@ -30,7 +30,7 @@ Returns a random factor vector of Internet browser elements.
 Generate a random vector of Internet browser.
 }
 \details{
-The browser use and probabilities (from \url{http://gs.statcounter.com}): 
+The browser use and probabilities (from https://gs.statcounter.com/): 
 
 \tabular{lr}{
   \bold{ Browser} \tab \bold{Percent} \cr
@@ -48,7 +48,7 @@ barplot(table(internet_browser(10000)))
 pie(table(internet_browser(10000)))
 }
 \references{
-\url{http://www.pewforum.org/2012/12/18/table-religious-composition-by-country-in-numbers}
+https://gs.statcounter.com/
 }
 \seealso{
 Other variable functions: 

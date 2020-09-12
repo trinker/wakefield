@@ -3,7 +3,7 @@
 #' Generate a random vector of religion.
 #'
 #' @details The religion and probabilities used match approximate world
-#' religion make-up (from \href{http://www.pewforum.org/}{Pew Research Center}).  
+#' religion make-up (from \href{https://www.pewforum.org/}{Pew Research Center}).  
 #' The default make up is:
 #'
 #' \tabular{lrr}{
@@ -21,7 +21,7 @@
 #' @inheritParams r_sample_factor
 #' @return Returns a random factor vector of religion elements.
 #' @keywords religion
-#' @references \url{http://www.pewforum.org/2012/12/18/table-religious-composition-by-country-in-numbers}
+#' @references https://www.pewforum.org/2012/12/18/table-religious-composition-by-country-in-numbers/
 #' @export
 #' @include utils.R r_sample.R
 #' @family variable functions

@@ -16,7 +16,7 @@
 #' \code{\link[base]{data.frame}}.
 #' @return Returns a \code{\link[dplyr]{tbl_df}}.
 #' @author Josh O'Brien and Tyler Rinker <tyler.rinker@@gmail.com>.
-#' @references \url{http://stackoverflow.com/a/29617983/1000343}
+#' @references https://stackoverflow.com/a/29617983/1000343
 #' @export
 #' @seealso \code{\link[wakefield]{r_list}},
 #' \code{\link[wakefield]{r_series}}

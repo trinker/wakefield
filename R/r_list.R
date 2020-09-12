@@ -17,7 +17,7 @@
 #' \code{\link[base]{data.frame}}.
 #' @return Returns a named list of equal length vectors.
 #' @author Josh O'Brien and Tyler Rinker <tyler.rinker@@gmail.com>.
-#' @references \url{http://stackoverflow.com/a/29617983/1000343}
+#' @references https://stackoverflow.com/a/29617983/1000343
 #' @keywords list
 #' @export
 #' @seealso \code{\link[wakefield]{r_data_frame}},
