@@ -4,8 +4,12 @@
 \alias{eye}
 \title{Generate Random Vector of Eye Colors}
 \usage{
-eye(n, x = c("Brown", "Blue", "Green", "Hazel", "Gray"), prob = c(0.44, 0.3,
-  0.13, 0.09, 0.04), name = "Eye")
+eye(
+  n,
+  x = c("Brown", "Blue", "Green", "Hazel", "Gray"),
+  prob = c(0.44, 0.3, 0.13, 0.09, 0.04),
+  name = "Eye"
+)
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -42,31 +46,56 @@ eye(10)
 barplot(v <- table(eye(10000)), col = replace(names(v), 4, "yellowgreen"))
 }
 \seealso{
-Other variable functions: \code{\link{age}},
-  \code{\link{animal}}, \code{\link{answer}},
-  \code{\link{area}}, \code{\link{car}},
-  \code{\link{children}}, \code{\link{coin}},
-  \code{\link{color}}, \code{\link{date_stamp}},
-  \code{\link{death}}, \code{\link{dice}},
-  \code{\link{dna}}, \code{\link{dob}},
-  \code{\link{dummy}}, \code{\link{education}},
-  \code{\link{employment}}, \code{\link{grade_level}},
-  \code{\link{grade}}, \code{\link{group}},
-  \code{\link{hair}}, \code{\link{height}},
-  \code{\link{income}}, \code{\link{internet_browser}},
-  \code{\link{iq}}, \code{\link{language}},
-  \code{\link{level}}, \code{\link{likert}},
-  \code{\link{lorem_ipsum}}, \code{\link{marital}},
-  \code{\link{military}}, \code{\link{month}},
-  \code{\link{name}}, \code{\link{normal}},
-  \code{\link{political}}, \code{\link{race}},
-  \code{\link{religion}}, \code{\link{sat}},
-  \code{\link{sentence}}, \code{\link{sex_inclusive}},
-  \code{\link{sex}}, \code{\link{smokes}},
-  \code{\link{speed}}, \code{\link{state}},
-  \code{\link{string}}, \code{\link{upper}},
-  \code{\link{valid}}, \code{\link{year}},
-  \code{\link{zip_code}}
+Other variable functions: 
+\code{\link{age}()},
+\code{\link{animal}()},
+\code{\link{answer}()},
+\code{\link{area}()},
+\code{\link{car}()},
+\code{\link{children}()},
+\code{\link{coin}()},
+\code{\link{color}},
+\code{\link{date_stamp}()},
+\code{\link{death}()},
+\code{\link{dice}()},
+\code{\link{dna}()},
+\code{\link{dob}()},
+\code{\link{dummy}()},
+\code{\link{education}()},
+\code{\link{employment}()},
+\code{\link{grade_level}()},
+\code{\link{grade}()},
+\code{\link{group}()},
+\code{\link{hair}()},
+\code{\link{height}()},
+\code{\link{income}()},
+\code{\link{internet_browser}()},
+\code{\link{iq}()},
+\code{\link{language}},
+\code{\link{level}()},
+\code{\link{likert}()},
+\code{\link{lorem_ipsum}()},
+\code{\link{marital}()},
+\code{\link{military}()},
+\code{\link{month}()},
+\code{\link{name}},
+\code{\link{normal}()},
+\code{\link{political}()},
+\code{\link{race}()},
+\code{\link{religion}()},
+\code{\link{sat}()},
+\code{\link{sentence}()},
+\code{\link{sex_inclusive}()},
+\code{\link{sex}()},
+\code{\link{smokes}()},
+\code{\link{speed}()},
+\code{\link{state}()},
+\code{\link{string}()},
+\code{\link{upper}()},
+\code{\link{valid}()},
+\code{\link{year}()},
+\code{\link{zip_code}()}
 }
+\concept{variable functions}
 \keyword{eye}
 \keyword{iris}

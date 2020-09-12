@@ -4,8 +4,17 @@
 \alias{interval}
 \title{Cut Numeric Into Factor}
 \usage{
-interval(fun, breaks, ..., labels = NULL, include.lowest = FALSE,
-  right = TRUE, dig.lab = 3, ordered_result = FALSE, n)
+interval(
+  fun,
+  breaks,
+  ...,
+  labels = NULL,
+  include.lowest = FALSE,
+  right = TRUE,
+  dig.lab = 3,
+  ordered_result = FALSE,
+  n
+)
 }
 \arguments{
 \item{fun}{A vector producing function.}

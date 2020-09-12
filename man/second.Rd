@@ -4,8 +4,13 @@
 \alias{second}
 \title{Generate a Random Sequence of Seconds in H:M:S Format}
 \usage{
-second(n, x = seq(0, 59, by = 1)/3600, prob = NULL, random = FALSE,
-  name = "Second")
+second(
+  n,
+  x = seq(0, 59, by = 1)/3600,
+  prob = NULL,
+  random = FALSE,
+  name = "Second"
+)
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within

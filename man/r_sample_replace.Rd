@@ -4,8 +4,7 @@
 \alias{r_sample_replace}
 \title{Generate Random Vector (Without Replacement)}
 \usage{
-r_sample_replace(n, x = 1:100, prob = NULL, replace = FALSE,
-  name = "Sample")
+r_sample_replace(n, x = 1:100, prob = NULL, replace = FALSE, name = "Sample")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within

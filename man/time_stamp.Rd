@@ -4,8 +4,13 @@
 \alias{time_stamp}
 \title{Generate a Random Sequence of Times in H:M:S Format}
 \usage{
-time_stamp(n, x = seq(0, 23, by = 1), prob = NULL, random = FALSE,
-  name = "Time")
+time_stamp(
+  n,
+  x = seq(0, 23, by = 1),
+  prob = NULL,
+  random = FALSE,
+  name = "Time"
+)
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within

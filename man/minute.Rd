@@ -4,8 +4,13 @@
 \alias{minute}
 \title{Generate a Random Sequence of Minutes in H:M:S Format}
 \usage{
-minute(n, x = seq(0, 59, by = 1)/60, prob = NULL, random = FALSE,
-  name = "Minute")
+minute(
+  n,
+  x = seq(0, 59, by = 1)/60,
+  prob = NULL,
+  random = FALSE,
+  name = "Minute"
+)
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within

@@ -18,7 +18,7 @@
 #' @return Returns a \pkg{ggplot2} object.
 #' @details By default coumn names retain their order.  Column types are ordered
 #' alphabetically in the legend, with \code{NA} appearing last.
-#' @keywords class, type
+#' @keywords class
 #' @export
 #' @examples
 #' table_heat(mtcars) #boring

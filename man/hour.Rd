@@ -4,8 +4,7 @@
 \alias{hour}
 \title{Generate a Random Sequence of H:M:S Times}
 \usage{
-hour(n, x = seq(0, 23.5, by = 0.5), prob = NULL, random = FALSE,
-  name = "Hour")
+hour(n, x = seq(0, 23.5, by = 0.5), prob = NULL, random = FALSE, name = "Hour")
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within

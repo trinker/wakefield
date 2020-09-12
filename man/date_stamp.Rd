@@ -4,8 +4,16 @@
 \alias{date_stamp}
 \title{Generate Random Vector of Dates}
 \usage{
-date_stamp(n, random = FALSE, x = NULL, start = Sys.Date(), k = 12,
-  by = "-1 months", prob = NULL, name = "Date")
+date_stamp(
+  n,
+  random = FALSE,
+  x = NULL,
+  start = Sys.Date(),
+  k = 12,
+  by = "-1 months",
+  prob = NULL,
+  name = "Date"
+)
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -50,29 +58,55 @@ date_stamp(10, x = seq(as.Date("1980-11-16"), length = 30, by = "1 years"))
 \seealso{
 \code{\link[base]{seq.Date}}
 
-Other variable functions: \code{\link{age}},
-  \code{\link{animal}}, \code{\link{answer}},
-  \code{\link{area}}, \code{\link{car}},
-  \code{\link{children}}, \code{\link{coin}},
-  \code{\link{color}}, \code{\link{death}},
-  \code{\link{dice}}, \code{\link{dna}}, \code{\link{dob}},
-  \code{\link{dummy}}, \code{\link{education}},
-  \code{\link{employment}}, \code{\link{eye}},
-  \code{\link{grade_level}}, \code{\link{grade}},
-  \code{\link{group}}, \code{\link{hair}},
-  \code{\link{height}}, \code{\link{income}},
-  \code{\link{internet_browser}}, \code{\link{iq}},
-  \code{\link{language}}, \code{\link{level}},
-  \code{\link{likert}}, \code{\link{lorem_ipsum}},
-  \code{\link{marital}}, \code{\link{military}},
-  \code{\link{month}}, \code{\link{name}},
-  \code{\link{normal}}, \code{\link{political}},
-  \code{\link{race}}, \code{\link{religion}},
-  \code{\link{sat}}, \code{\link{sentence}},
-  \code{\link{sex_inclusive}}, \code{\link{sex}},
-  \code{\link{smokes}}, \code{\link{speed}},
-  \code{\link{state}}, \code{\link{string}},
-  \code{\link{upper}}, \code{\link{valid}},
-  \code{\link{year}}, \code{\link{zip_code}}
+Other variable functions: 
+\code{\link{age}()},
+\code{\link{animal}()},
+\code{\link{answer}()},
+\code{\link{area}()},
+\code{\link{car}()},
+\code{\link{children}()},
+\code{\link{coin}()},
+\code{\link{color}},
+\code{\link{death}()},
+\code{\link{dice}()},
+\code{\link{dna}()},
+\code{\link{dob}()},
+\code{\link{dummy}()},
+\code{\link{education}()},
+\code{\link{employment}()},
+\code{\link{eye}()},
+\code{\link{grade_level}()},
+\code{\link{grade}()},
+\code{\link{group}()},
+\code{\link{hair}()},
+\code{\link{height}()},
+\code{\link{income}()},
+\code{\link{internet_browser}()},
+\code{\link{iq}()},
+\code{\link{language}},
+\code{\link{level}()},
+\code{\link{likert}()},
+\code{\link{lorem_ipsum}()},
+\code{\link{marital}()},
+\code{\link{military}()},
+\code{\link{month}()},
+\code{\link{name}},
+\code{\link{normal}()},
+\code{\link{political}()},
+\code{\link{race}()},
+\code{\link{religion}()},
+\code{\link{sat}()},
+\code{\link{sentence}()},
+\code{\link{sex_inclusive}()},
+\code{\link{sex}()},
+\code{\link{smokes}()},
+\code{\link{speed}()},
+\code{\link{state}()},
+\code{\link{string}()},
+\code{\link{upper}()},
+\code{\link{valid}()},
+\code{\link{year}()},
+\code{\link{zip_code}()}
 }
+\concept{variable functions}
 \keyword{date}

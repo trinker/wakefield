@@ -4,7 +4,9 @@
 \name{name_neutral}
 \alias{name_neutral}
 \title{Gender Neutral Names}
-\format{A character vector with 662 elements}
+\format{
+A character vector with 662 elements
+}
 \usage{
 data(name_neutral)
 }

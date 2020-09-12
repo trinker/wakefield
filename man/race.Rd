@@ -4,9 +4,13 @@
 \alias{race}
 \title{Generate Random Vector of Races}
 \usage{
-race(n, x = c("White", "Hispanic", "Black", "Asian", "Bi-Racial", "Native",
-  "Other", "Hawaiian"), prob = c(0.637, 0.163, 0.122, 0.047, 0.019, 0.007,
-  0.002, 0.0015), name = "Race")
+race(
+  n,
+  x = c("White", "Hispanic", "Black", "Asian", "Bi-Racial", "Native", "Other",
+    "Hawaiian"),
+  prob = c(0.637, 0.163, 0.122, 0.047, 0.019, 0.007, 0.002, 0.0015),
+  name = "Race"
+)
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -47,30 +51,55 @@ race(10)
 100*table(race(n <- 10000))/n
 }
 \seealso{
-Other variable functions: \code{\link{age}},
-  \code{\link{animal}}, \code{\link{answer}},
-  \code{\link{area}}, \code{\link{car}},
-  \code{\link{children}}, \code{\link{coin}},
-  \code{\link{color}}, \code{\link{date_stamp}},
-  \code{\link{death}}, \code{\link{dice}},
-  \code{\link{dna}}, \code{\link{dob}},
-  \code{\link{dummy}}, \code{\link{education}},
-  \code{\link{employment}}, \code{\link{eye}},
-  \code{\link{grade_level}}, \code{\link{grade}},
-  \code{\link{group}}, \code{\link{hair}},
-  \code{\link{height}}, \code{\link{income}},
-  \code{\link{internet_browser}}, \code{\link{iq}},
-  \code{\link{language}}, \code{\link{level}},
-  \code{\link{likert}}, \code{\link{lorem_ipsum}},
-  \code{\link{marital}}, \code{\link{military}},
-  \code{\link{month}}, \code{\link{name}},
-  \code{\link{normal}}, \code{\link{political}},
-  \code{\link{religion}}, \code{\link{sat}},
-  \code{\link{sentence}}, \code{\link{sex_inclusive}},
-  \code{\link{sex}}, \code{\link{smokes}},
-  \code{\link{speed}}, \code{\link{state}},
-  \code{\link{string}}, \code{\link{upper}},
-  \code{\link{valid}}, \code{\link{year}},
-  \code{\link{zip_code}}
+Other variable functions: 
+\code{\link{age}()},
+\code{\link{animal}()},
+\code{\link{answer}()},
+\code{\link{area}()},
+\code{\link{car}()},
+\code{\link{children}()},
+\code{\link{coin}()},
+\code{\link{color}},
+\code{\link{date_stamp}()},
+\code{\link{death}()},
+\code{\link{dice}()},
+\code{\link{dna}()},
+\code{\link{dob}()},
+\code{\link{dummy}()},
+\code{\link{education}()},
+\code{\link{employment}()},
+\code{\link{eye}()},
+\code{\link{grade_level}()},
+\code{\link{grade}()},
+\code{\link{group}()},
+\code{\link{hair}()},
+\code{\link{height}()},
+\code{\link{income}()},
+\code{\link{internet_browser}()},
+\code{\link{iq}()},
+\code{\link{language}},
+\code{\link{level}()},
+\code{\link{likert}()},
+\code{\link{lorem_ipsum}()},
+\code{\link{marital}()},
+\code{\link{military}()},
+\code{\link{month}()},
+\code{\link{name}},
+\code{\link{normal}()},
+\code{\link{political}()},
+\code{\link{religion}()},
+\code{\link{sat}()},
+\code{\link{sentence}()},
+\code{\link{sex_inclusive}()},
+\code{\link{sex}()},
+\code{\link{smokes}()},
+\code{\link{speed}()},
+\code{\link{state}()},
+\code{\link{string}()},
+\code{\link{upper}()},
+\code{\link{valid}()},
+\code{\link{year}()},
+\code{\link{zip_code}()}
 }
+\concept{variable functions}
 \keyword{race}

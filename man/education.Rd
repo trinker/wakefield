@@ -4,13 +4,18 @@
 \alias{education}
 \title{Generate Random Vector of Educational Attainment Level}
 \usage{
-education(n, x = c("No Schooling Completed", "Nursery School to 8th Grade",
-  "9th Grade to 12th Grade, No Diploma", "Regular High School Diploma",
-  "GED or Alternative Credential", "Some College, Less than 1 Year",
-  "Some College, 1 or More Years, No Degree", "Associate's Degree",
-  "Bachelor's Degree", "Master's Degree", "Professional School Degree",
-  "Doctorate Degree"), prob = c(0.013, 0.05, 0.085, 0.246, 0.039, 0.064, 0.15,
-  0.075, 0.176, 0.072, 0.019, 0.012), name = "Education")
+education(
+  n,
+  x = c("No Schooling Completed", "Nursery School to 8th Grade",
+    "9th Grade to 12th Grade, No Diploma", "Regular High School Diploma",
+    "GED or Alternative Credential", "Some College, Less than 1 Year",
+    "Some College, 1 or More Years, No Degree", "Associate's Degree",
+    "Bachelor's Degree", "Master's Degree", "Professional School Degree",
+    "Doctorate Degree"),
+  prob = c(0.013, 0.05, 0.085, 0.246, 0.039, 0.064, 0.15, 0.075, 0.176, 0.072, 0.019,
+    0.012),
+  name = "Education"
+)
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -58,30 +63,55 @@ pie(table(education(10000)))
 http://www.census.gov
 }
 \seealso{
-Other variable functions: \code{\link{age}},
-  \code{\link{animal}}, \code{\link{answer}},
-  \code{\link{area}}, \code{\link{car}},
-  \code{\link{children}}, \code{\link{coin}},
-  \code{\link{color}}, \code{\link{date_stamp}},
-  \code{\link{death}}, \code{\link{dice}},
-  \code{\link{dna}}, \code{\link{dob}},
-  \code{\link{dummy}}, \code{\link{employment}},
-  \code{\link{eye}}, \code{\link{grade_level}},
-  \code{\link{grade}}, \code{\link{group}},
-  \code{\link{hair}}, \code{\link{height}},
-  \code{\link{income}}, \code{\link{internet_browser}},
-  \code{\link{iq}}, \code{\link{language}},
-  \code{\link{level}}, \code{\link{likert}},
-  \code{\link{lorem_ipsum}}, \code{\link{marital}},
-  \code{\link{military}}, \code{\link{month}},
-  \code{\link{name}}, \code{\link{normal}},
-  \code{\link{political}}, \code{\link{race}},
-  \code{\link{religion}}, \code{\link{sat}},
-  \code{\link{sentence}}, \code{\link{sex_inclusive}},
-  \code{\link{sex}}, \code{\link{smokes}},
-  \code{\link{speed}}, \code{\link{state}},
-  \code{\link{string}}, \code{\link{upper}},
-  \code{\link{valid}}, \code{\link{year}},
-  \code{\link{zip_code}}
+Other variable functions: 
+\code{\link{age}()},
+\code{\link{animal}()},
+\code{\link{answer}()},
+\code{\link{area}()},
+\code{\link{car}()},
+\code{\link{children}()},
+\code{\link{coin}()},
+\code{\link{color}},
+\code{\link{date_stamp}()},
+\code{\link{death}()},
+\code{\link{dice}()},
+\code{\link{dna}()},
+\code{\link{dob}()},
+\code{\link{dummy}()},
+\code{\link{employment}()},
+\code{\link{eye}()},
+\code{\link{grade_level}()},
+\code{\link{grade}()},
+\code{\link{group}()},
+\code{\link{hair}()},
+\code{\link{height}()},
+\code{\link{income}()},
+\code{\link{internet_browser}()},
+\code{\link{iq}()},
+\code{\link{language}},
+\code{\link{level}()},
+\code{\link{likert}()},
+\code{\link{lorem_ipsum}()},
+\code{\link{marital}()},
+\code{\link{military}()},
+\code{\link{month}()},
+\code{\link{name}},
+\code{\link{normal}()},
+\code{\link{political}()},
+\code{\link{race}()},
+\code{\link{religion}()},
+\code{\link{sat}()},
+\code{\link{sentence}()},
+\code{\link{sex_inclusive}()},
+\code{\link{sex}()},
+\code{\link{smokes}()},
+\code{\link{speed}()},
+\code{\link{state}()},
+\code{\link{string}()},
+\code{\link{upper}()},
+\code{\link{valid}()},
+\code{\link{year}()},
+\code{\link{zip_code}()}
 }
+\concept{variable functions}
 \keyword{education}

@@ -4,7 +4,9 @@
 \name{animal_list}
 \alias{animal_list}
 \title{Animal List}
-\format{A character vector with 591 elements}
+\format{
+A character vector with 591 elements
+}
 \usage{
 data(animal_list)
 }

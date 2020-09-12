@@ -26,7 +26,7 @@
 lorem_ipsum <- function (n, ..., name = "Lorem_Ipsum") {
 
     if (missing(n)) stop("`n` is missing")
-    out <- stringi::stri_rand_lipsum(n=n, ...)
+    out <- stringi::stri_rand_lipsum(n_paragraphs=n, ...)
     varname(out, name)
 
 }
@@ -36,7 +36,7 @@ lorem_ipsum <- function (n, ..., name = "Lorem_Ipsum") {
 paragraph <- function (n, ..., name = "Paragraph"){
 
     if (missing(n)) stop("`n` is missing")
-    out <- stringi::stri_rand_lipsum(n=n, ...)
+    out <- stringi::stri_rand_lipsum(n_paragraphs=n, ...)
     varname(out, name)
 
 }

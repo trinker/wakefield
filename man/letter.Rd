@@ -9,15 +9,25 @@
 \usage{
 upper(n, k = 5, x = LETTERS, prob = NULL, name = "Upper")
 
-lower(n, k = 5, x = c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k",
-  "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"),
-  prob = NULL, name = "Lower")
+lower(
+  n,
+  k = 5,
+  x = c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+    "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"),
+  prob = NULL,
+  name = "Lower"
+)
 
 upper_factor(n, k = 5, x = LETTERS, prob = NULL, name = "Upper")
 
-lower_factor(n, k = 5, x = c("a", "b", "c", "d", "e", "f", "g", "h", "i",
-  "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x",
-  "y", "z"), prob = NULL, name = "Lower")
+lower_factor(
+  n,
+  k = 5,
+  x = c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+    "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"),
+  prob = NULL,
+  name = "Lower"
+)
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -54,32 +64,57 @@ barplot(table(upper(10000)))
 barplot(table(upper(10000, prob = probs(5))))
 }
 \seealso{
-Other variable functions: \code{\link{age}},
-  \code{\link{animal}}, \code{\link{answer}},
-  \code{\link{area}}, \code{\link{car}},
-  \code{\link{children}}, \code{\link{coin}},
-  \code{\link{color}}, \code{\link{date_stamp}},
-  \code{\link{death}}, \code{\link{dice}},
-  \code{\link{dna}}, \code{\link{dob}},
-  \code{\link{dummy}}, \code{\link{education}},
-  \code{\link{employment}}, \code{\link{eye}},
-  \code{\link{grade_level}}, \code{\link{grade}},
-  \code{\link{group}}, \code{\link{hair}},
-  \code{\link{height}}, \code{\link{income}},
-  \code{\link{internet_browser}}, \code{\link{iq}},
-  \code{\link{language}}, \code{\link{level}},
-  \code{\link{likert}}, \code{\link{lorem_ipsum}},
-  \code{\link{marital}}, \code{\link{military}},
-  \code{\link{month}}, \code{\link{name}},
-  \code{\link{normal}}, \code{\link{political}},
-  \code{\link{race}}, \code{\link{religion}},
-  \code{\link{sat}}, \code{\link{sentence}},
-  \code{\link{sex_inclusive}}, \code{\link{sex}},
-  \code{\link{smokes}}, \code{\link{speed}},
-  \code{\link{state}}, \code{\link{string}},
-  \code{\link{valid}}, \code{\link{year}},
-  \code{\link{zip_code}}
+Other variable functions: 
+\code{\link{age}()},
+\code{\link{animal}()},
+\code{\link{answer}()},
+\code{\link{area}()},
+\code{\link{car}()},
+\code{\link{children}()},
+\code{\link{coin}()},
+\code{\link{color}},
+\code{\link{date_stamp}()},
+\code{\link{death}()},
+\code{\link{dice}()},
+\code{\link{dna}()},
+\code{\link{dob}()},
+\code{\link{dummy}()},
+\code{\link{education}()},
+\code{\link{employment}()},
+\code{\link{eye}()},
+\code{\link{grade_level}()},
+\code{\link{grade}()},
+\code{\link{group}()},
+\code{\link{hair}()},
+\code{\link{height}()},
+\code{\link{income}()},
+\code{\link{internet_browser}()},
+\code{\link{iq}()},
+\code{\link{language}},
+\code{\link{level}()},
+\code{\link{likert}()},
+\code{\link{lorem_ipsum}()},
+\code{\link{marital}()},
+\code{\link{military}()},
+\code{\link{month}()},
+\code{\link{name}},
+\code{\link{normal}()},
+\code{\link{political}()},
+\code{\link{race}()},
+\code{\link{religion}()},
+\code{\link{sat}()},
+\code{\link{sentence}()},
+\code{\link{sex_inclusive}()},
+\code{\link{sex}()},
+\code{\link{smokes}()},
+\code{\link{speed}()},
+\code{\link{state}()},
+\code{\link{string}()},
+\code{\link{valid}()},
+\code{\link{year}()},
+\code{\link{zip_code}()}
 }
+\concept{variable functions}
 \keyword{capitals}
 \keyword{letters}
 \keyword{lower}

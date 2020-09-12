@@ -4,7 +4,9 @@
 \name{presidential_debates_2012}
 \alias{presidential_debates_2012}
 \title{2012 U.S. Presidential Debate Dialogue}
-\format{A character vector with 2911 elements}
+\format{
+A character vector with 2911 elements
+}
 \usage{
 data(presidential_debates_2012)
 }

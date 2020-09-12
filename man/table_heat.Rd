@@ -4,8 +4,13 @@
 \alias{table_heat}
 \title{View Data Table Column Types as Heat Map}
 \usage{
-table_heat(x, flip = FALSE, palette = "Set3", print = interactive(),
-  sep = "\\n")
+table_heat(
+  x,
+  flip = FALSE,
+  palette = "Set3",
+  print = interactive(),
+  sep = "\\n"
+)
 }
 \arguments{
 \item{x}{A \code{\link[base]{data.frame}}.}
@@ -70,5 +75,4 @@ table_heat(r_na(dat, NULL), palette = "Dark2")
 table_heat(r_na(dat, NULL), palette = "Spectral")
 table_heat(r_na(dat, NULL), palette = "Reds")
 }
-\keyword{class,}
-\keyword{type}
+\keyword{class}

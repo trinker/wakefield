@@ -1,6 +1,6 @@
 Package: wakefield
 Title: Generate Random Data Sets
-Version: 0.3.4
+Version: 0.3.5
 Authors@R: c(
         person("Tyler", "Rinker", email = "tyler.rinker@gmail.com", role = c("aut", "cre")),
         person("Josh", "O'Brien", role = "ctb"), 
@@ -12,7 +12,7 @@ Authors@R: c(
 Maintainer: Tyler Rinker <tyler.rinker@gmail.com>
 Description: Generates random data sets including: data.frames, lists,
         and vectors.
-Depends: R (>= 3.1.2)
+Depends: R (>= 3.2.0)
 Imports: chron, ggplot2, dplyr, stringi
 Suggests: testthat
 License: GPL-2
@@ -37,4 +37,4 @@ Collate: 'utils.R' 'r_sample.R' 'age.R' 'r_sample_factor.R' 'animal.R'
         'sex_inclusive.R' 'smokes.R' 'speed.R' 'state.R' 'string.R'
         'table_heat.R' 'time_stamp.R' 'upper.R' 'valid.R' 'variables.R'
         'varname.R' 'year.R' 'zip_code.R'
-RoxygenNote: 6.1.0
+RoxygenNote: 7.1.1

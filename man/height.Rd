@@ -6,14 +6,35 @@
 \alias{height_cm}
 \title{Generate Random Vector of Heights}
 \usage{
-height(n, mean = 69, sd = 3.75, min = 1, max = NULL, digits = 0,
-  name = "Height")
+height(
+  n,
+  mean = 69,
+  sd = 3.75,
+  min = 1,
+  max = NULL,
+  digits = 0,
+  name = "Height"
+)
 
-height_in(n, mean = 69, sd = 3.75, min = 1, max = NULL, digits = 1,
-  name = "Height(in)")
+height_in(
+  n,
+  mean = 69,
+  sd = 3.75,
+  min = 1,
+  max = NULL,
+  digits = 1,
+  name = "Height(in)"
+)
 
-height_cm(n, mean = 175.26, sd = 9.525, min = 1, max = NULL,
-  digits = 1, name = "Height(cm)")
+height_cm(
+  n,
+  mean = 175.26,
+  sd = 9.525,
+  min = 1,
+  max = NULL,
+  digits = 1,
+  name = "Height(cm)"
+)
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -55,30 +76,55 @@ hist(height(10000))
 interval(height, 5, n = 1000)
 }
 \seealso{
-Other variable functions: \code{\link{age}},
-  \code{\link{animal}}, \code{\link{answer}},
-  \code{\link{area}}, \code{\link{car}},
-  \code{\link{children}}, \code{\link{coin}},
-  \code{\link{color}}, \code{\link{date_stamp}},
-  \code{\link{death}}, \code{\link{dice}},
-  \code{\link{dna}}, \code{\link{dob}},
-  \code{\link{dummy}}, \code{\link{education}},
-  \code{\link{employment}}, \code{\link{eye}},
-  \code{\link{grade_level}}, \code{\link{grade}},
-  \code{\link{group}}, \code{\link{hair}},
-  \code{\link{income}}, \code{\link{internet_browser}},
-  \code{\link{iq}}, \code{\link{language}},
-  \code{\link{level}}, \code{\link{likert}},
-  \code{\link{lorem_ipsum}}, \code{\link{marital}},
-  \code{\link{military}}, \code{\link{month}},
-  \code{\link{name}}, \code{\link{normal}},
-  \code{\link{political}}, \code{\link{race}},
-  \code{\link{religion}}, \code{\link{sat}},
-  \code{\link{sentence}}, \code{\link{sex_inclusive}},
-  \code{\link{sex}}, \code{\link{smokes}},
-  \code{\link{speed}}, \code{\link{state}},
-  \code{\link{string}}, \code{\link{upper}},
-  \code{\link{valid}}, \code{\link{year}},
-  \code{\link{zip_code}}
+Other variable functions: 
+\code{\link{age}()},
+\code{\link{animal}()},
+\code{\link{answer}()},
+\code{\link{area}()},
+\code{\link{car}()},
+\code{\link{children}()},
+\code{\link{coin}()},
+\code{\link{color}},
+\code{\link{date_stamp}()},
+\code{\link{death}()},
+\code{\link{dice}()},
+\code{\link{dna}()},
+\code{\link{dob}()},
+\code{\link{dummy}()},
+\code{\link{education}()},
+\code{\link{employment}()},
+\code{\link{eye}()},
+\code{\link{grade_level}()},
+\code{\link{grade}()},
+\code{\link{group}()},
+\code{\link{hair}()},
+\code{\link{income}()},
+\code{\link{internet_browser}()},
+\code{\link{iq}()},
+\code{\link{language}},
+\code{\link{level}()},
+\code{\link{likert}()},
+\code{\link{lorem_ipsum}()},
+\code{\link{marital}()},
+\code{\link{military}()},
+\code{\link{month}()},
+\code{\link{name}},
+\code{\link{normal}()},
+\code{\link{political}()},
+\code{\link{race}()},
+\code{\link{religion}()},
+\code{\link{sat}()},
+\code{\link{sentence}()},
+\code{\link{sex_inclusive}()},
+\code{\link{sex}()},
+\code{\link{smokes}()},
+\code{\link{speed}()},
+\code{\link{state}()},
+\code{\link{string}()},
+\code{\link{upper}()},
+\code{\link{valid}()},
+\code{\link{year}()},
+\code{\link{zip_code}()}
 }
+\concept{variable functions}
 \keyword{height}

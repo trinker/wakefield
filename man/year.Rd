@@ -4,8 +4,12 @@
 \alias{year}
 \title{Generate Random Vector of Years}
 \usage{
-year(n, x = 1996:as.numeric(format(Sys.Date(), "\%Y")), prob = NULL,
-  name = "Year")
+year(
+  n,
+  x = 1996:as.numeric(format(Sys.Date(), "\%Y")),
+  prob = NULL,
+  name = "Year"
+)
 }
 \arguments{
 \item{n}{The number elements to generate.  This can be globally set within
@@ -31,30 +35,55 @@ pr <- probs(length(1996:2016))
 pie(table(year(10000, x= 1996:2016, prob = pr)))
 }
 \seealso{
-Other variable functions: \code{\link{age}},
-  \code{\link{animal}}, \code{\link{answer}},
-  \code{\link{area}}, \code{\link{car}},
-  \code{\link{children}}, \code{\link{coin}},
-  \code{\link{color}}, \code{\link{date_stamp}},
-  \code{\link{death}}, \code{\link{dice}},
-  \code{\link{dna}}, \code{\link{dob}},
-  \code{\link{dummy}}, \code{\link{education}},
-  \code{\link{employment}}, \code{\link{eye}},
-  \code{\link{grade_level}}, \code{\link{grade}},
-  \code{\link{group}}, \code{\link{hair}},
-  \code{\link{height}}, \code{\link{income}},
-  \code{\link{internet_browser}}, \code{\link{iq}},
-  \code{\link{language}}, \code{\link{level}},
-  \code{\link{likert}}, \code{\link{lorem_ipsum}},
-  \code{\link{marital}}, \code{\link{military}},
-  \code{\link{month}}, \code{\link{name}},
-  \code{\link{normal}}, \code{\link{political}},
-  \code{\link{race}}, \code{\link{religion}},
-  \code{\link{sat}}, \code{\link{sentence}},
-  \code{\link{sex_inclusive}}, \code{\link{sex}},
-  \code{\link{smokes}}, \code{\link{speed}},
-  \code{\link{state}}, \code{\link{string}},
-  \code{\link{upper}}, \code{\link{valid}},
-  \code{\link{zip_code}}
+Other variable functions: 
+\code{\link{age}()},
+\code{\link{animal}()},
+\code{\link{answer}()},
+\code{\link{area}()},
+\code{\link{car}()},
+\code{\link{children}()},
+\code{\link{coin}()},
+\code{\link{color}},
+\code{\link{date_stamp}()},
+\code{\link{death}()},
+\code{\link{dice}()},
+\code{\link{dna}()},
+\code{\link{dob}()},
+\code{\link{dummy}()},
+\code{\link{education}()},
+\code{\link{employment}()},
+\code{\link{eye}()},
+\code{\link{grade_level}()},
+\code{\link{grade}()},
+\code{\link{group}()},
+\code{\link{hair}()},
+\code{\link{height}()},
+\code{\link{income}()},
+\code{\link{internet_browser}()},
+\code{\link{iq}()},
+\code{\link{language}},
+\code{\link{level}()},
+\code{\link{likert}()},
+\code{\link{lorem_ipsum}()},
+\code{\link{marital}()},
+\code{\link{military}()},
+\code{\link{month}()},
+\code{\link{name}},
+\code{\link{normal}()},
+\code{\link{political}()},
+\code{\link{race}()},
+\code{\link{religion}()},
+\code{\link{sat}()},
+\code{\link{sentence}()},
+\code{\link{sex_inclusive}()},
+\code{\link{sex}()},
+\code{\link{smokes}()},
+\code{\link{speed}()},
+\code{\link{state}()},
+\code{\link{string}()},
+\code{\link{upper}()},
+\code{\link{valid}()},
+\code{\link{zip_code}()}
 }
+\concept{variable functions}
 \keyword{year}

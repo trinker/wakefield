@@ -4,7 +4,9 @@
 \name{grady_augmented}
 \alias{grady_augmented}
 \title{Augmented List of Grady Ward's English Words and Mark Kantrowitz's Names List}
-\format{A character vector with 122806 elements}
+\format{
+A character vector with 122806 elements
+}
 \usage{
 data(grady_augmented)
 }

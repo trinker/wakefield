@@ -4,7 +4,9 @@
 \name{languages}
 \alias{languages}
 \title{Languages of the World}
-\format{A data frame with 99 rows and 4 variables}
+\format{
+A data frame with 99 rows and 4 variables
+}
 \usage{
 data(languages)
 }

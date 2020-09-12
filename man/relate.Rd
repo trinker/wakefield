@@ -4,8 +4,16 @@
 \alias{relate}
 \title{Create Related Numeric Columns}
 \usage{
-relate(x, j, name = NULL, operation = "+", mean = 5, sd = 1,
-  rep.sep = "_", digits = max(nchar(sub("^[^.]*.", "", x))))
+relate(
+  x,
+  j,
+  name = NULL,
+  operation = "+",
+  mean = 5,
+  sd = 1,
+  rep.sep = "_",
+  digits = max(nchar(sub("^[^.]*.", "", x)))
+)
 }
 \arguments{
 \item{x}{A starting column.}

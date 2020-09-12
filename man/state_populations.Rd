@@ -4,7 +4,9 @@
 \name{state_populations}
 \alias{state_populations}
 \title{State Populations (2010)}
-\format{A data frame with 50 rows and 3 variables}
+\format{
+A data frame with 50 rows and 3 variables
+}
 \usage{
 data(state_populations)
 }

@@ -4,7 +4,6 @@
 \name{wakefield}
 \alias{wakefield}
 \alias{package-wakefield}
-\alias{wakefield-package}
 \title{Generate Random Data Sets}
 \description{
 Generates random data sets including: data.frames, lists, and vectors.
