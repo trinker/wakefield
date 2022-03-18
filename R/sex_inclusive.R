@@ -10,9 +10,16 @@
 #'
 #' \tabular{lr}{
 #'   \bold{Gender}     \tab \bold{Percent}\cr
-#'   Male    \tab 51.07 \%\cr
-#'   Female  \tab 48.63 \%\cr
-#'   Trans*  \tab 0.30 \%\cr
+#'   Male    \tab 50.37 \%\cr
+#'   Female  \tab 47.93 \%\cr
+#'   Trans*  \tab 2 \%\cr
+#' }
+#' 
+#' \tabular{lr}{
+#'   \bold{Gender}     \tab \bold{Percent}\cr
+#'   Male    \tab 50.52 \%\cr
+#'   Female  \tab 48.08 \%\cr
+#'   Intersex  \tab 1.7 \%\cr
 #' }
 #'
 #' @inheritParams r_sample_factor
@@ -31,12 +38,14 @@
 #' barplot(table(gender_inclusive(10000)))
 sex_inclusive <- hijack(r_sample_factor,
                   name = "Sex",
-                  x = c("Male", "Female", "Intersex")
+                  x = c("Male", "Female", "Intersex"),
+                  prob = c(0.5052, 0.4808, 0.017)
 )
 
 #' @export
 #' @rdname sex_inclusive
 gender_inclusive <- hijack(r_sample_factor,
                 name = "Gender",
-                x = c("Male", "Female", "Trans*")
+                x = c("Male", "Female", "Trans*"),
+                prob = c(0.5037, 0.4793, 0.02)
 )

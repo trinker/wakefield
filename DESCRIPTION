@@ -37,4 +37,4 @@ Collate: 'utils.R' 'r_sample.R' 'age.R' 'r_sample_factor.R' 'animal.R'
         'sex_inclusive.R' 'smokes.R' 'speed.R' 'state.R' 'string.R'
         'table_heat.R' 'time_stamp.R' 'upper.R' 'valid.R' 'variables.R'
         'varname.R' 'year.R' 'zip_code.R'
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2

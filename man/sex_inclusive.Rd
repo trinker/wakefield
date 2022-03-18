@@ -8,14 +8,14 @@
 sex_inclusive(
   n,
   x = c("Male", "Female", "Intersex"),
-  prob = NULL,
+  prob = c(0.5052, 0.4808, 0.017),
   name = "Sex"
 )
 
 gender_inclusive(
   n,
   x = c("Male", "Female", "Trans*"),
-  prob = NULL,
+  prob = c(0.5037, 0.4793, 0.02),
   name = "Gender"
 )
 }
@@ -46,9 +46,16 @@ make-up:
 
 \tabular{lr}{
   \bold{Gender}     \tab \bold{Percent}\cr
-  Male    \tab 51.07 \%\cr
-  Female  \tab 48.63 \%\cr
-  Trans*  \tab 0.30 \%\cr
+  Male    \tab 50.37 \%\cr
+  Female  \tab 47.93 \%\cr
+  Trans*  \tab 2 \%\cr
+}
+
+\tabular{lr}{
+  \bold{Gender}     \tab \bold{Percent}\cr
+  Male    \tab 50.52 \%\cr
+  Female  \tab 48.08 \%\cr
+  Intersex  \tab 1.7 \%\cr
 }
 }
 \examples{
