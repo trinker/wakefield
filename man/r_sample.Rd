@@ -31,5 +31,5 @@ r_sample(x = c("B", "W"), prob = c(.7, .3), n = 25, name = "Race")
 r_sample(25, x = c(TRUE, FALSE))
 }
 \seealso{
-\code{\link[base]{sample}}
+\code{\link[base:sample]{base::sample()}}
 }

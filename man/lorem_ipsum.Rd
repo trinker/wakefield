@@ -13,7 +13,7 @@ paragraph(n, ..., name = "Paragraph")
 \item{n}{The number elements to generate.  This can be globally set within
 the environment of \code{r_data_frame} or \code{r_list}.}
 
-\item{\dots}{Other arguments passed to  \code{\link[stringi]{stri_rand_lipsum}}.}
+\item{\dots}{Other arguments passed to  \code{\link[stringi:stri_rand_lipsum]{stringi::stri_rand_lipsum()}}.}
 
 \item{name}{The name to assign to the output vector's \code{varname}
 attribute.  This is used to auto assign names to the column/vector name when
@@ -37,7 +37,7 @@ paragraph(10)
 lorem_ipsum(10, start_lipsum = FALSE)
 }
 \seealso{
-\code{\link[stringi]{stri_rand_lipsum}}
+\code{\link[stringi:stri_rand_lipsum]{stringi::stri_rand_lipsum()}}
 
 Other variable functions: 
 \code{\link{age}()},
@@ -47,7 +47,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

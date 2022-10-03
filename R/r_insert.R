@@ -1,15 +1,15 @@
-#' Insert Data Frames Into \code{r_data_frame}
+#' Insert Data Frames Into `r_data_frame`
 #'
-#' Safely insert \code{\link[base]{data.frame}} objects into a
-#' \code{\link[wakefield]{r_data_frame}} or \code{\link[wakefield]{r_list}}.
+#' Safely insert [base::data.frame()] objects into a
+#' [wakefield::r_data_frame()] or [wakefield::r_list()].
 #'
 #' @inheritParams seriesname
-#' @return Returns a \code{\link[base]{data.frame}} with a
-#' \code{attributes(x)[["seriesname"]]} assigned.
+#' @return Returns a [base::data.frame()] with a
+#' `attributes(x)[["seriesname"]]` assigned.
 #' @keywords insert
 #' @export
 #' @include utils.R seriesname.R
-#' @seealso \code{\link[wakefield]{seriesname}}
+#' @seealso [wakefield::seriesname()]
 #' @examples
 #' dat <- dplyr::data_frame(
 #'     Age_1 = age(100), Age_2 = age(100), Age_3 = age(100),

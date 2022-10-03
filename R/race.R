@@ -6,15 +6,15 @@
 #' make-up.  The default make up is:
 #'
 #' \tabular{lr}{
-#'   \bold{Race}     \tab \bold{Percent}\cr
-#'   White     \tab 63.70 \%\cr
-#'   Hispanic  \tab 16.30 \%\cr
-#'   Black     \tab 12.20 \%\cr
-#'   Asian     \tab 4.70 \%\cr
-#'   Bi-Racial \tab 1.90 \%\cr
-#'   Native    \tab .70 \%\cr
-#'   Other     \tab .20 \%\cr
-#'   Hawaiian  \tab .15 \%\cr
+#'   **Race**     \tab **Percent**\cr
+#'   White     \tab 63.70 %\cr
+#'   Hispanic  \tab 16.30 %\cr
+#'   Black     \tab 12.20 %\cr
+#'   Asian     \tab 4.70 %\cr
+#'   Bi-Racial \tab 1.90 %\cr
+#'   Native    \tab .70 %\cr
+#'   Other     \tab .20 %\cr
+#'   Hawaiian  \tab .15 %\cr
 #' }
 #'
 #' @inheritParams r_sample_factor

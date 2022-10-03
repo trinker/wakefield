@@ -4,7 +4,7 @@
 #'
 #' @inheritParams r_sample_factor
 #' @return Returns a random integer vector of elements.
-#' @seealso \code{\link[base]{sample}}
+#' @seealso [base::sample()]
 #' @include utils.R r_sample.R
 #' @export
 #' @examples

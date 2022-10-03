@@ -2,7 +2,7 @@
 #'
 #' Generate a random vector of non-binary genders. Proportion of trans*
 #' category was taken from the
-#' \href{https://williamsinstitute.law.ucla.edu/}{Williams Institute Report} (2011),
+#' [Williams Institute Report](https://williamsinstitute.law.ucla.edu/) (2011),
 #' and subtracted equally from the male and female categories.
 #'
 #' @details The genders and probabilities used match approximate gender
@@ -10,9 +10,9 @@
 #'
 #' \tabular{lr}{
 #'   \bold{Gender}     \tab \bold{Percent}\cr
-#'   Male    \tab 51.07 \%\cr
-#'   Female  \tab 48.63 \%\cr
-#'   Trans*  \tab 0.30 \%\cr
+#'   Male    \tab 51.07 %\cr
+#'   Female  \tab 48.63 %\cr
+#'   Trans*  \tab 0.30 %\cr
 #' }
 #'
 #' @inheritParams r_sample_factor

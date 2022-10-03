@@ -22,26 +22,26 @@ used inside of \code{r_data_frame} or \code{r_list}.}
 }
 \value{
 Returns a (optionally random) vector of
-\code{\link[base]{character}}/\code{\link[base]{factor}} observations
+\code{\link[base:character]{base::character()}}/\code{\link[base:factor]{base::factor()}} observations
 ID numbers.
 }
 \description{
-\code{id} - Generate a sequential \code{\link[base]{character}} vector of
+\code{id} - Generate a sequential \code{\link[base:character]{base::character()}} vector of
 zero-padded identification numbers (IDs).
 
-\code{id_factor} - Generate a sequential \code{\link[base]{factor}} vector
+\code{id_factor} - Generate a sequential \code{\link[base:factor]{base::factor()}} vector
 of zero-padded identification numbers (IDs).
 }
 \note{
 \code{id} is faster than \code{id_factor}, as the later coerces the
-vector to a \code{\link[base]{factor}}.
+vector to a \code{\link[base:factor]{base::factor()}}.
 }
 \section{Warning}{
- \code{id} uses \code{\link[base]{sprintf}} to generate the
-padded ID.  Per \code{\link[base]{sprintf}}'s documentation: ``The format
+ \code{id} uses \code{\link[base:sprintf]{base::sprintf()}} to generate the
+padded ID.  Per \code{\link[base:sprintf]{base::sprintf()}}'s documentation: ``The format
 string is passed down the OS's sprintf function...The behaviour on inputs not
 documented here is 'undefined', which means it is allowed to differ by
-platform.''  See \code{\link[base]{sprintf}} for details.
+platform.''  See \code{\link[base:sprintf]{base::sprintf()}} for details.
 }
 
 \examples{
@@ -49,7 +49,7 @@ id(1000)
 r_data_frame(n=21, id)
 }
 \seealso{
-\code{\link[base]{sprintf}}
+\code{\link[base:sprintf]{base::sprintf()}}
 }
 \keyword{id}
 \keyword{identification}

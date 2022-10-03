@@ -1,6 +1,6 @@
 #' Data Frame Production (From Variable Functions)
 #'
-#' Produce a \code{\link[dplyr]{tbl_df}} data frame that allows the user to
+#' Produce a [dplyr::tbl_df()] data frame that allows the user to
 #' lazily pass unnamed \pkg{wakefield} variable functions (optionally, without
 #' call parenthesis).
 #'
@@ -8,19 +8,19 @@
 #' @param \ldots A set of optionally named arguments.  Using \pkg{wakefield}
 #' variable functions require no name or call parenthesis.
 #' @param rep.sep A separator to use for repeated variable names.  For example
-#' if the \code{\link[wakefield]{age}} is used three times
-#' (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
-#' three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
-#' To turn of this behavior use  \code{rep.sep = NULL}.  This results in
-#' \code{c("Age", "Age.1", "Age.2")} column names in the
-#' \code{\link[base]{data.frame}}.
-#' @return Returns a \code{\link[dplyr]{tbl_df}}.
+#' if the [wakefield::age()] is used three times
+#' (`r_data_frame(age, age, age)`), the name "Age" will be assigned to all
+#' three columns.  The results in column names `c("Age_1", "Age_2", "Age_3")`.
+#' To turn of this behavior use  `rep.sep = NULL`.  This results in
+#' `c("Age", "Age.1", "Age.2")` column names in the
+#' [base::data.frame()].
+#' @return Returns a [dplyr::tbl_df()].
 #' @author Josh O'Brien and Tyler Rinker <tyler.rinker@@gmail.com>.
 #' @references https://stackoverflow.com/a/29617983/1000343
 #' @export
-#' @seealso \code{\link[wakefield]{r_list}},
-#' \code{\link[wakefield]{r_series}}
-#' \code{\link[wakefield]{r_dummy}}
+#' @seealso [wakefield::r_list()],
+#' [wakefield::r_series()]
+#' [wakefield::r_dummy()]
 #' @examples
 #' r_data_frame(n = 30,
 #'     id,
@@ -98,7 +98,7 @@ function (n, ..., rep.sep = "_") {
 
     out <- stats::setNames(data.frame(out, stringsAsFactors = FALSE,
         check.names = FALSE), nms)
-    dplyr::tbl_df(out)
+    tibble::as_tibble(out)
 }
 
 

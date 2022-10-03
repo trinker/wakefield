@@ -1,19 +1,19 @@
 #' Convert a Factor Data Frame to Integer
 #'
-#' Converts a \code{\link[base]{data.frame}} of \code{\link[base]{factor}}s to
+#' Converts a [base::data.frame()] of [base::factor()]s to
 #' integers.
 #'
-#' @param x A \code{\link[base]{data.frame}} of \code{\link[base]{factor}}s.
-#' @param cols Numeric indices of the columns to incude (use \code{-} to exclude
-#' as well).  Default is to assign random \code{NA}s to all columns except the
+#' @param x A [base::data.frame()] of [base::factor()]s.
+#' @param cols Numeric indices of the columns to incude (use `-` to exclude
+#' as well).  Default is to assign random `NA`s to all columns except the
 #' first column.
-#' @param fun An \code{as.} coercion function to apply to each column.  Default
-#' is \code{\link[base]{as.integer}}.
-#' @return Returns a \code{\link[base]{data.frame}} equal to the
-#' \code{\link[base]{class}} of \code{x} with integer columns rather than factor.
+#' @param fun An `as.` coercion function to apply to each column.  Default
+#' is [base::as.integer()].
+#' @return Returns a [base::data.frame()] equal to the
+#' [base::class()] of `x` with integer columns rather than factor.
 #' @keywords integer numeric
 #' @export
-#' @seealso \code{\link[wakefield]{r_series}}
+#' @seealso [wakefield::r_series()]
 #' @examples
 #' as_integer(r_series(likert_7, 5, 10))
 #' as_integer(r_series(likert_7, 5, 10), cols = c(2, 4))

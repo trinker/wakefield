@@ -4,7 +4,7 @@
 #'
 #' @param j An integer of number of probability elements (typically performs
 #' best at j < 4000).
-#' @param upper \code{probs} works by sampling from \code{1:upper} j times and
+#' @param upper `probs` works by sampling from `1:upper` j times and
 #' then dividing each sample by the sum of all samples.
 #' @return Returns a vector of probabilities summing to 1.
 #' @keywords probability percent

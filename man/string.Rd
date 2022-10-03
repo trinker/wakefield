@@ -29,7 +29,7 @@ Generate a random vector of strings.
 string(10)
 }
 \seealso{
-\code{\link[stringi]{stri_rand_strings}}
+\code{\link[stringi:stri_rand_strings]{stringi::stri_rand_strings()}}
 
 Other variable functions: 
 \code{\link{age}()},
@@ -39,7 +39,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

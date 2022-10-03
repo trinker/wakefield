@@ -1,13 +1,13 @@
 #' Add Internal Name to Data Frame
 #'
-#' Adds \code{attributes(x)[["seriesname"]]} attribute to a
-#' \code{\link[base]{data.frame}}.
+#' Adds `attributes(x)[["seriesname"]]` attribute to a
+#' [base::data.frame()].
 #'
-#' @param x A \code{\link[base]{data.frame}} to add a \code{seriesname}
-#' attribute (i.e., \code{attributes(x)[["seriesname"]]})
-#' @param name A name to assign to \code{attributes(x)[["seriesname"]]}.
-#' @return Returns a \code{\link[base]{data.frame}} with a
-#' \code{attributes(x)[["seriesname"]]} assigned.
+#' @param x A [base::data.frame()] to add a `seriesname`
+#' attribute (i.e., `attributes(x)[["seriesname"]]`)
+#' @param name A name to assign to `attributes(x)[["seriesname"]]`.
+#' @return Returns a [base::data.frame()] with a
+#' `attributes(x)[["seriesname"]]` assigned.
 #' @export
 #' @examples
 #' seriesname(mtcars, "Cars")

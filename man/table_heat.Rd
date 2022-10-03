@@ -13,14 +13,14 @@ table_heat(
 )
 }
 \arguments{
-\item{x}{A \code{\link[base]{data.frame}}.}
+\item{x}{A \code{\link[base:data.frame]{base::data.frame()}}.}
 
-\item{flip}{logical.  If \code{TRUE} the \code{\link[base]{data.frame}} is
+\item{flip}{logical.  If \code{TRUE} the \code{\link[base:data.frame]{base::data.frame()}} is
 flipped so that the columns are on the y axis and observations on the x axis.
 This is useful when there are many columns or the column names are longer.}
 
 \item{palette}{A palette to chose from.  See
-\code{\link[ggplot2]{scale_fill_brewer}} for more.  These choices should
+\code{\link[ggplot2:scale_brewer]{ggplot2::scale_fill_brewer()}} for more.  These choices should
 exceed the number of unique column types. Use \code{NULL} to use
 \pkg{ggplot2}'s default color scheme.}
 
@@ -29,13 +29,13 @@ document construction such as \pkg{knitr} or \pkg{rmarkdown}.}
 
 \item{sep}{A separator to use between column types.  Column types are
 determined via \code{sapply(x, class)}.  When multiple types are present
-these are collapsed.  By default the \code{\\n} is used.}
+these are collapsed.  By default \verb{\\n} is used.}
 }
 \value{
 Returns a \pkg{ggplot2} object.
 }
 \description{
-Generate a heat map of column types from a \code{\link[base]{data.frame}}.
+Generate a heat map of column types from a \code{\link[base:data.frame]{base::data.frame()}}.
 }
 \details{
 By default coumn names retain their order.  Column types are ordered

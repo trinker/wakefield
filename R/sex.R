@@ -7,8 +7,8 @@
 #'
 #' \tabular{lr}{
 #'   \bold{Gender}     \tab \bold{Percent}\cr
-#'   Male    \tab 51.22 \%\cr
-#'   Female  \tab 48.78 \%\cr
+#'   Male    \tab 51.22 %\cr
+#'   Female  \tab 48.78 %\cr
 #' }
 #'
 #' @inheritParams r_sample_binary_factor

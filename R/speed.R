@@ -1,10 +1,10 @@
 #' Generate Random Vector of Speeds
 #'
-#' \code{speed} and \code{speed_in} - Generate a random normal vector of
+#' `speed` and `speed_in` - Generate a random normal vector of
 #' speeds in inches.
 #'
-#' @note \code{speed} rounds to nearest whole number.  \code{speed_in} &
-#' \code{speed_in} round to the nearest tenths.
+#' @note `speed` rounds to nearest whole number.  `speed_in` &
+#' `speed_in` round to the nearest tenths.
 #'
 #' @inheritParams normal_round
 #' @return Returns a random normal vector of speed elements.
@@ -39,7 +39,7 @@ speed_mph <- hijack(normal_round,
 
 #' Generate Random Vector of Speeds
 #'
-#' \code{speed_cm} - Generate a random normal vector of speeds in centimeters.
+#' `speed_cm` - Generate a random normal vector of speeds in centimeters.
 #'
 #' @rdname speed
 #' @export

@@ -1,22 +1,22 @@
 #' Available Variable Functions
 #'
 #' See a listing of all available variable functions for use in
-#' \code{\link[wakefield]{r_data_frame}} or \code{\link[wakefield]{r_list}}.
+#' [wakefield::r_data_frame()] or [wakefield::r_list()].
 #'
-#' @param type The output type. Must be either \code{NULL} (returns a
-#' character vector), \code{"matrix"}, or \code{"list"}; or the user may extract
+#' @param type The output type. Must be either `NULL` (returns a
+#' character vector), `"matrix"`, or `"list"`; or the user may extract
 #' a specific type from a list using:
-#' \code{"character"}, \code{"date"}, \code{"factor"}, \code{"integer"},
-#' \code{"logical"}, \code{"numeric"}, \code{"ordered factor"}.  Setting
-#' \code{type = TRUE} will also return a \code{\link[base]{list}}.
-#' The \code{\link[base]{list}} version breaks the variable functions into
-#' classes.  Specifying a specific class (e.g., \code{type = "numeric"} will
+#' `"character"`, `"date"`, `"factor"`, `"integer"`,
+#' `"logical"`, `"numeric"`, `"ordered factor"`.  Setting
+#' `type = TRUE` will also return a [base::list()].
+#' The [base::list()] version breaks the variable functions into
+#' classes.  Specifying a specific class (e.g., `type = "numeric"` will
 #' list only variable functions that yield a numeric output.
-#' @param ncols The number of columns to use if \code{type = "matrix"}.
-#' @param \ldots Other arguments passed to \code{\link[base]{matrix}}.
-#' @return Returns a \code{\link[base]{character}} vector,
-#' \code{\link[base]{matrix}} of all variable functions, or a
-#' \code{\link[base]{list}} of variable functions by type.
+#' @param ncols The number of columns to use if `type = "matrix"`.
+#' @param \ldots Other arguments passed to [base::matrix()].
+#' @return Returns a [base::character()] vector,
+#' [base::matrix()] of all variable functions, or a
+#' [base::list()] of variable functions by type.
 #' @keywords type
 #' @export
 #' @examples

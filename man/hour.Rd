@@ -32,7 +32,7 @@ hour(20)
 hour(20, random=TRUE)
 }
 \seealso{
-\code{\link[chron]{times}}
+\code{\link[chron:dates]{chron::times()}}
 }
 \keyword{hour}
 \keyword{time}

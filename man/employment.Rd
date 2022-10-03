@@ -33,12 +33,12 @@ Generate a random vector of employment statuses.
 The following arbitrary probabilities are used:
 
 \tabular{lr}{
-  \bold{ Employment Status}  \tab \bold{Percent}\cr
-  Full Time  \tab 60\%\cr
-  Part Time  \tab 10\%\cr
-  Unemployed \tab 10\%\cr
-  Retired    \tab 10\%\cr
-  Student    \tab 10\%\cr
+** Employment Status**  \tab \strong{Percent}\cr
+Full Time  \tab 60\%\cr
+Part Time  \tab 10\%\cr
+Unemployed \tab 10\%\cr
+Retired    \tab 10\%\cr
+Student    \tab 10\%\cr
 }
 }
 \examples{
@@ -55,7 +55,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

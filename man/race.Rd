@@ -35,15 +35,15 @@ The races and probabilities used match approximate U.S. racial
 make-up.  The default make up is:
 
 \tabular{lr}{
-  \bold{Race}     \tab \bold{Percent}\cr
-  White     \tab 63.70 \%\cr
-  Hispanic  \tab 16.30 \%\cr
-  Black     \tab 12.20 \%\cr
-  Asian     \tab 4.70 \%\cr
-  Bi-Racial \tab 1.90 \%\cr
-  Native    \tab .70 \%\cr
-  Other     \tab .20 \%\cr
-  Hawaiian  \tab .15 \%\cr
+\strong{Race}     \tab \strong{Percent}\cr
+White     \tab 63.70 \%\cr
+Hispanic  \tab 16.30 \%\cr
+Black     \tab 12.20 \%\cr
+Asian     \tab 4.70 \%\cr
+Bi-Racial \tab 1.90 \%\cr
+Native    \tab .70 \%\cr
+Other     \tab .20 \%\cr
+Hawaiian  \tab .15 \%\cr
 }
 }
 \examples{
@@ -59,7 +59,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

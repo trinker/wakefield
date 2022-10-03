@@ -29,3 +29,5 @@ logo_script.R
 check funs.R
 inst/figure
 Thumbs.db
+^wakefield\.Rproj$
+^\.github$

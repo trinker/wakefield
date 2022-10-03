@@ -1,6 +1,6 @@
 #' Generate Random Vector of Scholastic Aptitude Test (SATs)
 #'
-#' \code{grade} - Generate a random normal vector of scholastic aptitude test
+#' `grade` - Generate a random normal vector of scholastic aptitude test
 #' (SATs).
 #'
 #' @inheritParams normal_round

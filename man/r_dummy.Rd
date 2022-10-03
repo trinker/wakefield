@@ -16,14 +16,14 @@ r_dummy(fun, n, ..., prefix = FALSE, rep.sep = "_")
 generated from the factor's categories.}
 
 \item{rep.sep}{A separator to use for the variable and category part of names
-when \code{prefix = TRUE}.  For example if the \code{\link[wakefield]{age}}
+when \code{prefix = TRUE}.  For example if the \code{\link[=age]{age()}}
 is used (\code{r_dummy(sex)}), this results in column names
 \code{c("Sex_Male", "Sex_Female")}.}
 
 \item{\ldots}{Additional arguments passed to \code{fun}.}
 }
 \value{
-Returns a \code{\link[dplyr]{tbl_df}}.
+Returns a \code{\link[dplyr:tbl_df]{dplyr::tbl_df()}}.
 }
 \description{
 Generate random values from a \pkg{wakefield} variable function.
@@ -34,8 +34,8 @@ r_dummy(race, 1000)
 r_dummy(race, 1000, name = "Ethnicity")
 }
 \seealso{
-\code{\link[wakefield]{r_list}},
-\code{\link[wakefield]{r_data_frame}},
-\code{\link[wakefield]{r_series}}
+\code{\link[=r_list]{r_list()}},
+\code{\link[=r_data_frame]{r_data_frame()}},
+\code{\link[=r_series]{r_series()}}
 }
 \keyword{dummy}

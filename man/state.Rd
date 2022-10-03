@@ -32,57 +32,57 @@ Generate a random factor vector of states.
 \details{
 The state populations and probabilities:
 \tabular{lrr}{
-  \bold{ State}  \tab \bold{Population} \tab \bold{Percent} \cr
-  California     \tab 37,253,956 \tab 12.09 \%\cr
-  Texas          \tab 25,145,561 \tab 8.16 \% \cr
-  New York       \tab 19,378,102 \tab 6.29 \% \cr
-  Florida        \tab 18,801,310 \tab 6.10 \% \cr
-  Illinois       \tab 12,830,632 \tab 4.16 \% \cr
-  Pennsylvania   \tab 12,702,379 \tab 4.12 \% \cr
-  Ohio           \tab 11,536,504 \tab 3.74 \% \cr
-  Michigan       \tab  9,883,640 \tab 3.21 \% \cr
-  Georgia        \tab  9,687,653 \tab 3.14 \% \cr
-  North Carolina \tab  9,535,483 \tab 3.09 \% \cr
-  New Jersey     \tab  8,791,894 \tab 2.85 \% \cr
-  Virginia       \tab  8,001,024 \tab 2.60 \% \cr
-  Washington     \tab  6,724,540 \tab 2.18 \% \cr
-  Massachusetts  \tab  6,547,629 \tab 2.12 \% \cr
-  Indiana        \tab  6,483,802 \tab 2.10 \% \cr
-  Arizona        \tab  6,392,017 \tab 2.07 \% \cr
-  Tennessee      \tab  6,346,105 \tab 2.06 \% \cr
-  Missouri       \tab  5,988,927 \tab 1.94 \% \cr
-  Maryland       \tab  5,773,552 \tab 1.87 \% \cr
-  Wisconsin      \tab  5,686,986 \tab 1.85 \% \cr
-  Minnesota      \tab  5,303,925 \tab 1.72 \% \cr
-  Colorado       \tab  5,029,196 \tab 1.63 \% \cr
-  Alabama        \tab  4,779,736 \tab 1.55 \% \cr
-  South Carolina \tab  4,625,364 \tab 1.50 \% \cr
-  Louisiana      \tab  4,533,372 \tab 1.47 \% \cr
-  Kentucky       \tab  4,339,367 \tab 1.41 \% \cr
-  Oregon         \tab  3,831,074 \tab 1.24 \% \cr
-  Oklahoma       \tab  3,751,351 \tab 1.22 \% \cr
-  Connecticut    \tab  3,574,097 \tab 1.16 \% \cr
-  Iowa           \tab  3,046,355 \tab .99 \%  \cr
-  Mississippi    \tab  2,967,297 \tab .96 \%  \cr
-  Arkansas       \tab  2,915,918 \tab .95 \%  \cr
-  Kansas         \tab  2,853,118 \tab .93 \%  \cr
-  Utah           \tab  2,763,885 \tab .90 \%  \cr
-  Nevada         \tab  2,700,551 \tab .88 \%  \cr
-  New Mexico     \tab  2,059,179 \tab .67 \%  \cr
-  West Virginia  \tab  1,852,994 \tab .60 \%  \cr
-  Nebraska       \tab  1,826,341 \tab .59 \%  \cr
-  Idaho          \tab  1,567,582 \tab .51 \%  \cr
-  Hawaii         \tab  1,360,301 \tab .44 \%  \cr
-  Maine          \tab  1,328,361 \tab .43 \%  \cr
-  New Hampshire  \tab  1,316,470 \tab .43 \%  \cr
-  Rhode Island   \tab  1,052,567 \tab .34 \%  \cr
-  Montana        \tab   989,415 \tab .32 \%  \cr
-  Delaware       \tab   897,934 \tab .29 \%  \cr
-  South Dakota   \tab   814,180 \tab .26 \%  \cr
-  Alaska         \tab   710,231 \tab .23 \%  \cr
-  North Dakota   \tab   672,591 \tab .22 \%  \cr
-  Vermont        \tab   625,741 \tab .20 \%  \cr
-  Wyoming        \tab   563,626 \tab .18 \%  \cr
+\bold{ State}  \tab \bold{Population} \tab \bold{Percent} \cr
+California     \tab 37,253,956 \tab 12.09 \%\cr
+Texas          \tab 25,145,561 \tab 8.16 \% \cr
+New York       \tab 19,378,102 \tab 6.29 \% \cr
+Florida        \tab 18,801,310 \tab 6.10 \% \cr
+Illinois       \tab 12,830,632 \tab 4.16 \% \cr
+Pennsylvania   \tab 12,702,379 \tab 4.12 \% \cr
+Ohio           \tab 11,536,504 \tab 3.74 \% \cr
+Michigan       \tab  9,883,640 \tab 3.21 \% \cr
+Georgia        \tab  9,687,653 \tab 3.14 \% \cr
+North Carolina \tab  9,535,483 \tab 3.09 \% \cr
+New Jersey     \tab  8,791,894 \tab 2.85 \% \cr
+Virginia       \tab  8,001,024 \tab 2.60 \% \cr
+Washington     \tab  6,724,540 \tab 2.18 \% \cr
+Massachusetts  \tab  6,547,629 \tab 2.12 \% \cr
+Indiana        \tab  6,483,802 \tab 2.10 \% \cr
+Arizona        \tab  6,392,017 \tab 2.07 \% \cr
+Tennessee      \tab  6,346,105 \tab 2.06 \% \cr
+Missouri       \tab  5,988,927 \tab 1.94 \% \cr
+Maryland       \tab  5,773,552 \tab 1.87 \% \cr
+Wisconsin      \tab  5,686,986 \tab 1.85 \% \cr
+Minnesota      \tab  5,303,925 \tab 1.72 \% \cr
+Colorado       \tab  5,029,196 \tab 1.63 \% \cr
+Alabama        \tab  4,779,736 \tab 1.55 \% \cr
+South Carolina \tab  4,625,364 \tab 1.50 \% \cr
+Louisiana      \tab  4,533,372 \tab 1.47 \% \cr
+Kentucky       \tab  4,339,367 \tab 1.41 \% \cr
+Oregon         \tab  3,831,074 \tab 1.24 \% \cr
+Oklahoma       \tab  3,751,351 \tab 1.22 \% \cr
+Connecticut    \tab  3,574,097 \tab 1.16 \% \cr
+Iowa           \tab  3,046,355 \tab .99 \%  \cr
+Mississippi    \tab  2,967,297 \tab .96 \%  \cr
+Arkansas       \tab  2,915,918 \tab .95 \%  \cr
+Kansas         \tab  2,853,118 \tab .93 \%  \cr
+Utah           \tab  2,763,885 \tab .90 \%  \cr
+Nevada         \tab  2,700,551 \tab .88 \%  \cr
+New Mexico     \tab  2,059,179 \tab .67 \%  \cr
+West Virginia  \tab  1,852,994 \tab .60 \%  \cr
+Nebraska       \tab  1,826,341 \tab .59 \%  \cr
+Idaho          \tab  1,567,582 \tab .51 \%  \cr
+Hawaii         \tab  1,360,301 \tab .44 \%  \cr
+Maine          \tab  1,328,361 \tab .43 \%  \cr
+New Hampshire  \tab  1,316,470 \tab .43 \%  \cr
+Rhode Island   \tab  1,052,567 \tab .34 \%  \cr
+Montana        \tab   989,415 \tab .32 \%  \cr
+Delaware       \tab   897,934 \tab .29 \%  \cr
+South Dakota   \tab   814,180 \tab .26 \%  \cr
+Alaska         \tab   710,231 \tab .23 \%  \cr
+North Dakota   \tab   672,591 \tab .22 \%  \cr
+Vermont        \tab   625,741 \tab .20 \%  \cr
+Wyoming        \tab   563,626 \tab .18 \%  \cr
 }
 }
 \examples{
@@ -99,7 +99,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

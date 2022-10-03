@@ -45,10 +45,10 @@ The genders and probabilities used match approximate gender
 make-up:
 
 \tabular{lr}{
-  \bold{Gender}     \tab \bold{Percent}\cr
-  Male    \tab 51.07 \%\cr
-  Female  \tab 48.63 \%\cr
-  Trans*  \tab 0.30 \%\cr
+\bold{Gender}     \tab \bold{Percent}\cr
+Male    \tab 51.07 \%\cr
+Female  \tab 48.63 \%\cr
+Trans*  \tab 0.30 \%\cr
 }
 }
 \examples{
@@ -67,7 +67,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},
@@ -110,7 +110,7 @@ Other variable functions:
 \code{\link{zip_code}()}
 }
 \author{
-Matthew Sigal <msigal@yorku.ca>
+Matthew Sigal \href{mailto:msigal@yorku.ca}{msigal@yorku.ca}
 }
 \concept{variable functions}
 \keyword{gender}

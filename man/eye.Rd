@@ -33,12 +33,12 @@ Generate a random vector of eye colors.
 The eye colors and probabilities:
 
 \tabular{lr}{
-  \bold{ Color}     \tab \bold{Percent}\cr
-  Brown   \tab 44 \%\cr
-  Blue    \tab 30 \%\cr
-  Green   \tab 13 \%\cr
-  Hazel   \tab  9 \%\cr
-  Gray    \tab  4 \%\cr
+** Color**     \tab \strong{Percent}\cr
+Brown   \tab 44 \%\cr
+Blue    \tab 30 \%\cr
+Green   \tab 13 \%\cr
+Hazel   \tab  9 \%\cr
+Gray    \tab  4 \%\cr
 }
 }
 \examples{
@@ -54,7 +54,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

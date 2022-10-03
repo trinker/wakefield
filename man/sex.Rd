@@ -42,9 +42,9 @@ The genders and probabilities used match approximate gender
 make-up:
 
 \tabular{lr}{
-  \bold{Gender}     \tab \bold{Percent}\cr
-  Male    \tab 51.22 \%\cr
-  Female  \tab 48.78 \%\cr
+\bold{Gender}     \tab \bold{Percent}\cr
+Male    \tab 51.22 \%\cr
+Female  \tab 48.78 \%\cr
 }
 }
 \examples{
@@ -60,7 +60,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

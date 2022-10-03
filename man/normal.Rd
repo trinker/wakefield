@@ -36,16 +36,16 @@ attribute.  This is used to auto assign names to the column/vector name when
 used inside of \code{r_data_frame} or \code{r_list}.}
 
 \item{digits}{Integer indicating the number of decimal places to be used.
-Negative values are allowed (see \code{\link[base]{round}}).}
+Negative values are allowed (see \code{\link[base:Round]{base::round()}}).}
 }
 \value{
 Returns a random vector of elements.
 }
 \description{
-\code{normal} - A wrapper for \code{\link[stats]{rnorm}} that generate a
+\code{normal} - A wrapper for \code{\link[stats:Normal]{stats::rnorm()}} that generate a
 random normal vector.
 
-\code{normal_round} - A wrapper for \code{\link[stats]{rnorm}} that generate
+\code{normal_round} - A wrapper for \code{\link[stats:Normal]{stats::rnorm()}} that generate
 a rounded random normal vector.
 }
 \examples{
@@ -54,9 +54,9 @@ hist(normal(10000, 100, 10))
 interval(normal, 9, n = 1000)
 }
 \seealso{
-\code{\link[stats]{rnorm}}
+\code{\link[stats:Normal]{stats::rnorm()}}
 
-\code{\link[base]{round}}
+\code{\link[base:Round]{base::round()}}
 
 Other variable functions: 
 \code{\link{age}()},
@@ -66,7 +66,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

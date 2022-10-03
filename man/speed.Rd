@@ -43,7 +43,7 @@ replaced with \code{min}.}
 be replaced with \code{max}.}
 
 \item{digits}{Integer indicating the number of decimal places to be used.
-Negative values are allowed (see \code{\link[base]{round}}).}
+Negative values are allowed (see \code{\link[base:Round]{base::round()}}).}
 
 \item{name}{The name to assign to the output vector's \code{varname}
 attribute.  This is used to auto assign names to the column/vector name when
@@ -76,7 +76,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

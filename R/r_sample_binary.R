@@ -1,11 +1,11 @@
 #' Generate Random Binary Vector
 #'
-#' \code{r_sample_binary} - Generate a random binary vector.
+#' `r_sample_binary` - Generate a random binary vector.
 #'
 #' @inheritParams dummy
 #' @param x A vector of length 2 to sample from.
 #' @return Returns a random binary vector of elements.
-#' @seealso \code{\link[base]{sample.int}}
+#' @seealso [base::sample.int()]
 #' @export
 #' @rdname r_sample_binary
 #' @examples
@@ -23,7 +23,7 @@ function (n, x = 1:2, prob = NULL, name = "Binary") {
 
 #' Generate Random Binary Vector
 #'
-#' \code{r_sample_binary_factor} - Generate a random binary vector and coerces
+#' `r_sample_binary_factor` - Generate a random binary vector and coerces
 #' to a factor.
 #'
 #' @export

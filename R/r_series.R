@@ -1,29 +1,29 @@
 #' Data Frame Series (Repeated Measures)
 #'
-#' Produce a \code{\link[dplyr]{tbl_df}} data frame of repeated measures from a
+#' Produce a [dplyr::tbl_df()] data frame of repeated measures from a
 #' wakefield variable function.
 #'
 #' @param fun A \pkg{wakefield} variable function.
 #' @param j The number of columns to produce.
 #' @param n The number of rows to produce.
-#' @param \ldots Additional arguments passed to \code{fun}.
-#' @param integer logical.  If \code{TRUE} factor columns will be coerced to
+#' @param \ldots Additional arguments passed to `fun`.
+#' @param integer logical.  If `TRUE` factor columns will be coerced to
 #' integer.
 #' @param relate Allows the user to specify the relationship between columns.
-#' May be a named list of \code{c("operation", "mean", "sd")} or a string of
+#' May be a named list of `c("operation", "mean", "sd")` or a string of
 #' the form of "fM_sd" where `f` is one of (+, -, *, /), `M` is a mean value, and
-#' `sd` is a standard deviation of the mean value (e.g., \code{"*4_1"}).  See
-#' \code{\link[wakefield]{relate}} for details.
+#' `sd` is a standard deviation of the mean value (e.g., `"*4_1"`).  See
+#' [wakefield::relate()] for details.
 #' @param rep.sep A separator to use for repeated variable names.  For example
-#' if the \code{\link[wakefield]{age}} is used three times
-#' (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
-#' three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
-#' @return Returns a \code{\link[dplyr]{tbl_df}}.
-#' @references \url{https://github.com/trinker/wakefield/issues/1/#issuecomment-96166910}
+#' if the [wakefield::age()] is used three times
+#' (`r_data_frame(age, age, age)`), the name "Age" will be assigned to all
+#' three columns.  The results in column names `c("Age_1", "Age_2", "Age_3")`.
+#' @return Returns a [dplyr::tbl_df()].
+#' @references <https://github.com/trinker/wakefield/issues/1/#issuecomment-96166910>
 #' @export
-#' @seealso \code{\link[wakefield]{r_list}},
-#' \code{\link[wakefield]{r_data_frame}}
-#' \code{\link[wakefield]{r_dummy}}
+#' @seealso [wakefield::r_list()],
+#' [wakefield::r_data_frame()]
+#' [wakefield::r_dummy()]
 #' @examples
 #' r_series(grade, 5, 10)
 #'

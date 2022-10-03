@@ -36,8 +36,8 @@ slices <- c(table(out))
 pie(slices, main="Pie Chart of Colors", col = tolower(names(slices)))
 }
 \seealso{
-\code{\link[base]{sample}},
-\code{\link[base]{ordered}}
+\code{\link[base:sample]{base::sample()}},
+\code{\link[base:factor]{base::ordered()}}
 }
 \keyword{factor}
 \keyword{ordered}

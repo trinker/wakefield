@@ -11,7 +11,7 @@ income(n, digits = 2, name = "Income")
 the environment of \code{r_data_frame} or \code{r_list}.}
 
 \item{digits}{Integer indicating the number of decimal places to be used.
-Negative values are allowed (see \code{\link[base]{round}}).}
+Negative values are allowed (see \code{\link[base:Round]{base::round()}}).}
 
 \item{name}{The name to assign to the output vector's \code{varname}
 attribute.  This is used to auto assign names to the column/vector name when
@@ -32,7 +32,7 @@ hist(income(10000))
 pie(table(cut(income(10000), 10)))
 }
 \seealso{
-\code{\link[base]{gamma}}
+\code{\link[base:Special]{base::gamma()}}
 
 Other variable functions: 
 \code{\link{age}()},
@@ -42,7 +42,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

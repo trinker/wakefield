@@ -1,9 +1,9 @@
 #' Generate Random Logical Smokes Vector
 #'
-#' Generate a random logical (\code{TRUE}/\code{FALSE}) smokes vector.
+#' Generate a random logical (`TRUE`/`FALSE`) smokes vector.
 #'
 #' @inheritParams r_sample_logical
-#' @details The probabilities are non-smoker: 82.2\% vs. smoker: 17.8\%.
+#' @details The probabilities are non-smoker: 82.2% vs. smoker: 17.8%.
 #' @return Returns a random logical vector of smokes elements.
 #' @keywords smoking
 #' @export

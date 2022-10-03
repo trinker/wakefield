@@ -1,7 +1,7 @@
 #' Generate Random Vector of Sentences
 #'
 #' Generate a random vector of sentences from the
-#' \code{\link[wakefield]{presidential_debates_2012}}.
+#' [wakefield::presidential_debates_2012()].
 #'
 #' @inheritParams r_sample_factor
 #' @return Returns a random character vector of sentence elements.

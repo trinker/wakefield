@@ -1,10 +1,10 @@
 #' Generate Random Vector of Heights
 #'
-#' \code{height} and \code{height_in} - Generate a random normal vector of
+#' `height` and `height_in` - Generate a random normal vector of
 #' heights in inches.
 #'
-#' @note \code{height} rounds to nearest whole number.  \code{height_in} &
-#' \code{height_in} round to the nearest tenths.
+#' @note `height` rounds to nearest whole number.  `height_in` &
+#' `height_in` round to the nearest tenths.
 #'
 #' @inheritParams normal_round
 #' @return Returns a random normal vector of height elements.
@@ -39,7 +39,7 @@ height_in <- hijack(normal_round,
 
 #' Generate Random Vector of Heights
 #'
-#' \code{height_cm} - Generate a random normal vector of heights in centimeters.
+#' `height_cm` - Generate a random normal vector of heights in centimeters.
 #'
 #' @rdname height
 #' @export

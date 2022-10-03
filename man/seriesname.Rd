@@ -7,18 +7,18 @@
 seriesname(x, name)
 }
 \arguments{
-\item{x}{A \code{\link[base]{data.frame}} to add a \code{seriesname}
+\item{x}{A \code{\link[base:data.frame]{base::data.frame()}} to add a \code{seriesname}
 attribute (i.e., \code{attributes(x)[["seriesname"]]})}
 
 \item{name}{A name to assign to \code{attributes(x)[["seriesname"]]}.}
 }
 \value{
-Returns a \code{\link[base]{data.frame}} with a
+Returns a \code{\link[base:data.frame]{base::data.frame()}} with a
 \code{attributes(x)[["seriesname"]]} assigned.
 }
 \description{
 Adds \code{attributes(x)[["seriesname"]]} attribute to a
-\code{\link[base]{data.frame}}.
+\code{\link[base:data.frame]{base::data.frame()}}.
 }
 \examples{
 seriesname(mtcars, "Cars")

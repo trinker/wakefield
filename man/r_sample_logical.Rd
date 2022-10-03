@@ -28,5 +28,5 @@ table(r_sample_logical(1000))
 c("B", "W")[r_sample_logical(10)]
 }
 \seealso{
-\code{\link[base]{sample}}
+\code{\link[base:sample]{base::sample()}}
 }

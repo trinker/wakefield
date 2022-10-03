@@ -17,7 +17,7 @@ dob <- function(n, random = TRUE, x = NULL, start = Sys.Date() - 365*15,
     k = 365*2, by = "1 days", prob = NULL, name = "DOB"){
 
     if (is.null(x)){
-        x <- seq(start, length = k, by = by)
+        x <- seq(start, length.out = k, by = by)
     }
 
     if (!inherits(x, c("Date", "POSIXct", "POSIXt"))) warning("`x`may not a date vector")

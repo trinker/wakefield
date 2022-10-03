@@ -1,15 +1,15 @@
 #' Generate Random Letter Vector
 #'
-#' \code{upper} - Generates a random character vector of upper case letters.
+#' `upper` - Generates a random character vector of upper case letters.
 #'
 #' @param n The number elements to generate.  This can be globally set within
-#' the environment of \code{r_data_frame} or \code{r_list}.
+#' the environment of `r_data_frame` or `r_list`.
 #' @param k The number of the elements of x to sample from (uses 1:k).
 #' @param x A vector of elements to chose from.
 #' @param prob A vector of probabilities to chose from.
-#' @param name The name to assign to the output vector's \code{varname}
+#' @param name The name to assign to the output vector's `varname`
 #' attribute.  This is used to auto assign names to the column/vector name when
-#' used inside of \code{r_data_frame} or \code{r_list}.
+#' used inside of `r_data_frame` or `r_list`.
 #' @return Returns a random character/factor vector of letter elements.
 #' @keywords letters upper lower capitals
 #' @export
@@ -36,7 +36,7 @@ upper <- function(n, k = 5, x = LETTERS, prob = NULL, name = "Upper"){
 
 #' Generate Random Letter Vector
 #'
-#' \code{lower} - Generates a random character vector of lower case letters.
+#' `lower` - Generates a random character vector of lower case letters.
 #'
 #' @export
 #' @rdname letter
@@ -47,7 +47,7 @@ lower <- hijack(upper,
 
 #' Generate Random Letter Vector
 #'
-#' \code{upper_factor} - Generates a random factor vector of upper case letters.
+#' `upper_factor` - Generates a random factor vector of upper case letters.
 #'
 #' @export
 #' @rdname letter
@@ -65,7 +65,7 @@ upper_factor <- function(n, k = 5, x = LETTERS, prob = NULL, name = "Upper"){
 
 #' Generate Random Letter Vector
 #'
-#' \code{lower_factor} - Generates a random factor vector of lower case letters.
+#' `lower_factor` - Generates a random factor vector of lower case letters.
 #'
 #' @export
 #' @rdname letter

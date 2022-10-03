@@ -1,6 +1,6 @@
 #' Pre-Selected Column Data Set
 #'
-#' \code{r_data} - Generate a data set with pre-set columns selected.
+#' `r_data` - Generate a data set with pre-set columns selected.
 #'
 #' @param n The length to pass to the randomly generated vectors (number of rows).
 #' @param \ldots A set of optionally named arguments.  Using \pkg{wakefield}
@@ -18,13 +18,13 @@
 #'   \item Died
 #' }
 #'
-#' The user may use \ldots to add additional columns.  \code{r_data} is a
+#' The user may use \ldots to add additional columns.  `r_data` is a
 #' convenience function to quickly produce a data set.  For more specific usage
-#' use the more flexible \code{\link[wakefield]{r_data_frame}} function.
-#' @return Returns a \code{\link[dplyr]{tbl_df}}.
+#' use the more flexible [wakefield::r_data_frame()] function.
+#' @return Returns a [dplyr::tbl_df()].
 #' @export
 #' @rdname r_data
-#' @seealso \code{\link[wakefield]{r_data_frame}}
+#' @seealso [wakefield::r_data_frame()]
 #' @examples
 #' r_data()
 #' r_data(10)
@@ -52,7 +52,7 @@ r_data <- function(n = 500, ...){
 
 #' Pre-Selected Column Data Set
 #'
-#' \code{r_data_theme} - Generate a themed data set with pre-set columns.
+#' `r_data_theme` - Generate a themed data set with pre-set columns.
 #'
 #' @param data_theme A data theme.  Currently selections include:
 #' \describe{

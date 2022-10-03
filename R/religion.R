@@ -3,19 +3,19 @@
 #' Generate a random vector of religion.
 #'
 #' @details The religion and probabilities used match approximate world
-#' religion make-up (from \href{https://www.pewforum.org/}{Pew Research Center}).  
+#' religion make-up (from [Pew Research Center](https://www.pewforum.org/)).  
 #' The default make up is:
 #'
 #' \tabular{lrr}{
-#'   \bold{ Religion} \tab \bold{N} \tab \bold{Percent} \cr
-#'   Christian \tab 2,173,260,000 \tab 31.48 \%\cr
-#'   Muslim    \tab 1,599,280,000 \tab 23.16 \%\cr
-#'   None      \tab 1,127,000,000 \tab 16.32 \%\cr
-#'   Hindu     \tab 1,034,620,000 \tab 14.99 \%\cr
-#'   Buddhist  \tab   489,030,000 \tab 7.08 \% \cr
-#'   Folk      \tab   406,140,000 \tab 5.88 \% \cr
-#'   Other     \tab    59,330,000 \tab  .86 \% \cr
-#'   Jewish    \tab    15,670,000 \tab  .23 \% \cr
+#'   ** Religion** \tab **N** \tab **Percent** \cr
+#'   Christian \tab 2,173,260,000 \tab 31.48 %\cr
+#'   Muslim    \tab 1,599,280,000 \tab 23.16 %\cr
+#'   None      \tab 1,127,000,000 \tab 16.32 %\cr
+#'   Hindu     \tab 1,034,620,000 \tab 14.99 %\cr
+#'   Buddhist  \tab   489,030,000 \tab 7.08 % \cr
+#'   Folk      \tab   406,140,000 \tab 5.88 % \cr
+#'   Other     \tab    59,330,000 \tab  .86 % \cr
+#'   Jewish    \tab    15,670,000 \tab  .23 % \cr
 #' }
 #'
 #' @inheritParams r_sample_factor
@@ -48,7 +48,7 @@ religion <- hijack(r_sample_factor,
 ##     vect2df("Religion", "Total") %>%
 ##     mutate(
 ##         Proportion = Total/sum(Total),
-##         Percent = paste(round(100*Proportion, 2), "\\%"),
+##         Percent = paste(round(100*Proportion, 2), "\%"),
 ##         Proportion = round(Proportion, 5),
 ##         Total = format(Total,  big.mark = ",", scientific=FALSE),
 ##         Religion = gsub("^U.+", "None", gsub("\\..+", "", Religion))

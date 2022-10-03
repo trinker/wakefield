@@ -41,11 +41,11 @@ Distribution of levels (used in \code{prob}) were taken from New
 York State' s 2014 assessment report: \url{http://www.p12.nysed.gov/irs/}
 
 \tabular{lrr}{
-  \bold{ Level}   \tab \bold{ELA}  \tab \bold{Math}\cr
-  1 \tab 31.6\% \tab 29.8\%\cr
-  2 \tab 37.3\% \tab 33.3\%\cr
-  3 \tab 22.3\% \tab 22.8\%\cr
-  4 \tab 8.8\%  \tab 14.0\%\cr
+** Level**   \tab \strong{ELA}  \tab \strong{Math}\cr
+1 \tab 31.6\% \tab 29.8\%\cr
+2 \tab 37.3\% \tab 33.3\%\cr
+3 \tab 22.3\% \tab 22.8\%\cr
+4 \tab 8.8\%  \tab 14.0\%\cr
 }
 }
 \examples{
@@ -67,7 +67,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

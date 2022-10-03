@@ -22,7 +22,7 @@ used inside of \code{r_data_frame} or \code{r_list}.}
 Returns a random vector of car elements.
 }
 \description{
-Generate a random vector of cars (see \code{?\link[datasets]{mtcars}}).
+Generate a random vector of cars (see \verb{?[mtcars][datasets::mtcars]}).
 }
 \examples{
 car(10)
@@ -36,7 +36,7 @@ Other variable functions:
 \code{\link{area}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

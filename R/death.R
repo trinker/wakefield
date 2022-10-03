@@ -1,6 +1,6 @@
 #' Generate Random Vector of Deaths Outcomes
 #'
-#' Generate a random logical vector of deaths (\code{TRUE}/\code{FALSE}).
+#' Generate a random logical vector of deaths (`TRUE`/`FALSE`).
 #'
 #' @inheritParams dummy
 #' @return Returns a random logical vector of death outcome elements.

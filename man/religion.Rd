@@ -31,19 +31,19 @@ Generate a random vector of religion.
 }
 \details{
 The religion and probabilities used match approximate world
-religion make-up (from \href{https://www.pewforum.org/}{Pew Research Center}).  
+religion make-up (from \href{https://www.pewforum.org/}{Pew Research Center}).
 The default make up is:
 
 \tabular{lrr}{
-  \bold{ Religion} \tab \bold{N} \tab \bold{Percent} \cr
-  Christian \tab 2,173,260,000 \tab 31.48 \%\cr
-  Muslim    \tab 1,599,280,000 \tab 23.16 \%\cr
-  None      \tab 1,127,000,000 \tab 16.32 \%\cr
-  Hindu     \tab 1,034,620,000 \tab 14.99 \%\cr
-  Buddhist  \tab   489,030,000 \tab 7.08 \% \cr
-  Folk      \tab   406,140,000 \tab 5.88 \% \cr
-  Other     \tab    59,330,000 \tab  .86 \% \cr
-  Jewish    \tab    15,670,000 \tab  .23 \% \cr
+** Religion** \tab \strong{N} \tab \strong{Percent} \cr
+Christian \tab 2,173,260,000 \tab 31.48 \%\cr
+Muslim    \tab 1,599,280,000 \tab 23.16 \%\cr
+None      \tab 1,127,000,000 \tab 16.32 \%\cr
+Hindu     \tab 1,034,620,000 \tab 14.99 \%\cr
+Buddhist  \tab   489,030,000 \tab 7.08 \% \cr
+Folk      \tab   406,140,000 \tab 5.88 \% \cr
+Other     \tab    59,330,000 \tab  .86 \% \cr
+Jewish    \tab    15,670,000 \tab  .23 \% \cr
 }
 }
 \examples{
@@ -63,7 +63,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

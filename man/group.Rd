@@ -25,7 +25,7 @@ Returns a random factor vector of group (control/treatment) elements.
 Generate a random vector of binary groups (e.g., control/treatment).
 }
 \note{
-If you want > 2 groups see `r_sample_factor`.
+If you want > 2 groups see \code{r_sample_factor}.
 }
 \examples{
 group(10)
@@ -41,7 +41,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

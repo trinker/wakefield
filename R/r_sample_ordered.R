@@ -6,8 +6,8 @@
 #' @return Returns a random factor vector of elements.
 #' @export
 #' @keywords ordered factor
-#' @seealso \code{\link[base]{sample}},
-#' \code{\link[base]{ordered}}
+#' @seealso [base::sample()],
+#' [base::ordered()]
 #' @examples
 #' r_sample_ordered(100, name = "Var")
 #'

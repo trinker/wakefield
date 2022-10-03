@@ -2,14 +2,14 @@
 #'
 #' Replaces a proportion of values with NA. Useful for simulating missing data.
 #'
-#' @param x A \code{\link[base]{data.frame}} or \code{\link[base]{list}} to
-#' randomly replace elements with \code{NA}s.
-#' @param cols Numeric indices of the columns to incude (use \code{-} to exlcude
-#' as well).  Default is to assign random \code{NA}s to al columns except the
+#' @param x A [base::data.frame()] or [base::list()] to
+#' randomly replace elements with `NA`s.
+#' @param cols Numeric indices of the columns to incude (use `-` to exlcude
+#' as well).  Default is to assign random `NA`s to al columns except the
 #' first column.
 #' @param prob  The proportion of each column/vector elements to assign to
-#' \code{NA}.
-#' @return Returns a \code{\link[base]{data.frame}} or \code{\link[base]{list}}
+#' `NA`.
+#' @return Returns a [base::data.frame()] or [base::list()]
 #' with random missing values.
 #' @keywords na missing
 #' @export
