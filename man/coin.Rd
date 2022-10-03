@@ -36,7 +36,7 @@ Other variable functions:
 \code{\link{area}()},
 \code{\link{car}()},
 \code{\link{children}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

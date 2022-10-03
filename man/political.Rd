@@ -56,7 +56,7 @@ Other variable functions:
 \code{\link{car}()},
 \code{\link{children}()},
 \code{\link{coin}()},
-\code{\link{color}},
+\code{\link{color}()},
 \code{\link{date_stamp}()},
 \code{\link{death}()},
 \code{\link{dice}()},

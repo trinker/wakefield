@@ -67,6 +67,6 @@ relate <- function(x, j, name = NULL, operation = "+", mean = 5, sd = 1,
 
     out <- stats::setNames(seed_dat, paste(name, seq_len(j), sep = rep.sep))
 
-    seriesname(dplyr::tbl_df(out), name)
+    seriesname(tibble::as_tibble(out), name)
 }
 
