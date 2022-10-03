@@ -19,7 +19,6 @@ License: GPL-2
 LazyData: TRUE
 URL: https://github.com/trinker/wakefield
 BugReports: https://github.com/trinker/wakefield/issues
-Roxygen: list(wrap = FALSE)
 Collate: 'utils.R' 'r_sample.R' 'age.R' 'r_sample_factor.R' 'animal.R'
         'r_sample_binary.R' 'answer.R' 'area.R' 'as_integer.R' 'car.R'
         'children.R' 'coin.R' 'color.R' 'date_stamp.R'
@@ -37,4 +36,4 @@ Collate: 'utils.R' 'r_sample.R' 'age.R' 'r_sample_factor.R' 'animal.R'
         'sex_inclusive.R' 'smokes.R' 'speed.R' 'state.R' 'string.R'
         'table_heat.R' 'time_stamp.R' 'upper.R' 'valid.R' 'variables.R'
         'varname.R' 'year.R' 'zip_code.R'
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.1
