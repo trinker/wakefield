@@ -5,11 +5,11 @@
 #' @details The hair colors and probabilities:
 #'
 #' \tabular{lr}{
-#'   \bold{ Color}     \tab \bold{Percent}\cr
-#'   Brown   \tab 35 \%\cr
-#'   Black   \tab 28 \%\cr
-#'   Blonde  \tab 26 \%\cr
-#'   Red     \tab 11 \%\cr
+#'   ** Color**     \tab **Percent**\cr
+#'   Brown   \tab 35 %\cr
+#'   Black   \tab 28 %\cr
+#'   Blonde  \tab 26 %\cr
+#'   Red     \tab 11 %\cr
 #' }
 #'
 #' @inheritParams r_sample_factor

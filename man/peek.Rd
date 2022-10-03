@@ -7,7 +7,7 @@
 peek(x, n = 10, width = 10, ...)
 }
 \arguments{
-\item{x}{A \code{\link[base]{data.frame}} object.}
+\item{x}{A \code{\link[base:data.frame]{base::data.frame()}} object.}
 
 \item{n}{Number of rows to display.}
 
@@ -20,7 +20,7 @@ Prints a truncated head but invisibly returns \code{x}.
 }
 \description{
 Convenience function to view all the columns of the head
-of a truncated \code{\link[base]{data.frame}}.  \code{peek} invisibly returns
+of a truncated \code{\link[base:data.frame]{base::data.frame()}}.  \code{peek} invisibly returns
 \code{x}.  This makes its use ideal in a \pkg{dplyr}/\pkg{magrittr} pipeline.
 }
 \details{
@@ -51,5 +51,5 @@ dat2
 peek(dat2)
 }
 \seealso{
-\code{\link[utils]{head}}
+\code{\link[utils:head]{utils::head()}}
 }

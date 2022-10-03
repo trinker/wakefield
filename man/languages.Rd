@@ -16,10 +16,10 @@ https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers.
 }
 \details{
 \itemize{
-  \item Language. The language spoken.
-  \item N. The number of speakers world-wide.
-  \item Proportion. The proportion of speakers.
-  \item Percent. The percentage of speakers.
+\item Language. The language spoken.
+\item N. The number of speakers world-wide.
+\item Proportion. The proportion of speakers.
+\item Percent. The percentage of speakers.
 }
 }
 \references{

@@ -1,11 +1,11 @@
 #' Generate Random Vector of Grades
 #'
-#' \code{grade} - Generate a random normal vector of percent grades.
+#' `grade` - Generate a random normal vector of percent grades.
 #'
 #' @details The conversion between percent range, letter grade, and GPA is:
 #'
 #' \tabular{llr}{
-#'   \bold{Percent} \tab \bold{Letter} \tab \bold{GPA}\cr
+#'   **Percent** \tab **Letter** \tab **GPA**\cr
 #'   97-100 \tab A+ \tab 4.00\cr
 #'   93-96  \tab A  \tab 4.00\cr
 #'   90-92  \tab A- \tab 3.67\cr
@@ -49,7 +49,7 @@ function (n, mean = 88, sd = 4, name = "Grade", digits = 1) {
 
 #' Generate Random Vector of Grades
 #'
-#' \code{grade} - Generate a random normal vector of letter grades.
+#' `grade` - Generate a random normal vector of letter grades.
 #'
 #' @export
 #' @rdname grade
@@ -65,7 +65,7 @@ function (n, mean = 88, sd = 4, name = "Grade_Letter") {
 
 #' Generate Random Vector of Grades
 #'
-#' \code{grade} - Generate a random normal vector of grade point averages (GPA;
+#' `grade` - Generate a random normal vector of grade point averages (GPA;
 #' 0.0 - 4.0 scale).
 #'
 #' @export

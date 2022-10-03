@@ -19,12 +19,12 @@ attribute.  This is used to auto assign names to the column/vector name when
 used inside of \code{r_data_frame} or \code{r_list}.}
 }
 \value{
-Returns a random integer vector of ages within the provided range 
+Returns a random integer vector of ages within the provided range
 (defaults to 18:89).
 }
 \description{
-Generate a random vector of ages within the provided range.  The default age 
-range is set between 18 and 89, to match the age ranges which appear (see e.g.,  
+Generate a random vector of ages within the provided range.  The default age
+range is set between 18 and 89, to match the age ranges which appear (see e.g.,
 https://gssdataexplorer.norc.org/variables/53/vshow).
 }
 \examples{

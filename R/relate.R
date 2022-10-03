@@ -4,26 +4,26 @@
 #'
 #' @param x A starting column.
 #' @param j The number of columns to produce.
-#' @param name An optional prefix name to give to the columns.  If \code{NULL}
-#' attempts to take from the \code{varname} attribute of \code{x}.  If not found,
+#' @param name An optional prefix name to give to the columns.  If `NULL`
+#' attempts to take from the `varname` attribute of `x`.  If not found,
 #' "Variable" is used.
 #' @param operation A operation character vector of length 1; either
-#' \code{c("+", "-", "*", "/")}.  This is the relationship between columns.
+#' `c("+", "-", "*", "/")`.  This is the relationship between columns.
 #' @param mean Mean is the average value to add, subtract, multiple, or divide
 #' by.
-#' @param sd The amount of variability to allow in \code{mean}.  Setting to 0
+#' @param sd The amount of variability to allow in `mean`.  Setting to 0
 #' will constrain the operation between x_(n - 1) column and x_n to be exactly
-#' the mean value (see \bold{Examples} for a demonstration).
+#' the mean value (see **Examples** for a demonstration).
 #' @param rep.sep A separator to use for repeated variable names.  For example
-#' if the \code{\link[wakefield]{age}} is used three times
-#' (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
-#' three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
+#' if the [wakefield::age()] is used three times
+#' (`r_data_frame(age, age, age)`), the name "Age" will be assigned to all
+#' three columns.  The results in column names `c("Age_1", "Age_2", "Age_3")`.
 #' @param digits The number of digits to round to.  Defaults to the max number
-#' of significant digits in \code{x}.
-#' @return Returns a \code{\link[dplyr]{tbl_df}}.
+#' of significant digits in `x`.
+#' @return Returns a [dplyr::tbl_df()].
 #' @keywords correlate related
 #' @export
-#' @seealso \code{\link[wakefield]{r_series}}
+#' @seealso [wakefield::r_series()]
 #' @examples
 #' relate(1:10, 10)
 #'

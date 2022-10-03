@@ -39,6 +39,6 @@ time_stamp(20, random=TRUE)
 pie(table(time_stamp(2000, x = seq(0, 23, by = 2), prob = probs(12))))
 }
 \seealso{
-\code{\link[chron]{times}}
+\code{\link[chron:dates]{chron::times()}}
 }
 \keyword{time}

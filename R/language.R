@@ -1,7 +1,7 @@
 #' Generate Random Vector of Languages
 #'
 #' Generate a random vector of languages from the
-#' \code{\link[wakefield]{presidential_debates_2012}}.
+#' [wakefield::presidential_debates_2012()].
 #'
 #' @inheritParams r_sample_factor
 #' @return Returns a random character vector of language elements.

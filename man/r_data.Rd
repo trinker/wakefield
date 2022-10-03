@@ -14,16 +14,16 @@ r_data_theme(n = 100, data_theme = "the_works")
 
 \item{data_theme}{A data theme.  Currently selections include:
 \describe{
-  \item{the_works}{all available variable functions}
-  \item{survey}{ID column plus 10 numeric 5-point Likert type response columns}
-  \item{survey2}{ID column plus 10 5-point Likert type response columns}
+\item{the_works}{all available variable functions}
+\item{survey}{ID column plus 10 numeric 5-point Likert type response columns}
+\item{survey2}{ID column plus 10 5-point Likert type response columns}
 }}
 
 \item{\ldots}{A set of optionally named arguments.  Using \pkg{wakefield}
 variable functions require no name or call parenthesis.}
 }
 \value{
-Returns a \code{\link[dplyr]{tbl_df}}.
+Returns a \code{\link[dplyr:tbl_df]{dplyr::tbl_df()}}.
 }
 \description{
 \code{r_data} - Generate a data set with pre-set columns selected.
@@ -34,19 +34,19 @@ Returns a \code{\link[dplyr]{tbl_df}}.
 The pre-selected columns include:
 
 \itemize{
-  \item ID
-  \item Race
-  \item Age
-  \item Sex
-  \item Hour
-  \item IQ
-  \item Height
-  \item Died
+\item ID
+\item Race
+\item Age
+\item Sex
+\item Hour
+\item IQ
+\item Height
+\item Died
 }
 
 The user may use \ldots to add additional columns.  \code{r_data} is a
 convenience function to quickly produce a data set.  For more specific usage
-use the more flexible \code{\link[wakefield]{r_data_frame}} function.
+use the more flexible \code{\link[=r_data_frame]{r_data_frame()}} function.
 }
 \examples{
 r_data()
@@ -60,5 +60,5 @@ r_data_theme(, "survey")
 r_data_theme(, "survey2")
 }
 \seealso{
-\code{\link[wakefield]{r_data_frame}}
+\code{\link[=r_data_frame]{r_data_frame()}}
 }

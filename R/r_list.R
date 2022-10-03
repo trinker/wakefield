@@ -1,6 +1,6 @@
 #' List Production (From Variable Functions)
 #'
-#' Produce a named \code{\link[base]{list}} that allows the user to lazily pass
+#' Produce a named [base::list()] that allows the user to lazily pass
 #' unnamed \pkg{wakefield} variable functions (optionally, without call
 #' parenthesis).
 #'
@@ -8,21 +8,21 @@
 #' @param \ldots A set of optionally named arguments.  Using \pkg{wakefield}
 #' variable functions require no name or call parenthesis.
 #' @param rep.sep A separator to use for repeated variable names.  For example
-#' if the \code{\link[wakefield]{age}} is used three times
-#' (\code{r_list(age, age, age)}), the name "Age" will be assigned to all three
+#' if the [wakefield::age()] is used three times
+#' (`r_list(age, age, age)`), the name "Age" will be assigned to all three
 #' vectors in the list.  The results in column names
-#' \code{c("Age_1", "Age_2", "Age_3")}.  To turn of this behavior use
-#' \code{rep.sep = NULL}.  This results in \code{c("Age", "Age", "Age")} for
-#' vector names, leading to \code{c("Age", "Age.1", "Age.2")} if coerced to a
-#' \code{\link[base]{data.frame}}.
+#' `c("Age_1", "Age_2", "Age_3")`.  To turn of this behavior use
+#' `rep.sep = NULL`.  This results in `c("Age", "Age", "Age")` for
+#' vector names, leading to `c("Age", "Age.1", "Age.2")` if coerced to a
+#' [base::data.frame()].
 #' @return Returns a named list of equal length vectors.
 #' @author Josh O'Brien and Tyler Rinker <tyler.rinker@@gmail.com>.
 #' @references https://stackoverflow.com/a/29617983/1000343
 #' @keywords list
 #' @export
-#' @seealso \code{\link[wakefield]{r_data_frame}},
-#' \code{\link[wakefield]{r_series}}
-#' \code{\link[wakefield]{r_dummy}}
+#' @seealso [wakefield::r_data_frame()],
+#' [wakefield::r_series()]
+#' [wakefield::r_dummy()]
 #' @examples
 #' r_list(
 #'     n = 30,

@@ -15,9 +15,9 @@ A dataset containing U.S. state populations.
 }
 \details{
 \itemize{
-  \item State. The 50 U.S. states.
-  \item Population. Population of state.
-  \item Proportion. Proportion of total U.S. population.
+\item State. The 50 U.S. states.
+\item Population. Population of state.
+\item Proportion. Proportion of total U.S. population.
 }
 }
 \references{

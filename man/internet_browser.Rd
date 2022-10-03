@@ -30,16 +30,16 @@ Returns a random factor vector of Internet browser elements.
 Generate a random vector of Internet browser.
 }
 \details{
-The browser use and probabilities (from https://gs.statcounter.com/): 
+The browser use and probabilities (from https://gs.statcounter.com/):
 
 \tabular{lr}{
-  \bold{ Browser} \tab \bold{Percent} \cr
-  Chrome  \tab 50.27 \%\cr
-  IE      \tab 17.50 \% \cr
-  Firefox \tab 16.89 \%\cr
-  Safari  \tab 9.94 \% \cr
-  Opera   \tab 1.70 \%  \cr
-  Android \tab 1.32 \% \cr
+** Browser** \tab \strong{Percent} \cr
+Chrome  \tab 50.27 \%\cr
+IE      \tab 17.50 \% \cr
+Firefox \tab 16.89 \%\cr
+Safari  \tab 9.94 \% \cr
+Opera   \tab 1.70 \%  \cr
+Android \tab 1.32 \% \cr
 }
 }
 \examples{

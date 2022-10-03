@@ -30,5 +30,5 @@ table(r_sample_factor(x = c("Dog", "Cat", "Fish", "Bird"), n=1000))
 r_sample_factor(x = c("B", "W"), prob = c(.7, .3), n = 25)
 }
 \seealso{
-\code{\link[base]{sample}}
+\code{\link[base:sample]{base::sample()}}
 }

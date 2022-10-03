@@ -1,19 +1,19 @@
 #' Data Frame Viewing
 #'
 #' Convenience function to view all the columns of the head
-#' of a truncated \code{\link[base]{data.frame}}.  \code{peek} invisibly returns
-#' \code{x}.  This makes its use ideal in a \pkg{dplyr}/\pkg{magrittr} pipeline.
+#' of a truncated [base::data.frame()].  `peek` invisibly returns
+#' `x`.  This makes its use ideal in a \pkg{dplyr}/\pkg{magrittr} pipeline.
 #'
-#' @param x A \code{\link[base]{data.frame}} object.
+#' @param x A [base::data.frame()] object.
 #' @param n Number of rows to display.
 #' @param width The width of the columns to be displayed.
 #' @param \ldots For internal use.
-#' @return Prints a truncated head but invisibly returns \code{x}.
-#' @seealso \code{\link[utils]{head}}
+#' @return Prints a truncated head but invisibly returns `x`.
+#' @seealso [utils::head()]
 #' @export
 #' @details By default \pkg{dplyr} does not print all columns of a data frame
-#' (\code{tbl_df}).  This makes inspection of data difficult at times,
-#' particularly with text string data.  \code{peek} allows the user to see a
+#' (`tbl_df`).  This makes inspection of data difficult at times,
+#' particularly with text string data.  `peek` allows the user to see a
 #' truncated head for inspection purposes.
 #' @examples
 #' (dat1 <- r_data_frame(100, id, sentence, paragraph))

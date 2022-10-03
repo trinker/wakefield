@@ -7,18 +7,18 @@
 r_insert(x, name = "Inserted")
 }
 \arguments{
-\item{x}{A \code{\link[base]{data.frame}} to add a \code{seriesname}
+\item{x}{A \code{\link[base:data.frame]{base::data.frame()}} to add a \code{seriesname}
 attribute (i.e., \code{attributes(x)[["seriesname"]]})}
 
 \item{name}{A name to assign to \code{attributes(x)[["seriesname"]]}.}
 }
 \value{
-Returns a \code{\link[base]{data.frame}} with a
+Returns a \code{\link[base:data.frame]{base::data.frame()}} with a
 \code{attributes(x)[["seriesname"]]} assigned.
 }
 \description{
-Safely insert \code{\link[base]{data.frame}} objects into a
-\code{\link[wakefield]{r_data_frame}} or \code{\link[wakefield]{r_list}}.
+Safely insert \code{\link[base:data.frame]{base::data.frame()}} objects into a
+\code{\link[=r_data_frame]{r_data_frame()}} or \code{\link[=r_list]{r_list()}}.
 }
 \examples{
 dat <- dplyr::data_frame(
@@ -40,6 +40,6 @@ r_list(10,
 )
 }
 \seealso{
-\code{\link[wakefield]{seriesname}}
+\code{\link[=seriesname]{seriesname()}}
 }
 \keyword{insert}

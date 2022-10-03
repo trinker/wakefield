@@ -40,11 +40,11 @@ Returns a random factor vector of animal elements.
 The household pets and probabilities:
 
 \tabular{ll}{
-  Dog   \tab 36.5 \%\cr
-  Cat   \tab 30.4 \%\cr
-  None  \tab 25.8 \%\cr
-  Bird  \tab 3.1 \% \cr
-  Horse \tab 1.5 \% \cr
+Dog   \tab 36.5 \%\cr
+Cat   \tab 30.4 \%\cr
+None  \tab 25.8 \%\cr
+Bird  \tab 3.1 \% \cr
+Horse \tab 1.5 \% \cr
 }
 }
 \examples{

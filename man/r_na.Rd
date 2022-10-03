@@ -7,7 +7,7 @@
 r_na(x, cols = -1, prob = 0.05)
 }
 \arguments{
-\item{x}{A \code{\link[base]{data.frame}} or \code{\link[base]{list}} to
+\item{x}{A \code{\link[base:data.frame]{base::data.frame()}} or \code{\link[base:list]{base::list()}} to
 randomly replace elements with \code{NA}s.}
 
 \item{cols}{Numeric indices of the columns to incude (use \code{-} to exlcude
@@ -18,7 +18,7 @@ first column.}
 \code{NA}.}
 }
 \value{
-Returns a \code{\link[base]{data.frame}} or \code{\link[base]{list}}
+Returns a \code{\link[base:data.frame]{base::data.frame()}} or \code{\link[base:list]{base::list()}}
 with random missing values.
 }
 \description{

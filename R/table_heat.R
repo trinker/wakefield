@@ -1,23 +1,23 @@
 #' View Data Table Column Types as Heat Map
 #'
-#' Generate a heat map of column types from a \code{\link[base]{data.frame}}.
+#' Generate a heat map of column types from a [base::data.frame()].
 #'
-#' @param x A \code{\link[base]{data.frame}}.
-#' @param flip logical.  If \code{TRUE} the \code{\link[base]{data.frame}} is
+#' @param x A [base::data.frame()].
+#' @param flip logical.  If `TRUE` the [base::data.frame()] is
 #' flipped so that the columns are on the y axis and observations on the x axis.
 #' This is useful when there are many columns or the column names are longer.
 #' @param palette A palette to chose from.  See
-#' \code{\link[ggplot2]{scale_fill_brewer}} for more.  These choices should
-#' exceed the number of unique column types. Use \code{NULL} to use
+#' [ggplot2::scale_fill_brewer()] for more.  These choices should
+#' exceed the number of unique column types. Use `NULL` to use
 #' \pkg{ggplot2}'s default color scheme.
-#' @param print logical.  If \code{TRUE} the pot is printed.  Option for use in
+#' @param print logical.  If `TRUE` the pot is printed.  Option for use in
 #' document construction such as \pkg{knitr} or \pkg{rmarkdown}.
 #' @param sep A separator to use between column types.  Column types are
-#' determined via \code{sapply(x, class)}.  When multiple types are present
-#' these are collapsed.  By default the \code{\\n} is used.
+#' determined via `sapply(x, class)`.  When multiple types are present
+#' these are collapsed.  By default `\n` is used.
 #' @return Returns a \pkg{ggplot2} object.
 #' @details By default coumn names retain their order.  Column types are ordered
-#' alphabetically in the legend, with \code{NA} appearing last.
+#' alphabetically in the legend, with `NA` appearing last.
 #' @keywords class
 #' @export
 #' @examples
@@ -123,7 +123,7 @@ table_heat <- function(x, flip = FALSE, palette = "Set3", print = interactive(),
 #' Plots a tbl_df object.
 #'
 #' @param x The tbl_df object.
-#' @param \ldots Arguments passed to \code{\link[wakefield]{table_heat}}.
+#' @param \ldots Arguments passed to [wakefield::table_heat()].
 #' @method plot tbl_df
 #' @export
 plot.tbl_df <- function(x, ...){

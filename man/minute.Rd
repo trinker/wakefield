@@ -39,7 +39,7 @@ minute(20, random=TRUE)
 pie(table(minute(2000, x = seq(0, 59, by = 10)/60, prob = probs(6))))
 }
 \seealso{
-\code{\link[chron]{times}}
+\code{\link[chron:dates]{chron::times()}}
 }
 \keyword{minute}
 \keyword{time}

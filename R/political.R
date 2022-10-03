@@ -6,12 +6,12 @@
 #' political make-up of registered voters (2014).  The default make up is:
 #'
 #' \tabular{lrr}{
-#'   \bold{ Party} \tab \bold{N} \tab \bold{Percent} \cr
-#'   Democrat     \tab 43,140,758 \tab 57.73\% \cr
-#'   Republican   \tab 30,700,138 \tab 41.08\% \cr
-#'   Constitution \tab   367,000 \tab   .49\% \cr
-#'   Libertarian  \tab   278,446 \tab   .37\% \cr
-#'   Green        \tab   246,145 \tab   .33\% \cr
+#'   ** Party** \tab **N** \tab **Percent** \cr
+#'   Democrat     \tab 43,140,758 \tab 57.73% \cr
+#'   Republican   \tab 30,700,138 \tab 41.08% \cr
+#'   Constitution \tab   367,000 \tab   .49% \cr
+#'   Libertarian  \tab   278,446 \tab   .37% \cr
+#'   Green        \tab   246,145 \tab   .33% \cr
 #' }
 #'
 #' @inheritParams r_sample_factor

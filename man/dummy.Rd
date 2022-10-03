@@ -27,7 +27,7 @@ dummy(100, name = "Var")
 table(dummy(1000))
 }
 \seealso{
-\code{\link[base]{sample.int}}
+\code{\link[base:sample]{base::sample.int()}}
 
 Other variable functions: 
 \code{\link{age}()},

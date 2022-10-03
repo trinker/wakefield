@@ -25,7 +25,7 @@ attribute.  This is used to auto assign names to the column/vector name when
 used inside of \code{r_data_frame} or \code{r_list}.}
 
 \item{digits}{Integer indicating the number of decimal places to be used.
-Negative values are allowed (see \code{\link[base]{round}}).}
+Negative values are allowed (see \code{\link[base:Round]{base::round()}}).}
 }
 \value{
 Returns a random normal vector of grade elements.
@@ -42,20 +42,20 @@ Returns a random normal vector of grade elements.
 The conversion between percent range, letter grade, and GPA is:
 
 \tabular{llr}{
-  \bold{Percent} \tab \bold{Letter} \tab \bold{GPA}\cr
-  97-100 \tab A+ \tab 4.00\cr
-  93-96  \tab A  \tab 4.00\cr
-  90-92  \tab A- \tab 3.67\cr
-  87-89  \tab B+ \tab 3.33\cr
-  83-86  \tab B  \tab 3.00\cr
-  80-82  \tab B- \tab 2.67\cr
-  77-79  \tab C+ \tab 2.33\cr
-  73-76  \tab C  \tab 2.00\cr
-  70-72  \tab C- \tab 1.67\cr
-  67-69  \tab D+ \tab 1.33\cr
-  63-66  \tab D  \tab 1.00\cr
-  60-62  \tab D- \tab 0.67\cr
-  < 60   \tab F  \tab 0.00
+\strong{Percent} \tab \strong{Letter} \tab \strong{GPA}\cr
+97-100 \tab A+ \tab 4.00\cr
+93-96  \tab A  \tab 4.00\cr
+90-92  \tab A- \tab 3.67\cr
+87-89  \tab B+ \tab 3.33\cr
+83-86  \tab B  \tab 3.00\cr
+80-82  \tab B- \tab 2.67\cr
+77-79  \tab C+ \tab 2.33\cr
+73-76  \tab C  \tab 2.00\cr
+70-72  \tab C- \tab 1.67\cr
+67-69  \tab D+ \tab 1.33\cr
+63-66  \tab D  \tab 1.00\cr
+60-62  \tab D- \tab 0.67\cr
+< 60   \tab F  \tab 0.00
 }
 }
 \examples{

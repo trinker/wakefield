@@ -108,3 +108,4 @@ Collate:
     'varname.R'
     'year.R'
     'zip_code.R'
+Roxygen: list(markdown = TRUE)

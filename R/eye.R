@@ -5,12 +5,12 @@
 #' @details The eye colors and probabilities:
 #'
 #' \tabular{lr}{
-#'   \bold{ Color}     \tab \bold{Percent}\cr
-#'   Brown   \tab 44 \%\cr
-#'   Blue    \tab 30 \%\cr
-#'   Green   \tab 13 \%\cr
-#'   Hazel   \tab  9 \%\cr
-#'   Gray    \tab  4 \%\cr
+#'   ** Color**     \tab **Percent**\cr
+#'   Brown   \tab 44 %\cr
+#'   Blue    \tab 30 %\cr
+#'   Green   \tab 13 %\cr
+#'   Hazel   \tab  9 %\cr
+#'   Gray    \tab  4 %\cr
 #' }
 #'
 #' @inheritParams r_sample_factor

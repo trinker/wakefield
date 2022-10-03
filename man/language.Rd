@@ -28,7 +28,7 @@ Returns a random character vector of language elements.
 }
 \description{
 Generate a random vector of languages from the
-\code{\link[wakefield]{presidential_debates_2012}}.
+\code{\link[=presidential_debates_2012]{presidential_debates_2012()}}.
 }
 \examples{
 language(10)

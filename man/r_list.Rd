@@ -10,13 +10,13 @@ r_list(n, ..., rep.sep = "_")
 \item{n}{The length to pass to the randomly generated vectors.}
 
 \item{rep.sep}{A separator to use for repeated variable names.  For example
-if the \code{\link[wakefield]{age}} is used three times
+if the \code{\link[=age]{age()}} is used three times
 (\code{r_list(age, age, age)}), the name "Age" will be assigned to all three
 vectors in the list.  The results in column names
 \code{c("Age_1", "Age_2", "Age_3")}.  To turn of this behavior use
 \code{rep.sep = NULL}.  This results in \code{c("Age", "Age", "Age")} for
 vector names, leading to \code{c("Age", "Age.1", "Age.2")} if coerced to a
-\code{\link[base]{data.frame}}.}
+\code{\link[base:data.frame]{base::data.frame()}}.}
 
 \item{\ldots}{A set of optionally named arguments.  Using \pkg{wakefield}
 variable functions require no name or call parenthesis.}
@@ -25,7 +25,7 @@ variable functions require no name or call parenthesis.}
 Returns a named list of equal length vectors.
 }
 \description{
-Produce a named \code{\link[base]{list}} that allows the user to lazily pass
+Produce a named \code{\link[base:list]{base::list()}} that allows the user to lazily pass
 unnamed \pkg{wakefield} variable functions (optionally, without call
 parenthesis).
 }
@@ -60,11 +60,11 @@ r_list(
 https://stackoverflow.com/a/29617983/1000343
 }
 \seealso{
-\code{\link[wakefield]{r_data_frame}},
-\code{\link[wakefield]{r_series}}
-\code{\link[wakefield]{r_dummy}}
+\code{\link[=r_data_frame]{r_data_frame()}},
+\code{\link[=r_series]{r_series()}}
+\code{\link[=r_dummy]{r_dummy()}}
 }
 \author{
-Josh O'Brien and Tyler Rinker <tyler.rinker@gmail.com>.
+Josh O'Brien and Tyler Rinker \href{mailto:tyler.rinker@gmail.com}{tyler.rinker@gmail.com}.
 }
 \keyword{list}

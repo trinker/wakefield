@@ -1,10 +1,10 @@
 #' Generate Random Logical Vector
 #'
-#' Generate a random logical (\code{TRUE}/\code{FALSE}) vector.
+#' Generate a random logical (`TRUE`/`FALSE`) vector.
 #'
 #' @inheritParams r_sample_binary
-#' @return Returns a random logical (\code{TRUE}/\code{FALSE}) vector of elements.
-#' @seealso \code{\link[base]{sample}}
+#' @return Returns a random logical (`TRUE`/`FALSE`) vector of elements.
+#' @seealso [base::sample()]
 #' @export
 #' @examples
 #' r_sample_logical(100, name = "Var")

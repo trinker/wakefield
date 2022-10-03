@@ -3,12 +3,12 @@
 #' Generate a random vector of times in H:M:S format.
 #'
 #' @inheritParams r_sample_factor
-#' @param random logical.  If \code{TRUE} the times are randomized, otherwise the
+#' @param random logical.  If `TRUE` the times are randomized, otherwise the
 #' times are sequential.
 #' @return Returns a random vector of time elements in H:M:S format.
 #' @keywords time
 #' @export
-#' @seealso \code{\link[chron]{times}}
+#' @seealso [chron::times()]
 #' @examples
 #' time_stamp(20)
 #' time_stamp(20, random=TRUE)

@@ -32,10 +32,10 @@ by.}
 
 \item{sd}{The amount of variability to allow in \code{mean}.  Setting to 0
 will constrain the operation between x_(n - 1) column and x_n to be exactly
-the mean value (see \bold{Examples} for a demonstration).}
+the mean value (see \strong{Examples} for a demonstration).}
 
 \item{rep.sep}{A separator to use for repeated variable names.  For example
-if the \code{\link[wakefield]{age}} is used three times
+if the \code{\link[=age]{age()}} is used three times
 (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
 three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.}
 
@@ -43,7 +43,7 @@ three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
 of significant digits in \code{x}.}
 }
 \value{
-Returns a \code{\link[dplyr]{tbl_df}}.
+Returns a \code{\link[dplyr:tbl_df]{dplyr::tbl_df()}}.
 }
 \description{
 Generate columns that are related.
@@ -71,7 +71,7 @@ relate(time_stamp(10), 6)
 relate(rep(100, 10), 6, "Reaction", "-")
 }
 \seealso{
-\code{\link[wakefield]{r_series}}
+\code{\link[=r_series]{r_series()}}
 }
 \keyword{correlate}
 \keyword{related}

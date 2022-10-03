@@ -6,12 +6,12 @@
 #' @details The following arbitrary probabilities are used:
 #'
 #' \tabular{lr}{
-#'   \bold{ Employment Status}  \tab \bold{Percent}\cr
-#'   Full Time  \tab 60\%\cr
-#'   Part Time  \tab 10\%\cr
-#'   Unemployed \tab 10\%\cr
-#'   Retired    \tab 10\%\cr
-#'   Student    \tab 10\%\cr
+#'   ** Employment Status**  \tab **Percent**\cr
+#'   Full Time  \tab 60%\cr
+#'   Part Time  \tab 10%\cr
+#'   Unemployed \tab 10%\cr
+#'   Retired    \tab 10%\cr
+#'   Student    \tab 10%\cr
 #' }
 #'
 #' @return Returns a random vector of employment status elements.

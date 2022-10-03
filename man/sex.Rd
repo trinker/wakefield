@@ -42,9 +42,9 @@ The genders and probabilities used match approximate gender
 make-up:
 
 \tabular{lr}{
-  \bold{Gender}     \tab \bold{Percent}\cr
-  Male    \tab 51.22 \%\cr
-  Female  \tab 48.78 \%\cr
+\bold{Gender}     \tab \bold{Percent}\cr
+Male    \tab 51.22 \%\cr
+Female  \tab 48.78 \%\cr
 }
 }
 \examples{

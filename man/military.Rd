@@ -34,12 +34,12 @@ The military branches and probabilities used match approximate U.S.
 military make-up:
 
 \tabular{lrr}{
-  \bold{ Branch} \tab \bold{N} \tab \bold{Percent} \cr
-  Army         \tab 541,291 \tab 37.9\%\cr
-  Air Force    \tab 333,772 \tab 23.3\%\cr
-  Navy         \tab 317,237 \tab 22.2\%\cr
-  Marine Corps \tab 195,338 \tab 13.7\%\cr
-  Coast Guard  \tab 42,357  \tab 3.0\%\cr
+** Branch** \tab \strong{N} \tab \strong{Percent} \cr
+Army         \tab 541,291 \tab 37.9\%\cr
+Air Force    \tab 333,772 \tab 23.3\%\cr
+Navy         \tab 317,237 \tab 22.2\%\cr
+Marine Corps \tab 195,338 \tab 13.7\%\cr
+Coast Guard  \tab 42,357  \tab 3.0\%\cr
 }
 }
 \examples{

@@ -33,11 +33,11 @@ Generate a random vector of hair colors.
 The hair colors and probabilities:
 
 \tabular{lr}{
-  \bold{ Color}     \tab \bold{Percent}\cr
-  Brown   \tab 35 \%\cr
-  Black   \tab 28 \%\cr
-  Blonde  \tab 26 \%\cr
-  Red     \tab 11 \%\cr
+** Color**     \tab \strong{Percent}\cr
+Brown   \tab 35 \%\cr
+Black   \tab 28 \%\cr
+Blonde  \tab 26 \%\cr
+Red     \tab 11 \%\cr
 }
 }
 \examples{

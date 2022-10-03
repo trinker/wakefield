@@ -12,23 +12,23 @@ character vector), \code{"matrix"}, or \code{"list"}; or the user may extract
 a specific type from a list using:
 \code{"character"}, \code{"date"}, \code{"factor"}, \code{"integer"},
 \code{"logical"}, \code{"numeric"}, \code{"ordered factor"}.  Setting
-\code{type = TRUE} will also return a \code{\link[base]{list}}.
-The \code{\link[base]{list}} version breaks the variable functions into
+\code{type = TRUE} will also return a \code{\link[base:list]{base::list()}}.
+The \code{\link[base:list]{base::list()}} version breaks the variable functions into
 classes.  Specifying a specific class (e.g., \code{type = "numeric"} will
 list only variable functions that yield a numeric output.}
 
 \item{ncols}{The number of columns to use if \code{type = "matrix"}.}
 
-\item{\ldots}{Other arguments passed to \code{\link[base]{matrix}}.}
+\item{\ldots}{Other arguments passed to \code{\link[base:matrix]{base::matrix()}}.}
 }
 \value{
-Returns a \code{\link[base]{character}} vector,
-\code{\link[base]{matrix}} of all variable functions, or a
-\code{\link[base]{list}} of variable functions by type.
+Returns a \code{\link[base:character]{base::character()}} vector,
+\code{\link[base:matrix]{base::matrix()}} of all variable functions, or a
+\code{\link[base:list]{base::list()}} of variable functions by type.
 }
 \description{
 See a listing of all available variable functions for use in
-\code{\link[wakefield]{r_data_frame}} or \code{\link[wakefield]{r_list}}.
+\code{\link[=r_data_frame]{r_data_frame()}} or \code{\link[=r_list]{r_list()}}.
 }
 \examples{
 variables()

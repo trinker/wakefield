@@ -36,5 +36,5 @@ table(r_sample_binary(1000))
 c("B", "W")[r_sample_binary(10)]
 }
 \seealso{
-\code{\link[base]{sample.int}}
+\code{\link[base:sample]{base::sample.int()}}
 }

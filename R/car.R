@@ -1,6 +1,6 @@
 #' Generate Random Vector of Cars
 #'
-#' Generate a random vector of cars (see \code{?\link[datasets]{mtcars}}).
+#' Generate a random vector of cars (see `?[mtcars][datasets::mtcars]`).
 #'
 #' @inheritParams r_sample_factor
 #' @return Returns a random vector of car elements.

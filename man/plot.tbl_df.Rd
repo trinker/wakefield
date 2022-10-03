@@ -9,7 +9,7 @@
 \arguments{
 \item{x}{The tbl_df object.}
 
-\item{\ldots}{Arguments passed to \code{\link[wakefield]{table_heat}}.}
+\item{\ldots}{Arguments passed to \code{\link[=table_heat]{table_heat()}}.}
 }
 \description{
 Plots a tbl_df object.

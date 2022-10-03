@@ -9,7 +9,7 @@ NULL
 #' Augmented List of Grady Ward's English Words and Mark Kantrowitz's Names List
 #'
 #' A dataset containing a vector of Grady Ward's English words augmented with
-#' \pkg{qdapDictionaries}'s  \code{DICTIONARY}, Mark Kantrowitz's names list,
+#' \pkg{qdapDictionaries}'s  `DICTIONARY`, Mark Kantrowitz's names list,
 #' other proper nouns, and contractions.
 #'
 #' @details A dataset containing a vector of Grady Ward's English words

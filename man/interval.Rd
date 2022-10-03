@@ -27,7 +27,7 @@ into which the vector produced from \code{fun} is to be cut.}
 labels are constructed using "(a,b]" interval notation. If
 \code{labels = FALSE}, simple integer codes are returned instead of a factor.}
 
-\item{include.lowest}{logical.  If \code{TRUE} an 'x[i]' equal to the lowest
+\item{include.lowest}{logical.  If \code{TRUE} an \code{x[i]} equal to the lowest
 (or highest, for \code{right = FALSE}) 'breaks' value should be included.}
 
 \item{right}{logical.  If \code{TRUE} the intervals will be closed on the
@@ -45,10 +45,10 @@ the environment of \code{r_data_frame} or \code{r_list}.}
 \item{\ldots}{Other arguments passed to \code{fun}.}
 }
 \value{
-Returns a \code{\link[base]{cut}} factor vector.
+Returns a \code{\link[base:cut]{base::cut()}} factor vector.
 }
 \description{
-A wrapper for \code{\link[base]{cut}} that cuts the vector and then adds the
+A wrapper for \code{\link[base:cut]{base::cut()}} that cuts the vector and then adds the
 \code{varname} produced by the original function.
 }
 \examples{
@@ -57,7 +57,7 @@ attributes(interval(normal, 4, n=100))
 interval(age, 3, n = 1000)
 }
 \seealso{
-\code{\link[base]{cut}}
+\code{\link[base:cut]{base::cut()}}
 }
 \keyword{cut}
 \keyword{interval}

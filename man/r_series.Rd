@@ -18,22 +18,22 @@ integer.}
 
 \item{relate}{Allows the user to specify the relationship between columns.
 May be a named list of \code{c("operation", "mean", "sd")} or a string of
-the form of "fM_sd" where `f` is one of (+, -, *, /), `M` is a mean value, and
-`sd` is a standard deviation of the mean value (e.g., \code{"*4_1"}).  See
-\code{\link[wakefield]{relate}} for details.}
+the form of "fM_sd" where \code{f} is one of (+, -, *, /), \code{M} is a mean value, and
+\code{sd} is a standard deviation of the mean value (e.g., \code{"*4_1"}).  See
+\code{\link[=relate]{relate()}} for details.}
 
 \item{rep.sep}{A separator to use for repeated variable names.  For example
-if the \code{\link[wakefield]{age}} is used three times
+if the \code{\link[=age]{age()}} is used three times
 (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
 three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.}
 
 \item{\ldots}{Additional arguments passed to \code{fun}.}
 }
 \value{
-Returns a \code{\link[dplyr]{tbl_df}}.
+Returns a \code{\link[dplyr:tbl_df]{dplyr::tbl_df()}}.
 }
 \description{
-Produce a \code{\link[dplyr]{tbl_df}} data frame of repeated measures from a
+Produce a \code{\link[dplyr:tbl_df]{dplyr::tbl_df()}} data frame of repeated measures from a
 wakefield variable function.
 }
 \examples{
@@ -96,7 +96,7 @@ ggplot(dat, aes(x = Time, y = values, color = ID, group = ID)) +
 \url{https://github.com/trinker/wakefield/issues/1/#issuecomment-96166910}
 }
 \seealso{
-\code{\link[wakefield]{r_list}},
-\code{\link[wakefield]{r_data_frame}}
-\code{\link[wakefield]{r_dummy}}
+\code{\link[=r_list]{r_list()}},
+\code{\link[=r_data_frame]{r_data_frame()}}
+\code{\link[=r_dummy]{r_dummy()}}
 }

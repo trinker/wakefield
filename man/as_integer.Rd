@@ -7,21 +7,21 @@
 as_integer(x, cols = NULL, fun = as.integer)
 }
 \arguments{
-\item{x}{A \code{\link[base]{data.frame}} of \code{\link[base]{factor}}s.}
+\item{x}{A \code{\link[base:data.frame]{base::data.frame()}} of \code{\link[base:factor]{base::factor()}}s.}
 
 \item{cols}{Numeric indices of the columns to incude (use \code{-} to exclude
 as well).  Default is to assign random \code{NA}s to all columns except the
 first column.}
 
 \item{fun}{An \code{as.} coercion function to apply to each column.  Default
-is \code{\link[base]{as.integer}}.}
+is \code{\link[base:integer]{base::as.integer()}}.}
 }
 \value{
-Returns a \code{\link[base]{data.frame}} equal to the
-\code{\link[base]{class}} of \code{x} with integer columns rather than factor.
+Returns a \code{\link[base:data.frame]{base::data.frame()}} equal to the
+\code{\link[base:class]{base::class()}} of \code{x} with integer columns rather than factor.
 }
 \description{
-Converts a \code{\link[base]{data.frame}} of \code{\link[base]{factor}}s to
+Converts a \code{\link[base:data.frame]{base::data.frame()}} of \code{\link[base:factor]{base::factor()}}s to
 integers.
 }
 \examples{
@@ -38,7 +38,7 @@ r_data_frame(n=100,
     as_integer(2:3)
 }
 \seealso{
-\code{\link[wakefield]{r_series}}
+\code{\link[=r_series]{r_series()}}
 }
 \keyword{integer}
 \keyword{numeric}

@@ -26,7 +26,7 @@ dates are sequential.}
 arguments are supplied to \code{start}, \code{k}, and \code{by}.  The
 \code{x} argument takes precedence over the other three if \code{!is.null}.
 Note that \code{start}, \code{k}, and \code{by} work together to make a
-vector of dates to sample from.  See \code{\link[base]{seq.Date}} for
+vector of dates to sample from.  See \code{\link[base:seq.Date]{base::seq.Date()}} for
 additional information.}
 
 \item{start}{A date to start the sequence at.}
@@ -56,7 +56,7 @@ pie(table(date_stamp(2000, prob = probs(12))))
 date_stamp(10, x = seq(as.Date("1980-11-16"), length = 30, by = "1 years"))
 }
 \seealso{
-\code{\link[base]{seq.Date}}
+\code{\link[base:seq.Date]{base::seq.Date()}}
 
 Other variable functions: 
 \code{\link{age}()},
