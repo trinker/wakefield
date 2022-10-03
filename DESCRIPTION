@@ -2,38 +2,108 @@ Package: wakefield
 Title: Generate Random Data Sets
 Version: 0.3.7
 Authors@R: c(
-        person("Tyler", "Rinker", email = "tyler.rinker@gmail.com", role = c("aut", "cre")),
-        person("Josh", "O'Brien", role = "ctb"), 
-        person("Ananda", "Mahto", role = "ctb"), 
-        person("Matthew", "Sigal", role = "ctb"),
-        person("Jonathan", "Carroll", role = "ctb"),
-        person("Scott", "Westenberger", role = "ctb")  
-        )
+    person("Tyler", "Rinker", , "tyler.rinker@gmail.com", role = c("aut", "cre")),
+    person("Josh", "O'Brien", role = "ctb"),
+    person("Ananda", "Mahto", role = "ctb"),
+    person("Matthew", "Sigal", role = "ctb"),
+    person("Jonathan", "Carroll", role = "ctb"),
+    person("Scott", "Westenberger", role = "ctb")
+  )
 Maintainer: Tyler Rinker <tyler.rinker@gmail.com>
-Description: Generates random data sets including: data.frames, lists,
-        and vectors.
-Depends: R (>= 3.2.0)
-Imports: chron, ggplot2, dplyr, stringi
-Suggests: testthat
+Description: Generates random data sets including: data.frames, lists, and
+    vectors.
 License: GPL-2
-LazyData: TRUE
 URL: https://github.com/trinker/wakefield
 BugReports: https://github.com/trinker/wakefield/issues
-Collate: 'utils.R' 'r_sample.R' 'age.R' 'r_sample_factor.R' 'animal.R'
-        'r_sample_binary.R' 'answer.R' 'area.R' 'as_integer.R' 'car.R'
-        'children.R' 'coin.R' 'color.R' 'date_stamp.R'
-        'r_sample_logical.R' 'death.R' 'dice.R' 'dna.R' 'dob.R'
-        'dummy.R' 'education.R' 'employment.R' 'eye.R' 'grade.R'
-        'grade_level.R' 'group.R' 'hair.R' 'normal.R' 'height.R'
-        'hour.R' 'id.R' 'income.R' 'internet_browser.R' 'interval.R'
-        'iq.R' 'language.R' 'level.R' 'r_sample_ordered.R' 'likert.R'
-        'lorem_ipsum.R' 'marital.R' 'military.R' 'minute.R' 'month.R'
-        'r_sample_replace.R' 'wakefield-package.R' 'name.R' 'peek.R'
-        'political.R' 'probs.R' 'r_data.R' 'r_data_frame.R' 'r_dummy.R'
-        'seriesname.R' 'r_insert.R' 'r_list.R' 'r_na.R'
-        'r_sample_integer.R' 'r_series.R' 'race.R' 'relate.R'
-        'religion.R' 'sat.R' 'second.R' 'sentence.R' 'sex.R'
-        'sex_inclusive.R' 'smokes.R' 'speed.R' 'state.R' 'string.R'
-        'table_heat.R' 'time_stamp.R' 'upper.R' 'valid.R' 'variables.R'
-        'varname.R' 'year.R' 'zip_code.R'
+Depends: 
+    R (>= 3.2.0)
+Imports: 
+    chron,
+    dplyr,
+    ggplot2,
+    stringi
+Suggests: 
+    testthat
+Encoding: UTF-8
+LazyData: TRUE
 RoxygenNote: 7.2.1
+Collate: 
+    'utils.R'
+    'r_sample.R'
+    'age.R'
+    'r_sample_factor.R'
+    'animal.R'
+    'r_sample_binary.R'
+    'answer.R'
+    'area.R'
+    'as_integer.R'
+    'car.R'
+    'children.R'
+    'coin.R'
+    'color.R'
+    'date_stamp.R'
+    'r_sample_logical.R'
+    'death.R'
+    'dice.R'
+    'dna.R'
+    'dob.R'
+    'dummy.R'
+    'education.R'
+    'employment.R'
+    'eye.R'
+    'grade.R'
+    'grade_level.R'
+    'group.R'
+    'hair.R'
+    'normal.R'
+    'height.R'
+    'hour.R'
+    'id.R'
+    'income.R'
+    'internet_browser.R'
+    'interval.R'
+    'iq.R'
+    'language.R'
+    'level.R'
+    'r_sample_ordered.R'
+    'likert.R'
+    'lorem_ipsum.R'
+    'marital.R'
+    'military.R'
+    'minute.R'
+    'month.R'
+    'r_sample_replace.R'
+    'wakefield-package.R'
+    'name.R'
+    'peek.R'
+    'political.R'
+    'probs.R'
+    'r_data.R'
+    'r_data_frame.R'
+    'r_dummy.R'
+    'seriesname.R'
+    'r_insert.R'
+    'r_list.R'
+    'r_na.R'
+    'r_sample_integer.R'
+    'r_series.R'
+    'race.R'
+    'relate.R'
+    'religion.R'
+    'sat.R'
+    'second.R'
+    'sentence.R'
+    'sex.R'
+    'sex_inclusive.R'
+    'smokes.R'
+    'speed.R'
+    'state.R'
+    'string.R'
+    'table_heat.R'
+    'time_stamp.R'
+    'upper.R'
+    'valid.R'
+    'variables.R'
+    'varname.R'
+    'year.R'
+    'zip_code.R'
