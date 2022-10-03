@@ -35,7 +35,7 @@ date_stamp <- function(n, random = FALSE, x = NULL, start = Sys.Date(), k = 12,
     by = "-1 months", prob = NULL, name = "Date"){
 
     if (is.null(x)){
-        x <- seq(start, length = k, by = by)
+        x <- seq(start, length.out = k, by = by)
     }
 
     if (!inherits(x, c("Date", "POSIXct", "POSIXt"))) warning("`x`may not a date vector")

@@ -61,8 +61,8 @@ attribute. For example here we see the `race` variable function:
 race(n=10)
 ```
 
-    ##  [1] Black    White    Hispanic White    White    White    Hispanic White   
-    ##  [9] Hispanic Hispanic
+    ##  [1] White    Black    White    White    White    Hispanic White    White   
+    ##  [9] Black    Hispanic
     ## Levels: White Hispanic Black Asian Bi-Racial Native Other Hawaiian
 
 ``` r
@@ -90,24 +90,19 @@ r_data_frame(
 )
 ```
 
-    ## Warning: `tbl_df()` was deprecated in dplyr 1.0.0.
-    ## Please use `tibble::as_tibble()` instead.
-    ## ℹ The deprecated feature was likely used in the wakefield package.
-    ##   Please report the issue at <]8;;https://github.com/trinker/wakefield/issueshttps://github.com/trinker/wakefield/issues]8;;>.
-
     ## # A tibble: 500 × 1
     ##    Race     
     ##    <fct>    
-    ##  1 White    
-    ##  2 White    
-    ##  3 White    
+    ##  1 Hispanic 
+    ##  2 Hispanic 
+    ##  3 Hispanic 
     ##  4 White    
-    ##  5 Asian    
-    ##  6 Bi-Racial
-    ##  7 Black    
+    ##  5 Bi-Racial
+    ##  6 Hispanic 
+    ##  7 White    
     ##  8 White    
     ##  9 White    
-    ## 10 White    
+    ## 10 Hispanic 
     ## # … with 490 more rows
 
 The power of `r_data_frame` is apparent when we use many modular
@@ -130,23 +125,23 @@ r_data_frame(
     ## # A tibble: 500 × 8
     ##    ID    Race       Age Sex    Hour        IQ Height Died 
     ##    <chr> <fct>    <int> <fct>  <times>  <dbl>  <dbl> <lgl>
-    ##  1 001   Asian       27 Female 00:00:00    94     73 FALSE
-    ##  2 002   White       45 Male   00:00:00    87     76 FALSE
-    ##  3 003   White       24 Female 00:00:00   107     73 FALSE
-    ##  4 004   Hispanic    48 Male   00:00:00   100     79 TRUE 
-    ##  5 005   Black       49 Male   00:00:00    84     65 FALSE
-    ##  6 006   Black       48 Male   00:00:00    90     66 TRUE 
-    ##  7 007   White       35 Female 00:00:00   107     62 TRUE 
-    ##  8 008   White       62 Female 00:00:00   104     61 FALSE
-    ##  9 009   Hispanic    72 Female 00:00:00   117     71 FALSE
-    ## 10 010   White       72 Male   00:30:00    89     73 TRUE 
+    ##  1 001   White       22 Female 00:00:00   120     63 TRUE 
+    ##  2 002   Hispanic    66 Female 00:00:00   120     70 TRUE 
+    ##  3 003   White       56 Male   00:00:00   114     68 TRUE 
+    ##  4 004   Hispanic    24 Female 00:00:00   105     71 FALSE
+    ##  5 005   Black       49 Male   00:00:00    93     67 FALSE
+    ##  6 006   Native      35 Male   00:30:00    99     67 TRUE 
+    ##  7 007   White       65 Male   00:30:00    98     71 FALSE
+    ##  8 008   White       22 Male   00:30:00    83     69 TRUE 
+    ##  9 009   White       21 Male   00:30:00    98     77 FALSE
+    ## 10 010   White       80 Male   00:30:00   103     60 TRUE 
     ## # … with 490 more rows
 
 There are 49 **wakefield** based variable functions to chose from,
 spanning **R**’s various data types (see `?variables` for details).
 
 <!-- html table generated in R 4.2.1 by xtable 1.8-4 package -->
-<!-- Mon Oct  3 11:29:29 2022 -->
+<!-- Mon Oct  3 11:30:25 2022 -->
 <table>
 <tr>
 <td>
@@ -345,16 +340,16 @@ r_data_frame(
     ## # A tibble: 500 × 10
     ##    ID    Scoring Smoker Race       Age Sex    Hour        IQ Height Died 
     ##    <chr>   <dbl> <lgl>  <fct>    <int> <fct>  <times>  <dbl>  <dbl> <lgl>
-    ##  1 001    1.97   FALSE  Hispanic    51 Male   00:00:00   104     63 FALSE
-    ##  2 002    0.548  FALSE  White       57 Female 00:00:00   101     74 FALSE
-    ##  3 003    0.0675 FALSE  Asian       67 Female 00:00:00   105     68 FALSE
-    ##  4 004    0.470  TRUE   Black       64 Female 00:00:00   108     67 FALSE
-    ##  5 005    1.23   FALSE  White       72 Male   00:00:00    84     61 TRUE 
-    ##  6 006    0.622  TRUE   Hispanic    39 Male   00:00:00   105     67 FALSE
-    ##  7 007   -2.06   FALSE  Hispanic    48 Male   00:00:00   103     69 TRUE 
-    ##  8 008   -1.03   TRUE   White       53 Female 00:00:00   119     72 FALSE
-    ##  9 009   -0.940  TRUE   White       88 Female 00:00:00    95     70 FALSE
-    ## 10 010    0.499  FALSE  White       69 Male   00:00:00   104     70 TRUE 
+    ##  1 001    1.08   TRUE   White       36 Female 00:00:00    90     77 TRUE 
+    ##  2 002   -1.23   TRUE   White       83 Female 00:00:00    90     68 FALSE
+    ##  3 003   -1.09   TRUE   White       66 Male   00:00:00    88     69 TRUE 
+    ##  4 004   -1.37   TRUE   White       82 Male   00:00:00   111     68 FALSE
+    ##  5 005    1.90   TRUE   White       67 Male   00:00:00    95     66 TRUE 
+    ##  6 006   -0.308  FALSE  Asian       84 Female 00:00:00    90     67 FALSE
+    ##  7 007    0.714  FALSE  Hispanic    38 Female 00:00:00   108     75 TRUE 
+    ##  8 008   -0.0386 TRUE   Hispanic    45 Male   00:00:00    95     66 TRUE 
+    ##  9 009   -0.140  TRUE   White       23 Male   00:30:00   105     75 TRUE 
+    ## 10 010    1.84   TRUE   White       83 Female 00:30:00   109     72 TRUE 
     ## # … with 490 more rows
 
 ``` r
@@ -369,16 +364,16 @@ r_data_frame(
     ## # A tibble: 500 × 7
     ##    ID    Age_1 Age_2 Age_3 Grade_1 Grade_2 Grade_3
     ##    <chr> <int> <int> <int>   <dbl>   <dbl>   <dbl>
-    ##  1 001      35    87    89    91.1    84.5    92.1
-    ##  2 002      85    80    20    86.6    91.7    81.2
-    ##  3 003      35    69    47    87.5    90.3    83.9
-    ##  4 004      38    24    89    84.1    89.5    89.3
-    ##  5 005      82    84    64    85.6    90.7    85.4
-    ##  6 006      59    78    86    87      90.2    93.2
-    ##  7 007      66    85    36    89      84.1    88.1
-    ##  8 008      32    34    70    89.4    95.1    89.4
-    ##  9 009      63    56    54    84.8    89.8    89.9
-    ## 10 010      33    86    69    86.4    84.8    85.5
+    ##  1 001      51    33    50    92.1    86.1    90.9
+    ##  2 002      62    37    26    85.1    84.4    84.5
+    ##  3 003      30    21    35    81.3    84.9    79.9
+    ##  4 004      23    21    82    83.8    98.2    85.4
+    ##  5 005      42    75    81    89.6    89.1    87.4
+    ##  6 006      36    62    25    98.3    90.5    89.4
+    ##  7 007      41    52    29    89.3    86.6    95.6
+    ##  8 008      83    24    51    84.6    85.9    82.1
+    ##  9 009      44    48    34    86.4    79.5    83.4
+    ## 10 010      34    80    32    82.4    92      88.8
     ## # … with 490 more rows
 
 While passing variable functions to `r_data_frame` without call
@@ -406,16 +401,16 @@ r_data_frame(
     ## # A tibble: 500 × 11
     ##    ID    Scoring Smoker Reading(min…¹ Race    Age Sex   Hour     IQ Height Died 
     ##    <chr>   <dbl> <lgl>          <int> <fct> <int> <fct> <tim> <dbl>  <dbl> <lgl>
-    ##  1 001   -1.85   TRUE              22 White     8 Male  00:0…   104     41 FALSE
-    ##  2 002    1.13   TRUE              21 White    14 Male  00:0…   109     42 TRUE 
-    ##  3 003   -0.554  FALSE             30 White    13 Fema… 00:0…   116     49 TRUE 
-    ##  4 004    1.47   TRUE              24 Black    14 Fema… 00:0…   109     44 TRUE 
-    ##  5 005    0.407  TRUE              18 White    13 Fema… 00:0…   105     47 FALSE
-    ##  6 006   -0.0635 TRUE              20 Hisp…     8 Fema… 00:0…   102     59 FALSE
-    ##  7 007    0.740  TRUE              22 Asian    13 Fema… 00:0…    96     57 FALSE
-    ##  8 008    1.59   TRUE              10 White     9 Fema… 00:3…   108     43 FALSE
-    ##  9 009    1.95   FALSE             13 White     9 Fema… 00:3…    75     50 TRUE 
-    ## 10 010   -0.206  FALSE             17 White    10 Male  00:3…   104     48 FALSE
+    ##  1 001    -2.13  FALSE             21 Asian    10 Male  00:0…    98     42 TRUE 
+    ##  2 002     1.80  FALSE             20 Asian    12 Fema… 00:0…   107     44 FALSE
+    ##  3 003    -1.05  FALSE             19 White    11 Fema… 00:0…    93     49 FALSE
+    ##  4 004    -0.832 TRUE              24 Black     8 Male  00:0…    90     57 TRUE 
+    ##  5 005     1.36  TRUE              10 White     9 Male  00:0…   102     47 TRUE 
+    ##  6 006    -0.940 TRUE              20 Black    11 Male  00:0…   108     50 FALSE
+    ##  7 007     0.214 TRUE              23 White    14 Male  00:0…   124     40 TRUE 
+    ##  8 008    -0.492 FALSE             26 White    12 Male  00:0…    92     55 TRUE 
+    ##  9 009    -0.309 FALSE             17 Hisp…    11 Fema… 00:0…    80     42 FALSE
+    ## 10 010    -0.312 TRUE              26 White    13 Male  00:0…    96     65 TRUE 
     ## # … with 490 more rows, and abbreviated variable name ¹​`Reading(mins)`
 
 ## Random Missing Observations
@@ -445,16 +440,16 @@ r_data_frame(
     ## # A tibble: 30 × 10
     ##    ID    Race    Age Sex    Hour        IQ Height Died  Scoring Smoker
     ##    <chr> <fct> <int> <fct>  <times>  <dbl>  <dbl> <lgl>   <dbl> <lgl> 
-    ##  1 01    Black    75 <NA>   02:30:00   106     70 TRUE   NA     NA    
-    ##  2 02    White    NA <NA>   <NA>        NA     71 FALSE  -0.236 FALSE 
-    ##  3 03    White    29 <NA>   <NA>       123     65 NA     NA     FALSE 
-    ##  4 04    Black    56 Female 07:00:00   105     65 FALSE  -0.210 TRUE  
-    ##  5 05    <NA>     NA Male   <NA>        99     68 FALSE  NA     FALSE 
-    ##  6 06    White    88 <NA>   08:00:00    NA     NA FALSE   0.509 FALSE 
-    ##  7 07    White    19 Female 08:00:00    NA     69 TRUE    0.124 FALSE 
-    ##  8 08    White    NA <NA>   08:00:00   107     63 FALSE  -1.51  FALSE 
-    ##  9 09    <NA>     25 Female 09:00:00   102     NA TRUE   NA     TRUE  
-    ## 10 10    <NA>     58 Male   <NA>        96     75 TRUE   -0.465 NA    
+    ##  1 01    White    33 <NA>   02:00:00    NA     64 NA    NA      FALSE 
+    ##  2 02    Black    34 Female 03:00:00    NA     NA FALSE NA      FALSE 
+    ##  3 03    White    NA Male   <NA>        85     NA TRUE  NA      NA    
+    ##  4 04    <NA>     79 Female <NA>        97     62 TRUE  -0.832  TRUE  
+    ##  5 05    Black    NA Female 05:00:00   102     NA NA    NA      NA    
+    ##  6 06    <NA>     62 Female <NA>       119     NA FALSE NA      TRUE  
+    ##  7 07    <NA>     81 Female 08:30:00    93     NA FALSE NA      FALSE 
+    ##  8 08    <NA>     64 Female 09:00:00    99     70 TRUE  -0.944  TRUE  
+    ##  9 09    White    31 Male   <NA>        NA     65 FALSE -0.0715 TRUE  
+    ## 10 10    White    NA <NA>   10:30:00    95     75 NA    NA      NA    
     ## # … with 20 more rows
 
 ## Repeated Measures & Time Series
@@ -467,6 +462,11 @@ set.seed(10)
 
 r_series(likert, j = 3, n=10)
 ```
+
+    ## Warning: `tbl_df()` was deprecated in dplyr 1.0.0.
+    ## Please use `tibble::as_tibble()` instead.
+    ## ℹ The deprecated feature was likely used in the wakefield package.
+    ##   Please report the issue at <]8;;https://github.com/trinker/wakefield/issueshttps://github.com/trinker/wakefield/issues]8;;>.
 
     ## # A tibble: 10 × 3
     ##    Likert_1          Likert_2          Likert_3         
@@ -737,8 +737,6 @@ dat %>%
     ## ℹ The deprecated feature was likely used in the ggplot2 package.
     ##   Please report the issue at <]8;;https://github.com/tidyverse/ggplot2/issueshttps://github.com/tidyverse/ggplot2/issues]8;;>.
 
-    ## Warning in panel_params$guide: partial match of 'guide' to 'guides'
-
 ![](tools/figure/unnamed-chunk-17-1.png)<!-- -->
 
 ## Expanded Dummy Coding
@@ -798,6 +796,3 @@ r_data_frame(n=100,
    r_na() %>%
    plot(palette = "Set1")
 ```
-
-    ## Warning in seq.Date(start, length = k, by = by): partial argument match of
-    ## 'length' to 'length.out'
