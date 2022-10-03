@@ -12,7 +12,7 @@ library(pacman)
 # verbadge <- sprintf('<a href="https://img.shields.io/badge/Version-%s-orange.svg"><img src="https://img.shields.io/badge/Version-%s-orange.svg" alt="Version"/></a></p>', ver, ver)
 verbadge <- ''
 p_load(dplyr, wakefield, knitr, tidyr, ggplot2)
-````
+```
 
 ```{r, echo=FALSE}
 knit_hooks$set(htmlcap = function(before, options, envir) {
@@ -22,6 +22,7 @@ knit_hooks$set(htmlcap = function(before, options, envir) {
     })
 knitr::opts_knit$set(self.contained = TRUE, cache = FALSE)
 knitr::opts_chunk$set(fig.path = "tools/figure/")
+set.seed(1)
 ```
 
 
@@ -104,7 +105,7 @@ p_load(pander, xtable)
 variables("matrix", ncol=5) %>%
     xtable() %>%
     print(type = 'html', include.colnames = FALSE, include.rownames = FALSE,
-        html.table.attributes = '')
+        html.table.attributes = '', timestamp = NULL)
 
 #matrix(c(sprintf("`%s`", vect), blanks), ncol=4) %>%
 #    pandoc.table(format = "markdown", caption = "Available variable functions.")
