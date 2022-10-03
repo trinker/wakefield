@@ -1,10 +1,6 @@
 ---
 title: "wakefield"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-output:
-  md_document:
-    toc: true
-    toc_depth: 4
+output: github_document
 ---
 
 ```{r, echo=FALSE}
@@ -28,12 +24,15 @@ knitr::opts_knit$set(self.contained = TRUE, cache = FALSE)
 knitr::opts_chunk$set(fig.path = "tools/figure/")
 ```
 
+
+<!-- badges: start -->
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/0.1.0/active.svg)](https://www.repostatus.org/#active)
-[![Build Status](https://travis-ci.org/trinker/wakefield.svg?branch=master)](https://travis-ci.org/trinker/wakefield)
+[![R-CMD-check](https://github.com/trinker/wakefield/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/trinker/wakefield/actions/workflows/R-CMD-check.yaml)
 [![Coverage Status](https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_0.svg)](https://coveralls.io/github/trinker/wakefield)
 [![DOI](https://zenodo.org/badge/5398/trinker/wakefield.svg)](https://dx.doi.org/10.5281/zenodo.17172)
 [![](https://cranlogs.r-pkg.org/badges/wakefield)](https://cran.r-project.org/package=wakefield)
 `r verbadge`
+<!-- badges: end -->
 
 
 **wakefield** is designed to quickly generate random data sets.  The user passes `n` (number of rows) and predefined vectors to the `r_data_frame` function to produce a `dplyr::tbl_df` object.
@@ -56,6 +55,7 @@ pacman::p_load(dplyr, tidyr, ggplot2)
 # Contact
 
 You are welcome to:
+
 * submit suggestions and bug-reports at: <https://github.com/trinker/wakefield/issues>
 * send a pull request on: <https://github.com/trinker/wakefield/>
 * compose a friendly e-mail to: <tyler.rinker@gmail.com>
