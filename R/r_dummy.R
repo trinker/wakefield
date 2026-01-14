@@ -26,7 +26,7 @@ r_dummy <- function(fun, n, ..., prefix = FALSE, rep.sep = "_") {
 
     vect <- fun(n = n, ...)
 
-    out <- dplyr::tbl_df(mtabulate(vect))
+    out <- dplyr::as_tibble(mtabulate(vect))
 
     if (isTRUE(prefix)) {
         names(out) <- paste(attributes(vect)[["varname"]], colnames(out),

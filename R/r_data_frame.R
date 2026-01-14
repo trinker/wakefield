@@ -98,7 +98,7 @@ function (n, ..., rep.sep = "_") {
 
     out <- stats::setNames(data.frame(out, stringsAsFactors = FALSE,
         check.names = FALSE), nms)
-    dplyr::tbl_df(out)
+    dplyr::as_tibble(out)
 }
 
 

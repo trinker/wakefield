@@ -118,7 +118,7 @@ r_series <- function(fun, j, n, ..., integer = FALSE, relate = NULL,
 
     names(out) <- paste(attributes(out[[1]])[["varname"]], seq_len(j),sep = rep.sep)
 
-    out <- seriesname(dplyr::tbl_df(as.data.frame(out)), attributes(out[[1]])[["varname"]])
+    out <- seriesname(dplyr::as_tibble(as.data.frame(out)), attributes(out[[1]])[["varname"]])
 
     if (isTRUE(integer)) out <- as_integer(out)
 
