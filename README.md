@@ -5,7 +5,7 @@ wakefield
 state and is being actively
 developed.](https://www.repostatus.org/badges/0.1.0/active.svg)](https://www.repostatus.org/#active)
 [![Build
-Status](https://travis-ci.org/trinker/wakefield.svg?branch=master)](https://travis-ci.org/trinker/wakefield)
+Status](https://travis-ci.org/trinker/wakefield.svg?branch=master)](https://app.travis-ci.com/trinker/wakefield)
 [![Coverage
 Status](https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_0.svg)](https://coveralls.io/github/trinker/wakefield)
 [![DOI](https://zenodo.org/badge/5398/trinker/wakefield.svg)](https://dx.doi.org/10.5281/zenodo.17172)

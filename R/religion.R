@@ -3,7 +3,7 @@
 #' Generate a random vector of religion.
 #'
 #' @details The religion and probabilities used match approximate world
-#' religion make-up (from \href{https://www.pewforum.org/}{Pew Research Center}).  
+#' religion make-up (from \href{https://www.pewresearch.org/?rls=religion}{Pew Research Center}).
 #' The default make up is:
 #'
 #' \tabular{lrr}{
@@ -38,12 +38,12 @@ religion <- hijack(r_sample_factor,
 ## pacman::p_load(dplyr, curl, qdapRegex)
 ##
 ## m <- read.csv(curl("https://raw.githubusercontent.com/ramnathv/data/gh-pages/all/pew_religion_religionByCountry.csv"))
-## 
+##
 ## m[, -1] <- lapply(m[, -1], function(x) {
 ##     as_numeric(sapply(rm_number(x, extract= TRUE), paste, collapse=""))
 ## })
-## 
-## 
+##
+##
 ## c(apply(m[, -1], 2, sum)) %>%
 ##     vect2df("Religion", "Total") %>%
 ##     mutate(

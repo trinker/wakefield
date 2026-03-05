@@ -31,7 +31,7 @@ Generate a random vector of religion.
 }
 \details{
 The religion and probabilities used match approximate world
-religion make-up (from \href{https://www.pewforum.org/}{Pew Research Center}).  
+religion make-up (from \href{https://www.pewresearch.org/?rls=religion}{Pew Research Center}).
 The default make up is:
 
 \tabular{lrr}{

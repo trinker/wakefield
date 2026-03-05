@@ -29,7 +29,7 @@ level <- hijack(r_sample,
 #' similar to New York State grades 3-8 assessment results.
 #'
 #' @details Distribution of levels (used in \code{prob}) were taken from New
-#' York State' s 2014 assessment report: \url{http://www.p12.nysed.gov/irs/}
+#' York State's 2014 assessment report: \url{https://www.nysed.gov/information-reporting-services}
 #'
 #' \tabular{lrr}{
 #'   \bold{ Level}   \tab \bold{ELA}  \tab \bold{Math}\cr
