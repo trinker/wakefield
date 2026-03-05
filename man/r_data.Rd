@@ -23,7 +23,7 @@ r_data_theme(n = 100, data_theme = "the_works")
 variable functions require no name or call parenthesis.}
 }
 \value{
-Returns a \code{\link[dplyr]{tbl_df}}.
+Returns a \code{\link[dplyr]{as_tibble}}.
 }
 \description{
 \code{r_data} - Generate a data set with pre-set columns selected.
@@ -54,7 +54,10 @@ r_data(10)
 r_data(10, paragraph, Attending = valid)
 
 peek(r_data_theme())
-plot(r_data_theme(), flip=TRUE)
+\donttest{
+dev.new(width = 20, height = 20, noRStudioGD = TRUE)
+plot(r_data_theme(), flip = TRUE)
+}
 
 r_data_theme(, "survey")
 r_data_theme(, "survey2")

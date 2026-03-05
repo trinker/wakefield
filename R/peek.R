@@ -12,7 +12,7 @@
 #' @seealso \code{\link[utils]{head}}
 #' @export
 #' @details By default \pkg{dplyr} does not print all columns of a data frame
-#' (\code{tbl_df}).  This makes inspection of data difficult at times,
+#' (\code{as_tibble}).  This makes inspection of data difficult at times,
 #' particularly with text string data.  \code{peek} allows the user to see a
 #' truncated head for inspection purposes.
 #' @examples
@@ -35,22 +35,22 @@
 #'
 #' dat2
 #' peek(dat2)
-peek <- 
+peek <-
 function (x, n = 10, width = 10, ...) {
     WD <- options()[["width"]]
     options(width = 3000)
-    o <- utils::head(truncdf(as.data.frame(x), width), n = n, 
+    o <- utils::head(truncdf(as.data.frame(x), width), n = n,
         ...)
     header <- "Source: local data frame [%s x %s]\n\n"
     cat(sprintf(header, nrow(x), ncol(x)))
     out <- utils::capture.output(o)
     fill <- utils::tail(out, 1)
-    nth_row <- paste(c(paste(rep(".", nchar(nrow(o))), collapse = ""), 
+    nth_row <- paste(c(paste(rep(".", nchar(nrow(o))), collapse = ""),
         sapply(1:ncol(o), function(i) {
             elems <- c(colnames(o)[i], as.character(o[[i]]))
             elems[is.na(elems)] <- "NA"
             lens <- max(nchar(elems), na.rm = TRUE)
-            if (lens <= 3) return(paste(c(" ", rep(".", lens)), 
+            if (lens <= 3) return(paste(c(" ", rep(".", lens)),
                 collapse = ""))
             paste(c(rep(" ", (lens + 1) - 3), "..."), collapse = "")
         })), collapse = "")

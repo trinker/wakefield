@@ -7,5 +7,5 @@
 
 
 .Rproj.user
-wakefield.Rproj
+^wakefield\.Rproj$
 Thumbs.db

@@ -21,10 +21,10 @@ To turn of this behavior use  \code{rep.sep = NULL}.  This results in
 variable functions require no name or call parenthesis.}
 }
 \value{
-Returns a \code{\link[dplyr]{tbl_df}}.
+Returns a \code{\link[dplyr]{as_tibble}}.
 }
 \description{
-Produce a \code{\link[dplyr]{tbl_df}} data frame that allows the user to
+Produce a \code{\link[dplyr]{as_tibble}} data frame that allows the user to
 lazily pass unnamed \pkg{wakefield} variable functions (optionally, without
 call parenthesis).
 }

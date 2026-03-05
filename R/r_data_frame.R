@@ -1,6 +1,6 @@
 #' Data Frame Production (From Variable Functions)
 #'
-#' Produce a \code{\link[dplyr]{tbl_df}} data frame that allows the user to
+#' Produce a \code{\link[dplyr]{as_tibble}} data frame that allows the user to
 #' lazily pass unnamed \pkg{wakefield} variable functions (optionally, without
 #' call parenthesis).
 #'
@@ -14,7 +14,7 @@
 #' To turn of this behavior use  \code{rep.sep = NULL}.  This results in
 #' \code{c("Age", "Age.1", "Age.2")} column names in the
 #' \code{\link[base]{data.frame}}.
-#' @return Returns a \code{\link[dplyr]{tbl_df}}.
+#' @return Returns a \code{\link[dplyr]{as_tibble}}.
 #' @author Josh O'Brien and Tyler Rinker <tyler.rinker@@gmail.com>.
 #' @references https://stackoverflow.com/a/29617983/1000343
 #' @export
@@ -98,7 +98,7 @@ function (n, ..., rep.sep = "_") {
 
     out <- stats::setNames(data.frame(out, stringsAsFactors = FALSE,
         check.names = FALSE), nms)
-    dplyr::tbl_df(out)
+    dplyr::as_tibble(out)
 }
 
 

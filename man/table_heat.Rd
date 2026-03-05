@@ -61,7 +61,9 @@ dat <- r_data_frame(100,
 table_heat(dat)
 table_heat(dat, flip=TRUE)
 
+\donttest{
 table_heat(r_data_theme(), flip=TRUE)
+}
 
 ## NA values
 table_heat(r_na(dat, NULL))

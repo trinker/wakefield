@@ -12,7 +12,7 @@
 #' when \code{prefix = TRUE}.  For example if the \code{\link[wakefield]{age}}
 #' is used (\code{r_dummy(sex)}), this results in column names
 #' \code{c("Sex_Male", "Sex_Female")}.
-#' @return Returns a \code{\link[dplyr]{tbl_df}}.
+#' @return Returns a \code{\link[dplyr]{as_tibble}}.
 #' @keywords dummy
 #' @export
 #' @seealso \code{\link[wakefield]{r_list}},
@@ -26,7 +26,7 @@ r_dummy <- function(fun, n, ..., prefix = FALSE, rep.sep = "_") {
 
     vect <- fun(n = n, ...)
 
-    out <- dplyr::tbl_df(mtabulate(vect))
+    out <- dplyr::as_tibble(mtabulate(vect))
 
     if (isTRUE(prefix)) {
         names(out) <- paste(attributes(vect)[["varname"]], colnames(out),

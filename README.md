@@ -13,7 +13,7 @@ Status](https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_0.svg)](ht
 
 **wakefield** is designed to quickly generate random data sets. The user
 passes `n` (number of rows) and predefined vectors to the `r_data_frame`
-function to produce a `dplyr::tbl_df` object.
+function to produce a `dplyr::as_tibble` object.
 
 ![](tools/wakefield_logo/r_wakefield.png)
 
@@ -98,7 +98,7 @@ variable functions but is set once in `r_data_frame`:
         race
     )
 
-    ## Warning: `tbl_df()` is deprecated as of dplyr 1.0.0.
+    ## Warning: `as_tibble()` is deprecated as of dplyr 1.0.0.
     ## Please use `tibble::as_tibble()` instead.
     ## This warning is displayed once every 8 hours.
     ## Call `lifecycle::last_warnings()` to see where this warning was generated.
@@ -744,7 +744,7 @@ Visualizing Column Types
 ------------------------
 
 It is helpful to see the column types and `NA`s as a visualization. The
-`table_heat` (also the `plot` method assigned to `tbl_df` as well) can
+`table_heat` (also the `plot` method assigned to `as_tibble` as well) can
 provide visual glimpse of data types and missing cells.
 
     set.seed(10)

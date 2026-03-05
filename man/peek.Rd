@@ -25,7 +25,7 @@ of a truncated \code{\link[base]{data.frame}}.  \code{peek} invisibly returns
 }
 \details{
 By default \pkg{dplyr} does not print all columns of a data frame
-(\code{tbl_df}).  This makes inspection of data difficult at times,
+(\code{as_tibble}).  This makes inspection of data difficult at times,
 particularly with text string data.  \code{peek} allows the user to see a
 truncated head for inspection purposes.
 }

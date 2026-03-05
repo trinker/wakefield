@@ -43,7 +43,7 @@ three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
 of significant digits in \code{x}.}
 }
 \value{
-Returns a \code{\link[dplyr]{tbl_df}}.
+Returns a \code{\link[dplyr]{as_tibble}}.
 }
 \description{
 Generate columns that are related.

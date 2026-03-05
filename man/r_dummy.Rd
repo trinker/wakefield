@@ -23,7 +23,7 @@ is used (\code{r_dummy(sex)}), this results in column names
 \item{\ldots}{Additional arguments passed to \code{fun}.}
 }
 \value{
-Returns a \code{\link[dplyr]{tbl_df}}.
+Returns a \code{\link[dplyr]{as_tibble}}.
 }
 \description{
 Generate random values from a \pkg{wakefield} variable function.

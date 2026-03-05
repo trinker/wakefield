@@ -30,10 +30,10 @@ three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
 \item{\ldots}{Additional arguments passed to \code{fun}.}
 }
 \value{
-Returns a \code{\link[dplyr]{tbl_df}}.
+Returns a \code{\link[dplyr]{as_tibble}}.
 }
 \description{
-Produce a \code{\link[dplyr]{tbl_df}} data frame of repeated measures from a
+Produce a \code{\link[dplyr]{as_tibble}} data frame of repeated measures from a
 wakefield variable function.
 }
 \examples{

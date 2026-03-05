@@ -21,7 +21,7 @@
 #' The user may use \ldots to add additional columns.  \code{r_data} is a
 #' convenience function to quickly produce a data set.  For more specific usage
 #' use the more flexible \code{\link[wakefield]{r_data_frame}} function.
-#' @return Returns a \code{\link[dplyr]{tbl_df}}.
+#' @return Returns a \code{\link[dplyr]{as_tibble}}.
 #' @export
 #' @rdname r_data
 #' @seealso \code{\link[wakefield]{r_data_frame}}
@@ -31,7 +31,10 @@
 #' r_data(10, paragraph, Attending = valid)
 #'
 #' peek(r_data_theme())
-#' plot(r_data_theme(), flip=TRUE)
+#' \donttest{
+#' dev.new(width = 20, height = 20, noRStudioGD = TRUE)
+#' plot(r_data_theme(), flip = TRUE)
+#' }
 #'
 #' r_data_theme(, "survey")
 #' r_data_theme(, "survey2")

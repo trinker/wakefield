@@ -19,6 +19,7 @@
 #' @details By default coumn names retain their order.  Column types are ordered
 #' alphabetically in the legend, with \code{NA} appearing last.
 #' @keywords class
+#' @importFrom rlang .data
 #' @export
 #' @examples
 #' table_heat(mtcars) #boring
@@ -40,7 +41,9 @@
 #' table_heat(dat)
 #' table_heat(dat, flip=TRUE)
 #'
+#' \donttest{
 #' table_heat(r_data_theme(), flip=TRUE)
+#' }
 #'
 #' ## NA values
 #' table_heat(r_na(dat, NULL))
@@ -87,8 +90,8 @@ table_heat <- function(x, flip = FALSE, palette = "Set3", print = interactive(),
         x1 <- "Observations"
     }
 
-    theplot <- ggplot2::ggplot(ldat, ggplot2::aes_string(y = y1, x = x1)) +
-        ggplot2::geom_tile(ggplot2::aes_string(fill = "Types"), colour = NA) +
+    theplot <- ggplot2::ggplot(ldat, ggplot2::aes(y = .data[[y1]], x = .data[[x1]])) +
+        ggplot2::geom_tile(ggplot2::aes(fill = .data[["Types"]]), colour = NA) +
         ggplot2::theme_bw() +
         ggplot2::theme(
             panel.border = ggplot2::element_rect(color = NA),
@@ -118,14 +121,14 @@ table_heat <- function(x, flip = FALSE, palette = "Set3", print = interactive(),
     invisible(theplot)
 }
 
-#' Plots a tbl_df Object
+#' Plots a as_tibble Object
 #'
-#' Plots a tbl_df object.
+#' Plots a as_tibble object.
 #'
-#' @param x The tbl_df object.
+#' @param x The as_tibble object.
 #' @param \ldots Arguments passed to \code{\link[wakefield]{table_heat}}.
-#' @method plot tbl_df
+#' @method plot as_tibble
 #' @export
-plot.tbl_df <- function(x, ...){
+plot.as_tibble <- function(x, ...){
     table_heat(x, ...)
 }

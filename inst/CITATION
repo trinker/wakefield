@@ -1,15 +1,33 @@
-citHeader("To cite wakefield in publications, please use:")
+## Robust CITATION that works whether or not the package is installed
 
+.get_meta <- function() {
+  if (exists("meta", inherits = FALSE) && is.list(meta)) {
+    return(meta)
+  }
 
-citEntry(entry = "manual",
-    title = "{wakefield}: Generate Random Data",
-    author = "Tyler W. Rinker",
-    address = "Buffalo, New York",
-    note = "version 0.3.3",
-    year = "2018",
-    url = "https://github.com/trinker/wakefield",
-    textVersion  = paste("Rinker, T. W. (2018).",
-        "wakefield: Generate Random Data.",
-        "version 0.3.3. Buffalo, New York.",
-        "https://github.com/trinker/wakefield")
+  ## Fallback for when CITATION is read before installation
+  as.list(read.dcf("DESCRIPTION")[1, ])
+}
+
+.meta <- .get_meta()
+
+.year <- "2018"
+.version <- .meta[["Version"]]
+.url <- .meta[["URL"]]
+
+bibentry(
+  bibtype = "Manual",
+  title   = "{wakefield}: Generate Random Data",
+  author  = person(given = c("Tyler", "W."), family = "Rinker"),
+  year    = .year,
+  note    = paste("R package version", .version),
+  address = "Buffalo, New York",
+  url     = .url,
+  textVersion = paste(
+    "Rinker, T. W. (2018).",
+    "wakefield: Generate Random Data.",
+    sprintf("R package version %s.", .version),
+    "Buffalo, New York.",
+    .url
+  )
 )

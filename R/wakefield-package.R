@@ -1,10 +1,9 @@
-#' Generate Random Data Sets
+#' wakefield: Generate Random Data Sets
 #'
 #' Generates random data sets including: data.frames, lists, and vectors.
-#' @docType package
-#' @name wakefield
-#' @aliases wakefield package-wakefield
-NULL
+#'
+#' @keywords internal
+"_PACKAGE"
 
 #' Augmented List of Grady Ward's English Words and Mark Kantrowitz's Names List
 #'

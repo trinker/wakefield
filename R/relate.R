@@ -20,7 +20,7 @@
 #' three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
 #' @param digits The number of digits to round to.  Defaults to the max number
 #' of significant digits in \code{x}.
-#' @return Returns a \code{\link[dplyr]{tbl_df}}.
+#' @return Returns a \code{\link[dplyr]{as_tibble}}.
 #' @keywords correlate related
 #' @export
 #' @seealso \code{\link[wakefield]{r_series}}
@@ -67,6 +67,6 @@ relate <- function(x, j, name = NULL, operation = "+", mean = 5, sd = 1,
 
     out <- stats::setNames(seed_dat, paste(name, seq_len(j), sep = rep.sep))
 
-    seriesname(dplyr::tbl_df(out), name)
+    seriesname(dplyr::as_tibble(out), name)
 }
 

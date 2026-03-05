@@ -1,6 +1,6 @@
 #' Data Frame Series (Repeated Measures)
 #'
-#' Produce a \code{\link[dplyr]{tbl_df}} data frame of repeated measures from a
+#' Produce a \code{\link[dplyr]{as_tibble}} data frame of repeated measures from a
 #' wakefield variable function.
 #'
 #' @param fun A \pkg{wakefield} variable function.
@@ -18,7 +18,7 @@
 #' if the \code{\link[wakefield]{age}} is used three times
 #' (\code{r_data_frame(age, age, age)}), the name "Age" will be assigned to all
 #' three columns.  The results in column names \code{c("Age_1", "Age_2", "Age_3")}.
-#' @return Returns a \code{\link[dplyr]{tbl_df}}.
+#' @return Returns a \code{\link[dplyr]{as_tibble}}.
 #' @references \url{https://github.com/trinker/wakefield/issues/1/#issuecomment-96166910}
 #' @export
 #' @seealso \code{\link[wakefield]{r_list}},
@@ -118,7 +118,7 @@ r_series <- function(fun, j, n, ..., integer = FALSE, relate = NULL,
 
     names(out) <- paste(attributes(out[[1]])[["varname"]], seq_len(j),sep = rep.sep)
 
-    out <- seriesname(dplyr::tbl_df(as.data.frame(out)), attributes(out[[1]])[["varname"]])
+    out <- seriesname(dplyr::as_tibble(as.data.frame(out)), attributes(out[[1]])[["varname"]])
 
     if (isTRUE(integer)) out <- as_integer(out)
 
